@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Applied Mechanics"
+  subtitle: "Workbook"
+  author: "Serhat Beyenir"
+  date: "2024-11-01"
+  cover-image: /images/cover.png
+  downloads: [pdf]
+  page-footer:
+    left: |
+      © 2024 <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+    right: |
+      Built with <a href="https://quarto.org/">Quarto</a>.
+  chapters:
+    - index.qmd
+    - SI_Units.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: solar
+  pdf:
+    documentclass: scrbook
+    classoption: [paper=letterpaper]
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+
+editor: visual
+

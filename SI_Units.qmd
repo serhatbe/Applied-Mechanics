@@ -1,0 +1,201 @@
+# International System of Units {#sec-international-system-of-units}
+
+## Objectives
+
+-   Recall the based and derived units.
+-   Practice the application of unity fraction.
+
+## SI Units
+
+The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.
+
+| Physical Quantity   | SI Base Unit | Symbol |
+|---------------------|--------------|--------|
+| Length              | Meter        | m      |
+| Mass                | Kilogram     | kg     |
+| Time                | Second       | s      |
+| Electric Current    | Ampere       | A      |
+| Temperature         | Kelvin       | K      |
+| Amount of Substance | Mole         | mol    |
+| Luminous Intensity  | Candela      | cd     |
+
+: Base SI units.
+
+| Physical Quantity      | Derived SI Unit           | Symbol   |
+|------------------------|---------------------------|----------|
+| Area                   | Square meter              | m²       |
+| Volume                 | Cubic meter               | m³       |
+| Speed                  | Meter per second          | m/s      |
+| Acceleration           | Meter per second squared  | m/s^2^   |
+| Force                  | Newton                    | N        |
+| Pressure               | Pascal                    | Pa       |
+| Energy                 | Joule                     | J        |
+| Power                  | Watt                      | W        |
+| Electric Charge        | Coulomb                   | C        |
+| Electric Potential     | Volt                      | V        |
+| Resistance             | Ohm                       | Ω        |
+| Capacitance            | Farad                     | F        |
+| Frequency              | Hertz                     | Hz       |
+| Luminous Flux          | Lumen                     | lm       |
+| Illuminance            | Lux                       | lx       |
+| Specific Energy        | Joule per kilogram        | J/kg     |
+| Specific Heat Capacity | Joule per kilogram Kelvin | J/(kg·K) |
+
+: Derived SI units.
+
+| Factor | Prefix | Symbol |
+|--------|--------|--------|
+| 10^9^  | giga   | G      |
+| 10^6^  | mega   | M      |
+| 10^3^  | kilo   | k      |
+| 10^2^  | hecto  | h      |
+| 10^1^  | deca   | da     |
+| 10^-1^ | deci   | d      |
+| 10^-2^ | centi  | c      |
+| 10^-3^ | milli  | m      |
+| 10^-6^ | micro  | µ      |
+
+: Common multiples and submultiples for SI units.
+
+## Unity Fraction
+
+The **unity fraction** method, or **unit conversion using unity fractions**, is a systematic way to convert one unit of measurement into another. This method relies on multiplying by fractions that are equal to one, where the numerator and the denominator represent the same quantity in different units. Since any number multiplied by one remains the same, unity fractions allow for seamless conversion without changing the value.
+
+### How Unity Fraction Works
+
+The principle of unity fractions is based on:
+
+1.  **Setting up equal values**: Write a fraction where the numerator and denominator are equivalent values in different units, so the fraction equals one. For example, $\frac{1km}{1000m}$ is a unity fraction because 1 km equals 1000 m.
+
+2.  **Multiplying by unity fractions**: Multiply the initial quantity by the unity fraction(s) so that the undesired units cancel out, leaving only the desired units.
+
+### Example of Unity Fraction in Action
+
+Suppose we want to convert $5$ kilometers to meters.
+
+1.  Start with $5$ kilometers: $$
+    5 \, \text{km}
+    $$
+2.  Multiply by a unity fraction that cancels kilometers and introduces meters. We use $(\frac{1000 \, \text{m}}{1 \, \text{km}}), since\:1 \, \text{km} = 1000 \, \text{m}$:
+
+$$5 \, \text{km} \times \frac{1000 \, \text{m}}{1 \, \text{km}} = 5000 \, \text{m}$$
+
+3.  The kilometers $\text{km}$ cancel out, leaving us with meters $\text{m}$:
+
+$$
+5 \, \text{km} = 5000 \, \text{m}
+$$
+
+This step-by-step approach illustrates how the unity fraction cancels the undesired units and achieves the correct result in meters.
+
+Unity fractions can be extended by using multiple conversion steps. For example, converting hours to seconds would require two unity fractions: one to convert hours to minutes and another to convert minutes to seconds. This approach ensures accuracy and is widely used in science, engineering, and other fields that require precise unit conversions.
+
+## Problem Set
+
+**Instructions:**
+
+1.  Use unity fractions to convert between derived SI units.
+
+2.  Show each step of your work to ensure accuracy.
+
+3.  Simplify your answers and include correct units.
+
+------------------------------------------------------------------------
+
+### Example Problem
+
+Convert $15 \, \text{m/s}$ to $\text{km/h}$.
+
+**Solution:**
+
+1.  Start with $15 \, \text{m/s}$.
+2.  To convert meters to kilometers, multiply by $\frac{1 \, \text{km}}{1000 \, \text{m}}$.
+3.  To convert seconds to hours, multiply by $\frac{3600 \, \text{s}}{1 \, \text{h}}$.
+
+$$
+15 \, \text{m/s} \times \frac{1 \, \text{km}}{1000 \, \text{m}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 54 \, \text{km/h}
+$$
+
+The meters and seconds cancel out, leaving kilometers per hour: $54 \, \text{km/h}$.
+
+------------------------------------------------------------------------
+
+### Practice Problems
+
+Convert each of the following using unity fractions. Show all steps!
+
+1.  **Speed**\
+    Convert $72 \, \text{km/h}$ to $\text{m/s}$.
+
+2.  **Force**\
+    Convert $980 \, \text{N}$ (newtons) to $\text{kg} \cdot \text{m/s}^2$.
+
+3.  **Energy**\
+    Convert $2500 \, \text{J}$ (joules) to $\text{kJ}$.
+
+4.  **Power**\
+    Convert $1500 \, \text{W}$ (watts) to $\text{kW}$.
+
+5.  **Pressure**\
+    Convert $101325 \, \text{Pa}$ (pascals) to $\text{kPa}$.
+
+6.  **Volume Flow Rate**\
+    Convert $3 \, \text{m}^3/\text{min}$ to $\text{L/s}$.
+
+7.  **Density**\
+    Convert $1000 \, \text{kg/m}^3$ to $\text{g/cm}^3$.
+
+8.  **Acceleration**\
+    Convert $9.8 \, \text{m/s}^2$ to $\text{cm/s}^2$.
+
+9.  **Torque**\
+    Convert $50 \, \text{N} \cdot \text{m}$ to $\text{kN} \cdot \text{cm}$.
+
+10. **Frequency**\
+    Convert $500 \, \text{Hz}$ (hertz) to $\text{kHz}$.
+
+------------------------------------------------------------------------
+
+### Challenge Problems
+
+1.  **Work to Energy Conversion**\
+    A force of $20 \, \text{N}$ moves an object $500 \, \text{cm}$. Convert the work done to joules.
+
+2.  **Kinetic Energy Conversion**\
+    Calculate the kinetic energy in kilojoules of a $1500 \, \text{kg}$ car moving at $72 \, \text{km/h}$.
+
+3.  **Power to Energy Conversion**\
+    A machine operates at $2 \, \text{kW}$ for $3$ hours. Convert the energy used to megajoules.
+
+4.  **Pressure to Force Conversion**\
+    Convert a pressure of $200 \, \text{kPa}$ applied to an area of $0.5 \, \text{m}^2$ to force in newtons.
+
+5.  **Density to Mass Conversion**\
+    Convert $0.8 \, \text{g/cm}^3$ for an object with a volume of $250 \, \text{cm}^3$ to mass in grams.
+
+------------------------------------------------------------------------
+
+### Answer Key
+
+1.  $72 \, \text{km/h} = 20 \, \text{m/s}$
+2.  $980 \, \text{N} = 980 \, \text{kg} \cdot \text{m/s}^2$
+3.  $2500 \, \text{J} = 2.5 \, \text{kJ}$
+4.  $1500 \, \text{W} = 1.5 \, \text{kW}$
+5.  $101325 \, \text{Pa} = 101.325 \, \text{kPa}$
+6.  $3 \, \text{m}^3/\text{min} = 50 \, \text{L/s}$
+7.  $1000 \, \text{kg/m}^3 = 1 \, \text{g/cm}^3$
+8.  $9.8 \, \text{m/s}^2 = 980 \, \text{cm/s}^2$
+9.  $50 \, \text{N} \cdot \text{m} = 0.5 \, \text{kN} \cdot \text{cm}$
+10. $500 \, \text{Hz} = 0.5 \, \text{kHz}$
+
+**Challenge Problems**
+
+1.  $20 \, \text{N} \times 5 \, \text{m} = 100 \, \text{J}$
+2.  $\text{Kinetic energy} = 1500 \, \text{kg} \times \left(20 \, \text{m/s}\right)^2 / 2 = 300 \, \text{kJ}$
+3.  $2 \, \text{kW} \times 3 \, \text{hours} = 21.6 \, \text{MJ}$
+4.  $200 \, \text{kPa} \times 0.5 \, \text{m}^2 = 100,000 \, \text{N}$
+5.  $0.8 \, \text{g/cm}^3 \times 250 \, \text{cm}^3 = 200 \, \text{g}$
+
+## Further Reading
+
+Introduction in @russell2021 and SI units in @bolton2021 for additional information.

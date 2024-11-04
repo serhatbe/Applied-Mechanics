@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.
+
+@sec-international-system-of-units: The International System of Units (SI)\index{SI} is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.
