@@ -1,0 +1,59 @@
+# Scalar and Vector Quantities {#sec-scalar-and-vector-quantities}
+
+## Objectives
+
+-   Distinguish between scalar and vector quantities.
+-   Define equilibrium of an object.
+-   Practice vector problems.
+
+## Definitions
+
+In mathematics and physics, a **scalar**\index{scalar} is a quantity with only magnitude (size), whereas a **vector**\index{vector} has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.
+
+A vector is represented as an arrow, where the length denotes its magnitude, and the arrowhead indicates its direction. Vector diagrams are useful for visually conveying information about vector relationships, allowing us to analyze effects like the combination of forces or the movement of objects in two or three dimensions. In such diagrams, vectors are often drawn to scale and placed with respect to an origin or another reference point.
+
+### Coplanar Forces
+
+Coplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.
+
+### Space Diagrams
+
+The space diagram is an illustration of the system of forces.
+
+### Vector Diagrams
+
+The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.
+
+### Resultant
+
+The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces.
+
+### Equilibrium
+
+Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.
+
+Condition of equilibrium:
+
+1.  Net force must be zero: $\sum F = 0$
+
+2.  Net torque must be zero: $\sum T = 0$
+
+## Problem Set
+
+1.  Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.
+2.  Calculate the magnitude and direction of the resultant of the 457 N and 583 N forces, which are aligned along the same line but act in opposite directions.
+3.  Use the triangle of forces method to find the magnitude and direction of the resultant force from a 14 N force acting at 0° and a 23 N force acting at 35°.
+
+------------------------------------------------------------------------
+
+### Answer Key
+
+1.  Magnitude of the resultant: 4.6 kN. Direction: Same as the direction of the individual forces.
+
+2.  Magnitude of the resultant: 126 N. Direction: Same as the direction of the 583 N force.
+
+3.  The magnitude of the resultant force is approximately 35.39 N, and its direction is approximately 21.80° above the positive x-axis.
+
+## Further Reading
+
+Chapter 1 in @russell2021 and Chapter 2 in @bolton2021 for additional information.

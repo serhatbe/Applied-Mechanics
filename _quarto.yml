@@ -17,6 +17,7 @@ book:
   chapters:
     - index.qmd
     - SI_Units.qmd
+    - scalar-and-vector-quantities.qmd
     - summary.qmd
     - references.qmd
 

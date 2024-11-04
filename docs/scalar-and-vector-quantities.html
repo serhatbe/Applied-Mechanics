@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>References – Applied Mechanics</title>
+<title>2&nbsp; Scalar and Vector Quantities – Applied Mechanics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -49,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./SI_Units.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -101,7 +132,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./scalar-and-vector-quantities.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Scalar and Vector Quantities</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -144,7 +175,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scalar-and-vector-quantities.html" class="sidebar-item-text sidebar-link">
+  <a href="./scalar-and-vector-quantities.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Scalar and Vector Quantities</span></span></a>
   </div>
 </li>
@@ -156,7 +187,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -165,15 +196,34 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">2.1</span> Objectives</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions"><span class="header-section-number">2.2</span> Definitions</a>
+  <ul class="collapse">
+  <li><a href="#coplanar-forces" id="toc-coplanar-forces" class="nav-link" data-scroll-target="#coplanar-forces"><span class="header-section-number">2.2.1</span> Coplanar Forces</a></li>
+  <li><a href="#space-diagrams" id="toc-space-diagrams" class="nav-link" data-scroll-target="#space-diagrams"><span class="header-section-number">2.2.2</span> Space Diagrams</a></li>
+  <li><a href="#vector-diagrams" id="toc-vector-diagrams" class="nav-link" data-scroll-target="#vector-diagrams"><span class="header-section-number">2.2.3</span> Vector Diagrams</a></li>
+  <li><a href="#resultant" id="toc-resultant" class="nav-link" data-scroll-target="#resultant"><span class="header-section-number">2.2.4</span> Resultant</a></li>
+  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="header-section-number">2.2.5</span> Equilibrium</a></li>
+  </ul></li>
+  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set"><span class="header-section-number">2.3</span> Problem Set</a>
+  <ul class="collapse">
+  <li><a href="#answer-key" id="toc-answer-key" class="nav-link" data-scroll-target="#answer-key"><span class="header-section-number">2.3.1</span> Answer Key</a></li>
+  </ul></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">2.4</span> Further Reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span id="sec-scalar-and-vector-quantities" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Scalar and Vector Quantities</span></span></h1>
 </div>
 
 
@@ -190,37 +240,75 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-ahrensHowTakeSmart2022" class="csl-entry" role="listitem">
-Ahrens, Sönke. 2022. <em>How to Take Smart Notes: One Simple Technique
-to Boost Writing, Learning and Thinking</em>. 2nd ed. edition. Sönke
-Ahrens.
-</div>
-<div id="ref-bird2021" class="csl-entry" role="listitem">
-Bird, J. O. 2021. <em>Bird’s Engineering Mathematics</em>. Ninth
-edition. Abingdon, Oxon ; New York: Routledge.
-</div>
-<div id="ref-bird2020" class="csl-entry" role="listitem">
-Bird, J. O., and C. T. F. Ross. 2020. <em>Mechanical Engineering
-Principles</em>. Fourth edition. Abingdon, Oxon: Routledge.
-</div>
+<section id="objectives" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">2.1</span> Objectives</h2>
+<ul>
+<li>Distinguish between scalar and vector quantities.</li>
+<li>Define equilibrium of an object.</li>
+<li>Practice vector problems.</li>
+</ul>
+</section>
+<section id="definitions" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="definitions"><span class="header-section-number">2.2</span> Definitions</h2>
+<p>In mathematics and physics, a <strong>scalar</strong> is a quantity with only magnitude (size), whereas a <strong>vector</strong> has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.</p>
+<p>A vector is represented as an arrow, where the length denotes its magnitude, and the arrowhead indicates its direction. Vector diagrams are useful for visually conveying information about vector relationships, allowing us to analyze effects like the combination of forces or the movement of objects in two or three dimensions. In such diagrams, vectors are often drawn to scale and placed with respect to an origin or another reference point.</p>
+<section id="coplanar-forces" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="coplanar-forces"><span class="header-section-number">2.2.1</span> Coplanar Forces</h3>
+<p>Coplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.</p>
+</section>
+<section id="space-diagrams" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="space-diagrams"><span class="header-section-number">2.2.2</span> Space Diagrams</h3>
+<p>The space diagram is an illustration of the system of forces.</p>
+</section>
+<section id="vector-diagrams" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="vector-diagrams"><span class="header-section-number">2.2.3</span> Vector Diagrams</h3>
+<p>The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.</p>
+</section>
+<section id="resultant" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="resultant"><span class="header-section-number">2.2.4</span> Resultant</h3>
+<p>The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces.</p>
+</section>
+<section id="equilibrium" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="equilibrium"><span class="header-section-number">2.2.5</span> Equilibrium</h3>
+<p>Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.</p>
+<p>Condition of equilibrium:</p>
+<ol type="1">
+<li><p>Net force must be zero: <span class="math inline">\(\sum F = 0\)</span></p></li>
+<li><p>Net torque must be zero: <span class="math inline">\(\sum T = 0\)</span></p></li>
+</ol>
+</section>
+</section>
+<section id="problem-set" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="problem-set"><span class="header-section-number">2.3</span> Problem Set</h2>
+<ol type="1">
+<li>Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.</li>
+<li>Calculate the magnitude and direction of the resultant of the 457 N and 583 N forces, which are aligned along the same line but act in opposite directions.</li>
+<li>Use the triangle of forces method to find the magnitude and direction of the resultant force from a 14 N force acting at 0° and a 23 N force acting at 35°.</li>
+</ol>
+<hr>
+<section id="answer-key" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="answer-key"><span class="header-section-number">2.3.1</span> Answer Key</h3>
+<ol type="1">
+<li><p>Magnitude of the resultant: 4.6 kN. Direction: Same as the direction of the individual forces.</p></li>
+<li><p>Magnitude of the resultant: 126 N. Direction: Same as the direction of the 583 N force.</p></li>
+<li><p>The magnitude of the resultant force is approximately 35.39 N, and its direction is approximately 21.80° above the positive x-axis.</p></li>
+</ol>
+</section>
+</section>
+<section id="further-reading" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">2.4</span> Further Reading</h2>
+<p>Chapter 1 in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span> and Chapter 2 in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional information.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-bolton2021" class="csl-entry" role="listitem">
-Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition.
-Abingdon, Oxon ; New York, NY: Routledge.
-</div>
-<div id="ref-polya2014" class="csl-entry" role="listitem">
-Polya, G., and John H. Conway. 2014. <em>How to Solve It: A New Aspect
-of Mathematical Method</em>. With a Foreword by John H. Con ed. edition.
-Princeton Oxford: Princeton University Press.
+Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
 </div>
 <div id="ref-russell2021" class="csl-entry" role="listitem">
-Russell, Paul A., Leslie Jackson, and William Embleton. 2021.
-<em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds
-Marine Engineering and Technology Series, vol. 2. London: Reeds.
+Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
 </div>
 </div>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -789,11 +877,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span>
+      <a href="./SI_Units.html" class="pagination-link" aria-label="International System of Units">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">International System of Units</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

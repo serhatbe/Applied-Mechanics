@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Applied Mechanics",
     "section": "",
-    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.",
+    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.",
     "crumbs": [
       "Preface"
     ]
@@ -70,13 +70,63 @@
     ]
   },
   {
+    "objectID": "scalar-and-vector-quantities.html",
+    "href": "scalar-and-vector-quantities.html",
+    "title": "2  Scalar and Vector Quantities",
+    "section": "",
+    "text": "2.1 Objectives",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scalar and Vector Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "scalar-and-vector-quantities.html#objectives",
+    "href": "scalar-and-vector-quantities.html#objectives",
+    "title": "2  Scalar and Vector Quantities",
+    "section": "",
+    "text": "Distinguish between scalar and vector quantities.\nDefine equilibrium of an object.\nPractice vector problems.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scalar and Vector Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "scalar-and-vector-quantities.html#definitions",
+    "href": "scalar-and-vector-quantities.html#definitions",
+    "title": "2  Scalar and Vector Quantities",
+    "section": "2.2 Definitions",
+    "text": "2.2 Definitions\nIn mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\nA vector is represented as an arrow, where the length denotes its magnitude, and the arrowhead indicates its direction. Vector diagrams are useful for visually conveying information about vector relationships, allowing us to analyze effects like the combination of forces or the movement of objects in two or three dimensions. In such diagrams, vectors are often drawn to scale and placed with respect to an origin or another reference point.\n\n2.2.1 Coplanar Forces\nCoplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.\n\n\n2.2.2 Space Diagrams\nThe space diagram is an illustration of the system of forces.\n\n\n2.2.3 Vector Diagrams\nThe vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.\n\n\n2.2.4 Resultant\nThe resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces.\n\n\n2.2.5 Equilibrium\nEquilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.\nCondition of equilibrium:\n\nNet force must be zero: \\(\\sum F = 0\\)\nNet torque must be zero: \\(\\sum T = 0\\)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scalar and Vector Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "scalar-and-vector-quantities.html#problem-set",
+    "href": "scalar-and-vector-quantities.html#problem-set",
+    "title": "2  Scalar and Vector Quantities",
+    "section": "2.3 Problem Set",
+    "text": "2.3 Problem Set\n\nCalculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.\nCalculate the magnitude and direction of the resultant of the 457 N and 583 N forces, which are aligned along the same line but act in opposite directions.\nUse the triangle of forces method to find the magnitude and direction of the resultant force from a 14 N force acting at 0° and a 23 N force acting at 35°.\n\n\n\n2.3.1 Answer Key\n\nMagnitude of the resultant: 4.6 kN. Direction: Same as the direction of the individual forces.\nMagnitude of the resultant: 126 N. Direction: Same as the direction of the 583 N force.\nThe magnitude of the resultant force is approximately 35.39 N, and its direction is approximately 21.80° above the positive x-axis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scalar and Vector Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "scalar-and-vector-quantities.html#further-reading",
+    "href": "scalar-and-vector-quantities.html#further-reading",
+    "title": "2  Scalar and Vector Quantities",
+    "section": "2.4 Further Reading",
+    "text": "2.4 Further Reading\nChapter 1 in Russell, Jackson, and Embleton (2021) and Chapter 2 in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Scalar and Vector Quantities</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
-    "text": "In summary, we have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021)\nChapter 1: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "text": "In summary, we have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021)\nChapter 1: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\nChapter 2: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
