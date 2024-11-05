@@ -12,8 +12,9 @@ book:
   page-footer:
     left: |
       © 2024 <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
-    right: |
-      Built with <a href="https://quarto.org/">Quarto</a>.
+    right:
+      - icon: rss
+        href: index.xml
   chapters:
     - index.qmd
     - SI_Units.qmd
