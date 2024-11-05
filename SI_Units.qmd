@@ -5,7 +5,7 @@
 -   Recall the based and derived units.
 -   Practice the application of unity fraction.
 
-## SI Units
+## Concepts
 
 The International System of Units (SI)\index{SI} is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.
 
@@ -61,7 +61,7 @@ The International System of Units (SI)\index{SI} is the globally accepted standa
 
 : Common multiples and submultiples for SI units.
 
-## Unity Fraction
+### Unity Fraction
 
 The **unity fraction** method, or **unit conversion using unity fractions**, is a systematic way to convert one unit of measurement into another. This method relies on multiplying by fractions that are equal to one, where the numerator and the denominator represent the same quantity in different units. Since any number multiplied by one remains the same, unity fractions allow for seamless conversion without changing the value.
 
@@ -112,7 +112,7 @@ The meters and seconds cancel out, leaving kilometers per hour: $54 \, \text{km/
 
 **Instructions:**
 
-1.  Use unity fractions to convert between derived SI units.
+1.  Use unity fraction to convert between derived SI units.
 
 2.  Show each step of your work to ensure accuracy.
 
