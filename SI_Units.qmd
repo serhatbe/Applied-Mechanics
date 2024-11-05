@@ -9,6 +9,8 @@
 
 The International System of Units (SI)\index{SI} is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.
 
+{{< pagebreak >}}
+
 | Physical Quantity   | SI Base Unit | Symbol |
 |---------------------|--------------|--------|
 | Length              | Meter        | m      |
@@ -43,6 +45,8 @@ The International System of Units (SI)\index{SI} is the globally accepted standa
 
 : Derived SI units.
 
+{{< pagebreak >}}
+
 | Factor | Prefix | Symbol |
 |--------|--------|--------|
 | 10^9^  | giga   | G      |
@@ -67,7 +71,7 @@ The principle of unity fractions is based on:
 
 2.  **Multiplying by unity fractions**: Multiply the initial quantity by the unity fraction(s) so that the undesired units cancel out, leaving only the desired units.
 
-## Examples
+## Classwork
 
 ::: {#exm-0}
 Suppose we want to convert $5$ kilometers to meters.

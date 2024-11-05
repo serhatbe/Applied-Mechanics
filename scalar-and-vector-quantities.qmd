@@ -52,7 +52,7 @@ A simple jib crane has a vertical post, a jib, and a tie. The jib is hinged at i
 
 When a load is hung directly from the crane head, solving for forces involves a simple triangle of forces. In other cases, the crane may have a pulley at the head, with a rope running over it to a winch, creating a system with more than three forces.
 
-## Examples
+## Classwork
 
 ::: {#exm-1}
 A vertical lifting force of 95 N is applied to a body, and simultaneously, a horizontal force of 135 N pulls on it. Determine the magnitude and direction of the resulting force.
@@ -270,6 +270,73 @@ Magnitude of the Equilibrium Force: $\approx 35.8 \, \text{N}$
 Direction of the Equilibrium Force: $\approx 55.2^\circ$ above the horizontal (in the direction of the 15 N force).
 :::
 
+:::: {#exm-sling}
+A 200 kg mass is suspended as shown in @fig-sling01. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.
+
+::: column-margin
+![A 200 kg suspended mass.](images/sling01.png){#fig-sling01}
+:::
+
+a.  What is the tension in rope B?
+b.  Draw a free body diagram of the forces exerted on the ring.
+c.  What is the tension in rope A?
+
+Given Information
+
+-   Mass $m = 200 \, \text{kg}$
+-   Gravitational acceleration $g = 9.81 \, \text{m/s}^2$
+-   Angle $\theta = 25^\circ$
+
+a.  Tension in Rope B
+
+The tension $T_B$ in Rope B must support the entire weight of the mass. Therefore,
+
+$$
+T_B = m \cdot g = 200 \times 9.81 = 1962 \, \text{N}
+$$
+
+So, **the tension in Rope B is 1962 N**.
+
+b.  Free Body Diagram of the Ring
+
+The ring is in equilibrium, meaning the net force acting on it is zero. Here’s a breakdown of the forces:
+
+-   **Tension** $T_B$: Acts downward, equal to the weight of the 200 kg mass.
+-   **Tensions** $T_{A1}$ and $T_{A2}$: These are the tensions in each side of Rope A. Since the ring is at the center and the setup is symmetrical, $T_{A1} = T_{A2} = T_A$.
+
+Since the ring is in equilibrium, the vertical components of $T_{A1}$ and $T_{A2}$ must balance the downward force from $T_B$.
+
+c.  Tension in Rope A
+
+Since the angle between each side of Rope A and the horizontal is $\theta = 25^\circ$, we can use trigonometry to find $T_A$.
+
+The equilibrium condition is:
+
+$$
+2 \cdot T_A \cdot \sin(\theta) = T_B
+$$
+
+Solving for $T_A$:
+
+$$
+T_A = \frac{T_B}{2 \sin(\theta)}
+$$
+
+Substitute the values:
+
+$$
+T_A = \frac{1962}{2 \cdot \sin(25^\circ)}
+$$
+
+Calculating:
+
+$$
+T_A \approx 2321.24 \, \text{N}
+$$
+
+So, **the tension in Rope A is approximately 2321.24 N**.
+::::
+
 ## Problem Set
 
 1.  Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.
@@ -288,4 +355,4 @@ Direction of the Equilibrium Force: $\approx 55.2^\circ$ above the horizontal (i
 
 ## Further Reading
 
-Chapter 1 in @russell2021 and Chapter 2 in @bolton2021 for additional information.
+Read Chapter 1 in @russell2021, Chapter 1 in @hannah1995 and Chapter 2 in @bolton2021 for additional exercises.

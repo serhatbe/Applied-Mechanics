@@ -19,6 +19,7 @@ book:
     - index.qmd
     - SI_Units.qmd
     - scalar-and-vector-quantities.qmd
+    - moment-of-a-force.qmd
     - summary.qmd
     - references.qmd
 
@@ -30,6 +31,9 @@ format:
       light: flatly
       dark: solar
   pdf:
+    toc-title: Contents
+    lof: true
+    lot: true
     documentclass: scrbook
     classoption: [paper=letterpaper]
     include-in-header: 
@@ -39,6 +43,11 @@ format:
     include-after-body: 
       text: |
         \printindex
-
+geometry:
+  - left=.75in
+  - textwidth=4.5in
+  - marginparsep=.25in
+  - marginparwidth=2.5in
+  
 editor: visual
 
