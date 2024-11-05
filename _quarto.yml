@@ -7,6 +7,7 @@ book:
   subtitle: "Workbook"
   author: "Serhat Beyenir"
   date: "2024-11-01"
+  date-format: "MMMM D, YYYY"
   cover-image: /images/cover.png
   downloads: [pdf]
   page-footer:

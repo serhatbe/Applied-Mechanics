@@ -6,7 +6,7 @@
 -   Define equilibrium of an object.
 -   Practice vector problems.
 
-## Definitions
+## Concepts
 
 In mathematics and physics, a **scalar**\index{scalar} is a quantity with only magnitude (size), whereas a **vector**\index{vector} has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.
 
@@ -52,8 +52,9 @@ A simple jib crane has a vertical post, a jib, and a tie. The jib is hinged at i
 
 When a load is hung directly from the crane head, solving for forces involves a simple triangle of forces. In other cases, the crane may have a pulley at the head, with a rope running over it to a winch, creating a system with more than three forces.
 
-### Example 1
+## Examples
 
+::: {#exm-1}
 A vertical lifting force of 95 N is applied to a body, and simultaneously, a horizontal force of 135 N pulls on it. Determine the magnitude and direction of the resulting force.
 
 To solve for the magnitude and direction of the resultant force, we can use vector addition.
@@ -113,9 +114,9 @@ $$
 **Final Answer**
 
 The magnitude of the resultant force is approximately $165.07  \text{N}$, and its direction is $35.07^\circ$ above the horizontal.
+:::
 
-### Example 2
-
+::: {#exm-2}
 Two forces act upon a body. One exerts a horizontal force to the right with a magnitude of 25 Newtons, while the other exerts a vertical force downward with a magnitude of 20 Newtons. Determine the magnitude and direction of a third force that would counteract the combined effects of the other two forces.
 
 To determine the magnitude and direction of the third force that counteracts the combined effects of the two forces, we first need to find the resultant force of the two given forces.
@@ -191,9 +192,9 @@ $$
 **Final Answer**
 
 The magnitude of the third force is approximately $32.02  \text{N}$ , and its direction is approximately $218.66^\circ$ (measured counterclockwise from the positive x-axis or horizontal right).
+:::
 
-### Example 3
-
+::: {#exm-3}
 Determine the magnitude and direction of the equilibrium force resulting from the combination of two forces: a horizontal pull of 15 N and a pull of 25 N at an angle of 55 degrees with respect to the 15 N force.
 
 To find the magnitude and direction of the equilibrium force resulting from the combination of two forces (15 N horizontally and 25 N at an angle of 55 degrees), we can use vector addition.
@@ -267,8 +268,9 @@ $$
 Magnitude of the Equilibrium Force: $\approx 35.8 \, \text{N}$
 
 Direction of the Equilibrium Force: $\approx 55.2^\circ$ above the horizontal (in the direction of the 15 N force).
+:::
 
-### Problem Set
+## Problem Set
 
 1.  Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.
 2.  Calculate the magnitude and direction of the resultant of the 457 N and 583 N forces, which are aligned along the same line but act in opposite directions.

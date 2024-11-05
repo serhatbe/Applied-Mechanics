@@ -61,16 +61,15 @@ The International System of Units (SI)\index{SI} is the globally accepted standa
 
 The **unity fraction** method, or **unit conversion using unity fractions**, is a systematic way to convert one unit of measurement into another. This method relies on multiplying by fractions that are equal to one, where the numerator and the denominator represent the same quantity in different units. Since any number multiplied by one remains the same, unity fractions allow for seamless conversion without changing the value.
 
-### How Unity Fraction Works
-
 The principle of unity fractions is based on:
 
 1.  **Setting up equal values**: Write a fraction where the numerator and denominator are equivalent values in different units, so the fraction equals one. For example, $\frac{1km}{1000m}$ is a unity fraction because 1 km equals 1000 m.
 
 2.  **Multiplying by unity fractions**: Multiply the initial quantity by the unity fraction(s) so that the undesired units cancel out, leaving only the desired units.
 
-### Example of Unity Fraction in Action
+## Examples
 
+::: {#exm-0}
 Suppose we want to convert $5$ kilometers to meters.
 
 1.  Start with $5$ kilometers: $$
@@ -89,6 +88,21 @@ $$
 This step-by-step approach illustrates how the unity fraction cancels the undesired units and achieves the correct result in meters.
 
 Unity fractions can be extended by using multiple conversion steps. For example, converting hours to seconds would require two unity fractions: one to convert hours to minutes and another to convert minutes to seconds. This approach ensures accuracy and is widely used in science, engineering, and other fields that require precise unit conversions.
+:::
+
+::: {#exm-00}
+Convert $15 \, \text{m/s}$ to $\text{km/h}$.
+
+1.  Start with $15 \, \text{m/s}$.
+2.  To convert meters to kilometers, multiply by $\frac{1 \, \text{km}}{1000 \, \text{m}}$.
+3.  To convert seconds to hours, multiply by $\frac{3600 \, \text{s}}{1 \, \text{h}}$.
+
+$$
+15 \, \text{m/s} \times \frac{1 \, \text{km}}{1000 \, \text{m}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 54 \, \text{km/h}
+$$
+
+The meters and seconds cancel out, leaving kilometers per hour: $54 \, \text{km/h}$.
+:::
 
 ## Problem Set
 
@@ -101,28 +115,6 @@ Unity fractions can be extended by using multiple conversion steps. For example,
 3.  Simplify your answers and include correct units.
 
 ------------------------------------------------------------------------
-
-### Example Problem
-
-Convert $15 \, \text{m/s}$ to $\text{km/h}$.
-
-**Solution:**
-
-1.  Start with $15 \, \text{m/s}$.
-2.  To convert meters to kilometers, multiply by $\frac{1 \, \text{km}}{1000 \, \text{m}}$.
-3.  To convert seconds to hours, multiply by $\frac{3600 \, \text{s}}{1 \, \text{h}}$.
-
-$$
-15 \, \text{m/s} \times \frac{1 \, \text{km}}{1000 \, \text{m}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 54 \, \text{km/h}
-$$
-
-The meters and seconds cancel out, leaving kilometers per hour: $54 \, \text{km/h}$.
-
-------------------------------------------------------------------------
-
-### Practice Problems
-
-Convert each of the following using unity fractions. Show all steps!
 
 1.  **Speed**\
     Convert $72 \, \text{km/h}$ to $\text{m/s}$.
@@ -154,23 +146,19 @@ Convert each of the following using unity fractions. Show all steps!
 10. **Frequency**\
     Convert $500 \, \text{Hz}$ (hertz) to $\text{kHz}$.
 
-------------------------------------------------------------------------
-
-### Challenge Problems
-
-1.  **Work to Energy Conversion**\
+11. **Work to Energy Conversion**\
     A force of $20 \, \text{N}$ moves an object $500 \, \text{cm}$. Convert the work done to joules.
 
-2.  **Kinetic Energy Conversion**\
+12. **Kinetic Energy Conversion**\
     Calculate the kinetic energy in kilojoules of a $1500 \, \text{kg}$ car moving at $72 \, \text{km/h}$.
 
-3.  **Power to Energy Conversion**\
+13. **Power to Energy Conversion**\
     A machine operates at $2 \, \text{kW}$ for $3$ hours. Convert the energy used to megajoules.
 
-4.  **Pressure to Force Conversion**\
+14. **Pressure to Force Conversion**\
     Convert a pressure of $200 \, \text{kPa}$ applied to an area of $0.5 \, \text{m}^2$ to force in newtons.
 
-5.  **Density to Mass Conversion**\
+15. **Density to Mass Conversion**\
     Convert $0.8 \, \text{g/cm}^3$ for an object with a volume of $250 \, \text{cm}^3$ to mass in grams.
 
 ------------------------------------------------------------------------
@@ -187,14 +175,11 @@ Convert each of the following using unity fractions. Show all steps!
 8.  $9.8 \, \text{m/s}^2 = 980 \, \text{cm/s}^2$
 9.  $50 \, \text{N} \cdot \text{m} = 0.5 \, \text{kN} \cdot \text{cm}$
 10. $500 \, \text{Hz} = 0.5 \, \text{kHz}$
-
-**Challenge Problems**
-
-1.  $20 \, \text{N} \times 5 \, \text{m} = 100 \, \text{J}$
-2.  $\text{Kinetic energy} = 1500 \, \text{kg} \times \left(20 \, \text{m/s}\right)^2 / 2 = 300 \, \text{kJ}$
-3.  $2 \, \text{kW} \times 3 \, \text{hours} = 21.6 \, \text{MJ}$
-4.  $200 \, \text{kPa} \times 0.5 \, \text{m}^2 = 100,000 \, \text{N}$
-5.  $0.8 \, \text{g/cm}^3 \times 250 \, \text{cm}^3 = 200 \, \text{g}$
+11. $20 \, \text{N} \times 5 \, \text{m} = 100 \, \text{J}$
+12. $\text{Kinetic energy} = 1500 \, \text{kg} \times \left(20 \, \text{m/s}\right)^2 / 2 = 300 \, \text{kJ}$
+13. $2 \, \text{kW} \times 3 \, \text{hours} = 21.6 \, \text{MJ}$
+14. $200 \, \text{kPa} \times 0.5 \, \text{m}^2 = 100,000 \, \text{N}$
+15. $0.8 \, \text{g/cm}^3 \times 250 \, \text{cm}^3 = 200 \, \text{g}$
 
 ## Further Reading
 
