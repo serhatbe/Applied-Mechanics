@@ -38,7 +38,237 @@ Condition of equilibrium:
 
 2.  Net torque must be zero: $\sum T = 0$
 
-## Problem Set
+### Bow's Notation
+
+Bow’s Notation is a way to label forces in a system by marking spaces in the diagram with capital letters (A, B, C, etc.). Each force is named after the two spaces it separates, like force AB or force BC. In the vector diagram, each force’s vector is labeled at both ends with matching lowercase letters (e.g., ah, bc) in the direction of the arrow.
+
+### Slings
+
+A sling is a device or assembly of ropes, cables, or straps used to support and lift loads. Slings play a crucial role in rigging operations, allowing objects to be lifted, lowered, or moved safely and efficiently. Slings are arranged to distribute the load evenly across their length, reducing stress points and ensuring stability. In multi-leg slings (e.g., two-leg or four-leg), the load is shared among the sling legs, which helps stabilize and balance the load.
+
+### Jib Cranes
+
+A simple jib crane has a vertical post, a jib, and a tie. The jib is hinged at its lower end to the post, and the tie connects the top of the jib to the base of the post, forming the crane head where the tie and jib meet.
+
+When a load is hung directly from the crane head, solving for forces involves a simple triangle of forces. In other cases, the crane may have a pulley at the head, with a rope running over it to a winch, creating a system with more than three forces.
+
+### Example 1
+
+A vertical lifting force of 95 N is applied to a body, and simultaneously, a horizontal force of 135 N pulls on it. Determine the magnitude and direction of the resulting force.
+
+To solve for the magnitude and direction of the resultant force, we can use vector addition.
+
+Given:
+
+-   Vertical force, $F_v = 95 \, \text{N}$
+
+-   Horizontal force, $F_h = 135 \, \text{N}$
+
+Step 1: Calculate the Magnitude of the Resultant Force
+
+The resultant force $F_r$ is the vector sum of the vertical and horizontal forces. Using the Pythagorean theorem:
+
+$$
+F_r = \sqrt{F_v^2 + F_h^2}
+$$
+
+Substituting the values:
+
+$$
+F_r = \sqrt{95^2 + 135^2}
+$$
+
+Calculating further:
+
+$$
+F_r = \sqrt{9025 + 18225} = \sqrt{27250}
+$$
+
+Thus,
+
+$$
+F_r \approx 165.07 , \text{N}
+$$
+
+Step 2: Determine the Direction of the Resultant Force
+
+The direction $\theta$ of the resultant force with respect to the horizontal can be found using the tangent function:
+
+$$
+\theta = \arctan \left( \frac{F_v}{F_h} \right)
+$$
+
+Substituting the values:
+
+$$
+\theta = \arctan \left( \frac{95}{135} \right)
+$$
+
+Calculating $\theta$:
+
+$$
+\theta \approx 35.07^\circ
+$$
+
+**Final Answer**
+
+The magnitude of the resultant force is approximately $165.07  \text{N}$, and its direction is $35.07^\circ$ above the horizontal.
+
+### Example 2
+
+Two forces act upon a body. One exerts a horizontal force to the right with a magnitude of 25 Newtons, while the other exerts a vertical force downward with a magnitude of 20 Newtons. Determine the magnitude and direction of a third force that would counteract the combined effects of the other two forces.
+
+To determine the magnitude and direction of the third force that counteracts the combined effects of the two forces, we first need to find the resultant force of the two given forces.
+
+Given Forces:
+
+-   Horizontal force to the right: $F_h = 25 \, \text{N}$
+
+-   Vertical force downward: $F_v = 20 \, \text{N}$
+
+Step 1: Calculate the Resultant Force
+
+The resultant force $F_r$ can be found using the Pythagorean theorem since the forces are perpendicular to each other.
+
+$$
+F_r = \sqrt{F_h^2 + F_v^2}
+$$
+
+Substituting the values:
+
+$$
+F_r = \sqrt{25^2 + 20^2}
+$$
+
+Calculating:
+
+$$
+F_r = \sqrt{625 + 400} = \sqrt{1025}
+$$
+
+Thus,
+
+$$
+F_r \approx 32.02 , \text{N}
+$$
+
+Step 2: Determine the Direction of the Resultant Force
+
+The direction $\theta$ of the resultant force can be found using the tangent function:
+
+$$
+\theta = \arctan \left( \frac{F_v}{F_h} \right)
+$$
+
+Substituting the values:
+
+$$
+\theta = \arctan \left( \frac{20}{25} \right)
+$$
+
+Calculating $\theta$:
+
+$$
+\theta \approx 38.66^\circ
+$$
+
+This angle is measured from the horizontal axis (to the right) downward.
+
+Step 3: Determine the Third Force
+
+To counteract the resultant force, the third force $F_3$ must have the same magnitude as $F_r$ but in the opposite direction. Therefore, its magnitude is:
+
+$$
+F_3 = F_r \approx 32.02 , \text{N}
+$$
+
+The direction of the third force will be opposite to the direction of the resultant force, which means it will be directed at an angle of:
+
+$$
+\theta + 180^\circ \approx 38.66^\circ + 180^\circ \approx 218.66^\circ
+$$
+
+**Final Answer**
+
+The magnitude of the third force is approximately $32.02  \text{N}$ , and its direction is approximately $218.66^\circ$ (measured counterclockwise from the positive x-axis or horizontal right).
+
+### Example 3
+
+Determine the magnitude and direction of the equilibrium force resulting from the combination of two forces: a horizontal pull of 15 N and a pull of 25 N at an angle of 55 degrees with respect to the 15 N force.
+
+To find the magnitude and direction of the equilibrium force resulting from the combination of two forces (15 N horizontally and 25 N at an angle of 55 degrees), we can use vector addition.
+
+Step 1: Resolve the Forces into Components
+
+1.  Force $F_1 = 15\text{N}$ (Horizontal):
+
+$F_{1x} = 15 \, \text{N}$
+
+$F_{1y} = 0 \, \text{N}$
+
+2.  Force $F_2 = 25 \text{N}$ at $55^\circ$:
+
+$F_{2x} = F_2 \cdot \cos(55^\circ) = 25 \cdot \cos(55^\circ)$
+
+$F_{2y} = F_2 \cdot \sin(55^\circ) = 25 \cdot \sin(55^\circ)$
+
+Step 2: Calculate Components of $F_2$
+
+Using $\cos(55^\circ) \approx 0.5736$ and $\sin(55^\circ) \approx 0.8192$:
+
+$$
+F_{2x} = 25 \cdot 0.5736 \approx 14.34 \, \text{N}
+$$
+
+$$
+F_{2y} = 25 \cdot 0.8192 \approx 20.48 \, \text{N}
+$$
+
+Step 3: Find the Resultant Components
+
+Now, we sum the components in the x and y directions:
+
+-   Resultant x-component:
+
+$$
+R_x = F_{1x} + F_{2x} = 15 + 14.34 \approx 29.34 \, \text{N}
+$$
+
+-   Resultant y-component:
+
+$$
+R_y = F_{1y} + F_{2y} = 0 + 20.48 \approx 20.48 \, \text{N}
+$$
+
+Step 4: Calculate the Magnitude of the Resultant Force
+
+The magnitude of the resultant force R can be found using the Pythagorean theorem: $$
+R = \sqrt{R_x^2 + R_y^2}
+$$
+
+Calculating R : $$
+R = \sqrt{(29.34)^2 + (20.48)^2} \approx \sqrt{861.64 + 419.04} \approx \sqrt{1280.68} \approx 35.8 \, \text{N}
+$$
+
+Step 5: Determine the Direction of the Resultant Force
+
+The direction (angle $\theta$ of the resultant force can be found using the tangent function: $$
+\tan(\theta) = \frac{R_y}{R_x}
+$$ $$
+\theta = \tan^{-1}\left(\frac{20.48}{29.34}\right)
+$$
+
+Calculating $\theta$: $$
+\theta \approx \tan^{-1}(0.698) \approx 55.2^\circ
+$$
+
+**Final Answer**
+
+Magnitude of the Equilibrium Force: $\approx 35.8 \, \text{N}$
+
+Direction of the Equilibrium Force: $\approx 55.2^\circ$ above the horizontal (in the direction of the 15 N force).
+
+### Problem Set
 
 1.  Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.
 2.  Calculate the magnitude and direction of the resultant of the 457 N and 583 N forces, which are aligned along the same line but act in opposite directions.
