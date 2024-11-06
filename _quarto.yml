@@ -6,7 +6,7 @@ book:
   title: "Applied Mechanics"
   subtitle: "Workbook"
   author: "Serhat Beyenir"
-  date: "2024-11-01"
+  date: "2024-11-06"
   date-format: "MMMM D, YYYY"
   cover-image: /images/cover.png
   downloads: [pdf]
@@ -22,7 +22,7 @@ book:
     - moment-of-a-force.qmd
     - summary.qmd
     - references.qmd
-
+    
 bibliography: references.bib
 
 format:
@@ -43,6 +43,7 @@ format:
     include-after-body: 
       text: |
         \printindex
+
 geometry:
   - left=.75in
   - textwidth=4.5in
