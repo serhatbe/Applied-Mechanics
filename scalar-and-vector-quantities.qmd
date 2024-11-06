@@ -61,9 +61,9 @@ To solve for the magnitude and direction of the resultant force, we can use vect
 
 Given:
 
--   Vertical force, $F_v = 95 \, \text{N}$
+-   Vertical force, $F_v = 95\:\text{N}$
 
--   Horizontal force, $F_h = 135 \, \text{N}$
+-   Horizontal force, $F_h = 135\:\text{N}$
 
 Step 1: Calculate the Magnitude of the Resultant Force
 
@@ -88,7 +88,7 @@ $$
 Thus,
 
 $$
-F_r \approx 165.07 , \text{N}
+F_r \approx 165.07\:\text{N}
 $$
 
 Step 2: Determine the Direction of the Resultant Force
@@ -108,12 +108,12 @@ $$
 Calculating $\theta$:
 
 $$
-\theta \approx 35.07^\circ
+\theta \approx 35.1341^\circ
 $$
 
 **Final Answer**
 
-The magnitude of the resultant force is approximately $165.07  \text{N}$, and its direction is $35.07^\circ$ above the horizontal.
+The magnitude of the resultant force is approximately $165.07\:\text{N}$, and its direction is $35.1341^\circ$ above the horizontal.
 :::
 
 ::: {#exm-2}
@@ -150,7 +150,7 @@ $$
 Thus,
 
 $$
-F_r \approx 32.02 , \text{N}
+F_r \approx 32.02\:\text{N}
 $$
 
 Step 2: Determine the Direction of the Resultant Force
@@ -180,7 +180,7 @@ Step 3: Determine the Third Force
 To counteract the resultant force, the third force $F_3$ must have the same magnitude as $F_r$ but in the opposite direction. Therefore, its magnitude is:
 
 $$
-F_3 = F_r \approx 32.02 , \text{N}
+F_3 = F_r \approx 32.02\:\text{N}
 $$
 
 The direction of the third force will be opposite to the direction of the resultant force, which means it will be directed at an angle of:
@@ -201,13 +201,13 @@ To find the magnitude and direction of the equilibrium force resulting from the 
 
 Step 1: Resolve the Forces into Components
 
-1.  Force $F_1 = 15\text{N}$ (Horizontal):
+1.  Force $F_1 = 15\:\text{N}$ (Horizontal):
 
-$F_{1x} = 15 \, \text{N}$
+$F_{1x} = 15\:\text{N}$
 
-$F_{1y} = 0 \, \text{N}$
+$F_{1y} = 0\:\text{N}$
 
-2.  Force $F_2 = 25 \text{N}$ at $55^\circ$:
+2.  Force $F_2 = 25\:\text{N}$ at $55^\circ$:
 
 $F_{2x} = F_2 \cdot \cos(55^\circ) = 25 \cdot \cos(55^\circ)$
 
@@ -218,11 +218,11 @@ Step 2: Calculate Components of $F_2$
 Using $\cos(55^\circ) \approx 0.5736$ and $\sin(55^\circ) \approx 0.8192$:
 
 $$
-F_{2x} = 25 \cdot 0.5736 \approx 14.34 \, \text{N}
+F_{2x} = 25 \cdot 0.5736 \approx 14.34\:\text{N}
 $$
 
 $$
-F_{2y} = 25 \cdot 0.8192 \approx 20.48 \, \text{N}
+F_{2y} = 25 \cdot 0.8192 \approx 20.48\:\text{N}
 $$
 
 Step 3: Find the Resultant Components
@@ -256,18 +256,18 @@ Step 5: Determine the Direction of the Resultant Force
 The direction (angle $\theta$ of the resultant force can be found using the tangent function: $$
 \tan(\theta) = \frac{R_y}{R_x}
 $$ $$
-\theta = \tan^{-1}\left(\frac{20.48}{29.34}\right)
+\theta = \arctan\left(\frac{20.48}{29.34}\right)
 $$
 
 Calculating $\theta$: $$
-\theta \approx \tan^{-1}(0.698) \approx 55.2^\circ
+\theta \approx \arctan(0.698) \approx 34.9159^\circ
 $$
 
 **Final Answer**
 
-Magnitude of the Equilibrium Force: $\approx 35.8 \, \text{N}$
+Magnitude of the Equilibrium Force $\approx 35.8 \, \text{N}$
 
-Direction of the Equilibrium Force: $\approx 55.2^\circ$ above the horizontal (in the direction of the 15 N force).
+Direction of the Equilibrium Force $\approx 34.92^\circ$ above the horizontal (in the direction of the 15 N force).
 :::
 
 :::: {#exm-sling}
