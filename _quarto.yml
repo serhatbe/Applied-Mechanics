@@ -28,7 +28,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: flatly
+      light: cosmo #flatly
       dark: solar
   pdf:
     toc-title: Contents
