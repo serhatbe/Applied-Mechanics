@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="amw.svg"
+   inkscape:export-filename="..\..\etc\etc\etc\etc\etc\etc\etc\etc\etc\etc\etc\Applied-Mechanics\images\cover3.png"
+   inkscape:export-xdpi="2307.9443"
+   inkscape:export-ydpi="2307.9443"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4">Applied Mechanics Workbook</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="15.3125"
+     inkscape:cx="16.261224"
+     inkscape:cy="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:18.6132px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c8c400;stroke-width:1"
+       x="25.228025"
+       y="15.562166"
+       id="text1"
+       transform="scale(0.9531827,1.0491168)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="25.228025"
+         y="15.562166"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6132px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#d40000;stroke-width:1">AMW</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.44335px;font-family:'Baskerville Old Face';-inkscape-font-specification:'Baskerville Old Face, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#d40000;stroke-width:1"
+       x="27.818739"
+       y="21.596306"
+       id="text2"
+       transform="scale(0.89166653,1.1214955)"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="27.818739"
+         y="21.596306"
+         style="font-size:6.44335px;text-align:center;text-anchor:middle;stroke-width:1">Applied</tspan><tspan
+         sodipodi:role="line"
+         x="27.818739"
+         y="29.650494"
+         style="font-size:6.44335px;text-align:center;text-anchor:middle;stroke-width:1"
+         id="tspan3">Mechanics </tspan><tspan
+         sodipodi:role="line"
+         x="27.818739"
+         y="37.704681"
+         style="font-size:6.44335px;text-align:center;text-anchor:middle;stroke-width:1"
+         id="tspan4">Workbok</tspan></text>
+  </g>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Applied Mechanics Workbook</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

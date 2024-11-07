@@ -6,9 +6,9 @@ book:
   title: "Applied Mechanics Workbook"
   subtitle: "Supplementary Exercises for In-Class Learning"
   author: "Serhat Beyenir"
-  date: "2024-11-06"
+  date: today
   date-format: "MMMM D, YYYY"
-  cover-image: /images/cover.png
+  cover-image: images/cover.png
   downloads: [pdf]
   page-footer:
     left: |
@@ -31,11 +31,10 @@ format:
       light: cosmo #flatly
       dark: solar
   pdf:
+    documentclass: book #scrreprt
     toc-title: Contents
-    lof: true
     lot: true
-    documentclass: book #scrbook
-    classoption: [paper=letterpaper]
+    lof: true
     include-in-header: 
       text: |
         \usepackage{makeidx}
@@ -44,11 +43,12 @@ format:
       text: |
         \printindex
 
+editor: visual
+
+
 <!--geometry:
   - left=.75in
   - textwidth=4.5in
   - marginparsep=.25in
   - marginparwidth=2.5in-->
-  
-editor: visual
 
