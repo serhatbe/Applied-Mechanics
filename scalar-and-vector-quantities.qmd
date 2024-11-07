@@ -270,12 +270,10 @@ Magnitude of the Equilibrium Force $\approx 35.8 \, \text{N}$
 Direction of the Equilibrium Force $\approx 34.92^\circ$ above the horizontal (in the direction of the 15 N force).
 :::
 
-:::: {#exm-sling}
+::: {#exm-sling}
 A 200 kg mass is suspended as shown in @fig-sling01. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.
 
-::: column-margin
 ![A 200 kg suspended mass.](images/sling01.png){#fig-sling01}
-:::
 
 a.  What is the tension in rope B?
 b.  Draw a free body diagram of the forces exerted on the ring.
@@ -335,7 +333,7 @@ T_A \approx 2321.24 \, \text{N}
 $$
 
 So, **the tension in Rope A is approximately 2321.24 N**.
-::::
+:::
 
 ## Problem Set
 
