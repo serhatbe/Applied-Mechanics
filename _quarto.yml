@@ -34,7 +34,7 @@ format:
     toc-title: Contents
     lof: true
     lot: true
-    documentclass: scrbook
+    documentclass: book #scrbook
     classoption: [paper=letterpaper]
     include-in-header: 
       text: |
@@ -44,11 +44,11 @@ format:
       text: |
         \printindex
 
-geometry:
+<!--geometry:
   - left=.75in
   - textwidth=4.5in
   - marginparsep=.25in
-  - marginparwidth=2.5in
+  - marginparwidth=2.5in-->
   
 editor: visual
 
