@@ -1,3 +1,10 @@
+---
+format:
+  pdf:
+    header-includes:
+      - \usepackage{tikz}
+---
+
 # Scalar and Vector Quantities {#sec-scalar-and-vector-quantities}
 
 ## Objectives
@@ -19,6 +26,7 @@ Coplanar forces are forces that act within the same plane. This means they lie a
 ### Space Diagrams
 
 The space diagram is an illustration of the system of forces.
+
 
 ### Vector Diagrams
 
