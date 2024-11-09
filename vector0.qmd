@@ -1,0 +1,252 @@
+---
+format:
+  pdf:
+    engine: pdflatex
+    header-includes:
+      - \usepackage{tikz}
+---
+
+## The Ti*k*Z and PGF Packages
+
+See <https://tikz.dev/>
+
+\usetikzlibrary {intersections}
+\begin{tikzpicture}
+  \path[save path=\pathA,name path=A] (0,1) to [bend left] (1,0);
+  \path[save path=\pathB,name path=B]
+    (0,0) .. controls (.33,.1) and (.66,.9) .. (1,1);
+
+  \fill[name intersections={of=A and B}] (intersection-1) circle (1pt);
+
+  \draw[blue][use path=\pathA];
+  \draw[red] [use path=\pathB];
+\end{tikzpicture}
+\begin{tikzpicture}[xscale=1.57]
+  \draw (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0) sin (5,1);
+  \draw[color=red] (0,1.5) cos (1,0) sin (2,-1.5) cos (3,0) sin (4,1.5) cos (5,0);
+\end{tikzpicture}
+\begin{tikzpicture}[x=.5cm]
+  \draw[thick] (0,0) grid [step=1]     (3,2);
+  \draw[red]   (0,0) grid [step=.75cm] (3,2);
+\end{tikzpicture}
+\begin{tikzpicture}
+  \draw        (0,0) circle [radius=1];
+  \draw[blue]  (0,0) grid [step=(45:1)] (3,2);
+\end{tikzpicture}
+\begin{tikzpicture}[radius=1cm,delta angle=30]
+  \draw (-1,0) -- +(3.5,0);
+  \draw (1,0) ++(210:2cm) -- +(30:4cm);
+  \draw (1,0) +(0:1cm) arc [start angle=0];
+  \draw (1,0) +(180:1cm) arc [start angle=180];
+  \path (1,0) ++(15:.75cm) node{$\alpha$};
+  \path (1,0) ++(15:-.75cm) node{$\beta$};
+\end{tikzpicture}
+\begin{tikzpicture}
+    % Example vector diagram
+    \draw[->] (-6, 0) -- (5, 0) node[right] {$x$};
+    \draw[->] (0, -1) -- (0, 4) node[left] {$y$};
+    \draw[->, thick, red] (0, 0) -- (3, 2) node[midway, above] {$\vec{A}$};
+    \draw[->, thick, blue] (0, 0) -- (-3, -2) node[midway, above] {$\vec{A}$};
+\end{tikzpicture}
+\begin{tikzpicture}
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (1.25,0.25);
+
+  \draw[blue] (A) -- (B);
+\end{tikzpicture}
+\usetikzlibrary {calc}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (1.25,0.25);
+  \draw (A) -- (B);
+
+  \draw (A) let
+              \p1 = ($ (B) - (A) $)
+            in
+              circle ({veclen(\x1,\y1)});
+\end{tikzpicture}
+\usetikzlibrary {calc}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (1.25,0.25);
+  \draw (A) -- (B);
+
+  \draw let \p1 = ($ (B) - (A) $),
+            \n2 = {veclen(\x1,\y1)}
+        in
+          (A) circle (\n2)
+          (B) circle (\n2);
+\end{tikzpicture}
+\usetikzlibrary {intersections,through}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (1.25,0.25);
+  \draw (A) -- (B);
+
+  \node (D) [name path=D,draw,circle through=(B),label=left:$D$]  at (A) {};
+  \node (E) [name path=E,draw,circle through=(A),label=right:$E$] at (B) {};
+
+  % Name the coordinates, but do not draw anything:
+  \path [name intersections={of=D and E}];
+
+  \coordinate [label=above:$C$] (C) at (intersection-1);
+
+  \draw [red] (A) -- (C);
+  \draw [red] (B) -- (C);
+\end{tikzpicture}
+\usetikzlibrary {backgrounds,calc,intersections,through}
+\begin{tikzpicture}[thick,help lines/.style={thin,draw=black!50}]
+  \def\A{\textcolor{input}{$A$}}     \def\B{\textcolor{input}{$B$}}
+  \def\C{\textcolor{output}{$C$}}    \def\D{$D$}
+  \def\E{$E$}
+
+  \colorlet{input}{blue!80!black}    \colorlet{output}{red!70!black}
+  \colorlet{triangle}{orange}
+
+  \coordinate [label=left:\A]  (A) at ($ (0,0) + .1*(rand,rand) $);
+  \coordinate [label=right:\B] (B) at ($ (1.25,0.25) + .1*(rand,rand) $);
+
+  \draw [input] (A) -- (B);
+
+  \node [name path=D,help lines,draw,label=left:\D]   (D) at (A) [circle through=(B)] {};
+  \node [name path=E,help lines,draw,label=right:\E]  (E) at (B) [circle through=(A)] {};
+
+  \path [name intersections={of=D and E,by={[label=above:\C]C}}];
+
+  \draw [output] (A) -- (C) -- (B);
+
+  \foreach \point in {A,B,C}
+    \fill [black,opacity=.5] (\point) circle (2pt);
+
+  \begin{pgfonlayer}{background}
+    \fill[triangle!80] (A) -- (C) -- (B) -- cycle;
+  \end{pgfonlayer}
+
+  \node [below right, text width=10cm,align=justify] at (4,3) {
+    \small\textbf{Proposition I}\par
+    \emph{To construct an \textcolor{triangle}{equilateral triangle}
+      on a given \textcolor{input}{finite straight line}.}
+    \par\vskip1em
+    Let \A\B\ be the given \textcolor{input}{finite straight line}.  \dots
+  };
+\end{tikzpicture}
+\usetikzlibrary {calc}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (1.25,0.25);
+  \draw (A) -- (B);
+  \node [fill=red,inner sep=1pt,label=below:$X$] (X) at ($ (A)!.5!(B) $) {};
+\end{tikzpicture}
+\usetikzlibrary {calc}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (1.25,0.25);
+  \draw (A) -- (B);
+  \node [fill=red,inner sep=1pt,label=below:$X$] (X) at ($ (A)!.5!(B) $) {};
+  \node [fill=red,inner sep=1pt,label=above:$D$] (D) at
+    ($ (X) ! {sin(60)*2} ! 90:(B) $) {};
+  \draw (A) -- (D) -- (B);
+\end{tikzpicture}
+\usetikzlibrary {calc,intersections,through}
+\begin{tikzpicture}
+  \coordinate [label=left:$A$]  (A) at (0,0);
+  \coordinate [label=right:$B$] (B) at (0.75,0.25);
+  \coordinate [label=above:$C$] (C) at (1,1.5);
+  \draw (A) -- (B) -- (C);
+  \coordinate [label=above:$D$] (D) at
+    ($ (A) ! .5 ! (B) ! {sin(60)*2} ! 90:(B) $) {};
+  \draw (D) -- ($ (D) ! 3.5 ! (B) $) coordinate [label=below:$F$] (F);
+  \draw (D) -- ($ (D) ! 2.5 ! (A) $) coordinate [label=below:$E$] (E);
+  \node (H) [name path=H,label=135:$H$,draw,circle through=(C)] at (B) {};
+  \path [name path=B--F] (B) -- (F);
+  \path [name intersections={of=H and B--F,by={[label=left:$G$]G}}];
+  \fill[red,opacity=.5] (G) circle (2pt);
+\end{tikzpicture}
+\usetikzlibrary {calc,intersections,through}
+\begin{tikzpicture}[thick,help lines/.style={thin,draw=black!50}]
+  \def\A{\textcolor{orange}{$A$}}   \def\B{\textcolor{input}{$B$}}
+  \def\C{\textcolor{input}{$C$}}    \def\D{$D$}
+  \def\E{$E$}                       \def\F{$F$}
+  \def\G{$G$}                       \def\H{$H$}
+  \def\K{$K$}                       \def\L{\textcolor{output}{$L$}}
+
+  \colorlet{input}{blue!80!black}    \colorlet{output}{red!70!black}
+
+  \coordinate [label=left:\A]  (A) at ($ (0,0) + .1*(rand,rand) $);
+  \coordinate [label=right:\B] (B) at ($ (1,0.2) + .1*(rand,rand) $);
+  \coordinate [label=above:\C] (C) at ($ (1,2) + .1*(rand,rand) $);
+
+  \draw [input] (B) -- (C);
+  \draw [help lines] (A) -- (B);
+
+  \coordinate [label=above:\D] (D) at ($ (A)!.5!(B) ! {sin(60)*2} ! 90:(B) $);
+
+  \draw [help lines] (D) -- ($ (D)!3.75!(A) $) coordinate [label=-135:\E] (E);
+  \draw [help lines] (D) -- ($ (D)!3.75!(B) $) coordinate [label=-45:\F] (F);
+
+  \node (H) at (B) [name path=H,help lines,circle through=(C),draw,label=135:\H] {};
+  \path [name path=B--F] (B) -- (F);
+  \path [name intersections={of=H and B--F,by={[label=right:\G]G}}];
+
+  \node (K) at (D) [name path=K,help lines,circle through=(G),draw,label=135:\K] {};
+  \path [name path=A--E] (A) -- (E);
+  \path [name intersections={of=K and A--E,by={[label=below:\L]L}}];
+
+  \draw [output] (A) -- (L);
+
+  \foreach \point in {A,B,C,D,G,L}
+    \fill [black,opacity=.5] (\point) circle (2pt);
+
+  % \node ...
+\end{tikzpicture}
+\usetikzlibrary {backgrounds,mindmap,shadows}
+\begin{tikzpicture}[
+  mindmap,
+  concept color=black,
+  root concept/.append style={
+    concept,
+    circular drop shadow,
+    fill=white, line width=1ex,
+    text=black, font=\large\scshape}
+  ]
+
+  \clip (-1.5,-5) rectangle ++(4,10);
+
+  \node [root concept] (Computational Complexity) {Computational Complexity};
+
+  \begin{pgfonlayer}{background}
+    \clip (-1.5,-5) rectangle ++(4,10);
+
+    \colorlet{upperleft}{green!50!black!25}
+    \colorlet{upperright}{orange!25}
+    \colorlet{lowerleft}{red!25}
+    \colorlet{lowerright}{blue!25}
+
+     % The large rectangles:
+    \fill [upperleft]  (Computational Complexity) rectangle ++(-20,20);
+    \fill [upperright] (Computational Complexity) rectangle ++(20,20);
+    \fill [lowerleft]  (Computational Complexity) rectangle ++(-20,-20);
+    \fill [lowerright] (Computational Complexity) rectangle ++(20,-20);
+
+    % The shadings:
+    \shade [left color=upperleft,right color=upperright]
+      ([xshift=-1cm]Computational Complexity) rectangle ++(2,20);
+    \shade [left color=lowerleft,right color=lowerright]
+      ([xshift=-1cm]Computational Complexity) rectangle ++(2,-20);
+    \shade [top color=upperleft,bottom color=lowerleft]
+      ([yshift=-1cm]Computational Complexity) rectangle ++(-20,2);
+    \shade [top color=upperright,bottom color=lowerright]
+      ([yshift=-1cm]Computational Complexity) rectangle ++(20,2);
+  \end{pgfonlayer}
+\end{tikzpicture}
+
+### Vector
+
+\usetikzlibrary {arrows.meta}
+\tikz {
+  \draw [arrows = {->[]}]         (0,1)   -- (1,1);
+
+}
+
+### Test
+

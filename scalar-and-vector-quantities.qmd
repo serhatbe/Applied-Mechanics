@@ -27,7 +27,6 @@ Coplanar forces are forces that act within the same plane. This means they lie a
 
 The space diagram is an illustration of the system of forces.
 
-
 ### Vector Diagrams
 
 The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.
@@ -40,11 +39,19 @@ The resultant is a single force that represents the combined effect of two or mo
 
 Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.
 
-Condition of equilibrium:
+Conditions of equilibrium:
 
-1.  Net force must be zero: $\sum F = 0$
+1.  Net force must be zero:
 
-2.  Net torque must be zero: $\sum T = 0$
+$$
+\sum_{k} \vec{F}_{k} = \vec{0}
+$$ {#eq-force}
+
+2.  Net torque must be zero:
+
+$$
+\sum_{k} \vec{\tau}_{k} = \vec{0} \ldotp
+$$ {#eq-torque}
 
 ### Bow's Notation
 
