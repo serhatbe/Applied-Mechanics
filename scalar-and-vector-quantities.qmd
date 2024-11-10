@@ -1,10 +1,3 @@
----
-format:
-  pdf:
-    header-includes:
-      - \usepackage{tikz}
----
-
 # Scalar and Vector Quantities {#sec-scalar-and-vector-quantities}
 
 ## Objectives
@@ -27,17 +20,23 @@ Coplanar forces are forces that act within the same plane. This means they lie a
 
 The space diagram is an illustration of the system of forces.
 
+![Space Diagram](images/spacedia.png){#fig-spacedia fig-align="center" width="75%"}
+
 ### Vector Diagrams
 
 The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.
 
+![Vector Diagram](images/vectordia.png){#fig-vectordia fig-align="center"}
+
 ### Resultant
 
-The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces.
+The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces as shown in @fig-vectordia.
 
 ### Equilibrium
 
 Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.
+
+![Equilibrant](images/vectordiaE.png){#fig-equilibrant fig-align="center"}
 
 Conditions of equilibrium:
 
@@ -50,12 +49,34 @@ $$ {#eq-force}
 2.  Net torque must be zero:
 
 $$
-\sum_{k} \vec{\tau}_{k} = \vec{0} \ldotp
+\sum_{k} \vec{\tau}_{k} = \vec{0}
 $$ {#eq-torque}
 
 ### Bow's Notation
 
-Bow’s Notation is a way to label forces in a system by marking spaces in the diagram with capital letters (A, B, C, etc.). Each force is named after the two spaces it separates, like force AB or force BC. In the vector diagram, each force’s vector is labeled at both ends with matching lowercase letters (e.g., ah, bc) in the direction of the arrow.
+Bow’s Notation is a graphical method employed in structural engineering to label the forces acting on a truss or structural framework. The notation was developed by British mathematician Robert Bow in the 19th century and continues to be a practical tool for visualizing and solving force equilibrium problems in structures.
+
+![Bow’s Notation Space Diagram](images/bowsNotation.png){#fig-BowsNotSpace fig-align="center"}
+
+![Bow’s Notation Vector Diagram](images/bowsNotationVector.png){#fig-BowsNotVec fig-align="center"}
+
+#### Key Concepts of Bow’s Notation
+
+1.  Labeling Spaces Between Forces:
+    -   Each space between external forces (such as loads and reactions) and each internal member of a truss is designated with a unique letter (e.g., A, B, C, etc.).
+    -   These labels are assigned sequentially around the structure in a clockwise or counterclockwise direction.
+2.  Force Polygon:
+    -   Each labeled space corresponds to a point on a force polygon, which is a closed polygon representing the equilibrium of forces.
+    -   The lengths and directions of the sides of the force polygon reflect the magnitudes and directions of the forces in each member.
+3.  Member Notation:
+    -   Each truss member is identified by the two letters representing the spaces it separates. For instance, a member between spaces A and B is labeled as AB.
+4.  Utilizing Bow’s Notation in Analysis:
+    -   After labeling the spaces, equilibrium equations and graphical methods (such as constructing a force polygon) can be employed to determine the magnitude and direction of each force in the truss.
+    -   The notation simplifies calculations by visually connecting the forces and facilitating the identification of how different forces interact within the structure.
+
+#### Example of Bow’s Notation Application
+
+In a simple triangular truss, the spaces surrounding the triangle may be labeled A, B, and C. If the members connect these spaces, they would be named as AB, BC, and CA. By employing Bow’s Notation, engineers can construct a force polygon, analyze it for equilibrium, and determine the unknown forces in each member of the truss.
 
 ### Slings
 

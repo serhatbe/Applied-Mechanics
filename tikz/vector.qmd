@@ -1,0 +1,33 @@
+---
+format:
+  pdf:
+    engine: pdflatex
+    header-includes:
+      - \usepackage{tikz}
+---
+
+\usetikzlibrary {arrows.meta}
+\tikz {
+  \draw [arrows = {->[]}]         (0,5)   -- (1,1);
+  \draw [arrows = {->[]}]         (0,1)   -- (1,1);
+  \draw[ball color=yellow] (3.4,0.5) circle(0.25) node{-}node[above=0.3cm]{$q'$};
+}
+
+## Angle Library
+
+\begin{tikzpicture}[radius=1cm,delta angle=30]
+  \draw (-1,0) -- +(3.5,0);
+  \draw (1,0) ++(210:2cm) -- +(30:4cm);
+  \draw (1,0) +(0:1cm) arc [start angle=0];
+  \draw (1,0) +(180:1cm) arc [start angle=180];
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[radius=1cm,delta angle=45]
+  \draw (-1,0) -- +(3.5,0);
+  \draw (1,0) ++(210:2cm) -- +(35:4cm);
+  \draw (1,0) +(0:1cm) arc [start angle=0];
+  \draw (1,0) +(180:1cm) arc [start angle=180];
+  \path (1,0) ++(15:.75cm) node{$\alpha$};
+  \path (1,0) ++(15:-.75cm) node{$\beta$};
+\end{tikzpicture}

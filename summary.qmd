@@ -1,4 +1,4 @@
-# Summary
+# Summary {.unnumbered}
 
 In summary, we have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021, @polya2014, @bird2020 and @bird2021. These sources have helped you understand complex concepts.
 
@@ -33,8 +33,6 @@ In summary, we have used several books by @ahrensHowTakeSmart2022, @russell2021,
 -   Application of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.
 
 -   Example of Moment: Torque, the moment of force, is the product of force and distance.
-
--   
 
 As you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.
 

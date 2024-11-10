@@ -48,6 +48,4 @@ Final Answer
 as shown in @fig-sling01. 
 ```
 
-
-
 Note: https://phys.libretexts.org
