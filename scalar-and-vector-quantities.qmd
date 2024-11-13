@@ -16,6 +16,36 @@ A vector is represented as an arrow, where the length denotes its magnitude, and
 
 Coplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.
 
+### Addition of Vectors by Nose-to-tail Method
+
+The "nose-to-tail" method, also known as the "head-to-tail", is a visual way to add vectors in physics or engineering. Here’s a step-by-step explanation of how it works:
+
+1.  Draw the First Vector: Start by drawing the first vector on your graph or paper. This vector should have its tail (starting point) at the origin or any chosen starting point. Make sure you draw it with the correct direction and length to scale.
+
+2.  Place the Second Vector: Take the second vector and place its tail at the "head" (or "tip") of the first vector. The direction and length should be accurately represented here as well.
+
+3.  Continue with Additional Vectors: If there are more vectors to add, repeat the process by placing each vector’s tail at the head of the previous one.
+
+4.  Draw the Resultant Vector: The resultant vector, or the sum of all the vectors, is the vector that goes directly from the "tail" of the first vector to the "head" of the last vector in the chain. Draw this vector as a straight line connecting the starting point to the endpoint of the last vector.
+
+5.  Measure the Resultant: The length and direction of this resultant vector represent the combined effect of all the original vectors.
+
+![Addition of Vectors by Nose-to-tail Method](images/Nose_to_tail_method.png){#fig-Nose_to_tail_method}
+
+### Addition of Vectors by Parallelogram Method
+
+The parallelogram method is another visual technique for adding two vectors, specifically used when you have two vectors that start from the same point. Here’s how it works:
+
+1.  Draw Both Vectors: Start by drawing the two vectors with their tails (starting points) at the same origin point. The direction and length of each vector should be accurate and to scale.
+
+2.  Complete the Parallelogram: Using the two vectors as adjacent sides, imagine a parallelogram where each vector is duplicated to form the opposite sides. Draw lines parallel to each vector from the head (tip) of the other vector to form a closed parallelogram.
+
+3.  Draw the Resultant Vector: The resultant vector, or the sum of the two vectors, is represented by the diagonal of the parallelogram that starts from the common origin point of the two vectors and goes to the opposite corner of the parallelogram.
+
+4.  Measure the Resultant: The length and direction of this diagonal vector represent the combined effect of the two vectors.
+
+![Addition of Vectors by Parallelogram Method](images/Parallelogram_method.png){#fig-Parallelogram_method}
+
 ### Space Diagrams
 
 The space diagram is an illustration of the system of forces.
@@ -307,9 +337,9 @@ Direction of the Equilibrium Force $\approx 34.92^\circ$ above the horizontal (i
 :::
 
 ::: {#exm-sling}
-A 200 kg mass is suspended as shown in @fig-sling01. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.
+A 200 kg mass is suspended as shown in @fig-sling. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.
 
-![A 200 kg suspended mass.](images/sling01.png){#fig-sling01}
+![A 200 kg suspended mass.](images/sling.png){#fig-sling}
 
 a.  What is the tension in rope B?
 b.  Draw a free body diagram of the forces exerted on the ring.

@@ -1,6 +1,6 @@
-# Summary {.unnumbered}
+# Review {#sec-review}
 
-In summary, we have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021, @polya2014, @bird2020 and @bird2021. These sources have helped you understand complex concepts.
+We have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021, @polya2014, @bird2020 and @bird2021. These sources have helped you understand complex concepts.
 
 @sec-international-system-of-units:
 

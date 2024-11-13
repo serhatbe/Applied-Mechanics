@@ -7,3 +7,5 @@ This workbook presents a collection of lecture notes on Applied Mechanics, desig
 @sec-scalar-and-vector-quantities: In mathematics and physics, a **scalar**\index{scalar} is a quantity with only magnitude (size), whereas a **vector**\index{vector} has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.
 
 @sec-moment-of-a-force: A **moment**\index{moment} is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.
+
+@sec-review: Review section

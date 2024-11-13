@@ -20,7 +20,7 @@ book:
     - SI_Units.qmd
     - scalar-and-vector-quantities.qmd
     - moment-of-a-force.qmd
-    - summary.qmd
+    - review.qmd
     - references.qmd
     
 bibliography: references.bib

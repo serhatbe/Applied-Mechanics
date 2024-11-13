@@ -61,7 +61,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6561bbde787c299e21493071c8edc6ff.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ed6da6eef3892af8a4b5ed59bfb951f5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f90a1b115807ea56b20e50efb3bb25e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -187,8 +187,8 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary</span></a>
+  <a href="./review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Review</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -211,13 +211,15 @@ window.Quarto = {
   <li><a href="#concepts" id="toc-concepts" class="nav-link" data-scroll-target="#concepts"><span class="header-section-number">2.2</span> Concepts</a>
   <ul class="collapse">
   <li><a href="#coplanar-forces" id="toc-coplanar-forces" class="nav-link" data-scroll-target="#coplanar-forces"><span class="header-section-number">2.2.1</span> Coplanar Forces</a></li>
-  <li><a href="#space-diagrams" id="toc-space-diagrams" class="nav-link" data-scroll-target="#space-diagrams"><span class="header-section-number">2.2.2</span> Space Diagrams</a></li>
-  <li><a href="#vector-diagrams" id="toc-vector-diagrams" class="nav-link" data-scroll-target="#vector-diagrams"><span class="header-section-number">2.2.3</span> Vector Diagrams</a></li>
-  <li><a href="#resultant" id="toc-resultant" class="nav-link" data-scroll-target="#resultant"><span class="header-section-number">2.2.4</span> Resultant</a></li>
-  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="header-section-number">2.2.5</span> Equilibrium</a></li>
-  <li><a href="#bows-notation" id="toc-bows-notation" class="nav-link" data-scroll-target="#bows-notation"><span class="header-section-number">2.2.6</span> Bow’s Notation</a></li>
-  <li><a href="#slings" id="toc-slings" class="nav-link" data-scroll-target="#slings"><span class="header-section-number">2.2.7</span> Slings</a></li>
-  <li><a href="#jib-cranes" id="toc-jib-cranes" class="nav-link" data-scroll-target="#jib-cranes"><span class="header-section-number">2.2.8</span> Jib Cranes</a></li>
+  <li><a href="#addition-of-vectors-by-nose-to-tail-method" id="toc-addition-of-vectors-by-nose-to-tail-method" class="nav-link" data-scroll-target="#addition-of-vectors-by-nose-to-tail-method"><span class="header-section-number">2.2.2</span> Addition of Vectors by Nose-to-tail Method</a></li>
+  <li><a href="#addition-of-vectors-by-parallelogram-method" id="toc-addition-of-vectors-by-parallelogram-method" class="nav-link" data-scroll-target="#addition-of-vectors-by-parallelogram-method"><span class="header-section-number">2.2.3</span> Addition of Vectors by Parallelogram Method</a></li>
+  <li><a href="#space-diagrams" id="toc-space-diagrams" class="nav-link" data-scroll-target="#space-diagrams"><span class="header-section-number">2.2.4</span> Space Diagrams</a></li>
+  <li><a href="#vector-diagrams" id="toc-vector-diagrams" class="nav-link" data-scroll-target="#vector-diagrams"><span class="header-section-number">2.2.5</span> Vector Diagrams</a></li>
+  <li><a href="#resultant" id="toc-resultant" class="nav-link" data-scroll-target="#resultant"><span class="header-section-number">2.2.6</span> Resultant</a></li>
+  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium"><span class="header-section-number">2.2.7</span> Equilibrium</a></li>
+  <li><a href="#bows-notation" id="toc-bows-notation" class="nav-link" data-scroll-target="#bows-notation"><span class="header-section-number">2.2.8</span> Bow’s Notation</a></li>
+  <li><a href="#slings" id="toc-slings" class="nav-link" data-scroll-target="#slings"><span class="header-section-number">2.2.9</span> Slings</a></li>
+  <li><a href="#jib-cranes" id="toc-jib-cranes" class="nav-link" data-scroll-target="#jib-cranes"><span class="header-section-number">2.2.10</span> Jib Cranes</a></li>
   </ul></li>
   <li><a href="#classwork" id="toc-classwork" class="nav-link" data-scroll-target="#classwork"><span class="header-section-number">2.3</span> Classwork</a></li>
   <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set"><span class="header-section-number">2.4</span> Problem Set</a>
@@ -266,8 +268,49 @@ window.Quarto = {
 <h3 data-number="2.2.1" class="anchored" data-anchor-id="coplanar-forces"><span class="header-section-number">2.2.1</span> Coplanar Forces</h3>
 <p>Coplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.</p>
 </section>
-<section id="space-diagrams" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="space-diagrams"><span class="header-section-number">2.2.2</span> Space Diagrams</h3>
+<section id="addition-of-vectors-by-nose-to-tail-method" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="addition-of-vectors-by-nose-to-tail-method"><span class="header-section-number">2.2.2</span> Addition of Vectors by Nose-to-tail Method</h3>
+<p>The “nose-to-tail” method, also known as the “head-to-tail”, is a visual way to add vectors in physics or engineering. Here’s a step-by-step explanation of how it works:</p>
+<ol type="1">
+<li><p>Draw the First Vector: Start by drawing the first vector on your graph or paper. This vector should have its tail (starting point) at the origin or any chosen starting point. Make sure you draw it with the correct direction and length to scale.</p></li>
+<li><p>Place the Second Vector: Take the second vector and place its tail at the “head” (or “tip”) of the first vector. The direction and length should be accurately represented here as well.</p></li>
+<li><p>Continue with Additional Vectors: If there are more vectors to add, repeat the process by placing each vector’s tail at the head of the previous one.</p></li>
+<li><p>Draw the Resultant Vector: The resultant vector, or the sum of all the vectors, is the vector that goes directly from the “tail” of the first vector to the “head” of the last vector in the chain. Draw this vector as a straight line connecting the starting point to the endpoint of the last vector.</p></li>
+<li><p>Measure the Resultant: The length and direction of this resultant vector represent the combined effect of all the original vectors.</p></li>
+</ol>
+<div id="fig-Nose_to_tail_method" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Nose_to_tail_method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Nose_to_tail_method.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Nose_to_tail_method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Addition of Vectors by Nose-to-tail Method
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="addition-of-vectors-by-parallelogram-method" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="addition-of-vectors-by-parallelogram-method"><span class="header-section-number">2.2.3</span> Addition of Vectors by Parallelogram Method</h3>
+<p>The parallelogram method is another visual technique for adding two vectors, specifically used when you have two vectors that start from the same point. Here’s how it works:</p>
+<ol type="1">
+<li><p>Draw Both Vectors: Start by drawing the two vectors with their tails (starting points) at the same origin point. The direction and length of each vector should be accurate and to scale.</p></li>
+<li><p>Complete the Parallelogram: Using the two vectors as adjacent sides, imagine a parallelogram where each vector is duplicated to form the opposite sides. Draw lines parallel to each vector from the head (tip) of the other vector to form a closed parallelogram.</p></li>
+<li><p>Draw the Resultant Vector: The resultant vector, or the sum of the two vectors, is represented by the diagonal of the parallelogram that starts from the common origin point of the two vectors and goes to the opposite corner of the parallelogram.</p></li>
+<li><p>Measure the Resultant: The length and direction of this diagonal vector represent the combined effect of the two vectors.</p></li>
+</ol>
+<div id="fig-Parallelogram_method" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Parallelogram_method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Parallelogram_method.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Parallelogram_method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Addition of Vectors by Parallelogram Method
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="space-diagrams" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="space-diagrams"><span class="header-section-number">2.2.4</span> Space Diagrams</h3>
 <p>The space diagram is an illustration of the system of forces.</p>
 <div id="fig-spacedia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -275,13 +318,13 @@ window.Quarto = {
 <img src="images/spacedia.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spacedia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Space Diagram
+Figure&nbsp;2.3: Space Diagram
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="vector-diagrams" class="level3" data-number="2.2.3">
-<h3 data-number="2.2.3" class="anchored" data-anchor-id="vector-diagrams"><span class="header-section-number">2.2.3</span> Vector Diagrams</h3>
+<section id="vector-diagrams" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="vector-diagrams"><span class="header-section-number">2.2.5</span> Vector Diagrams</h3>
 <p>The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.</p>
 <div id="fig-vectordia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -289,17 +332,17 @@ Figure&nbsp;2.1: Space Diagram
 <img src="images/vectordia.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vectordia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: Vector Diagram
+Figure&nbsp;2.4: Vector Diagram
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="resultant" class="level3" data-number="2.2.4">
-<h3 data-number="2.2.4" class="anchored" data-anchor-id="resultant"><span class="header-section-number">2.2.4</span> Resultant</h3>
-<p>The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces as shown in <a href="#fig-vectordia" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>.</p>
+<section id="resultant" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="resultant"><span class="header-section-number">2.2.6</span> Resultant</h3>
+<p>The resultant is a single force that represents the combined effect of two or more forces acting on an object. It has the same effect as applying all the original forces together and is found by adding the individual forces, taking both their magnitudes and directions into account. The resultant gives the overall direction and magnitude of the combined forces as shown in <a href="#fig-vectordia" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>.</p>
 </section>
-<section id="equilibrium" class="level3" data-number="2.2.5">
-<h3 data-number="2.2.5" class="anchored" data-anchor-id="equilibrium"><span class="header-section-number">2.2.5</span> Equilibrium</h3>
+<section id="equilibrium" class="level3" data-number="2.2.7">
+<h3 data-number="2.2.7" class="anchored" data-anchor-id="equilibrium"><span class="header-section-number">2.2.7</span> Equilibrium</h3>
 <p>Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.</p>
 <div id="fig-equilibrant" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -307,7 +350,7 @@ Figure&nbsp;2.2: Vector Diagram
 <img src="images/vectordiaE.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-equilibrant-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.3: Equilibrant
+Figure&nbsp;2.5: Equilibrant
 </figcaption>
 </figure>
 </div>
@@ -325,8 +368,8 @@ Figure&nbsp;2.3: Equilibrant
 \sum_{k} \vec{\tau}_{k} = \vec{0}
 \tag{2.2}\]</span></span></p>
 </section>
-<section id="bows-notation" class="level3" data-number="2.2.6">
-<h3 data-number="2.2.6" class="anchored" data-anchor-id="bows-notation"><span class="header-section-number">2.2.6</span> Bow’s Notation</h3>
+<section id="bows-notation" class="level3" data-number="2.2.8">
+<h3 data-number="2.2.8" class="anchored" data-anchor-id="bows-notation"><span class="header-section-number">2.2.8</span> Bow’s Notation</h3>
 <p>Bow’s Notation is a graphical method employed in structural engineering to label the forces acting on a truss or structural framework. The notation was developed by British mathematician Robert Bow in the 19th century and continues to be a practical tool for visualizing and solving force equilibrium problems in structures.</p>
 <div id="fig-BowsNotSpace" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -334,7 +377,7 @@ Figure&nbsp;2.3: Equilibrant
 <img src="images/bowsNotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-BowsNotSpace-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.4: Bow’s Notation Space Diagram
+Figure&nbsp;2.6: Bow’s Notation Space Diagram
 </figcaption>
 </figure>
 </div>
@@ -344,12 +387,12 @@ Figure&nbsp;2.4: Bow’s Notation Space Diagram
 <img src="images/bowsNotationVector.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-BowsNotVec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.5: Bow’s Notation Vector Diagram
+Figure&nbsp;2.7: Bow’s Notation Vector Diagram
 </figcaption>
 </figure>
 </div>
-<section id="key-concepts-of-bows-notation" class="level4" data-number="2.2.6.1">
-<h4 data-number="2.2.6.1" class="anchored" data-anchor-id="key-concepts-of-bows-notation"><span class="header-section-number">2.2.6.1</span> Key Concepts of Bow’s Notation</h4>
+<section id="key-concepts-of-bows-notation" class="level4" data-number="2.2.8.1">
+<h4 data-number="2.2.8.1" class="anchored" data-anchor-id="key-concepts-of-bows-notation"><span class="header-section-number">2.2.8.1</span> Key Concepts of Bow’s Notation</h4>
 <ol type="1">
 <li>Labeling Spaces Between Forces:
 <ul>
@@ -372,17 +415,17 @@ Figure&nbsp;2.5: Bow’s Notation Vector Diagram
 </ul></li>
 </ol>
 </section>
-<section id="example-of-bows-notation-application" class="level4" data-number="2.2.6.2">
-<h4 data-number="2.2.6.2" class="anchored" data-anchor-id="example-of-bows-notation-application"><span class="header-section-number">2.2.6.2</span> Example of Bow’s Notation Application</h4>
+<section id="example-of-bows-notation-application" class="level4" data-number="2.2.8.2">
+<h4 data-number="2.2.8.2" class="anchored" data-anchor-id="example-of-bows-notation-application"><span class="header-section-number">2.2.8.2</span> Example of Bow’s Notation Application</h4>
 <p>In a simple triangular truss, the spaces surrounding the triangle may be labeled A, B, and C. If the members connect these spaces, they would be named as AB, BC, and CA. By employing Bow’s Notation, engineers can construct a force polygon, analyze it for equilibrium, and determine the unknown forces in each member of the truss.</p>
 </section>
 </section>
-<section id="slings" class="level3" data-number="2.2.7">
-<h3 data-number="2.2.7" class="anchored" data-anchor-id="slings"><span class="header-section-number">2.2.7</span> Slings</h3>
+<section id="slings" class="level3" data-number="2.2.9">
+<h3 data-number="2.2.9" class="anchored" data-anchor-id="slings"><span class="header-section-number">2.2.9</span> Slings</h3>
 <p>A sling is a device or assembly of ropes, cables, or straps used to support and lift loads. Slings play a crucial role in rigging operations, allowing objects to be lifted, lowered, or moved safely and efficiently. Slings are arranged to distribute the load evenly across their length, reducing stress points and ensuring stability. In multi-leg slings (e.g., two-leg or four-leg), the load is shared among the sling legs, which helps stabilize and balance the load.</p>
 </section>
-<section id="jib-cranes" class="level3" data-number="2.2.8">
-<h3 data-number="2.2.8" class="anchored" data-anchor-id="jib-cranes"><span class="header-section-number">2.2.8</span> Jib Cranes</h3>
+<section id="jib-cranes" class="level3" data-number="2.2.10">
+<h3 data-number="2.2.10" class="anchored" data-anchor-id="jib-cranes"><span class="header-section-number">2.2.10</span> Jib Cranes</h3>
 <p>A simple jib crane has a vertical post, a jib, and a tie. The jib is hinged at its lower end to the post, and the tie connects the top of the jib to the base of the post, forming the crane head where the tie and jib meet.</p>
 <p>When a load is hung directly from the crane head, solving for forces involves a simple triangle of forces. In other cases, the crane may have a pulley at the head, with a rope running over it to a winch, creating a system with more than three forces.</p>
 </section>
@@ -538,14 +581,14 @@ R = \sqrt{(29.34)^2 + (20.48)^2} \approx \sqrt{861.64 + 419.04} \approx \sqrt{12
 <p>Direction of the Equilibrium Force <span class="math inline">\(\approx 34.92^\circ\)</span> above the horizontal (in the direction of the 15 N force).</p>
 </div>
 <div id="exm-sling" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.4</strong></span> A 200 kg mass is suspended as shown in <a href="#fig-sling01" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.</p>
-<div id="fig-sling01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p><span class="theorem-title"><strong>Example 2.4</strong></span> A 200 kg mass is suspended as shown in <a href="#fig-sling" class="quarto-xref">Figure&nbsp;<span>2.8</span></a>. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.</p>
+<div id="fig-sling" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sling01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/sling01.png" class="img-fluid figure-img">
+<div aria-describedby="fig-sling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/sling.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sling01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.6: A 200 kg suspended mass.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.8: A 200 kg suspended mass.
 </figcaption>
 </figure>
 </div>
