@@ -1,0 +1,38 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+
+%maths
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{tikzpicture}
+%\draw [step=0.5,lightgray] (0,0) grid (5,5);  % Grid
+\draw [->, blue] (0.5,4.5) -- (4.5,4.5) node[midway, above] {$\vec{F}_{1} = 4\,N$};
+\draw [->, blue] (0.5,4.5) -- (4.5,1) node[midway, right] {$\vec{F}_{2} = 5.31\,N$};
+\draw [->, blue] (0.5,4.5) -- (2,1.5) node[midway, left] {$\vec{F}_{3} = 3.35\,N$};
+\end{tikzpicture}
+
+\end{document}
