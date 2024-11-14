@@ -30,7 +30,7 @@ The "nose-to-tail" method, also known as the "head-to-tail", is a visual way to 
 
 5.  Measure the Resultant: The length and direction of this resultant vector represent the combined effect of all the original vectors.
 
-![Addition of Vectors by Nose-to-tail Method](images/Nose_to_tail_method.png){#fig-Nose_to_tail_method}
+![Addition of Vectors by Nose-to-tail Method](images/nose-to-tail-method.png){#fig-Nose_to_tail_method}
 
 ### Addition of Vectors by Parallelogram Method
 
@@ -44,19 +44,19 @@ The parallelogram method is another visual technique for adding two vectors, spe
 
 4.  Measure the Resultant: The length and direction of this diagonal vector represent the combined effect of the two vectors.
 
-![Addition of Vectors by Parallelogram Method](images/Parallelogram_method.png){#fig-Parallelogram_method}
+![Addition of Vectors by Parallelogram Method](images/parallelogram-method.png){#fig-Parallelogram_method}
 
 ### Space Diagrams
 
 The space diagram is an illustration of the system of forces.
 
-![Space Diagram](images/spacedia.png){#fig-spacedia fig-align="center" width="75%"}
+![Space Diagram](images/spacedia.png){#fig-spacedia width="75%"}
 
 ### Vector Diagrams
 
 The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.
 
-![Vector Diagram](images/vectordia.png){#fig-vectordia fig-align="center"}
+![Vector Diagram](images/vectordia.png){#fig-vectordia}
 
 ### Resultant
 
@@ -66,7 +66,7 @@ The resultant is a single force that represents the combined effect of two or mo
 
 Equilibrium of an object occurs when all the forces acting on it are balanced, so the object remains at rest or moves at a constant speed in a straight line. In equilibrium, there is no net force or acceleration, meaning the object is in a stable state without any change in its motion.
 
-![Equilibrant](images/vectordiaE.png){#fig-equilibrant fig-align="center"}
+![Equilibrant](images/vectordiaE.png){#fig-equilibrant}
 
 Conditions of equilibrium:
 
@@ -86,9 +86,9 @@ $$ {#eq-torque}
 
 Bow’s Notation is a graphical method employed in structural engineering to label the forces acting on a truss or structural framework. The notation was developed by British mathematician Robert Bow in the 19th century and continues to be a practical tool for visualizing and solving force equilibrium problems in structures.
 
-![Bow’s Notation Space Diagram](images/bowsNotation.png){#fig-BowsNotSpace fig-align="center"}
+![Bow’s Notation Space Diagram](images/bows-notation.png){#fig-BowsNotSpace}
 
-![Bow’s Notation Vector Diagram](images/bowsNotationVector.png){#fig-BowsNotVec fig-align="center"}
+![Bow’s Notation Vector Diagram](images/bows-notation-vector.png){#fig-BowsNotVec}
 
 #### Key Concepts of Bow’s Notation
 

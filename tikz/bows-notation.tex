@@ -1,0 +1,39 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+
+%maths
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+%colours
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{tikzpicture}
+%\draw [step=0.5,lightgray] (-.5,0) grid (5,5);  % Grid
+\draw [->, blue] (2.5,2.5) -- (2.5,5);
+\node[text=blue] at (1.7,3.6) {A};
+\draw [->, blue] (2.5,2.5) -- (4,4);
+\node[text=blue] at (2.95,3.5) {B};
+\draw [->, blue] (2.5,2.5) -- (4.5,1.5);
+\node[text=blue] at (3.55,2.75) {C};
+\draw [->, blue] (2.5,2.5) -- (0.5,3);
+\node[text=blue] at (2.55,1.75) {D};
+\draw [->, blue] (2.5,2.5) -- (1,.5);
+\node[text=blue] at (1.5,2.25) {E};
+\end{tikzpicture}
+
+\end{document}
