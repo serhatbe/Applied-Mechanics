@@ -336,12 +336,82 @@ Magnitude of the Equilibrium Force $\approx 35.8 \, \text{N}$
 Direction of the Equilibrium Force $\approx 34.92^\circ$ above the horizontal (in the direction of the 15 N force).
 :::
 
+::: {#exm-ship}
+A ship is heading in a direction N 30° E at a speed which in still water would be 20 knots. It is carried off course by a current of 5 knots in a direction of E 60° S. Calculate the ship’s actual speed and direction.
+
+**Solution**:
+
+We need to resolve both the ship's velocity in still water and the current into their vector components (x and y) and then compute the resultant speed and direction.
+
+1.  **Ship's velocity in still water (N 30° E at 20 knots):**
+
+-   Direction: N 30° E means 30° clockwise from North.
+-   Speed: 20 knots.
+
+The **x** (East-West) component is: $$
+v_{x1} = 20 \times \cos(30^\circ) = 20 \times \frac{\sqrt{3}}{2} \approx 17.32 \, \text{knots}
+$$
+
+The **y** (North-South) component is: $$
+v_{y1} = 20 \times \sin(30^\circ) = 20 \times \frac{1}{2} = 10 \, \text{knots}
+$$
+
+2.  **Current's velocity (E 60° S at 5 knots):**
+
+-   Direction: E 60° S means 60° South of East.
+-   Speed: 5 knots.
+
+The **x** (East-West) component is: $$
+v_{x2} = 5 \times \cos(60^\circ) = 5 \times \frac{1}{2} = 2.5 \, \text{knots}
+$$
+
+The **y** (North-South) component is: $$
+v_{y2} = 5 \times \sin(60^\circ) = 5 \times \frac{\sqrt{3}}{2} \approx 4.33 \, \text{knots}
+$$
+
+Since the current is pushing the ship southward, the y-component will be **negative**: $$
+v_{y2} = -4.33 \, \text{knots}
+$$
+
+3.  **Add the components:**
+
+Total **x** component: $$
+v_x = v_{x1} + v_{x2} = 17.32 + 2.5 = 19.82 \, \text{knots}
+$$
+
+Total **y** component: $$
+v_y = v_{y1} + v_{y2} = 10 - 4.33 = 5.67 \, \text{knots}
+$$
+
+4.  **Calculate the actual speed and direction:**
+
+-   The **actual speed** is the magnitude of the total velocity vector: $$
+    \text{Speed} = \sqrt{v_x^2 + v_y^2} = \sqrt{19.82^2 + 5.67^2} = \sqrt{393.39 + 32.14} = \sqrt{425.53} \approx 20.64 \, \text{knots}
+    $$
+
+-   The **actual direction** is the angle relative to East (measured counterclockwise from the positive x-axis): $$
+    \theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.67}{19.82}\right) \approx \tan^{-1}(0.286) \approx 16.0^\circ
+    $$
+
+So, the ship's actual direction is **16.0° North of East**.
+
+Final Answer, see @fig-ship:
+
+-   **Speed:** 20.64 knots
+
+-   **Direction:** N 16.0° E
+
+![Ship vs Current diagram](images/ship-current.png){#fig-ship-current}
+
+![Ship vs Current diagram](images/ship.png){#fig-ship}
+:::
+
 ::: {#exm-rvector}
 Given the space diagram in @fig-vectorcoordinates, estimate the resultant vector using a graphical method.
 
-![Vector cartesian coordinates](images/r-vector.png){#fig-vectorcoordinates}
+![Vector Cartesian coordinates](images/r-vector.png){#fig-vectorcoordinates}
 
-![Solution](images/r-vector-sol.png)
+![Solution](images/r-vector-sol.png){#fig-vectorcoordinatessol}
 :::
 
 ::: {#exm-pvector}
@@ -353,33 +423,47 @@ Given the space diagram in @fig-vectorpolarcoordinates, estimate the resultant v
 :::
 
 ::: {#exm-q6}
-Given r-vector-polar (Q6) Solution shown in @fig-q6,
+Three forces of 5 N, 8 N and 13 N act as shown in @fig-q6. Calculate the magnitude and direction of the resultant force.
 
-![Solution](images/r-vector-polar (Q6).png){#fig-q6}
+![](images/r-vector-polar-Q6.png){#fig-q6}
+
+Given the polar coordinates, solution is shown in @fig-q6sol,
+
+![Solution](images/r-vector-polar%20(Q6).png){#fig-q6sol}
 :::
 
 ::: {#exm-q7}
-Given r-vector-polar (Q7) Solution shown in @fig-q7,
+If velocity $v_1$= 25 m/s at $60\textdegree$ and $v_2$= 15 m/s at $330\textdegree$, calculate the magnitude and direction of resultant velocity.
 
-![Solution](images/r-vector-polar (Q7).png){#fig-q7}
+Graphical solution is shown in @fig-q7sol.
+
+![Graphical solution.](images/r-vector-polar%20(Q7).png){#fig-q7sol}
 :::
 
 ::: {#exm-q8}
-Given r-vector-polar (Q8) Solution shown in @fig-q8,
+Calculate the magnitude and direction of the resultant vector of the force system shown in @fig-q8
 
-![Solution](images/r-vector-polar (Q8).png){#fig-q8}
+![](images/r-vector-polar-q8.png){#fig-q8}
+
+Solution is shown in @fig-q8sol,
+
+![Solution](images/r-vector-polar%20(Q8).png){#fig-q8sol}
 :::
 
 ::: {#exm-q9}
-Given r-vector-polar (Q9) Solution shown in @fig-q9,
+Calculate the magnitude and direction of the resultant vector of the system shown @fig-q9
 
-![Solution](images/r-vector-polar (Q9).png){#fig-q9}
+![Vectors](images/r-vector-polar-q9.png){#fig-q9}
+
+Solution shown in @fig-q9sol,
+
+![Solution](images/r-vector-polar-q9sol.png){#fig-q9sol}
 :::
 
 ::: {#exm-q11}
-Given r-vector-polar (Q11) Solution shown in @fig-q11,
+A ship heads in a direction of E 20° S at a speed of 20 knots while the current is 4 knots in a direction of N 30° E. Determine the speed and actual direction of the ship. Solution shown in @fig-q11,
 
-![Solution](images/r-vector-polar (Q11).png){#fig-q11}
+![Solution](images/r-vector-polar%20(Q11).png){#fig-q11}
 :::
 
 ::: {#exm-sling}

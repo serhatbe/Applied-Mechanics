@@ -1,0 +1,39 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{textcomp} % For \textdegree
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.25]
+
+% Draw the coordinate axes
+\draw[->] (-25,0) -- (25,0) node[right] {East (x)};
+\draw[->] (0,-25) -- (0,25) node[above] {North (y)};
+
+% Ship's velocity in still water (N 30° E at 20 knots)
+\draw[->, thick, blue] (0,0) -- (30:20) node[right] {Ship's velocity (20 kn N 30° E )} coordinate (S);
+
+% Current velocity (E 60° S at 5 knots)
+\draw[->, thick, orange] (0,0) -- (-60:5) node[below] {Current velocity (5 kn E 60° S)} coordinate (C);
+
+% Resultant velocity
+%\draw[->, thick, green] (0,0) -- (5.964, -1.33) node[below right] {Resultant velocity};
+\draw[->, thick, red] (C) -- (S) node[midway, right] {Resultant velocity (20.6 kn N 16.0° E )};
+
+% Labels for angles
+%\draw[->] (0,0) -- (2.5,0) node[below] {};
+%\draw[->] (0,0) -- (0,3) node[left] {};
+%\draw[->] (0,0) -- (3.464,3) node[above=5pt] {N 30\textdegree E};
+%\draw[->] (0,0) -- (2.5,-4.33) node[right] {E 60\textdegree S};
+
+% Angles
+%\draw[rotate around={atan(3/3.464):(0,0)}] (1,0) arc[start angle=0,end angle=atan(3/3.464),radius=1cm];
+%\node at (1.5, 0.5) {30\textdegree};
+%\draw[rotate around={atan(-4.33/2.5):(0,0)}] (1,0) arc[start angle=0,end angle=atan(-4.33/2.5),radius=1cm];
+%\node at (1.5, -1.0) {60\textdegree};
+
+\end{tikzpicture}
+
+\end{document}
