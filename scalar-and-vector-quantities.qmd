@@ -336,6 +336,52 @@ Magnitude of the Equilibrium Force $\approx 35.8 \, \text{N}$
 Direction of the Equilibrium Force $\approx 34.92^\circ$ above the horizontal (in the direction of the 15 N force).
 :::
 
+::: {#exm-rvector}
+Given the space diagram in @fig-vectorcoordinates, estimate the resultant vector using a graphical method.
+
+![Vector cartesian coordinates](images/r-vector.png){#fig-vectorcoordinates}
+
+![Solution](images/r-vector-sol.png)
+:::
+
+::: {#exm-pvector}
+Given the space diagram in @fig-vectorpolarcoordinates, estimate the resultant vector using a graphical method.
+
+![Vector polar coordinates](images/resultant-vector.png){#fig-vectorpolarcoordinates}
+
+![Solution](images/resultant-vector-solution.png){#fig-vectorpolarsolution}
+:::
+
+::: {#exm-q6}
+Given r-vector-polar (Q6) Solution shown in @fig-q6,
+
+![Solution](images/r-vector-polar (Q6).png){#fig-q6}
+:::
+
+::: {#exm-q7}
+Given r-vector-polar (Q7) Solution shown in @fig-q7,
+
+![Solution](images/r-vector-polar (Q7).png){#fig-q7}
+:::
+
+::: {#exm-q8}
+Given r-vector-polar (Q8) Solution shown in @fig-q8,
+
+![Solution](images/r-vector-polar (Q8).png){#fig-q8}
+:::
+
+::: {#exm-q9}
+Given r-vector-polar (Q9) Solution shown in @fig-q9,
+
+![Solution](images/r-vector-polar (Q9).png){#fig-q9}
+:::
+
+::: {#exm-q11}
+Given r-vector-polar (Q11) Solution shown in @fig-q11,
+
+![Solution](images/r-vector-polar (Q11).png){#fig-q11}
+:::
+
 ::: {#exm-sling}
 A 200 kg mass is suspended as shown in @fig-sling. Rope A is attached to a beam in two places and is passed through a ring that rest naturally at the centre of rope A. Rope B is attached to the bottom of the ring, and to the 200 kg mass.
 

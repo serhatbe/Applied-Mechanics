@@ -1,0 +1,56 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.25]
+    % Define the origin
+    \coordinate (O) at (0,0);
+    
+    % Define the polar coordinates (magnitude and angle) of each vector
+    \def\mA{8}    % Magnitude of vector A
+    \def\angleA{70} % Angle of vector A (degrees)
+
+    \def\mB{5}    % Magnitude of vector B
+    \def\angleB{0} % Angle of vector B (degrees)
+
+    \def\mC{13}    % Magnitude of vector C
+    \def\angleC{300} % Angle of vector C (degrees)
+    
+    % Convert polar coordinates to Cartesian for each vector endpoint
+    \pgfmathsetmacro{\Ax}{\mA*cos(\angleA)}
+    \pgfmathsetmacro{\Ay}{\mA*sin(\angleA)}
+
+    \pgfmathsetmacro{\Bx}{\mB*cos(\angleB)}
+    \pgfmathsetmacro{\By}{\mB*sin(\angleB)}
+
+    \pgfmathsetmacro{\Cx}{\mC*cos(\angleC)}
+    \pgfmathsetmacro{\Cy}{\mC*sin(\angleC)}
+    
+    % Calculate the resultant vector components
+    \pgfmathsetmacro{\xR}{\Ax + \Bx + \Cx}
+    \pgfmathsetmacro{\yR}{\Ay + \By + \Cy}
+    
+    % Calculate the magnitude and angle of the resultant vector
+    \pgfmathsetmacro{\mR}{sqrt((\xR)^2 + (\yR)^2)}
+    \pgfmathsetmacro{\angleR}{atan2(\yR, \xR)}
+
+    % Define coordinates for A, B, C, and R
+    \coordinate (A) at (\Ax, \Ay);
+    \coordinate (B) at (\Bx, \By);
+    \coordinate (C) at (\Cx, \Cy);
+    \coordinate (R) at (\xR, \yR);
+    
+    % Draw vectors A, B, C from the origin
+    \draw[->, thick, blue] (O) -- (A) node[midway, left=5pt] {$\vec{A} (\mA, \angleA^\circ)$};
+    \draw[->, thick, red] (A) -- ++(B) node[midway, above] {$\vec{B} (\mB, \angleB^\circ)$};
+    \draw[->, thick, green] (A) ++ (B) -- ++(C) node[midway, right] {$\vec{C} (\mC, \angleC^\circ)$};
+    
+    % Draw the resultant vector R from the origin
+    \draw[->, thick, purple] (O) -- (R) node[midway, below=25pt] {$|\vec{R}| = \mR$, $\theta_R = \angleR^\circ$};
+\end{tikzpicture}
+
+\end{document}

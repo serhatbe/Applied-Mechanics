@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+%Packages & Librariesresultant-vector
+\usepackage{tikz}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,scale=0.35]
+% Axes
+\draw[dashed,gray] (-15,0) -- (10,0); %x    
+% Define the origin
+\coordinate (O) at (0,0);    
+% Define velocities v1, v2 and v3
+\coordinate (A) at (8.66025,5); % Vector v1
+\coordinate (B) at (0,20); % Vector v2
+\coordinate (C) at (-14.4889,-3.8823); % Vector v3
+% Draw vector v1
+\draw[->, thick, blue] (O) -- (A) node[midway, right=5pt] {$\vec{F_1}{=10\, N}$};
+\draw[thick, blue] (1,0) arc (0:30:1) node[midway, right]{$30\degree$};   
+% Draw vector v2 
+\draw[->, thick, blue] (O) -- (B) node[midway, left] {$\vec{F_2}{=20\, N}$};
+% Draw vector v3 
+\draw[->, thick, blue] (O) -- (C) node[midway, below=5pt] {$\vec{F_3}{=15\, N}$};
+\draw[thick, blue] (-2,0) arc (180:195:2) node[midway, left]{$15\degree$};
+\end{tikzpicture}
+
+\end{document}
