@@ -386,7 +386,7 @@ $$
 4.  **Calculate the actual speed and direction:**
 
 -   The **actual speed** is the magnitude of the total velocity vector: $$
-    \text{Speed} = \sqrt{v_x^2 + v_y^2} = \sqrt{19.82^2 + 5.67^2} = \sqrt{393.39 + 32.14} = \sqrt{425.53} \approx 20.64 \, \text{knots}
+    \text{Speed} = \sqrt{v_x^2 + v_y^2} = \sqrt{19.82^2 + 5.67^2} = \sqrt{393.39 + 32.14} = \sqrt{425.53} \approx 20.62 \, \text{knots}
     $$
 
 -   The **actual direction** is the angle relative to East (measured counterclockwise from the positive x-axis): $$
@@ -397,11 +397,9 @@ So, the ship's actual direction is **16.0° North of East**.
 
 Final Answer, see @fig-ship:
 
--   **Speed:** 20.64 knots
+-   **Speed:** 20.62 knots
 
 -   **Direction:** N 16.0° E
-
-![Ship vs Current diagram](images/ship-current.png){#fig-ship-current}
 
 ![Ship vs Current diagram](images/ship.png){#fig-ship}
 :::
