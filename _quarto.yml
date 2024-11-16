@@ -31,6 +31,7 @@ format:
       light: cosmo #flatly
       dark: solar
   pdf:
+    #latex-engine: xelatex  # or pdflatex, if preferred
     documentclass: book #scrreprt
     toc-title: Contents
     lot: true
