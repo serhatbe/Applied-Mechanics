@@ -12,11 +12,11 @@ In mathematics and physics, a **scalar**\index{scalar} is a quantity with only m
 
 A vector is represented as an arrow, where the length denotes its magnitude, and the arrowhead indicates its direction. Vector diagrams are useful for visually conveying information about vector relationships, allowing us to analyze effects like the combination of forces or the movement of objects in two or three dimensions. In such diagrams, vectors are often drawn to scale and placed with respect to an origin or another reference point.
 
-### Coplanar Forces
+## Coplanar Forces
 
 Coplanar forces are forces that act within the same plane. This means they lie along a single, flat surface, and their lines of action do not extend out of that plane. Coplanar forces are often analyzed together in physics and engineering because their combined effects can be resolved within two dimensions.
 
-### Addition of Vectors by Nose-to-tail Method
+## Addition of Vectors by Nose-to-tail Method
 
 The "nose-to-tail" method, also known as the "head-to-tail", is a visual way to add vectors in physics or engineering. Here’s a step-by-step explanation of how it works:
 
@@ -32,7 +32,7 @@ The "nose-to-tail" method, also known as the "head-to-tail", is a visual way to 
 
 ![Addition of Vectors by Nose-to-tail Method](images/nose-to-tail-method.png){#fig-Nose_to_tail_method}
 
-### Addition of Vectors by Parallelogram Method
+## Addition of Vectors by Parallelogram Method
 
 The parallelogram method is another visual technique for adding two vectors, specifically used when you have two vectors that start from the same point. Here’s how it works:
 
@@ -46,13 +46,41 @@ The parallelogram method is another visual technique for adding two vectors, spe
 
 ![Addition of Vectors by Parallelogram Method](images/parallelogram-method.png){#fig-Parallelogram_method}
 
-### Space Diagrams
+## Cosine Rule
+
+The Cosine Rule is used to relate the lengths of the sides of a triangle to the cosine of one of its angles:
+
+$$
+c^2 = a^2 + b^2 - 2ab\cos C
+$$ {#eq-cos}
+
+Where:
+
+-   a, b, c are the sides of the triangle.
+
+-   C is the angle opposite side c.
+
+## Sine Rule
+
+The Sine Rule relates the sides and angles of a triangle:
+
+$$
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+$$ {#eq-sine}
+
+Where:
+
+-   a, b, c are the sides of the triangle opposite to angles A, B, C, respectively.
+
+-   A, B, C are the angles of the triangle.
+
+## Space Diagrams
 
 The space diagram is an illustration of the system of forces.
 
 ![Space Diagram](images/spacedia.png){#fig-spacedia width="75%"}
 
-### Vector Diagrams
+## Vector Diagrams
 
 The vector diagram is a diagram drawn to scale with the vectors joined end to end. Vector diagrams are used to analyze and combine forces to find the resultant.
 
@@ -82,7 +110,7 @@ $$
 \sum_{k} \vec{\tau}_{k} = \vec{0}
 $$ {#eq-torque}
 
-### Bow's Notation
+## Bow's Notation
 
 Bow’s Notation is a graphical method employed in structural engineering to label the forces acting on a truss or structural framework. The notation was developed by British mathematician Robert Bow in the 19th century and continues to be a practical tool for visualizing and solving force equilibrium problems in structures.
 
@@ -90,7 +118,7 @@ Bow’s Notation is a graphical method employed in structural engineering to lab
 
 ![Bow’s Notation Vector Diagram](images/bows-notation-vector.png){#fig-BowsNotVec}
 
-#### Key Concepts of Bow’s Notation
+### Key Concepts of Bow’s Notation
 
 1.  Labeling Spaces Between Forces:
     -   Each space between external forces (such as loads and reactions) and each internal member of a truss is designated with a unique letter (e.g., A, B, C, etc.).
@@ -104,15 +132,15 @@ Bow’s Notation is a graphical method employed in structural engineering to lab
     -   After labeling the spaces, equilibrium equations and graphical methods (such as constructing a force polygon) can be employed to determine the magnitude and direction of each force in the truss.
     -   The notation simplifies calculations by visually connecting the forces and facilitating the identification of how different forces interact within the structure.
 
-#### Example of Bow’s Notation Application
+### Example of Bow’s Notation Application
 
 In a simple triangular truss, the spaces surrounding the triangle may be labeled A, B, and C. If the members connect these spaces, they would be named as AB, BC, and CA. By employing Bow’s Notation, engineers can construct a force polygon, analyze it for equilibrium, and determine the unknown forces in each member of the truss.
 
-### Slings
+## Slings
 
 A sling is a device or assembly of ropes, cables, or straps used to support and lift loads. Slings play a crucial role in rigging operations, allowing objects to be lifted, lowered, or moved safely and efficiently. Slings are arranged to distribute the load evenly across their length, reducing stress points and ensuring stability. In multi-leg slings (e.g., two-leg or four-leg), the load is shared among the sling legs, which helps stabilize and balance the load.
 
-### Jib Cranes
+## Jib Cranes
 
 A simple jib crane has a vertical post, a jib, and a tie. The jib is hinged at its lower end to the post, and the tie connects the top of the jib to the base of the post, forming the crane head where the tie and jib meet.
 
@@ -120,7 +148,7 @@ When a load is hung directly from the crane head, solving for forces involves a 
 
 ## Classwork
 
-::: {#exm-1}
+::: {#exm-2_1}
 A vertical lifting force of 95 N is applied to a body, and simultaneously, a horizontal force of 135 N pulls on it. Determine the magnitude and direction of the resulting force.
 
 To solve for the magnitude and direction of the resultant force, we can use vector addition.
@@ -182,7 +210,7 @@ $$
 The magnitude of the resultant force is approximately $165.07\:\text{N}$, and its direction is $35.1341^\circ$ above the horizontal.
 :::
 
-::: {#exm-2}
+::: {#exm-2_2}
 Two forces act upon a body. One exerts a horizontal force to the right with a magnitude of 25 Newtons, while the other exerts a vertical force downward with a magnitude of 20 Newtons. Determine the magnitude and direction of a third force that would counteract the combined effects of the other two forces.
 
 To determine the magnitude and direction of the third force that counteracts the combined effects of the two forces, we first need to find the resultant force of the two given forces.
@@ -260,7 +288,7 @@ $$
 The magnitude of the third force is approximately $32.02  \text{N}$ , and its direction is approximately $218.66^\circ$ (measured counterclockwise from the positive x-axis or horizontal right).
 :::
 
-::: {#exm-3}
+::: {#exm-2_3}
 Determine the magnitude and direction of the equilibrium force resulting from the combination of two forces: a horizontal pull of 15 N and a pull of 25 N at an angle of 55 degrees with respect to the 15 N force.
 
 To find the magnitude and direction of the equilibrium force resulting from the combination of two forces (15 N horizontally and 25 N at an angle of 55 degrees), we can use vector addition.

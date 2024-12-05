@@ -116,7 +116,7 @@ This step-by-step approach illustrates how the unity fraction cancels the undesi
 Unity fractions can be extended by using multiple conversion steps. For example, converting hours to seconds would require two unity fractions: one to convert hours to minutes and another to convert minutes to seconds. This approach ensures accuracy and is widely used in science, engineering, and other fields that require precise unit conversions.
 :::
 
-::: {#exm-00}
+::: {#exm-1}
 Convert $15 \, \text{m/s}$ to $\text{km/h}$.
 
 1.  Start with $15 \, \text{m/s}$.
