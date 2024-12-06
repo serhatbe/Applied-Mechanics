@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+%Packages & Libraries
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+    % Define the coordinates of the triangle
+    \coordinate [label=left:$A$] (A) at (0,0);
+    \coordinate [label=right:$B$] (B) at (4,0);
+    \coordinate [label=above:$C$] (C) at (2,3);
+
+    % Draw the sides of the triangle
+    \draw (A) -- node[below] {$c$} (B);
+    \draw (B) -- node[right] {$a$} (C);
+    \draw (C) -- node[left] {$b$} (A);
+
+    % Label the angles
+    \draw [blue] (A) -- (B) -- (C) -- cycle;
+    \node at (0.5,0.2) {$\alpha$};
+    \node at (3.5,0.2) {$\beta$};
+    \node at (2,2.5) {$\gamma$};
+\end{tikzpicture}
+
+\end{document}
