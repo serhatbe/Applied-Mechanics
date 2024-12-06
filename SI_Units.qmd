@@ -199,7 +199,7 @@ The meters and seconds cancel out, leaving kilometers per hour: $54 \, \text{km/
 6.  $3 \, \text{m}^3/\text{min} = 50 \, \text{L/s}$
 7.  $1000 \, \text{kg/m}^3 = 1 \, \text{g/cm}^3$
 8.  $9.8 \, \text{m/s}^2 = 980 \, \text{cm/s}^2$
-9.  $50 \, \text{N} \cdot \text{m} = 0.5 \, \text{kN} \cdot \text{cm}$
+9.  $50 \, \text{N} \cdot \text{m} = 5 \, \text{kN} \cdot \text{cm}$
 10. $500 \, \text{Hz} = 0.5 \, \text{kHz}$
 11. $20 \, \text{N} \times 5 \, \text{m} = 100 \, \text{J}$
 12. $\text{Kinetic energy} = 1500 \, \text{kg} \times \left(20 \, \text{m/s}\right)^2 / 2 = 300 \, \text{kJ}$
