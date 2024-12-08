@@ -1,0 +1,67 @@
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+\usepackage{tikz} 
+\usepackage{amsmath}
+\usetikzlibrary{calc}
+
+% Set global precision for all calculations and outputs
+\pgfmathsetmacro{\pgfmathprecision}{2}  % Set global precision to n decimals
+
+% Define an alias for the math print with fixed precision
+\newcommand{\precisedNumber}[1]{\pgfmathprintnumber[fixed, precision=\pgfmathprecision]{#1}}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.25]
+% Draw the coordinate axes
+\draw[->] (-45,0) -- (45,0) node[below] {(x)};
+\draw[->] (0,-40) -- (0,45) node[left] {(y)};
+    % Define the origin
+    \coordinate (O) at (0,0);
+    
+    % Define the polar coordinates (magnitude and angle) of each vector
+    \def\mA{62}    % Magnitude of vector A
+    \def\angleA{48} % Angle of vector A (degrees)
+
+    \def\mB{42}    % Magnitude of vector B
+    \def\angleB{192} % Angle of vector B (degrees)
+
+    \def\mC{37.5}    % Magnitude of vector C
+    \def\angleC{270} % Angle of vector C (degrees)
+    
+    % Convert polar coordinates to Cartesian for each vector endpoint
+    \pgfmathsetmacro{\Ax}{\mA*cos(\angleA)}
+    \pgfmathsetmacro{\Ay}{\mA*sin(\angleA)}
+
+    \pgfmathsetmacro{\Bx}{\mB*cos(\angleB)}
+    \pgfmathsetmacro{\By}{\mB*sin(\angleB)}
+
+    \pgfmathsetmacro{\Cx}{\mC*cos(\angleC)}
+    \pgfmathsetmacro{\Cy}{\mC*sin(\angleC)}
+     
+    % Define coordinates for A, B, C, and R
+    \coordinate (A) at (\Ax, \Ay);
+    \coordinate (B) at (\Bx, \By);
+    \coordinate (C) at (\Cx, \Cy);
+    
+    % Draw vectors A, B, C from the origin
+    \draw[->, ultra thick, blue] (O) -- (A) node[midway, left=9pt] {$\vec{Jib}$};
+    %\draw[red] (0,0) arc (30:60:3);
+    \draw (3,0) arc (0:48:3cm) node[midway, right=2pt]{$48^\circ$};
+    \draw[->, ultra thick, blue] (O) -- (B) node[midway, right=5pt] {$\vec{Tie}$};
+    \draw (-3,0) arc (180:192:3cm) node[midway, left=5pt]{$12^\circ$};
+    \draw[->, thick, red] (O) -- (C) node[midway, right=5pt] {$\vec{Weight}$};
+    
+    % The Arc Operation
+%\begin{tikzpicture}[radius=1cm,delta angle=30]
+%\draw (-1,0) -- +(3.5,0);
+%\draw (1,0) ++(210:2cm) -- +(30:4cm);
+%\draw (1,0) +(0:1cm) arc [start angle=0];
+%\draw (1,0) +(180:1cm) arc [start angle=180];
+%\path (1,0) ++(15:.75cm) node{$\alpha$};
+%\path (1,0) ++(15:-.75cm) node{$\beta$};
+%\end{tikzpicture}
+    
+\end{tikzpicture}
+
+\end{document}

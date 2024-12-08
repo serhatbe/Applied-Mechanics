@@ -673,6 +673,111 @@ $$
 So, **the tension in Rope A is approximately 2321.24 N**.
 :::
 
+::: {#exm-jib-p12}
+The angle between the jib and the vertical post of a jib crane is 42 degree, and between the tie and jib the angle is 36 degree. Find the forces in the jib and tie when 37.5 kN is suspended from the crane head.
+
+Problem Setup:
+
+1.  Jib: $48^\circ$ from the x-axis.
+
+2.  Tie: $192^\circ$ from the x-axis.
+
+3.  Weight (W): $270^\circ$ from the x-axis.
+
+4.  Load: W = $37.5\ \text{kN}$.
+
+![Jib](images/jib_p12.png){#fig-jib_p12}
+
+Step 1: Equilibrium Equations
+
+Trigonometric Values:
+
+-   For the jib $48^\circ$:
+
+    -   $\cos(48^\circ) \approx 0.6691$,
+
+    -   $\sin(48^\circ) \approx 0.7431$.
+
+-   For the tie $192^\circ$:
+
+    -   $\cos(192^\circ) = \cos(180^\circ + 12^\circ) = -\cos(12^\circ) \approx -0.9781$,
+
+    -   $\sin(192^\circ) = \sin(180^\circ + 12^\circ) = -\sin(12^\circ) \approx -0.2079$.
+
+-   For the weight $270^\circ$:
+
+    -   $\cos(270^\circ) = 0$,
+
+    -   $\sin(270^\circ) = -1$.
+
+Step 2: Force Components
+
+Tie (T):
+
+$T_x = T \cos(192^\circ)$, $T_y = T \sin(192^\circ)$.
+
+Jib (J):
+
+$J_x = J \cos(48^\circ), \quad J_y = J \sin(48^\circ)$.
+
+Weight (W):
+
+$W_x = 0, \quad W_y = -37.5 , \text{kN}$.
+
+Step 3: Equations of Equilibrium
+
+Horizontal (x-direction):
+
+$T_x + J_x = 0$.
+
+Substitute:
+
+$T \cos(192^\circ) + J \cos(48^\circ) = 0$.
+
+$T (-0.9781) + J (0.6691) = 0$.
+
+Rearrange for T:
+
+$T = \frac{J (0.6691)}{0.9781}$.
+
+$T \approx 0.684\ J$.
+
+Vertical (y-direction):
+
+$T_y + J_y + W_y = 0$.
+
+Substitute:
+
+$T \sin(192^\circ) + J \sin(48^\circ) - 37.5 = 0$.
+
+$T (-0.2079) + J (0.7431) = 37.5$.
+
+Substitute T = 0.684 J:
+
+$(0.684\ J)(-0.2079) + J (0.7431) = 37.5$.
+
+Simplify:
+
+$-0.142\  J + 0.7431\ J = 37.5$.
+
+$0.6011\ J = 37.5$.
+
+Solve for J:
+
+$J = \frac{37.5}{0.6011} \approx 62.37 , \text{kN}$.
+
+Step 4: Solve for T
+
+Using $T = 0.684\ J$:
+
+$T = 0.684 (62.37) \approx 42.67\ \text{kN}$.
+
+Final Results:
+
+-   Force in the jib (J) = $62.37\ \text{kN}$ (compressive).
+-   Force in the tie (T) = $42.67\ \text{kN}$ (tensile).
+:::
+
 ## Problem Set
 
 1.  Calculate the magnitude and direction of the resultant of the 1.7 kN and 2.9 kN forces, which are aligned along the same line and act in the same direction.

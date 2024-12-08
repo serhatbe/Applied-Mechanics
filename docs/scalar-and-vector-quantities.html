@@ -61,8 +61,8 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-ec1d12af9487bc57caf1724595cbb410.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2172c2886f7b3de52eed80ab0b6e452f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-4cae49b2eeaea5eee2bde9cfab2388c5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2eb8c37c764bb4edba42a54f5c9a154e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5e79572dcfcebd00108c1fe1d6a40836.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -147,7 +147,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images\logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Applied Mechanics Workbook</a> 
@@ -339,15 +339,15 @@ r = \sqrt{x^2 + y^2}
 </section>
 <section id="polar-coordinates" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="polar-coordinates"><span class="header-section-number">2.7</span> Polar Coordinates</h2>
-<p>In a two-dimensional polar coordinate system, a point is represented as <span class="math inline">\((r,\theta)\)</span>, where:</p>
+<p>In a two-dimensional Polar coordinate system, a point is represented as <span class="math inline">\((r,\theta)\)</span>, where:</p>
 <ul>
 <li><span class="math inline">\(r\)</span> is the radial distance from the origin.</li>
 <li><span class="math inline">\(\theta\)</span> is the angle between the positive (x)-axis and the line joining the origin to the point (measured in radians or degrees).</li>
 </ul>
-<p>The relationships between polar and Cartesian coordinates are: <span id="eq-polar1"><span class="math display">\[
+<p>The relationships between Polar and Cartesian coordinates are: <span id="eq-polar1"><span class="math display">\[
 x = r\cos\theta, \quad y = r\sin\theta
 \tag{2.3}\]</span></span></p>
-<p>Conversely, given Cartesian coordinates ((x, y)), the polar coordinates can be obtained as: <span id="eq-polar2"><span class="math display">\[
+<p>Conversely, given Cartesian coordinates (x, y), the polar coordinates can be obtained as: <span id="eq-polar2"><span class="math display">\[
 r = \sqrt{x^2 + y^2}, \quad \theta = \tan^{-1}\left(\frac{y}{x}\right)
 \tag{2.4}\]</span></span></p>
 </section>
@@ -985,6 +985,81 @@ T_A = \frac{1962}{2 \cdot \sin(25^\circ)}
 T_A \approx 2321.24 \, \text{N}
 \]</span></p>
 <p>So, <strong>the tension in Rope A is approximately 2321.24 N</strong>.</p>
+</div>
+<div id="exm-jib-p12" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.14</strong></span> The angle between the jib and the vertical post of a jib crane is 42 degree, and between the tie and jib the angle is 36 degree. Find the forces in the jib and tie when 37.5 kN is suspended from the crane head.</p>
+<p>Problem Setup:</p>
+<ol type="1">
+<li><p>Jib: <span class="math inline">\(48^\circ\)</span> from the x-axis.</p></li>
+<li><p>Tie: <span class="math inline">\(192^\circ\)</span> from the x-axis.</p></li>
+<li><p>Weight (W): <span class="math inline">\(270^\circ\)</span> from the x-axis.</p></li>
+<li><p>Load: W = <span class="math inline">\(37.5\ \text{kN}\)</span>.</p></li>
+</ol>
+<div id="fig-jib_p12" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jib_p12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/jib_p12.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jib_p12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.23: Jib
+</figcaption>
+</figure>
+</div>
+<p>Step 1: Equilibrium Equations</p>
+<p>Trigonometric Values:</p>
+<ul>
+<li><p>For the jib <span class="math inline">\(48^\circ\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(\cos(48^\circ) \approx 0.6691\)</span>,</p></li>
+<li><p><span class="math inline">\(\sin(48^\circ) \approx 0.7431\)</span>.</p></li>
+</ul></li>
+<li><p>For the tie <span class="math inline">\(192^\circ\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(\cos(192^\circ) = \cos(180^\circ + 12^\circ) = -\cos(12^\circ) \approx -0.9781\)</span>,</p></li>
+<li><p><span class="math inline">\(\sin(192^\circ) = \sin(180^\circ + 12^\circ) = -\sin(12^\circ) \approx -0.2079\)</span>.</p></li>
+</ul></li>
+<li><p>For the weight <span class="math inline">\(270^\circ\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(\cos(270^\circ) = 0\)</span>,</p></li>
+<li><p><span class="math inline">\(\sin(270^\circ) = -1\)</span>.</p></li>
+</ul></li>
+</ul>
+<p>Step 2: Force Components</p>
+<p>Tie (T):</p>
+<p><span class="math inline">\(T_x = T \cos(192^\circ)\)</span>, <span class="math inline">\(T_y = T \sin(192^\circ)\)</span>.</p>
+<p>Jib (J):</p>
+<p><span class="math inline">\(J_x = J \cos(48^\circ), \quad J_y = J \sin(48^\circ)\)</span>.</p>
+<p>Weight (W):</p>
+<p><span class="math inline">\(W_x = 0, \quad W_y = -37.5 , \text{kN}\)</span>.</p>
+<p>Step 3: Equations of Equilibrium</p>
+<p>Horizontal (x-direction):</p>
+<p><span class="math inline">\(T_x + J_x = 0\)</span>.</p>
+<p>Substitute:</p>
+<p><span class="math inline">\(T \cos(192^\circ) + J \cos(48^\circ) = 0\)</span>.</p>
+<p><span class="math inline">\(T (-0.9781) + J (0.6691) = 0\)</span>.</p>
+<p>Rearrange for T:</p>
+<p><span class="math inline">\(T = \frac{J (0.6691)}{0.9781}\)</span>.</p>
+<p><span class="math inline">\(T \approx 0.684\ J\)</span>.</p>
+<p>Vertical (y-direction):</p>
+<p><span class="math inline">\(T_y + J_y + W_y = 0\)</span>.</p>
+<p>Substitute:</p>
+<p><span class="math inline">\(T \sin(192^\circ) + J \sin(48^\circ) - 37.5 = 0\)</span>.</p>
+<p><span class="math inline">\(T (-0.2079) + J (0.7431) = 37.5\)</span>.</p>
+<p>Substitute T = 0.684 J:</p>
+<p><span class="math inline">\((0.684\ J)(-0.2079) + J (0.7431) = 37.5\)</span>.</p>
+<p>Simplify:</p>
+<p><span class="math inline">\(-0.142\  J + 0.7431\ J = 37.5\)</span>.</p>
+<p><span class="math inline">\(0.6011\ J = 37.5\)</span>.</p>
+<p>Solve for J:</p>
+<p><span class="math inline">\(J = \frac{37.5}{0.6011} \approx 62.37 , \text{kN}\)</span>.</p>
+<p>Step 4: Solve for T</p>
+<p>Using <span class="math inline">\(T = 0.684\ J\)</span>:</p>
+<p><span class="math inline">\(T = 0.684 (62.37) \approx 42.67\ \text{kN}\)</span>.</p>
+<p>Final Results:</p>
+<ul>
+<li>Force in the jib (J) = <span class="math inline">\(62.37\ \text{kN}\)</span> (compressive).</li>
+<li>Force in the tie (T) = <span class="math inline">\(42.67\ \text{kN}\)</span> (tensile).</li>
+</ul>
 </div>
 </section>
 <section id="problem-set" class="level2" data-number="2.16">
