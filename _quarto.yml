@@ -19,6 +19,7 @@ book:
     - index.qmd
     - SI_Units.qmd
     - scalar-and-vector-quantities.qmd
+    - kinematics.qmd
     - moment-of-a-force.qmd
     - review.qmd
     - references.qmd

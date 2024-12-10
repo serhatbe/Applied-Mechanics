@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Review – Applied Mechanics Workbook</title>
+<title>3&nbsp; Kinematics – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./moment-of-a-force.html" rel="prev">
+<link href="./moment-of-a-force.html" rel="next">
+<link href="./scalar-and-vector-quantities.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -103,7 +132,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./review.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Review</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./kinematics.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kinematics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,7 +184,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./kinematics.html" class="sidebar-item-text sidebar-link">
+  <a href="./kinematics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kinematics</span></span></a>
   </div>
 </li>
@@ -167,7 +196,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./review.html" class="sidebar-item-text sidebar-link active">
+  <a href="./review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Review</span></span></a>
   </div>
 </li>
@@ -182,15 +211,32 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">3.1</span> Objectives</a></li>
+  <li><a href="#kinematic-equations" id="toc-kinematic-equations" class="nav-link" data-scroll-target="#kinematic-equations"><span class="header-section-number">3.2</span> Kinematic Equations</a></li>
+  <li><a href="#linear-motion-definitions" id="toc-linear-motion-definitions" class="nav-link" data-scroll-target="#linear-motion-definitions"><span class="header-section-number">3.3</span> Linear Motion Definitions</a></li>
+  <li><a href="#equations-of-motion-constant-acceleration" id="toc-equations-of-motion-constant-acceleration" class="nav-link" data-scroll-target="#equations-of-motion-constant-acceleration"><span class="header-section-number">3.4</span> Equations of Motion (Constant Acceleration)</a></li>
+  <li><a href="#rotational-motion-definitions" id="toc-rotational-motion-definitions" class="nav-link" data-scroll-target="#rotational-motion-definitions"><span class="header-section-number">3.5</span> Rotational Motion Definitions</a></li>
+  <li><a href="#equations-of-rotational-motion-constant-angular-acceleration" id="toc-equations-of-rotational-motion-constant-angular-acceleration" class="nav-link" data-scroll-target="#equations-of-rotational-motion-constant-angular-acceleration"><span class="header-section-number">3.6</span> Equations of Rotational Motion (Constant Angular Acceleration)</a></li>
+  <li><a href="#relation-between-linear-and-angular-motion" id="toc-relation-between-linear-and-angular-motion" class="nav-link" data-scroll-target="#relation-between-linear-and-angular-motion"><span class="header-section-number">3.7</span> Relation Between Linear and Angular Motion</a>
+  <ul class="collapse">
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">3.7.1</span> Variables</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points"><span class="header-section-number">3.8</span> Key Points</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">3.9</span> Further Reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-review" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Review</span></span></h1>
+<h1 class="title"><span id="sec-kinematics" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kinematics</span></span></h1>
 </div>
 
 
@@ -207,53 +253,144 @@ div.csl-indent {
 </header>
 
 
-<p>We have used several books by <span class="citation" data-cites="ahrensHowTakeSmart2022">Ahrens (<a href="references.html#ref-ahrensHowTakeSmart2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="polya2014">Polya and Conway (<a href="references.html#ref-polya2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="bird2020">Bird and Ross (<a href="references.html#ref-bird2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="bird2021">Bird (<a href="references.html#ref-bird2021" role="doc-biblioref">2021</a>)</span>. These sources have helped you understand complex concepts.</p>
-<p><a href="SI_Units.html" class="quarto-xref"><span>Chapter 1</span></a>:</p>
+<section id="objectives" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">3.1</span> Objectives</h2>
 <ul>
-<li><p>Purpose of SI Units: Provide a consistent framework for scientific and technical measurements.</p></li>
-<li><p>Advantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.</p></li>
-<li><p>Fundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.</p></li>
-<li><p>Method Name: Unity fraction method.</p></li>
-<li><p>Purpose: Converting one unit of measurement into another.</p></li>
-<li><p>Methodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.</p></li>
+<li>Recall</li>
+<li>Practice</li>
 </ul>
-<p><a href="scalar-and-vector-quantities.html" class="quarto-xref"><span>Chapter 2</span></a>:</p>
+</section>
+<section id="kinematic-equations" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="kinematic-equations"><span class="header-section-number">3.2</span> Kinematic Equations</h2>
+<p>Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (<span class="math inline">\(x\)</span>), initial velocity (<span class="math inline">\(v_0\)</span>), final velocity (<span class="math inline">\(v\)</span>), acceleration (<span class="math inline">\(a\)</span>), and time (<span class="math inline">\(t\)</span>).</p>
+<p>Final velocity as a function of initial velocity, acceleration, and time: <span id="eq-v"><span class="math display">\[
+    v = v_0 + at
+     \tag{3.1}\]</span></span></p>
+<p>Displacement as a function of initial velocity, time, and acceleration: <span id="eq-x"><span class="math display">\[
+    x = v_0 t + \frac{1}{2} a t^2
+     \tag{3.2}\]</span></span></p>
+<p>Displacement as a function of initial velocity, final velocity, and time: <span id="eq-cosx1"><span class="math display">\[
+    x = \frac{(v_0 + v)}{2} t
+     \tag{3.3}\]</span></span></p>
+<p>Final velocity squared as a function of initial velocity, acceleration, and displacement: <span id="eq-v1"><span class="math display">\[
+    v^2 = v_0^2 + 2a x
+     \tag{3.4}\]</span></span></p>
+</section>
+<section id="linear-motion-definitions" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="linear-motion-definitions"><span class="header-section-number">3.3</span> Linear Motion Definitions</h2>
 <ul>
-<li><p>Scalar Definition: A quantity with only magnitude (size).</p></li>
-<li><p>Vector Definition: A quantity with both magnitude and direction.</p></li>
-<li><p>Scalar Examples: Numbers, mass, speed, temperature, volume, and time.</p></li>
-<li><p>Vector Examples: Velocity, acceleration, weight, and friction.</p></li>
+<li><p><span class="math inline">\(\textbf{Speed} (v)\)</span>: The scalar measure of the rate of change of distance. Mathematically, <span class="math display">\[
+  v = \frac{d}{t}
+  \]</span> where (d) is distance and (t) is time.</p></li>
+<li><p><span class="math inline">\(\textbf{Velocity} (\vec{v})\)</span>: The vector measure of the rate of change of displacement. It is given by: <span class="math display">\[
+  \vec{v} = \frac{\Delta \vec{x}}{\Delta t}
+  \]</span> where <span class="math inline">\(\Delta \vec{x}\)</span> is the displacement vector and <span class="math inline">\(\Delta t\)</span> is the time interval.</p></li>
+<li><p><span class="math inline">\(\textbf{Acceleration} (\vec{a})\)</span>: The rate of change of velocity with respect to time. It is defined as: <span class="math display">\[
+  \vec{a} = \frac{\Delta \vec{v}}{\Delta t}
+  \]</span></p></li>
 </ul>
-<p><a href="moment-of-a-force.html" class="quarto-xref"><span>Chapter 4</span></a>:</p>
+</section>
+<section id="equations-of-motion-constant-acceleration" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="equations-of-motion-constant-acceleration"><span class="header-section-number">3.4</span> Equations of Motion (Constant Acceleration)</h2>
+<p><span class="math display">\[
+\vec{v} = \vec{u} + \vec{a}t
+\]</span></p>
+<p><span class="math display">\[
+\vec{s} = \vec{u}t + \frac{1}{2}\vec{a}t^2
+\]</span></p>
+<p><span class="math display">\[
+\vec{v}^2 = \vec{u}^2 + 2\vec{a} \cdot \vec{s}
+\]</span></p>
+<p>where:</p>
 <ul>
-<li><p>Definition of Moment: A mathematical concept representing the product of a distance and a physical quantity.</p></li>
-<li><p>Application of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.</p></li>
-<li><p>Example of Moment: Torque, the moment of force, is the product of force and distance.</p></li>
+<li><span class="math inline">\(\vec{u}\)</span>: Initial velocity</li>
+<li><span class="math inline">\(\vec{v}\)</span>: Final velocity</li>
+<li><span class="math inline">\(\vec{s}\)</span>: Displacement</li>
+<li><span class="math inline">\(\vec{a}\)</span>: Acceleration</li>
+<li><span class="math inline">\(t\)</span>: Time</li>
 </ul>
-<p>As you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.</p>
-<p>We wish you the best on the exam.</p>
+</section>
+<section id="rotational-motion-definitions" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="rotational-motion-definitions"><span class="header-section-number">3.5</span> Rotational Motion Definitions</h2>
+<ul>
+<li><span class="math inline">\(\textbf{Angular Displacement} (\theta)\)</span>: The angle through which an object rotates, measured in radians.</li>
+<li><span class="math inline">\(\textbf{Angular Velocity} (\omega)\)</span>: The rate of change of angular displacement. Mathematically: <span class="math display">\[
+    \omega = \frac{\Delta \theta}{\Delta t}
+    \]</span></li>
+<li><span class="math inline">\(\textbf{Angular Acceleration} (\alpha)\)</span>: The rate of change of angular velocity with respect to time: <span class="math display">\[
+     \alpha = \frac{\Delta \omega}{\Delta t}
+     \]</span></li>
+</ul>
+</section>
+<section id="equations-of-rotational-motion-constant-angular-acceleration" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="equations-of-rotational-motion-constant-angular-acceleration"><span class="header-section-number">3.6</span> Equations of Rotational Motion (Constant Angular Acceleration)</h2>
+<p><span class="math display">\[
+\omega = \omega_0 + \alpha t
+\]</span></p>
+<p><span class="math display">\[
+\theta = \omega\_0 t + \frac{1}{2}\alpha t^2
+\]</span> <span class="math display">\[
+\omega^2 = \omega_0^2 + 2\alpha \theta
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline">\(\omega_0\)</span>: Initial angular velocity</p></li>
+<li><p><span class="math inline">\(\omega\)</span>: Final angular velocity</p></li>
+<li><p><span class="math inline">\(\theta\)</span> Angular displacement</p></li>
+<li><p><span class="math inline">\(\alpha\)</span>: Angular acceleration</p></li>
+<li><p><span class="math inline">\(t\)</span>: Time</p></li>
+</ul>
+</section>
+<section id="relation-between-linear-and-angular-motion" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="relation-between-linear-and-angular-motion"><span class="header-section-number">3.7</span> Relation Between Linear and Angular Motion</h2>
+<p>The relationship between linear and angular motion is described by the following equations:</p>
+<p><span class="math inline">\(v = r \omega\)</span> (linear velocity <span class="math inline">\(v\)</span> and angular velocity <span class="math inline">\(\omega\)</span>),</p>
+<p><span class="math inline">\(a = r \alpha\)</span> (linear acceleration <span class="math inline">\(a\)</span> and angular acceleration <span class="math inline">\(\alpha\)</span>),</p>
+<p><span class="math inline">\(s = r \theta\)</span> (linear displacement <span class="math inline">\(s\)</span> and angular displacement <span class="math inline">\(\theta\)</span>).</p>
+<section id="variables" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="variables"><span class="header-section-number">3.7.1</span> Variables</h3>
+<ul>
+<li><p><span class="math inline">\(v\)</span>: Linear velocity, the rate of change of linear displacement <span class="math inline">\((v = \frac{ds}{dt})\)</span>.</p></li>
+<li><p><span class="math inline">\(a\)</span>: Linear acceleration, the rate of change of linear velocity <span class="math inline">\((a = \frac{dv}{dt})\)</span>.</p></li>
+<li><p><span class="math inline">\(s\)</span>: Linear displacement, the distance moved along the circular path.</p></li>
+<li><p><span class="math inline">\(r\)</span>: Radius of the circular path.</p></li>
+<li><p><span class="math inline">\(\omega\)</span>: Angular velocity, the rate of change of angular displacement <span class="math inline">\((\omega = \frac{d\theta}{dt})\)</span>.</p></li>
+<li><p><span class="math inline">\(\alpha\)</span>: Angular acceleration, the rate of change of angular velocity <span class="math inline">\((\alpha = \frac{d\omega}{dt})\)</span>.</p></li>
+<li><p><span class="math inline">\(\theta\)</span>: Angular displacement, the angle swept by the radius in radians.</p></li>
+</ul>
+</section>
+</section>
+<section id="key-points" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="key-points"><span class="header-section-number">3.8</span> Key Points</h2>
+<ul>
+<li><p>Linear motion is directly proportional to angular motion, with the radius ((r)) acting as the proportionality constant.</p></li>
+<li><p>These equations apply to uniform circular motion as well as accelerated circular motion.</p></li>
+<li><p>Units for the variables:</p>
+<ul>
+<li><p><span class="math inline">\(v\)</span>: meters per second <span class="math inline">\((m/s)\)</span>,</p></li>
+<li><p><span class="math inline">\(a\)</span>: meters per second squared <span class="math inline">\((m/s^2)\)</span>,</p></li>
+<li><p><span class="math inline">\(s\)</span>: meters <span class="math inline">\((m)\)</span>,</p></li>
+<li><p><span class="math inline">\(r\)</span>: meters <span class="math inline">\((m)\)</span>,</p></li>
+<li><p><span class="math inline">\(\omega\)</span>: radians per second <span class="math inline">\((rad/s)\)</span>,</p></li>
+<li><p><span class="math inline">\(\alpha\)</span>: radians per second squared <span class="math inline">\((rad/s^2)\)</span>,</p></li>
+<li><p><span class="math inline">\(\theta\)</span>: radians (<span class="math inline">\(rad\)</span>).</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="further-reading" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">3.9</span> Further Reading</h2>
+<p>Introduction in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span> and SI units in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional information.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-ahrensHowTakeSmart2022" class="csl-entry" role="listitem">
-Ahrens, Sönke. 2022. <em>How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking</em>. 2nd ed. edition. Sönke Ahrens.
-</div>
-<div id="ref-bird2021" class="csl-entry" role="listitem">
-Bird, J. O. 2021. <em>Bird’s Engineering Mathematics</em>. Ninth edition. Abingdon, Oxon ; New York: Routledge.
-</div>
-<div id="ref-bird2020" class="csl-entry" role="listitem">
-Bird, J. O., and C. T. F. Ross. 2020. <em>Mechanical Engineering Principles</em>. Fourth edition. Abingdon, Oxon: Routledge.
-</div>
 <div id="ref-bolton2021" class="csl-entry" role="listitem">
 Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
-</div>
-<div id="ref-polya2014" class="csl-entry" role="listitem">
-Polya, G., and John H. Conway. 2014. <em>How to Solve It: A New Aspect of Mathematical Method</em>. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.
 </div>
 <div id="ref-russell2021" class="csl-entry" role="listitem">
 Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -819,13 +956,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./moment-of-a-force.html" class="pagination-link" aria-label="Moment of a Force">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Moment of a Force</span></span>
+      <a href="./scalar-and-vector-quantities.html" class="pagination-link" aria-label="Scalar and Vector Quantities">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Scalar and Vector Quantities</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./moment-of-a-force.html" class="pagination-link" aria-label="Moment of a Force">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Moment of a Force</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

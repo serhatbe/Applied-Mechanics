@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Applied Mechanics Workbook",
     "section": "",
-    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n4  Review: Review section",
+    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n5  Review: Review section",
     "crumbs": [
       "Preface"
     ]
@@ -270,73 +270,173 @@
     ]
   },
   {
-    "objectID": "moment-of-a-force.html",
-    "href": "moment-of-a-force.html",
-    "title": "3  Moment of a Force",
+    "objectID": "kinematics.html",
+    "href": "kinematics.html",
+    "title": "3  Kinematics",
     "section": "",
     "text": "3.1 Objectives",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#objectives",
+    "href": "kinematics.html#objectives",
+    "title": "3  Kinematics",
+    "section": "",
+    "text": "Recall\nPractice",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#kinematic-equations",
+    "href": "kinematics.html#kinematic-equations",
+    "title": "3  Kinematics",
+    "section": "3.2 Kinematic Equations",
+    "text": "3.2 Kinematic Equations\nKinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\nFinal velocity as a function of initial velocity, acceleration, and time: \\[\n    v = v_0 + at\n     \\tag{3.1}\\]\nDisplacement as a function of initial velocity, time, and acceleration: \\[\n    x = v_0 t + \\frac{1}{2} a t^2\n     \\tag{3.2}\\]\nDisplacement as a function of initial velocity, final velocity, and time: \\[\n    x = \\frac{(v_0 + v)}{2} t\n     \\tag{3.3}\\]\nFinal velocity squared as a function of initial velocity, acceleration, and displacement: \\[\n    v^2 = v_0^2 + 2a x\n     \\tag{3.4}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#linear-motion-definitions",
+    "href": "kinematics.html#linear-motion-definitions",
+    "title": "3  Kinematics",
+    "section": "3.3 Linear Motion Definitions",
+    "text": "3.3 Linear Motion Definitions\n\n\\(\\textbf{Speed} (v)\\): The scalar measure of the rate of change of distance. Mathematically, \\[\n  v = \\frac{d}{t}\n  \\] where (d) is distance and (t) is time.\n\\(\\textbf{Velocity} (\\vec{v})\\): The vector measure of the rate of change of displacement. It is given by: \\[\n  \\vec{v} = \\frac{\\Delta \\vec{x}}{\\Delta t}\n  \\] where \\(\\Delta \\vec{x}\\) is the displacement vector and \\(\\Delta t\\) is the time interval.\n\\(\\textbf{Acceleration} (\\vec{a})\\): The rate of change of velocity with respect to time. It is defined as: \\[\n  \\vec{a} = \\frac{\\Delta \\vec{v}}{\\Delta t}\n  \\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#equations-of-motion-constant-acceleration",
+    "href": "kinematics.html#equations-of-motion-constant-acceleration",
+    "title": "3  Kinematics",
+    "section": "3.4 Equations of Motion (Constant Acceleration)",
+    "text": "3.4 Equations of Motion (Constant Acceleration)\n\\[\n\\vec{v} = \\vec{u} + \\vec{a}t\n\\]\n\\[\n\\vec{s} = \\vec{u}t + \\frac{1}{2}\\vec{a}t^2\n\\]\n\\[\n\\vec{v}^2 = \\vec{u}^2 + 2\\vec{a} \\cdot \\vec{s}\n\\]\nwhere:\n\n\\(\\vec{u}\\): Initial velocity\n\\(\\vec{v}\\): Final velocity\n\\(\\vec{s}\\): Displacement\n\\(\\vec{a}\\): Acceleration\n\\(t\\): Time",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#rotational-motion-definitions",
+    "href": "kinematics.html#rotational-motion-definitions",
+    "title": "3  Kinematics",
+    "section": "3.5 Rotational Motion Definitions",
+    "text": "3.5 Rotational Motion Definitions\n\n\\(\\textbf{Angular Displacement} (\\theta)\\): The angle through which an object rotates, measured in radians.\n\\(\\textbf{Angular Velocity} (\\omega)\\): The rate of change of angular displacement. Mathematically: \\[\n    \\omega = \\frac{\\Delta \\theta}{\\Delta t}\n    \\]\n\\(\\textbf{Angular Acceleration} (\\alpha)\\): The rate of change of angular velocity with respect to time: \\[\n     \\alpha = \\frac{\\Delta \\omega}{\\Delta t}\n     \\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#equations-of-rotational-motion-constant-angular-acceleration",
+    "href": "kinematics.html#equations-of-rotational-motion-constant-angular-acceleration",
+    "title": "3  Kinematics",
+    "section": "3.6 Equations of Rotational Motion (Constant Angular Acceleration)",
+    "text": "3.6 Equations of Rotational Motion (Constant Angular Acceleration)\n\\[\n\\omega = \\omega_0 + \\alpha t\n\\]\n\\[\n\\theta = \\omega\\_0 t + \\frac{1}{2}\\alpha t^2\n\\] \\[\n\\omega^2 = \\omega_0^2 + 2\\alpha \\theta\n\\]\nwhere:\n\n\\(\\omega_0\\): Initial angular velocity\n\\(\\omega\\): Final angular velocity\n\\(\\theta\\) Angular displacement\n\\(\\alpha\\): Angular acceleration\n\\(t\\): Time",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#relation-between-linear-and-angular-motion",
+    "href": "kinematics.html#relation-between-linear-and-angular-motion",
+    "title": "3  Kinematics",
+    "section": "3.7 Relation Between Linear and Angular Motion",
+    "text": "3.7 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)),\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)),\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\n3.7.1 Variables\n\n\\(v\\): Linear velocity, the rate of change of linear displacement \\((v = \\frac{ds}{dt})\\).\n\\(a\\): Linear acceleration, the rate of change of linear velocity \\((a = \\frac{dv}{dt})\\).\n\\(s\\): Linear displacement, the distance moved along the circular path.\n\\(r\\): Radius of the circular path.\n\\(\\omega\\): Angular velocity, the rate of change of angular displacement \\((\\omega = \\frac{d\\theta}{dt})\\).\n\\(\\alpha\\): Angular acceleration, the rate of change of angular velocity \\((\\alpha = \\frac{d\\omega}{dt})\\).\n\\(\\theta\\): Angular displacement, the angle swept by the radius in radians.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#key-points",
+    "href": "kinematics.html#key-points",
+    "title": "3  Kinematics",
+    "section": "3.8 Key Points",
+    "text": "3.8 Key Points\n\nLinear motion is directly proportional to angular motion, with the radius ((r)) acting as the proportionality constant.\nThese equations apply to uniform circular motion as well as accelerated circular motion.\nUnits for the variables:\n\n\\(v\\): meters per second \\((m/s)\\),\n\\(a\\): meters per second squared \\((m/s^2)\\),\n\\(s\\): meters \\((m)\\),\n\\(r\\): meters \\((m)\\),\n\\(\\omega\\): radians per second \\((rad/s)\\),\n\\(\\alpha\\): radians per second squared \\((rad/s^2)\\),\n\\(\\theta\\): radians (\\(rad\\)).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "kinematics.html#further-reading",
+    "href": "kinematics.html#further-reading",
+    "title": "3  Kinematics",
+    "section": "3.9 Further Reading",
+    "text": "3.9 Further Reading\nIntroduction in Russell, Jackson, and Embleton (2021) and SI units in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
+    ]
+  },
+  {
+    "objectID": "moment-of-a-force.html",
+    "href": "moment-of-a-force.html",
+    "title": "4  Moment of a Force",
+    "section": "",
+    "text": "4.1 Objectives",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#objectives",
     "href": "moment-of-a-force.html#objectives",
-    "title": "3  Moment of a Force",
+    "title": "4  Moment of a Force",
     "section": "",
     "text": "Recall.\nPractice the application.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#concepts",
     "href": "moment-of-a-force.html#concepts",
-    "title": "3  Moment of a Force",
-    "section": "3.2 Concepts",
-    "text": "3.2 Concepts",
+    "title": "4  Moment of a Force",
+    "section": "4.2 Concepts",
+    "text": "4.2 Concepts",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#classwork",
     "href": "moment-of-a-force.html#classwork",
-    "title": "3  Moment of a Force",
-    "section": "3.3 Classwork",
-    "text": "3.3 Classwork",
+    "title": "4  Moment of a Force",
+    "section": "4.3 Classwork",
+    "text": "4.3 Classwork",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#problem-set",
     "href": "moment-of-a-force.html#problem-set",
-    "title": "3  Moment of a Force",
-    "section": "3.4 Problem Set",
-    "text": "3.4 Problem Set",
+    "title": "4  Moment of a Force",
+    "section": "4.4 Problem Set",
+    "text": "4.4 Problem Set",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#further-reading",
     "href": "moment-of-a-force.html#further-reading",
-    "title": "3  Moment of a Force",
-    "section": "3.5 Further Reading",
-    "text": "3.5 Further Reading\nRead Chapter 7 in Russell, Jackson, and Embleton (2021), Chapter 1 in Hannah and Hillier (1995) and Chapter 2 in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd edition. Harlow: Longman Pub Group.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "title": "4  Moment of a Force",
+    "section": "4.5 Further Reading",
+    "text": "4.5 Further Reading\nRead Chapter 7 in Russell, Jackson, and Embleton (2021), Chapter 1 in Hannah and Hillier (1995) and Chapter 2 in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd edition. Harlow: Longman Pub Group.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "review.html",
     "href": "review.html",
-    "title": "4  Review",
+    "title": "5  Review",
     "section": "",
-    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 4:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Review</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Review</span>"
     ]
   },
   {
