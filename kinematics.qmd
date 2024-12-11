@@ -5,26 +5,6 @@
 -   Recall
 -   Practice
 
-## Kinematic Equations
-
-Kinematic equations\index{Kinematic equations} describe the motion of objects under constant acceleration. They relate displacement ($x$), initial velocity ($v_0$), final velocity ($v$), acceleration ($a$), and time ($t$).
-
-Final velocity as a function of initial velocity, acceleration, and time: $$
-    v = v_0 + at
-    $$ {#eq-v}
-
-Displacement as a function of initial velocity, time, and acceleration: $$
-    x = v_0 t + \frac{1}{2} a t^2
-    $$ {#eq-x}
-
-Displacement as a function of initial velocity, final velocity, and time: $$
-    x = \frac{(v_0 + v)}{2} t
-    $$ {#eq-cosx1}
-
-Final velocity squared as a function of initial velocity, acceleration, and displacement: $$
-    v^2 = v_0^2 + 2a x
-    $$ {#eq-v1}
-
 ## Linear Motion Definitions
 
 -   $\textbf{Speed} (v)$: The scalar measure of the rate of change of distance. Mathematically, $$
@@ -39,10 +19,16 @@ Final velocity squared as a function of initial velocity, acceleration, and disp
       \vec{a} = \frac{\Delta \vec{v}}{\Delta t}
       $$
 
+{{< pagebreak >}}
+
 ## Equations of Motion (Constant Acceleration)
 
 $$
 \vec{v} = \vec{u} + \vec{a}t
+$$
+
+$$
+\vec{s} = \frac{\vec{u}+\vec{v}}{2}t
 $$
 
 $$
@@ -61,49 +47,67 @@ where:
 -   $\vec{a}$: Acceleration
 -   $t$: Time
 
-## Rotational Motion Definitions
+{{< pagebreak >}}
+
+## Angular Motion Definitions
 
 -   $\textbf{Angular Displacement} (\theta)$: The angle through which an object rotates, measured in radians.
+
+    ![](images/angulardisp.png){width="310"}
+
 -   $\textbf{Angular Velocity} (\omega)$: The rate of change of angular displacement. Mathematically: $$
         \omega = \frac{\Delta \theta}{\Delta t}
-        $$
+        $$ $$
+    \omega (rad/s) =2\pi n \:where\:n=speed\:in\:rev/s
+    $$
+
 -   $\textbf{Angular Acceleration} (\alpha)$: The rate of change of angular velocity with respect to time: $$
          \alpha = \frac{\Delta \omega}{\Delta t}
          $$
 
-## Equations of Rotational Motion (Constant Angular Acceleration)
+{{< pagebreak >}}
+
+## Equations of Angular Motion (Constant Angular Acceleration)
 
 $$
-\omega = \omega_0 + \alpha t
+\omega_2 = \omega_1 \mp \alpha t
 $$
 
 $$
-\theta = \omega\_0 t + \frac{1}{2}\alpha t^2 
-$$ $$
-\omega^2 = \omega_0^2 + 2\alpha \theta
+\theta = \frac{\omega_1+\omega_2}{2}t
+$$
+
+$$
+\theta = \omega_1 t \mp \frac{1}{2}\alpha t^2 
+$$
+
+$$
+\omega_2^2 = \omega_1^2 \mp 2\alpha \theta
 $$
 
 where:
 
--   $\omega_0$: Initial angular velocity
+-   $\omega_1$: Initial angular velocity (rad/s)
 
--   $\omega$: Final angular velocity
+-   $\omega_2$: Final angular velocity (rad/s)
 
--   $\theta$ Angular displacement
+-   $\theta$ Angular displacement (rad)
 
--   $\alpha$: Angular acceleration
+-   $\alpha$: Angular acceleration (rad/s^2^)
 
--   $t$: Time
+-   $t$: Time (s)
+
+{{< pagebreak >}}
 
 ## Relation Between Linear and Angular Motion
 
 The relationship between linear and angular motion is described by the following equations:
 
+$s = r \theta$ (linear displacement $s$ and angular displacement $\theta$).
+
 $v = r \omega$ (linear velocity $v$ and angular velocity $\omega$),
 
 $a = r \alpha$ (linear acceleration $a$ and angular acceleration $\alpha$),
-
-$s = r \theta$ (linear displacement $s$ and angular displacement $\theta$).
 
 ### Variables
 
@@ -123,9 +127,7 @@ $s = r \theta$ (linear displacement $s$ and angular displacement $\theta$).
 
 ## Key Points
 
--   Linear motion is directly proportional to angular motion, with the radius ((r)) acting as the proportionality constant.
-
--   These equations apply to uniform circular motion as well as accelerated circular motion.
+-   Linear motion is directly proportional to angular motion, with the radius ($r$) acting as the proportionality constant.
 
 -   Units for the variables:
 

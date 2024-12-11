@@ -290,21 +290,11 @@
     ]
   },
   {
-    "objectID": "kinematics.html#kinematic-equations",
-    "href": "kinematics.html#kinematic-equations",
-    "title": "3  Kinematics",
-    "section": "3.2 Kinematic Equations",
-    "text": "3.2 Kinematic Equations\nKinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\nFinal velocity as a function of initial velocity, acceleration, and time: \\[\n    v = v_0 + at\n     \\tag{3.1}\\]\nDisplacement as a function of initial velocity, time, and acceleration: \\[\n    x = v_0 t + \\frac{1}{2} a t^2\n     \\tag{3.2}\\]\nDisplacement as a function of initial velocity, final velocity, and time: \\[\n    x = \\frac{(v_0 + v)}{2} t\n     \\tag{3.3}\\]\nFinal velocity squared as a function of initial velocity, acceleration, and displacement: \\[\n    v^2 = v_0^2 + 2a x\n     \\tag{3.4}\\]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
-    ]
-  },
-  {
     "objectID": "kinematics.html#linear-motion-definitions",
     "href": "kinematics.html#linear-motion-definitions",
     "title": "3  Kinematics",
-    "section": "3.3 Linear Motion Definitions",
-    "text": "3.3 Linear Motion Definitions\n\n\\(\\textbf{Speed} (v)\\): The scalar measure of the rate of change of distance. Mathematically, \\[\n  v = \\frac{d}{t}\n  \\] where (d) is distance and (t) is time.\n\\(\\textbf{Velocity} (\\vec{v})\\): The vector measure of the rate of change of displacement. It is given by: \\[\n  \\vec{v} = \\frac{\\Delta \\vec{x}}{\\Delta t}\n  \\] where \\(\\Delta \\vec{x}\\) is the displacement vector and \\(\\Delta t\\) is the time interval.\n\\(\\textbf{Acceleration} (\\vec{a})\\): The rate of change of velocity with respect to time. It is defined as: \\[\n  \\vec{a} = \\frac{\\Delta \\vec{v}}{\\Delta t}\n  \\]",
+    "section": "3.2 Linear Motion Definitions",
+    "text": "3.2 Linear Motion Definitions\n\n\\(\\textbf{Speed} (v)\\): The scalar measure of the rate of change of distance. Mathematically, \\[\n  v = \\frac{d}{t}\n  \\] where (d) is distance and (t) is time.\n\\(\\textbf{Velocity} (\\vec{v})\\): The vector measure of the rate of change of displacement. It is given by: \\[\n  \\vec{v} = \\frac{\\Delta \\vec{x}}{\\Delta t}\n  \\] where \\(\\Delta \\vec{x}\\) is the displacement vector and \\(\\Delta t\\) is the time interval.\n\\(\\textbf{Acceleration} (\\vec{a})\\): The rate of change of velocity with respect to time. It is defined as: \\[\n  \\vec{a} = \\frac{\\Delta \\vec{v}}{\\Delta t}\n  \\]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
@@ -313,28 +303,28 @@
     "objectID": "kinematics.html#equations-of-motion-constant-acceleration",
     "href": "kinematics.html#equations-of-motion-constant-acceleration",
     "title": "3  Kinematics",
-    "section": "3.4 Equations of Motion (Constant Acceleration)",
-    "text": "3.4 Equations of Motion (Constant Acceleration)\n\\[\n\\vec{v} = \\vec{u} + \\vec{a}t\n\\]\n\\[\n\\vec{s} = \\vec{u}t + \\frac{1}{2}\\vec{a}t^2\n\\]\n\\[\n\\vec{v}^2 = \\vec{u}^2 + 2\\vec{a} \\cdot \\vec{s}\n\\]\nwhere:\n\n\\(\\vec{u}\\): Initial velocity\n\\(\\vec{v}\\): Final velocity\n\\(\\vec{s}\\): Displacement\n\\(\\vec{a}\\): Acceleration\n\\(t\\): Time",
+    "section": "3.3 Equations of Motion (Constant Acceleration)",
+    "text": "3.3 Equations of Motion (Constant Acceleration)\n\\[\n\\vec{v} = \\vec{u} + \\vec{a}t\n\\]\n\\[\n\\vec{s} = \\frac{\\vec{u}+\\vec{v}}{2}t\n\\]\n\\[\n\\vec{s} = \\vec{u}t + \\frac{1}{2}\\vec{a}t^2\n\\]\n\\[\n\\vec{v}^2 = \\vec{u}^2 + 2\\vec{a} \\cdot \\vec{s}\n\\]\nwhere:\n\n\\(\\vec{u}\\): Initial velocity\n\\(\\vec{v}\\): Final velocity\n\\(\\vec{s}\\): Displacement\n\\(\\vec{a}\\): Acceleration\n\\(t\\): Time",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
   },
   {
-    "objectID": "kinematics.html#rotational-motion-definitions",
-    "href": "kinematics.html#rotational-motion-definitions",
+    "objectID": "kinematics.html#angular-motion-definitions",
+    "href": "kinematics.html#angular-motion-definitions",
     "title": "3  Kinematics",
-    "section": "3.5 Rotational Motion Definitions",
-    "text": "3.5 Rotational Motion Definitions\n\n\\(\\textbf{Angular Displacement} (\\theta)\\): The angle through which an object rotates, measured in radians.\n\\(\\textbf{Angular Velocity} (\\omega)\\): The rate of change of angular displacement. Mathematically: \\[\n    \\omega = \\frac{\\Delta \\theta}{\\Delta t}\n    \\]\n\\(\\textbf{Angular Acceleration} (\\alpha)\\): The rate of change of angular velocity with respect to time: \\[\n     \\alpha = \\frac{\\Delta \\omega}{\\Delta t}\n     \\]",
+    "section": "3.4 Angular Motion Definitions",
+    "text": "3.4 Angular Motion Definitions\n\n\\(\\textbf{Angular Displacement} (\\theta)\\): The angle through which an object rotates, measured in radians.\n\n\\(\\textbf{Angular Velocity} (\\omega)\\): The rate of change of angular displacement. Mathematically: \\[\n    \\omega = \\frac{\\Delta \\theta}{\\Delta t}\n    \\] \\[\n\\omega (rad/s) =2\\pi n \\:where\\:n=speed\\:in\\:rev/s\n\\]\n\\(\\textbf{Angular Acceleration} (\\alpha)\\): The rate of change of angular velocity with respect to time: \\[\n     \\alpha = \\frac{\\Delta \\omega}{\\Delta t}\n     \\]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
   },
   {
-    "objectID": "kinematics.html#equations-of-rotational-motion-constant-angular-acceleration",
-    "href": "kinematics.html#equations-of-rotational-motion-constant-angular-acceleration",
+    "objectID": "kinematics.html#equations-of-angular-motion-constant-angular-acceleration",
+    "href": "kinematics.html#equations-of-angular-motion-constant-angular-acceleration",
     "title": "3  Kinematics",
-    "section": "3.6 Equations of Rotational Motion (Constant Angular Acceleration)",
-    "text": "3.6 Equations of Rotational Motion (Constant Angular Acceleration)\n\\[\n\\omega = \\omega_0 + \\alpha t\n\\]\n\\[\n\\theta = \\omega\\_0 t + \\frac{1}{2}\\alpha t^2\n\\] \\[\n\\omega^2 = \\omega_0^2 + 2\\alpha \\theta\n\\]\nwhere:\n\n\\(\\omega_0\\): Initial angular velocity\n\\(\\omega\\): Final angular velocity\n\\(\\theta\\) Angular displacement\n\\(\\alpha\\): Angular acceleration\n\\(t\\): Time",
+    "section": "3.5 Equations of Angular Motion (Constant Angular Acceleration)",
+    "text": "3.5 Equations of Angular Motion (Constant Angular Acceleration)\n\\[\n\\omega_2 = \\omega_1 \\mp \\alpha t\n\\]\n\\[\n\\theta = \\frac{\\omega_1+\\omega_2}{2}t\n\\]\n\\[\n\\theta = \\omega_1 t \\mp \\frac{1}{2}\\alpha t^2\n\\]\n\\[\n\\omega_2^2 = \\omega_1^2 \\mp 2\\alpha \\theta\n\\]\nwhere:\n\n\\(\\omega_1\\): Initial angular velocity (rad/s)\n\\(\\omega_2\\): Final angular velocity (rad/s)\n\\(\\theta\\) Angular displacement (rad)\n\\(\\alpha\\): Angular acceleration (rad/s2)\n\\(t\\): Time (s)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
@@ -343,8 +333,8 @@
     "objectID": "kinematics.html#relation-between-linear-and-angular-motion",
     "href": "kinematics.html#relation-between-linear-and-angular-motion",
     "title": "3  Kinematics",
-    "section": "3.7 Relation Between Linear and Angular Motion",
-    "text": "3.7 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)),\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)),\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\n3.7.1 Variables\n\n\\(v\\): Linear velocity, the rate of change of linear displacement \\((v = \\frac{ds}{dt})\\).\n\\(a\\): Linear acceleration, the rate of change of linear velocity \\((a = \\frac{dv}{dt})\\).\n\\(s\\): Linear displacement, the distance moved along the circular path.\n\\(r\\): Radius of the circular path.\n\\(\\omega\\): Angular velocity, the rate of change of angular displacement \\((\\omega = \\frac{d\\theta}{dt})\\).\n\\(\\alpha\\): Angular acceleration, the rate of change of angular velocity \\((\\alpha = \\frac{d\\omega}{dt})\\).\n\\(\\theta\\): Angular displacement, the angle swept by the radius in radians.",
+    "section": "3.6 Relation Between Linear and Angular Motion",
+    "text": "3.6 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)),\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)),\n\n3.6.1 Variables\n\n\\(v\\): Linear velocity, the rate of change of linear displacement \\((v = \\frac{ds}{dt})\\).\n\\(a\\): Linear acceleration, the rate of change of linear velocity \\((a = \\frac{dv}{dt})\\).\n\\(s\\): Linear displacement, the distance moved along the circular path.\n\\(r\\): Radius of the circular path.\n\\(\\omega\\): Angular velocity, the rate of change of angular displacement \\((\\omega = \\frac{d\\theta}{dt})\\).\n\\(\\alpha\\): Angular acceleration, the rate of change of angular velocity \\((\\alpha = \\frac{d\\omega}{dt})\\).\n\\(\\theta\\): Angular displacement, the angle swept by the radius in radians.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
@@ -353,8 +343,8 @@
     "objectID": "kinematics.html#key-points",
     "href": "kinematics.html#key-points",
     "title": "3  Kinematics",
-    "section": "3.8 Key Points",
-    "text": "3.8 Key Points\n\nLinear motion is directly proportional to angular motion, with the radius ((r)) acting as the proportionality constant.\nThese equations apply to uniform circular motion as well as accelerated circular motion.\nUnits for the variables:\n\n\\(v\\): meters per second \\((m/s)\\),\n\\(a\\): meters per second squared \\((m/s^2)\\),\n\\(s\\): meters \\((m)\\),\n\\(r\\): meters \\((m)\\),\n\\(\\omega\\): radians per second \\((rad/s)\\),\n\\(\\alpha\\): radians per second squared \\((rad/s^2)\\),\n\\(\\theta\\): radians (\\(rad\\)).",
+    "section": "3.7 Key Points",
+    "text": "3.7 Key Points\n\nLinear motion is directly proportional to angular motion, with the radius (\\(r\\)) acting as the proportionality constant.\nUnits for the variables:\n\n\\(v\\): meters per second \\((m/s)\\),\n\\(a\\): meters per second squared \\((m/s^2)\\),\n\\(s\\): meters \\((m)\\),\n\\(r\\): meters \\((m)\\),\n\\(\\omega\\): radians per second \\((rad/s)\\),\n\\(\\alpha\\): radians per second squared \\((rad/s^2)\\),\n\\(\\theta\\): radians (\\(rad\\)).",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
@@ -363,8 +353,8 @@
     "objectID": "kinematics.html#further-reading",
     "href": "kinematics.html#further-reading",
     "title": "3  Kinematics",
-    "section": "3.9 Further Reading",
-    "text": "3.9 Further Reading\nIntroduction in Russell, Jackson, and Embleton (2021) and SI units in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "section": "3.8 Further Reading",
+    "text": "3.8 Further Reading\nIntroduction in Russell, Jackson, and Embleton (2021) and SI units in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
