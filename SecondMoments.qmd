@@ -1,0 +1,179 @@
+---
+title: "Second Moments"
+---
+
+## Second Moment Calculations
+
+The **second moment**, or **moment of inertia**, measures how an area or mass is distributed about an axis. Below are the key concepts and formulas.
+
+### 1. General Formula
+
+The second moment of area about the (x)-axis or (y)-axis is: $$
+I_x = \int_A y^2 \, dA, \quad I_y = \int_A x^2 \, dA
+$$
+
+### 2. Polar Moment of Inertia
+
+The polar moment of inertia about the origin is: $$
+J = \int_A \left(x^2 + y^2\right) \, dA
+$$
+
+### 3. Composite Areas
+
+For a composite area, the total moment of inertia is the sum of the moments of its components: $$
+I_{\text{total}} = \sum I_i
+$$ For each component: $$
+I_i = I_{c,i} + A_i d_i^2
+$$
+
+### 4. Parallel Axis Theorem
+
+To find the moment of inertia about an axis parallel to the centroidal axis: $$
+I = I_c + A d^2
+$$
+
+### 5. Moments of Common Shapes
+
+#### Rectangle
+
+For a rectangle with base (b) and height (h): $$
+I_x = \frac{b h^3}{12}, \quad I_y = \frac{b^3 h}{12}
+$$
+
+#### Circle
+
+For a circle with radius (r): $$
+I_x = I_y = \frac{\pi r^4}{4}, \quad J = \frac{\pi r^4}{2}
+$$
+
+#### Triangle
+
+For a triangle with base (b) and height (h): $$
+I_x = \frac{b h^3}{36}, \quad I_y = \frac{h b^3}{36}
+$$
+
+## Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis
+
+We calculate the **moment of inertia** of a rectangle about its **centroidal** $x$-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at $y = h/2$ (mid-height of the rectangle).
+
+## 1. Moment of Inertia Formula
+
+The formula for the moment of inertia is:
+
+$$
+I = \int y^2 \, dA
+$$
+
+Here:
+
+-   $y$: distance from the axis of rotation (centroidal axis in this case),
+
+-   $dA$: the infinitesimal area element.
+
+## 2. Setup for the Rectangle
+
+-   The rectangle is centered on the centroidal $x$-axis, so the height ranges from $y = -h/2$ to $y = h/2$.
+
+-   The width of the rectangle is $b$.
+
+-   The infinitesimal area element is $dA = b \, dy$.
+
+The integral becomes:
+
+$$
+I_{\text{centroidal}} = \int_{-h/2}^{h/2} y^2 \, b \, dy
+$$
+
+## 3. Solve the Integral
+
+Factor $b$ (constant width) outside of the integral:
+
+$$
+I_{\text{centroidal}} = b \int_{-h/2}^{h/2} y^2 \, dy
+$$
+
+The integral of $y^2$ is:
+
+$$
+\int y^2 \, dy = \frac{y^3}{3}
+$$
+
+Apply the limits $y = -h/2$ to $y = h/2$:
+
+$$
+I_{\text{centroidal}} = b \left[ \frac{y^3}{3} \right]_{-h/2}^{h/2}
+$$
+
+Substitute the limits:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{(h/2)^3}{3} - \frac{(-h/2)^3}{3} \right)
+$$
+
+Since $(-h/2)^3 = -(h/2)^3$, the terms simplify:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{(h/2)^3}{3} + \frac{(h/2)^3}{3} \right)
+$$
+
+Combine the terms:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{2(h/2)^3}{3} \right)
+$$
+
+Simplify $(h/2)^3 = \frac{h^3}{8}$:
+
+$$
+I_{\text{centroidal}} = b \cdot \frac{2}{3} \cdot \frac{h^3}{8}
+$$
+
+$$
+I_{\text{centroidal}} = b \cdot \frac{h^3}{12}
+$$
+
+## 4. Final Result
+
+The moment of inertia of a rectangle about its centroidal $x$-axis is:
+
+$$
+I_{\text{centroidal}} = \frac{b h^3}{12}
+$$
+
+This is the standard formula for the moment of inertia of a rectangle about its centroidal axis.
+
+## Difference Between First Moment and Second Moment
+
+The **first moment** and **second moment** are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:
+
+## 1. First Moment
+
+-   **Definition**: The first moment measures the mean or center of mass relative to a reference point.
+-   **Formula**: $$
+    M_1 = \sum (x_i \cdot f_i)
+    $$ where $x_i$ is a value, and $f_i$ is its weight.
+-   **Physical Interpretation**: In mechanics, it determines the center of mass or centroid of an object.
+
+## 2. Second Moment
+
+-   **Definition**: The second moment measures the spread or dispersion of values around a reference point.
+
+-   **Formula**: $$
+    M_2 = \sum (x_i^2 \cdot f_i)
+    $$
+
+    where $x_i$ is a value, and $f_i$ is its weight.
+
+-   **Physical Interpretation**: In mechanics, the second moment of area ($I$) is used to describe an object's resistance to bending or torsion (e.g., the moment of inertia).
+
+## Key Differences
+
+| Feature | First Moment | Second Moment |
+|------------------------|------------------------|------------------------|
+| **Reference** | Measures position relative to a point (e.g., centroid). | Measures spread relative to a point. |
+| **Physical Meaning** | Indicates center or balance point. | Indicates resistance or spread. |
+| **Example (Physics)** | Center of mass. | Moment of inertia. |
+
+In summary, the **first moment** tells you *where things are*, while the **second moment** tells you *how far things are spread*.
+
+## 

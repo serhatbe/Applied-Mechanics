@@ -5,11 +5,255 @@
 -   Recall.
 -   Practice the application.
 
-## Concepts
+## Definitions
 
-## Classwork
+Centre of Gravity (CG): The point where the entire weight of an object acts, and at which gravity can be considered to apply. CG depends on the distribution of mass and gravity.
 
-## Problem Set
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Weights}{\sum Weights} \qquad \bar{y} = \frac{ \sum Moments\ of\ Weights}{\sum Weights}
+$$ {#eq-weights}
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Volumes}{\sum Volumes} \qquad \bar{y} = \frac{ \sum Moments\ of\ Volumes}{\sum Volumes}
+$$ {#eq-volumes}
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Areas}{\sum Areas} \qquad \bar{y} = \frac{ \sum Moments\ of\ Areas}{\sum Areas}
+$$ {#eq-areas}
+
+Centroid: The geometric center of a shape or object, determined purely by its geometry and independent of mass or weight distribution. The centroid of a uniform shape coincides with the center of gravity because the mass is evenly distributed.
+
+$$
+\bar{x} = \frac{ \sum {\bar{x}_i}\ A_i}{\sum A_i} \qquad \bar{y} = \frac{ \sum {\bar{y}_i}\ A_i}{\sum A_i}
+$$ {#eq-centroids}
+
+## Properties of Common Shapes
+
+In @tbl-centroids, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.
+
+{{< pagebreak >}}
+
+| Shape | Area | $\bar{x}$ | $\bar{y}$ |
+|:--:|:--:|:--:|:--:|
+| ![](images/centroids-rectangle.png) | $A = b h$ | $b/2$ | $h/2$ |
+| ![](images/centroids-triangle.png) | $\dfrac{bh}{2}$ | $b/3$ | $h/3$ |
+| ![](images/centroids-trapezoid.png) | $\dfrac{(a+b) h}{2}$ | $\dfrac{a^2 +ab + b^2}{3 (a+b)}$ | $\dfrac{h(2a+b)}{3(a+b)}$ |
+| ![](images/centroids-circle.png) | $\pi r^2$ | $r$ | $r$ |
+| ![](images/centroids-semi-circle.png) | $\dfrac{\pi r^2}{2}$ | $r$ | $\dfrac{4 r}{3 \pi}$ |
+| ![](images/centroids-quarter-circle.png) | $\dfrac{\pi r^2}{4}$ | $\dfrac{4 r}{3 \pi}$ | $\dfrac{4 r}{3 \pi}$ |
+
+: Centroids of Common Shapes {#tbl-centroids}
+
+{{< pagebreak >}}
+
+## Centroids using Composite Parts
+
+In this section we will discuss how to find centroids of two-dimensional shapes by first dividing them into pieces with known properties, and then combining the pieces to find the centroid of the original shape. This method will work when the geometric properties of all the sub-shapes are known or can be easily determined. The equations we will use for this approach are
+
+$$
+\bar{x} = \frac{ \sum {\bar{x}_i}\ A_i}{\sum A_i} \qquad \bar{y} = \frac{ \sum {\bar{y}_i}\ A_i}{\sum A_i}
+$$
+
+Consider the complex shape below.
+
+![](images/composite-ex-0.png)
+
+There are often several ways to divide a shape, but it’s best to use as few parts as possible to minimize your computations and opportunities for error. For example, you could choose to break this shape into either a rectangle, a right triangle, and an circular hole:
+
+![](images/composite-ex-1.png)
+
+Once the complex shape has been divided into parts, the next step is to determine the area and centroidal coordinates for each part.
+
+| Part     | $A_i$   | $\bar{x}_i$ | $\bar{y}_i$ | $A_i \bar{x}_i$ | $A_i \bar{y}_i$ |
+|----------|---------|-------------|-------------|-----------------|-----------------|
+| 1        | 20      | 2.5         | 2           | 50              | 40              |
+| 2        | 12      | 7           | 4/3         | 84              | 16              |
+| 3        | -7.0685 | 3           | 2           | -21.2057        | -14.1371        |
+| $\Sigma$ | 24.9315 | —           | —           | 112.7943        | 41.8629         |
+
+The last two columns of the table contain the first moments of area $Q_x = A_i \bar{y}_i$ and $Q_y = A_i \bar{x}_i\text{,}$, and are easily filled in by multiplying the values in columns two to four. Be sure to attend to positive and negative signs when multiplying. Note that the moment of area with respect to the $x$ axis uses the distance from the $x$ axis, which is $\bar{y}_i\text{,}$, and vice-versa.
+
+$$
+\bar{x}  = \frac{Q_y}{A}  = \frac{112.8}{24.93}  = {4.52}\ cm
+$$ $$
+\bar{y}  = \frac{Q_x}{A}  = \frac{41.86}{24.93}  = {1.692}\ cm
+$$
+
+Finally, plot the centroid $(\bar{x}, \bar{y})$ on the diagram. If you have made a calculation error it will usually be obvious, because the centroid location won’t “feel right.”
+
+## Second Moment Calculations
+
+The **second moment**, or **moment of inertia**, measures how an area or mass is distributed about an axis. Below are the key concepts and formulas.
+
+### 1. General Formula
+
+The second moment of area about the (x)-axis or (y)-axis is: $$
+I_x = \int_A y^2 \, dA, \quad I_y = \int_A x^2 \, dA
+$$
+
+### 2. Polar Moment of Inertia
+
+The polar moment of inertia about the origin is: $$
+J = \int_A \left(x^2 + y^2\right) \, dA
+$$
+
+### 3. Composite Areas
+
+For a composite area, the total moment of inertia is the sum of the moments of its components: $$
+I_{\text{total}} = \sum I_i
+$$ For each component: $$
+I_i = I_{c,i} + A_i d_i^2
+$$
+
+### 4. Parallel Axis Theorem
+
+To find the moment of inertia about an axis parallel to the centroidal axis: $$
+I = I_c + A d^2
+$$
+
+### 5. Moments of Common Shapes
+
+#### Rectangle
+
+For a rectangle with base (b) and height (h): $$
+I_x = \frac{b h^3}{12}, \quad I_y = \frac{b^3 h}{12}
+$$
+
+#### Circle
+
+For a circle with radius (r): $$
+I_x = I_y = \frac{\pi r^4}{4}, \quad J = \frac{\pi r^4}{2}
+$$
+
+#### Triangle
+
+For a triangle with base (b) and height (h): $$
+I_x = \frac{b h^3}{36}, \quad I_y = \frac{h b^3}{36}
+$$
+
+## Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis
+
+We calculate the **moment of inertia** of a rectangle about its **centroidal** $x$-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at $y = h/2$ (mid-height of the rectangle).
+
+## 1. Moment of Inertia Formula
+
+The formula for the moment of inertia is:
+
+$$
+I = \int y^2 \, dA
+$$
+
+Here:
+
+-   $y$: distance from the axis of rotation (centroidal axis in this case),
+
+-   $dA$: the infinitesimal area element.
+
+## 2. Setup for the Rectangle
+
+-   The rectangle is centered on the centroidal $x$-axis, so the height ranges from $y = -h/2$ to $y = h/2$.
+
+-   The width of the rectangle is $b$.
+
+-   The infinitesimal area element is $dA = b \, dy$.
+
+The integral becomes:
+
+$$
+I_{\text{centroidal}} = \int_{-h/2}^{h/2} y^2 \, b \, dy
+$$
+
+## 3. Solve the Integral
+
+Factor $b$ (constant width) outside of the integral:
+
+$$
+I_{\text{centroidal}} = b \int_{-h/2}^{h/2} y^2 \, dy
+$$
+
+The integral of $y^2$ is:
+
+$$
+\int y^2 \, dy = \frac{y^3}{3}
+$$
+
+Apply the limits $y = -h/2$ to $y = h/2$:
+
+$$
+I_{\text{centroidal}} = b \left[ \frac{y^3}{3} \right]_{-h/2}^{h/2}
+$$
+
+Substitute the limits:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{(h/2)^3}{3} - \frac{(-h/2)^3}{3} \right)
+$$
+
+Since $(-h/2)^3 = -(h/2)^3$, the terms simplify:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{(h/2)^3}{3} + \frac{(h/2)^3}{3} \right)
+$$
+
+Combine the terms:
+
+$$
+I_{\text{centroidal}} = b \left( \frac{2(h/2)^3}{3} \right)
+$$
+
+Simplify $(h/2)^3 = \frac{h^3}{8}$:
+
+$$
+I_{\text{centroidal}} = b \cdot \frac{2}{3} \cdot \frac{h^3}{8}
+$$
+
+$$
+I_{\text{centroidal}} = b \cdot \frac{h^3}{12}
+$$
+
+## 4. Final Result
+
+The moment of inertia of a rectangle about its centroidal $x$-axis is:
+
+$$
+I_{\text{centroidal}} = \frac{b h^3}{12}
+$$
+
+This is the standard formula for the moment of inertia of a rectangle about its centroidal axis.
+
+## Difference Between First Moment and Second Moment
+
+The **first moment** and **second moment** are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:
+
+## 1. First Moment
+
+-   **Definition**: The first moment measures the mean or center of mass relative to a reference point.
+-   **Formula**: $$
+    M_1 = \sum (x_i \cdot f_i)
+    $$ where $x_i$ is a value, and $f_i$ is its weight.
+-   **Physical Interpretation**: In mechanics, it determines the center of mass or centroid of an object.
+
+## 2. Second Moment
+
+-   **Definition**: The second moment measures the spread or dispersion of values around a reference point.
+
+-   **Formula**: $$
+    M_2 = \sum (x_i^2 \cdot f_i)
+    $$
+
+    where $x_i$ is a value, and $f_i$ is its weight.
+
+-   **Physical Interpretation**: In mechanics, the second moment of area ($I$) is used to describe an object's resistance to bending or torsion (e.g., the moment of inertia).
+
+## Key Differences
+
+| Feature | First Moment | Second Moment |
+|----|----|----|
+| **Reference** | Measures position relative to a point (e.g., centroid). | Measures spread relative to a point. |
+| **Physical Meaning** | Indicates center or balance point. | Indicates resistance or spread. |
+| **Example (Physics)** | Center of mass. | Moment of inertia. |
+
+In summary, the **first moment** tells you *where things are*, while the **second moment** tells you *how far things are spread*.Problem Set
 
 ## Further Reading
 

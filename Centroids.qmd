@@ -1,0 +1,44 @@
+---
+title: "Centre of Gravity vs Centroid"
+---
+
+## Definitions
+
+Centre of Gravity (CG): The point where the entire weight of an object acts, and at which gravity can be considered to apply. CG depends on the distribution of mass and gravity.
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Weights}{\sum Weights} \qquad \bar{y} = \frac{ \sum Moments\ of\ Weights}{\sum Weights}
+$$ {#eq-weights}
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Volumes}{\sum Volumes} \qquad \bar{y} = \frac{ \sum Moments\ of\ Volumes}{\sum Volumes}
+$$ {#eq-volumes}
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Areas}{\sum Areas} \qquad \bar{y} = \frac{ \sum Moments\ of\ Areas}{\sum Areas}
+$$ {#eq-areas}
+
+Centroid: The geometric center of a shape or object, determined purely by its geometry and independent of mass or weight distribution. The centroid of a uniform shape coincides with the center of gravity because the mass is evenly distributed.
+
+$$
+\bar{x} = \frac{ \sum {\bar{x}_i}\ A_i}{\sum A_i} \qquad \bar{y} = \frac{ \sum {\bar{y}_i}\ A_i}{\sum A_i}
+$$ {#eq-centroids}
+
+## Properties of Common Shapes
+
+In @tbl-centroids, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.
+
+{{< pagebreak >}}
+
+| Shape | Area | $\bar{x}$ | $\bar{y}$ |
+|:--:|:--:|:--:|:--:|
+| ![](images/centroids-rectangle.png) | $A = b h$ | $b/2$ | $h/2$ |
+| ![](images/centroids-triangle.png) | $\dfrac{bh}{2}$ | $b/3$ | $h/3$ |
+| ![](images/centroids-trapezoid.png) | $\dfrac{(a+b) h}{2}$ | $\dfrac{a^2 +ab + b^2}{3 (a+b)}$ | $\dfrac{h(2a+b)}{3(a+b)}$ |
+| ![](images/centroids-circle.png) | $\pi r^2$ | $r$ | $r$ |
+| ![](images/centroids-semi-circle.png) | $\dfrac{\pi r^2}{2}$ | $r$ | $\dfrac{4 r}{3 \pi}$ |
+| ![](images/centroids-quarter-circle.png) | $\dfrac{\pi r^2}{4}$ | $\dfrac{4 r}{3 \pi}$ | $\dfrac{4 r}{3 \pi}$ |
+
+: Centroids of Common Shapes {#tbl-centroids}
+
+{{< pagebreak >}}
