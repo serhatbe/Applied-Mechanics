@@ -31,7 +31,7 @@ In @tbl-centroids, all centroids are measured from the indicated origin. You mus
 {{< pagebreak >}}
 
 | Shape | Area | $\bar{x}$ | $\bar{y}$ |
-|:--:|:--:|:--:|:--:|
+|:----------------:|:----------------:|:----------------:|:----------------:|
 | ![](images/centroids-rectangle.png) | $A = b h$ | $b/2$ | $h/2$ |
 | ![](images/centroids-triangle.png) | $\dfrac{bh}{2}$ | $b/3$ | $h/3$ |
 | ![](images/centroids-trapezoid.png) | $\dfrac{(a+b) h}{2}$ | $\dfrac{a^2 +ab + b^2}{3 (a+b)}$ | $\dfrac{h(2a+b)}{3(a+b)}$ |
