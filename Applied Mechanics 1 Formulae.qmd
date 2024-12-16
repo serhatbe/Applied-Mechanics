@@ -1,0 +1,175 @@
+---
+title: "Applied Mechanics 1 Formulae"
+format: pdf
+---
+
+## Rules of Cosine and Sine
+
+$$
+c^2 = a^2 + b^2 - 2ab\cos \gamma
+$$ $$
+\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma}
+$$
+
+## Linear Motion
+
+$$
+\vec{v} = \vec{u} + \vec{a}t
+$$
+
+$$
+\vec{s} = \frac{\vec{u}+\vec{v}}{2}t
+$$
+
+$$
+\vec{s} = \vec{u}t + \frac{1}{2}\vec{a}t^2
+$$
+
+$$
+\vec{v}^2 = \vec{u}^2 + 2\vec{a} \cdot \vec{s}
+$$
+
+$$
+Linear\ momentum = m \vec{v}
+$$
+
+where:
+
+-   $\vec{u}$: Initial velocity
+-   $\vec{v}$: Final velocity
+-   $\vec{s}$: Displacement
+-   $\vec{a}$: Acceleration
+-   $m$: Mass
+-   $t$: Time
+
+## Angular Motion
+
+$$
+\omega_2 = \omega_1 \mp \alpha t
+$$
+
+$$
+\theta = \frac{\omega_1+\omega_2}{2}t
+$$
+
+$$
+\theta = \omega_1 t \mp \frac{1}{2}\alpha t^2 
+$$
+
+$$
+\omega_2^2 = \omega_1^2 \mp 2\alpha \theta
+$$
+
+$$
+\text{Angular momentum} = m r^2 \omega
+$$
+
+$$
+\text{Angular momentum} = I \omega
+$$
+
+$$
+I = m k^2
+$$
+
+$$
+\tau = I \alpha
+$$
+
+$$
+k = \sqrt{\frac{I}{A}} \quad \text{(for area)} \quad \text{or} \quad k = \sqrt{\frac{I}{m}} \quad \text{(for mass)},
+$$
+
+$$
+\text{Rotational K.E.} = \frac{1}{2} I \omega^2
+$$
+
+where:
+
+-   $\omega_1$: Initial angular velocity (rad/s)
+
+-   $\omega_2$: Final angular velocity (rad/s)
+
+-   $\theta$ Angular displacement (rad)
+
+-   $\alpha$: Angular acceleration (rad/s^2^)
+
+-   $t$: Time
+
+-   $m$: Mass
+
+-   $r$: Radius
+
+-   $I$: Moment of inertia
+
+-   $k$: Radius of gyration
+
+-   $\tau$: Torque
+
+-   $A$: Area of the cross-section (for area calculations)
+
+-   $m$: Mass of the body (for mass calculations)
+
+## Relation Between Linear and Angular Motion
+
+The relationship between linear and angular motion is described by the following equations:
+
+$s = r \theta$ (linear displacement $s$ and angular displacement $\theta$).
+
+$v = r \omega$ (linear velocity $v$ and angular velocity $\omega$),
+
+$a = r \alpha$ (linear acceleration $a$ and angular acceleration $\alpha$).
+
+## Conditions of Equilibrium for Simple Beams
+
+| Sum of Horizontal Forces | Sum of Vertical Force | Sum of Moments |
+|--------------------------|-----------------------|----------------|
+| $\sum F_x = 0$           | $\sum F_y = 0$        | $\sum M = 0$   |
+
+## Centre of Gravity
+
+$$
+\bar{x} = \frac{ \sum Moments\ of\ Weights}{\sum Weights} \qquad \bar{y} = \frac{ \sum Moments\ of\ Weights}{\sum Weights}
+$$
+
+## Centroid
+
+$$
+\bar{x} = \frac{ \sum {\bar{x}_i}\ A_i}{\sum A_i} \qquad \bar{y} = \frac{ \sum {\bar{y}_i}\ A_i}{\sum A_i}
+$$
+
+## Parallel Axis Theorem
+
+To find the moment of inertia about an axis parallel to the centroidal axis:
+
+$$ I = I_c + A d^2 $$
+
+{{< pagebreak >}}
+
+| Shape | Area | $\bar{x}$ | $\bar{y}$ |
+|:----------------:|:----------------:|:----------------:|:----------------:|
+| ![](images/centroids-rectangle.png) | $A = b h$ | $b/2$ | $h/2$ |
+| ![](images/centroids-triangle.png) | $\dfrac{bh}{2}$ | $b/3$ | $h/3$ |
+| ![](images/centroids-trapezoid.png) | $\dfrac{(a+b) h}{2}$ | $\dfrac{a^2 +ab + b^2}{3 (a+b)}$ | $\dfrac{h(2a+b)}{3(a+b)}$ |
+| ![](images/centroids-circle.png) | $\pi r^2$ | $r$ | $r$ |
+| ![](images/centroids-semi-circle.png) | $\dfrac{\pi r^2}{2}$ | $r$ | $\dfrac{4 r}{3 \pi}$ |
+| ![](images/centroids-quarter-circle.png) | $\dfrac{\pi r^2}{4}$ | $\dfrac{4 r}{3 \pi}$ | $\dfrac{4 r}{3 \pi}$ |
+
+: Centroids of Common Shapes {#tbl-centroids}
+
+{{< pagebreak >}}
+
+## Second Moments of Common Shapes
+
+| Shape | Second moment ($I_x$) | Second moment ($I_y$) |
+|------------------------|------------------------|------------------------|
+| ![](images/Moment_of_area_of_a_rectangle_through_the_centroid.svg.png){width="3.5cm"} | $I_x = \frac{1}{12} b h^3$ | $I_y = \frac{1}{12} b^3 h$ |
+| ![](images/Moment_of_area_of_a_rectangle_through_the_base.svg.png){width="3.5cm"} | $I_x = \frac{1}{3} b h^3$ | $I_y = \frac{1}{3} b^3 h$ |
+| ![](images/Moment_of_area_of_a_circle.svg.png){width="3.5cm"} | $I_x = \frac{\pi}{4} r^4$ | $I_y = \frac{\pi}{4} r^4$ |
+| ![](images/Moment_of_area_of_an_annulus.svg.png){width="3.5cm"} | $I_x = \frac{\pi}{4} (r_2^4-r_1^4)$ | $I_y = \frac{\pi}{4} (r_2^4-r_1^4)$ |
+| ![](images/Moment_of_area_of_a_semicircle_through_the_base.svg.png){width="3.5cm"} | $I_x = \frac{\pi}{8} r^4$ | $I_y = \frac{\pi}{8} r^4$ |
+| ![](images/Moment_of_area_of_a_quarter_circle_through_the_base.svg.png){width="3.5cm"} | $I_x = \frac{\pi}{16} r^4$ | $I_y = \frac{\pi}{16} r^4$ |
+| ![](images/Moment_of_inertia_on_a_traingle_through_the_base_with_dimension_'a'.svg.png){width="3.5cm"} | $I_x = \frac{1}{12} b h^3$ |  |
+| ![](images/Moment_of_inertia_on_a_triangle_through_centroide_with_dimension_'a'.svg.png){width="3.5cm"} | $I_x = \frac{1}{36} b h^3$ |  |
+
+: Second moments {#tbl-second-moments}

@@ -105,9 +105,9 @@ The relationship between linear and angular motion is described by the following
 
 $s = r \theta$ (linear displacement $s$ and angular displacement $\theta$).
 
-$v = r \omega$ (linear velocity $v$ and angular velocity $\omega$),
+$v = r \omega$ (linear velocity $v$ and angular velocity $\omega$).
 
-$a = r \alpha$ (linear acceleration $a$ and angular acceleration $\alpha$),
+$a = r \alpha$ (linear acceleration $a$ and angular acceleration $\alpha$).
 
 ### Variables
 

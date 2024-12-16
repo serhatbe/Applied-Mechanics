@@ -1,0 +1,265 @@
+---
+title: "Dynamics"
+format: pdf
+editor: visual
+---
+
+## Newton's Laws of Motion
+
+1.  **First Law (Law of Inertia)**:\
+    An object remains at rest, or in uniform motion in a straight line, unless acted upon by a net external force.\
+    $$
+    \Sigma F = 0 \implies v = \text{constant}
+    $$
+
+2.  **Second Law (Law of Acceleration)**:\
+    The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.\
+    $$
+    \vec{F} = m \vec{a}
+    $$
+
+3.  **Third Law (Action-Reaction Law)**:\
+    For every action, there is an equal and opposite reaction.\
+    $$
+    \vec{F}_{\text{action}} = -\vec{F}_{\text{reaction}}
+    $$
+
+::: {#exm-3-1}
+3.1 Find the accelerating force required to increase the velocity of a body which has a mass of 20 kg from 30 m/s to 70 m/s in 4 s.
+:::
+
+::: {#exm-3-2}
+3.2 A lift is supported by a steel wire rope, the total mass of the lift and contents is 750 kg. Find the tension in the wire rope, in newtons, when the lift is (i) moving at constant velocity, (ii) moving upwards and accelerating at 1.2 m/s^2^, (iii) moving upwards and retarding at 1.2 m/s^2^
+:::
+
+## Linear Momentum
+
+Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object's **mass** and its **velocity**. Linear momentum is a vector quantity, meaning it has both magnitude and direction.
+
+Mathematically, linear momentum is given by:
+
+$$
+Linear\ momentum = m \vec{v}
+$$
+
+Where:
+
+-   Linear momentum is in kg·m/s.
+
+-   $m$ is the mass of the object in kilograms.
+
+-   $\vec{v}$ is the velocity of the object in meters per second.
+
+::: {#exm-3-5}
+3.5 The mass of the head of a hand hammer is 0.8 kg. When moving at 9 m/s it strikes a chisel and is brought to rest in 1/250 s. What is the average force of the blow?
+:::
+
+## Angular Momentum
+
+![Angular momentum](images/angularmomentum.png){width="4cm"}
+
+Given **linear velocity** $\vec{v}$ and **angular velocity** $\omega$:
+
+$$
+\vec{v} = r \omega
+$$
+
+The **linear momentum** is determined by:
+
+$$
+\text{Linear momentum} = m \vec{v}
+$$
+
+Substituting for $\vec{v}$:
+
+$$
+\text{Linear momentum} = m r \omega
+$$
+
+The **moment of linear momentum** can then be written as:
+
+$$
+\text{Moment of linear momentum} = m r \omega r
+$$
+
+The moment of linear momentum is referred to as the **angular momentum**. Simplifying the above equation:
+
+$$
+\text{Angular momentum} = m r^2 \omega
+$$
+
+Here, $m r^2$ is the **moment of inertia** (second moment of mass) of the object about its axis of rotation, denoted as $I$. Thus, the angular momentum can be expressed as:
+
+$$
+\text{Angular momentum} = I \omega
+$$
+
+Where:
+
+-   $I$ is the moment of inertia in $m^4$.
+-   $\omega$ is the angular velocity in $rad/s$.
+
+Additionally, the moment of inertia $I$ is given by:
+
+$$
+I = m k^2
+$$
+
+Where:
+
+-   $I$ is the moment of inertia in $m^4$.
+-   $m$ is the mass in $kg$.
+-   $k$ is the radius of gyration in $m$.
+
+::: {#exm-3-9}
+3.9 A flywheel of mass 500 kg and radius of gyration 1.2 m is running at 300 rev/min. By means of a clutch, this flywheel is suddenly connected to another flywheel, mass 2000 kg and radius of gyration 0.6 m, initially at rest. Calculate their common speed of rotation after engagement.
+:::
+
+## Turning Moment
+
+![Turning moment](images/turningmoment.png){width="4cm" height="3.3cm"}
+
+We know the relation between linear acceleration $a$ and angular acceleration $\alpha$:
+
+$$
+a = r \alpha
+$$
+
+And
+
+$$
+F = ma
+$$
+
+Therefore,
+
+$$
+F = m \alpha r
+$$
+
+If the force is not applied directly on the rim but at a greater or lesser leverage, say $L$ from the center, the effective force on the rim causing it to accelerate will be greater or lesser accordingly, in the ratio of $L$ to $r$. Thus:
+
+$$
+F \frac{L}{r} = m \alpha r
+$$
+
+Multiplying both sides by $r$,
+
+$$
+FL = m \alpha r^2
+$$
+
+Now, $FL$ is the torque applied. Therefore, the accelerating torque is:
+
+$$
+\tau = m r^2 \alpha
+$$
+
+Or,
+
+$$
+\tau = m k^2 \alpha
+$$
+
+$\tau$ is also given by:
+
+$$
+\tau = I \alpha
+$$
+
+Where:
+
+-   $\tau$ is the torque in $Nm$.
+-   $I$ is the moment of inertia in $m^4$.
+-   $\alpha$: Angular acceleration in $rad/s^2$.
+
+::: {#exm-Ex134Pg295}
+Ex134 p.295 A shaft system has a moment of inertia of 51.4 kgm^2^. Determine the torque required to give it an angular acceleration of 5.3 rad/s^2^
+
+Torque, $\tau = I \alpha$, where moment of inertia I = 51.4 kg m and angular acceleration, $\alpha = 5.3 rad/s$ . Hence, torque, $\tau = (51.4)(5.3) = 272.4 Nm$
+:::
+
+::: {#exm-3-10}
+3.10 The mass of a flywheel is 175 kg and its radius of gyration is 380 mm. Find the torque required to attain a speed of 500 rev/min from rest in 30 s.
+:::
+
+::: {#exm-3-11}
+3.11 The torque to overcome frictional and other resistances of a turbine is 317 N m and may be considered as constant for all speeds. The mass of the rotating parts is 1.59 t and the radius of gyration is 0.686 m. If the gas is cut off when the turbine is running free of load at 1920 rev/min, find the time it will take to come to rest and the number of revolutions turned during that time.
+:::
+
+## Power by Torque
+
+![A rotating mechanism.](images/powerbytorque.png){width="4cm"}
+
+Consider a force $F$ applied at a radius $r$ on a rotating mechanism, as shown above.
+
+The work done in one revolution is the product of the force and the circumference. Therefore:
+
+$$
+W = F \cdot 2 \pi r
+$$
+
+If the mechanism is running at $n$ revolutions per second:
+
+$$
+\text{Power} = F \cdot 2 \pi r n
+$$
+
+Since torque $\tau = F r$, we can rewrite the equation as:
+
+$$
+P = \tau \cdot 2 \pi n
+$$
+
+Given that $\omega = 2 \pi n$:
+
+$$
+P = \tau \cdot \omega
+$$
+
+Where:
+
+-   $P$ is the power in watts (W),
+-   $\tau$ is the torque in newton-meters (Nm), and
+-   $\omega$ is the angular velocity in radians per second (rad/s).
+
+::: {#exm-4-4}
+4.4 The mean torque in a propeller shaft is 2.26 x 10^5^ Nm when running at 140 rpm. Find the power transmitted.
+:::
+
+::: {#exm-4-6}
+4.6 One gear wheel with 100 teeth of 6 mm pitch running at 250 revlmin drives another which has 50 teeth. If the power transmitted is 0.5 kW, find the driving force on the teeth and the speed of the driven wheel.
+:::
+
+## Kinetic Energy of Rotation
+
+We know that $K.E. = \frac{1}{2}mv^2$, where $v$ is the linear velocity of the body. For a rotating body, the effective linear velocity is at the radius of gyration, as this is the radius at which the entire mass of the rotating body can be considered to act.
+
+Let $k$ = radius of gyration (in meters),\
+Let $\omega$ = angular velocity (in radians per second).
+
+The relationship between linear and angular velocity is:
+
+$$
+v = \omega k
+$$
+
+Substituting $v^2 = \omega^2 k^2$ into $K.E. = \frac{1}{2}mv^2$ gives:
+
+$$
+\text{Rotational K.E.} = \frac{1}{2} m k^2 \omega^2
+$$
+
+Since $I = m k^2$, where $I$ is the moment of inertia:
+
+$$
+\text{Rotational K.E.} = \frac{1}{2} I \omega^2
+$$
+
+::: {#exm-4-10}
+4.10 The radius of gyration of the flywheel of a shearing machine is 0.46 m and its mass is 750 kg. Find the kinetic energy stored in it when running at 120 rev/min. If the speed falls to 100 rev/min during the cutting stroke, find the kinetic energy given out by the wheel.
+:::
+
+::: {#exm-4-11}
+4.11 The torque required to turn a flywheel and shaft against friction at the bearings is 34 N m. The mass of the wheel and shaft is 907 kg and the radius of gyration is 381 mm. Assuming frictional resistance to be constant at all speeds, find the number of revolutions the system will turn whilst coming to rest from a speed of 450 rev/min when the driving power is cut out, and also the time taken in coming to rest.
+:::

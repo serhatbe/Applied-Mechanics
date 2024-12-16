@@ -1,6 +1,7 @@
 ---
 title: "Second Moments"
 format: pdf
+editor: visual
 ---
 
 ## Second Moment Calculations
@@ -195,17 +196,44 @@ $$
 
 ## Radius of Gyration
 
-The radius of gyration of a body about an axis is a measure of the distribution of its area or mass relative to that axis. It is defined as the distance from the axis at which the total area or mass of the body could be concentrated without changing its moment of inertia.
+The **radius of gyration** of a body about an axis is a measure of the distribution of its area or mass relative to that axis. It is defined as the distance from the axis at which the total area or mass of the body could be concentrated without changing its moment of inertia.
 
-Mathematically, the radius of gyration k is given by:
+Mathematically, the radius of gyration ( k ) is given by:
+
+$$
+k = \sqrt{\frac{I}{A}} \quad \text{(for area)} \quad \text{or} \quad k = \sqrt{\frac{I}{m}} \quad \text{(for mass)},
+$$
 
 where:
 
--   I : Moment of inertia about the axis
+-   $I$: Moment of inertia about the axis
 
--   A : Area of the cross-section (for area calculations)
+-   $A$: Area of the cross-section (for area calculations)
 
--   m : Mass of the body (for mass calculations)
+-   $m$: Mass of the body (for mass calculations)
+
+## Formulas for Common Shapes
+
+### 1. Rectangle (about its centroidal axis)
+
+-   Dimensions: ( b ) (breadth), ( h ) (height)
+-   Radius of gyration about the centroidal x-axis: $$
+    k_x = \sqrt{\frac{I_x}{A}} = \sqrt{\frac{\frac{1}{12} b h^3}{b h}} = \frac{h}{\sqrt{12}}
+    $$
+-   Radius of gyration about the centroidal y-axis: $$
+    k_y = \frac{b}{\sqrt{12}}
+    $$
+
+### 2. Circle (about its centroidal axis)
+
+-   Radius: ( r )
+-   Radius of gyration: $$
+    k = \sqrt{\frac{I}{A}} = \sqrt{\frac{\frac{\pi r^4}{4}}{\pi r^2}} = \frac{r}{\sqrt{2}}
+    $$
+
+## Conclusion
+
+The radius of gyration depends on the geometry and axis of rotation. The formulas provided above are specific to standard shapes and commonly used axes.
 
 ## Difference Between First Moment and Second Moment
 
@@ -234,7 +262,7 @@ The **first moment** and **second moment** are concepts from mathematics and phy
 ## Key Differences
 
 | Feature | First Moment | Second Moment |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Reference** | Measures position relative to a point (e.g., centroid). | Measures spread relative to a point. |
 | **Physical Meaning** | Indicates center or balance point. | Indicates resistance or spread. |
 | **Example (Physics)** | Center of mass. | Moment of inertia. |
@@ -244,9 +272,9 @@ The **first moment** and **second moment** are concepts from mathematics and phy
 ## Second Moments of Common Shapes
 
 | Shape | Second moment ($I_x$) | Second moment ($I_y$) |
-|----|----|----|
-| ![](images/Moment_of_area_of_a_rectangle_through_the_centroid.svg.png) | $I_x = \frac{1}{12} b h^3$ | $I_x = \frac{1}{12} b^3 h$ |
-| ![](images/Moment_of_area_of_a_rectangle_through_the_base.svg.png) | $I_x = \frac{1}{3} b h^3$ | $I_x = \frac{1}{3} b^3 h$ |
+|------------------------|------------------------|------------------------|
+| ![](images/Moment_of_area_of_a_rectangle_through_the_centroid.svg.png) | $I_x = \frac{1}{12} b h^3$ | $I_y = \frac{1}{12} b^3 h$ |
+| ![](images/Moment_of_area_of_a_rectangle_through_the_base.svg.png) | $I_x = \frac{1}{3} b h^3$ | $I_y = \frac{1}{3} b^3 h$ |
 | ![](images/Moment_of_area_of_a_circle.svg.png) | $I_x = \frac{\pi}{4} r^4$ | $I_y = \frac{\pi}{4} r^4$ |
 | ![](images/Moment_of_area_of_an_annulus.svg.png) | $I_x = \frac{\pi}{4} (r_2^4-r_1^4)$ | $I_y = \frac{\pi}{4} (r_2^4-r_1^4)$ |
 | ![](images/Moment_of_area_of_a_semicircle_through_the_base.svg.png) | $I_x = \frac{\pi}{8} r^4$ | $I_y = \frac{\pi}{8} r^4$ |
