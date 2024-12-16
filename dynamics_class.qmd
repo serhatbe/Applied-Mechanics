@@ -1,9 +1,8 @@
-# Dynamics {#sec-dynamics}
-
-## Objectives
-
--   Recall
--   Practice
+---
+title: "Dynamics"
+format: pdf
+editor: visual
+---
 
 ## Newton's Laws of Motion
 

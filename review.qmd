@@ -26,6 +26,10 @@ We have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021
 
 -   Vector Examples: Velocity, acceleration, weight, and friction.
 
+@sec-kinematics:
+
+@sec-dynamics:
+
 @sec-moment-of-a-force:
 
 -   Definition of Moment: A mathematical concept representing the product of a distance and a physical quantity.

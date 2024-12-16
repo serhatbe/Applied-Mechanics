@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Applied Mechanics Workbook",
     "section": "",
-    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n5  Review: Review section",
+    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Dynamics: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n5  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n6  Review: Review section",
     "crumbs": [
       "Preface"
     ]
@@ -334,7 +334,7 @@
     "href": "kinematics.html#relation-between-linear-and-angular-motion",
     "title": "3  Kinematics",
     "section": "3.6 Relation Between Linear and Angular Motion",
-    "text": "3.6 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)),\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)),\n\n3.6.1 Variables\n\n\\(v\\): Linear velocity, the rate of change of linear displacement \\((v = \\frac{ds}{dt})\\).\n\\(a\\): Linear acceleration, the rate of change of linear velocity \\((a = \\frac{dv}{dt})\\).\n\\(s\\): Linear displacement, the distance moved along the circular path.\n\\(r\\): Radius of the circular path.\n\\(\\omega\\): Angular velocity, the rate of change of angular displacement \\((\\omega = \\frac{d\\theta}{dt})\\).\n\\(\\alpha\\): Angular acceleration, the rate of change of angular velocity \\((\\alpha = \\frac{d\\omega}{dt})\\).\n\\(\\theta\\): Angular displacement, the angle swept by the radius in radians.",
+    "text": "3.6 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)).\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)).\n\n3.6.1 Variables\n\n\\(v\\): Linear velocity, the rate of change of linear displacement \\((v = \\frac{ds}{dt})\\).\n\\(a\\): Linear acceleration, the rate of change of linear velocity \\((a = \\frac{dv}{dt})\\).\n\\(s\\): Linear displacement, the distance moved along the circular path.\n\\(r\\): Radius of the circular path.\n\\(\\omega\\): Angular velocity, the rate of change of angular displacement \\((\\omega = \\frac{d\\theta}{dt})\\).\n\\(\\alpha\\): Angular acceleration, the rate of change of angular velocity \\((\\alpha = \\frac{d\\omega}{dt})\\).\n\\(\\theta\\): Angular displacement, the angle swept by the radius in radians.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kinematics</span>"
     ]
@@ -360,323 +360,403 @@
     ]
   },
   {
-    "objectID": "moment-of-a-force.html",
-    "href": "moment-of-a-force.html",
-    "title": "4  Moment of a Force",
+    "objectID": "dynamics.html",
+    "href": "dynamics.html",
+    "title": "4  Dynamics",
     "section": "",
     "text": "4.1 Objectives",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#objectives",
+    "href": "dynamics.html#objectives",
+    "title": "4  Dynamics",
+    "section": "",
+    "text": "Recall\nPractice",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#newtons-laws-of-motion",
+    "href": "dynamics.html#newtons-laws-of-motion",
+    "title": "4  Dynamics",
+    "section": "4.2 Newton’s Laws of Motion",
+    "text": "4.2 Newton’s Laws of Motion\n\nFirst Law (Law of Inertia):\nAn object remains at rest, or in uniform motion in a straight line, unless acted upon by a net external force.\n\\[\n\\Sigma F = 0 \\implies v = \\text{constant}\n\\]\nSecond Law (Law of Acceleration):\nThe acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.\n\\[\n\\vec{F} = m \\vec{a}\n\\]\nThird Law (Action-Reaction Law):\nFor every action, there is an equal and opposite reaction.\n\\[\n\\vec{F}_{\\text{action}} = -\\vec{F}_{\\text{reaction}}\n\\]\n\n\nExample 4.1 3.1 Find the accelerating force required to increase the velocity of a body which has a mass of 20 kg from 30 m/s to 70 m/s in 4 s.\n\n\nExample 4.2 3.2 A lift is supported by a steel wire rope, the total mass of the lift and contents is 750 kg. Find the tension in the wire rope, in newtons, when the lift is (i) moving at constant velocity, (ii) moving upwards and accelerating at 1.2 m/s2, (iii) moving upwards and retarding at 1.2 m/s2",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#linear-momentum",
+    "href": "dynamics.html#linear-momentum",
+    "title": "4  Dynamics",
+    "section": "4.3 Linear Momentum",
+    "text": "4.3 Linear Momentum\nLinear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\nMathematically, linear momentum is given by:\n\\[\nLinear\\ momentum = m \\vec{v}\n\\]\nWhere:\n\nLinear momentum is in kg·m/s.\n\\(m\\) is the mass of the object in kilograms.\n\\(\\vec{v}\\) is the velocity of the object in meters per second.\n\n\nExample 4.3 3.5 The mass of the head of a hand hammer is 0.8 kg. When moving at 9 m/s it strikes a chisel and is brought to rest in 1/250 s. What is the average force of the blow?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#angular-momentum",
+    "href": "dynamics.html#angular-momentum",
+    "title": "4  Dynamics",
+    "section": "4.4 Angular Momentum",
+    "text": "4.4 Angular Momentum\n\n\n\nAngular momentum\n\n\nGiven linear velocity \\(\\vec{v}\\) and angular velocity \\(\\omega\\):\n\\[\n\\vec{v} = r \\omega\n\\]\nThe linear momentum is determined by:\n\\[\n\\text{Linear momentum} = m \\vec{v}\n\\]\nSubstituting for \\(\\vec{v}\\):\n\\[\n\\text{Linear momentum} = m r \\omega\n\\]\nThe moment of linear momentum can then be written as:\n\\[\n\\text{Moment of linear momentum} = m r \\omega r\n\\]\nThe moment of linear momentum is referred to as the angular momentum. Simplifying the above equation:\n\\[\n\\text{Angular momentum} = m r^2 \\omega\n\\]\nHere, \\(m r^2\\) is the moment of inertia (second moment of mass) of the object about its axis of rotation, denoted as \\(I\\). Thus, the angular momentum can be expressed as:\n\\[\n\\text{Angular momentum} = I \\omega\n\\]\nWhere:\n\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(\\omega\\) is the angular velocity in \\(rad/s\\).\n\nAdditionally, the moment of inertia \\(I\\) is given by:\n\\[\nI = m k^2\n\\]\nWhere:\n\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(m\\) is the mass in \\(kg\\).\n\\(k\\) is the radius of gyration in \\(m\\).\n\n\nExample 4.4 3.9 A flywheel of mass 500 kg and radius of gyration 1.2 m is running at 300 rev/min. By means of a clutch, this flywheel is suddenly connected to another flywheel, mass 2000 kg and radius of gyration 0.6 m, initially at rest. Calculate their common speed of rotation after engagement.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#turning-moment",
+    "href": "dynamics.html#turning-moment",
+    "title": "4  Dynamics",
+    "section": "4.5 Turning Moment",
+    "text": "4.5 Turning Moment\n\n\n\nTurning moment\n\n\nWe know the relation between linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\):\n\\[\na = r \\alpha\n\\]\nAnd\n\\[\nF = ma\n\\]\nTherefore,\n\\[\nF = m \\alpha r\n\\]\nIf the force is not applied directly on the rim but at a greater or lesser leverage, say \\(L\\) from the center, the effective force on the rim causing it to accelerate will be greater or lesser accordingly, in the ratio of \\(L\\) to \\(r\\). Thus:\n\\[\nF \\frac{L}{r} = m \\alpha r\n\\]\nMultiplying both sides by \\(r\\),\n\\[\nFL = m \\alpha r^2\n\\]\nNow, \\(FL\\) is the torque applied. Therefore, the accelerating torque is:\n\\[\n\\tau = m r^2 \\alpha\n\\]\nOr,\n\\[\n\\tau = m k^2 \\alpha\n\\]\n\\(\\tau\\) is also given by:\n\\[\n\\tau = I \\alpha\n\\]\nWhere:\n\n\\(\\tau\\) is the torque in \\(Nm\\).\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(\\alpha\\): Angular acceleration in \\(rad/s^2\\).\n\n\nExample 4.5 Ex134 p.295 A shaft system has a moment of inertia of 51.4 kgm2. Determine the torque required to give it an angular acceleration of 5.3 rad/s2\nTorque, \\(\\tau = I \\alpha\\), where moment of inertia I = 51.4 kg m and angular acceleration, \\(\\alpha = 5.3 rad/s\\) . Hence, torque, \\(\\tau = (51.4)(5.3) = 272.4 Nm\\)\n\n\nExample 4.6 3.10 The mass of a flywheel is 175 kg and its radius of gyration is 380 mm. Find the torque required to attain a speed of 500 rev/min from rest in 30 s.\n\n\nExample 4.7 3.11 The torque to overcome frictional and other resistances of a turbine is 317 N m and may be considered as constant for all speeds. The mass of the rotating parts is 1.59 t and the radius of gyration is 0.686 m. If the gas is cut off when the turbine is running free of load at 1920 rev/min, find the time it will take to come to rest and the number of revolutions turned during that time.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#power-by-torque",
+    "href": "dynamics.html#power-by-torque",
+    "title": "4  Dynamics",
+    "section": "4.6 Power by Torque",
+    "text": "4.6 Power by Torque\n\n\n\nA rotating mechanism.\n\n\nConsider a force \\(F\\) applied at a radius \\(r\\) on a rotating mechanism, as shown above.\nThe work done in one revolution is the product of the force and the circumference. Therefore:\n\\[\nW = F \\cdot 2 \\pi r\n\\]\nIf the mechanism is running at \\(n\\) revolutions per second:\n\\[\n\\text{Power} = F \\cdot 2 \\pi r n\n\\]\nSince torque \\(\\tau = F r\\), we can rewrite the equation as:\n\\[\nP = \\tau \\cdot 2 \\pi n\n\\]\nGiven that \\(\\omega = 2 \\pi n\\):\n\\[\nP = \\tau \\cdot \\omega\n\\]\nWhere:\n\n\\(P\\) is the power in watts (W),\n\\(\\tau\\) is the torque in newton-meters (Nm), and\n\\(\\omega\\) is the angular velocity in radians per second (rad/s).\n\n\nExample 4.8 4.4 The mean torque in a propeller shaft is 2.26 x 105 Nm when running at 140 rpm. Find the power transmitted.\n\n\nExample 4.9 4.6 One gear wheel with 100 teeth of 6 mm pitch running at 250 revlmin drives another which has 50 teeth. If the power transmitted is 0.5 kW, find the driving force on the teeth and the speed of the driven wheel.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "dynamics.html#kinetic-energy-of-rotation",
+    "href": "dynamics.html#kinetic-energy-of-rotation",
+    "title": "4  Dynamics",
+    "section": "4.7 Kinetic Energy of Rotation",
+    "text": "4.7 Kinetic Energy of Rotation\nWe know that \\(K.E. = \\frac{1}{2}mv^2\\), where \\(v\\) is the linear velocity of the body. For a rotating body, the effective linear velocity is at the radius of gyration, as this is the radius at which the entire mass of the rotating body can be considered to act.\nLet \\(k\\) = radius of gyration (in meters),\nLet \\(\\omega\\) = angular velocity (in radians per second).\nThe relationship between linear and angular velocity is:\n\\[\nv = \\omega k\n\\]\nSubstituting \\(v^2 = \\omega^2 k^2\\) into \\(K.E. = \\frac{1}{2}mv^2\\) gives:\n\\[\n\\text{Rotational K.E.} = \\frac{1}{2} m k^2 \\omega^2\n\\]\nSince \\(I = m k^2\\), where \\(I\\) is the moment of inertia:\n\\[\n\\text{Rotational K.E.} = \\frac{1}{2} I \\omega^2\n\\]\n\nExample 4.10 4.10 The radius of gyration of the flywheel of a shearing machine is 0.46 m and its mass is 750 kg. Find the kinetic energy stored in it when running at 120 rev/min. If the speed falls to 100 rev/min during the cutting stroke, find the kinetic energy given out by the wheel.\n\n\nExample 4.11 4.11 The torque required to turn a flywheel and shaft against friction at the bearings is 34 N m. The mass of the wheel and shaft is 907 kg and the radius of gyration is 381 mm. Assuming frictional resistance to be constant at all speeds, find the number of revolutions the system will turn whilst coming to rest from a speed of 450 rev/min when the driving power is cut out, and also the time taken in coming to rest.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Dynamics</span>"
+    ]
+  },
+  {
+    "objectID": "moment-of-a-force.html",
+    "href": "moment-of-a-force.html",
+    "title": "5  Moment of a Force",
+    "section": "",
+    "text": "5.1 Objectives",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#objectives",
     "href": "moment-of-a-force.html#objectives",
-    "title": "4  Moment of a Force",
+    "title": "5  Moment of a Force",
     "section": "",
     "text": "Recall.\nPractice the application.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#definitions",
     "href": "moment-of-a-force.html#definitions",
-    "title": "4  Moment of a Force",
-    "section": "4.2 Definitions",
-    "text": "4.2 Definitions\nCentre of Gravity (CG): The point where the entire weight of an object acts, and at which gravity can be considered to apply. CG depends on the distribution of mass and gravity.\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights}\n\\tag{4.1}\\]\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Volumes}{\\sum Volumes} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Volumes}{\\sum Volumes}\n\\tag{4.2}\\]\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Areas}{\\sum Areas} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Areas}{\\sum Areas}\n\\tag{4.3}\\]\nCentroid: The geometric center of a shape or object, determined purely by its geometry and independent of mass or weight distribution. The centroid of a uniform shape coincides with the center of gravity because the mass is evenly distributed.\n\\[\n\\bar{x} = \\frac{ \\sum {\\bar{x}_i}\\ A_i}{\\sum A_i} \\qquad \\bar{y} = \\frac{ \\sum {\\bar{y}_i}\\ A_i}{\\sum A_i}\n\\tag{4.4}\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.2 Definitions",
+    "text": "5.2 Definitions\nCentre of Gravity (CG): The point where the entire weight of an object acts, and at which gravity can be considered to apply. CG depends on the distribution of mass and gravity.\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights}\n\\tag{5.1}\\]\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Volumes}{\\sum Volumes} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Volumes}{\\sum Volumes}\n\\tag{5.2}\\]\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Areas}{\\sum Areas} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Areas}{\\sum Areas}\n\\tag{5.3}\\]\nCentroid: The geometric center of a shape or object, determined purely by its geometry and independent of mass or weight distribution. The centroid of a uniform shape coincides with the center of gravity because the mass is evenly distributed.\n\\[\n\\bar{x} = \\frac{ \\sum {\\bar{x}_i}\\ A_i}{\\sum A_i} \\qquad \\bar{y} = \\frac{ \\sum {\\bar{y}_i}\\ A_i}{\\sum A_i}\n\\tag{5.4}\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#properties-of-common-shapes",
     "href": "moment-of-a-force.html#properties-of-common-shapes",
-    "title": "4  Moment of a Force",
-    "section": "4.3 Properties of Common Shapes",
-    "text": "4.3 Properties of Common Shapes\nIn Table 4.1, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.\n\n\n\n\nTable 4.1: Centroids of Common Shapes\n\n\n\n\n\n\n\n\n\n\n\nShape\nArea\n\\(\\bar{x}\\)\n\\(\\bar{y}\\)\n\n\n\n\n\n\\(A = b h\\)\n\\(b/2\\)\n\\(h/2\\)\n\n\n\n\\(\\dfrac{bh}{2}\\)\n\\(b/3\\)\n\\(h/3\\)\n\n\n\n\\(\\dfrac{(a+b) h}{2}\\)\n\\(\\dfrac{a^2 +ab + b^2}{3 (a+b)}\\)\n\\(\\dfrac{h(2a+b)}{3(a+b)}\\)\n\n\n\n\\(\\pi r^2\\)\n\\(r\\)\n\\(r\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{2}\\)\n\\(r\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{4}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)",
+    "title": "5  Moment of a Force",
+    "section": "5.3 Properties of Common Shapes",
+    "text": "5.3 Properties of Common Shapes\nIn Table 5.1, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.\n\n\n\n\nTable 5.1: Centroids of Common Shapes\n\n\n\n\n\n\n\n\n\n\n\nShape\nArea\n\\(\\bar{x}\\)\n\\(\\bar{y}\\)\n\n\n\n\n\n\\(A = b h\\)\n\\(b/2\\)\n\\(h/2\\)\n\n\n\n\\(\\dfrac{bh}{2}\\)\n\\(b/3\\)\n\\(h/3\\)\n\n\n\n\\(\\dfrac{(a+b) h}{2}\\)\n\\(\\dfrac{a^2 +ab + b^2}{3 (a+b)}\\)\n\\(\\dfrac{h(2a+b)}{3(a+b)}\\)\n\n\n\n\\(\\pi r^2\\)\n\\(r\\)\n\\(r\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{2}\\)\n\\(r\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{4}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#centroids-using-composite-parts",
     "href": "moment-of-a-force.html#centroids-using-composite-parts",
-    "title": "4  Moment of a Force",
-    "section": "4.4 Centroids using Composite Parts",
-    "text": "4.4 Centroids using Composite Parts\nIn this section we will discuss how to find centroids of two-dimensional shapes by first dividing them into pieces with known properties, and then combining the pieces to find the centroid of the original shape. This method will work when the geometric properties of all the sub-shapes are known or can be easily determined. The equations we will use for this approach are\n\\[\n\\bar{x} = \\frac{ \\sum {\\bar{x}_i}\\ A_i}{\\sum A_i} \\qquad \\bar{y} = \\frac{ \\sum {\\bar{y}_i}\\ A_i}{\\sum A_i}\n\\]\nConsider the complex shape below.\n\nThere are often several ways to divide a shape, but it’s best to use as few parts as possible to minimize your computations and opportunities for error. For example, you could choose to break this shape into either a rectangle, a right triangle, and an circular hole:\n\nOnce the complex shape has been divided into parts, the next step is to determine the area and centroidal coordinates for each part.\n\n\n\n\n\n\n\n\n\n\n\nPart\n\\(A_i\\)\n\\(\\bar{x}_i\\)\n\\(\\bar{y}_i\\)\n\\(A_i \\bar{x}_i\\)\n\\(A_i \\bar{y}_i\\)\n\n\n\n\n1\n20\n2.5\n2\n50\n40\n\n\n2\n12\n7\n4/3\n84\n16\n\n\n3\n-7.0685\n3\n2\n-21.2057\n-14.1371\n\n\n\\(\\Sigma\\)\n24.9315\n—\n—\n112.7943\n41.8629\n\n\n\nThe last two columns of the table contain the first moments of area \\(Q_x = A_i \\bar{y}_i\\) and \\(Q_y = A_i \\bar{x}_i\\text{,}\\), and are easily filled in by multiplying the values in columns two to four. Be sure to attend to positive and negative signs when multiplying. Note that the moment of area with respect to the \\(x\\) axis uses the distance from the \\(x\\) axis, which is \\(\\bar{y}_i\\text{,}\\), and vice-versa.\n\\[\n\\bar{x}  = \\frac{Q_y}{A}  = \\frac{112.8}{24.93}  = {4.52}\\ cm\n\\] \\[\n\\bar{y}  = \\frac{Q_x}{A}  = \\frac{41.86}{24.93}  = {1.692}\\ cm\n\\]\nFinally, plot the centroid \\((\\bar{x}, \\bar{y})\\) on the diagram. If you have made a calculation error it will usually be obvious, because the centroid location won’t “feel right.”",
+    "title": "5  Moment of a Force",
+    "section": "5.4 Centroids using Composite Parts",
+    "text": "5.4 Centroids using Composite Parts\nIn this section we will discuss how to find centroids of two-dimensional shapes by first dividing them into pieces with known properties, and then combining the pieces to find the centroid of the original shape. This method will work when the geometric properties of all the sub-shapes are known or can be easily determined. The equations we will use for this approach are\n\\[\n\\bar{x} = \\frac{ \\sum {\\bar{x}_i}\\ A_i}{\\sum A_i} \\qquad \\bar{y} = \\frac{ \\sum {\\bar{y}_i}\\ A_i}{\\sum A_i}\n\\]\nConsider the complex shape below.\n\nThere are often several ways to divide a shape, but it’s best to use as few parts as possible to minimize your computations and opportunities for error. For example, you could choose to break this shape into either a rectangle, a right triangle, and an circular hole:\n\nOnce the complex shape has been divided into parts, the next step is to determine the area and centroidal coordinates for each part.\n\n\n\n\n\n\n\n\n\n\n\nPart\n\\(A_i\\)\n\\(\\bar{x}_i\\)\n\\(\\bar{y}_i\\)\n\\(A_i \\bar{x}_i\\)\n\\(A_i \\bar{y}_i\\)\n\n\n\n\n1\n20\n2.5\n2\n50\n40\n\n\n2\n12\n7\n4/3\n84\n16\n\n\n3\n-7.0685\n3\n2\n-21.2057\n-14.1371\n\n\n\\(\\Sigma\\)\n24.9315\n—\n—\n112.7943\n41.8629\n\n\n\nThe last two columns of the table contain the first moments of area \\(Q_x = A_i \\bar{y}_i\\) and \\(Q_y = A_i \\bar{x}_i\\text{,}\\), and are easily filled in by multiplying the values in columns two to four. Be sure to attend to positive and negative signs when multiplying. Note that the moment of area with respect to the \\(x\\) axis uses the distance from the \\(x\\) axis, which is \\(\\bar{y}_i\\text{,}\\), and vice-versa.\n\\[\n\\bar{x}  = \\frac{Q_y}{A}  = \\frac{112.8}{24.93}  = {4.52}\\ cm\n\\] \\[\n\\bar{y}  = \\frac{Q_x}{A}  = \\frac{41.86}{24.93}  = {1.692}\\ cm\n\\]\nFinally, plot the centroid \\((\\bar{x}, \\bar{y})\\) on the diagram. If you have made a calculation error it will usually be obvious, because the centroid location won’t “feel right.”",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#second-moment-calculations",
     "href": "moment-of-a-force.html#second-moment-calculations",
-    "title": "4  Moment of a Force",
-    "section": "4.5 Second Moment Calculations",
-    "text": "4.5 Second Moment Calculations\nThe second moment, or moment of inertia, measures how an area or mass is distributed about an axis. Below are the key concepts and formulas.\n\n4.5.1 1. General Formula\nThe second moment of area about the (x)-axis or (y)-axis is: \\[\nI_x = \\int_A y^2 \\, dA, \\quad I_y = \\int_A x^2 \\, dA\n\\]\n\n\n4.5.2 2. Polar Moment of Inertia\nThe polar moment of inertia about the origin is: \\[\nJ = \\int_A \\left(x^2 + y^2\\right) \\, dA\n\\]\n\n\n4.5.3 3. Composite Areas\nFor a composite area, the total moment of inertia is the sum of the moments of its components: \\[\nI_{\\text{total}} = \\sum I_i\n\\] For each component: \\[\nI_i = I_{c,i} + A_i d_i^2\n\\]\n\n\n4.5.4 4. Parallel Axis Theorem\nTo find the moment of inertia about an axis parallel to the centroidal axis: \\[\nI = I_c + A d^2\n\\]\n\n\n4.5.5 5. Moments of Common Shapes\n\n4.5.5.1 Rectangle\nFor a rectangle with base (b) and height (h): \\[\nI_x = \\frac{b h^3}{12}, \\quad I_y = \\frac{b^3 h}{12}\n\\]\n\n\n4.5.5.2 Circle\nFor a circle with radius (r): \\[\nI_x = I_y = \\frac{\\pi r^4}{4}, \\quad J = \\frac{\\pi r^4}{2}\n\\]\n\n\n4.5.5.3 Triangle\nFor a triangle with base (b) and height (h): \\[\nI_x = \\frac{b h^3}{36}, \\quad I_y = \\frac{h b^3}{36}\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.5 Second Moment Calculations",
+    "text": "5.5 Second Moment Calculations\nThe second moment, or moment of inertia, measures how an area or mass is distributed about an axis. Below are the key concepts and formulas.\n\n5.5.1 1. General Formula\nThe second moment of area about the (x)-axis or (y)-axis is: \\[\nI_x = \\int_A y^2 \\, dA, \\quad I_y = \\int_A x^2 \\, dA\n\\]\n\n\n5.5.2 2. Polar Moment of Inertia\nThe polar moment of inertia about the origin is: \\[\nJ = \\int_A \\left(x^2 + y^2\\right) \\, dA\n\\]\n\n\n5.5.3 3. Composite Areas\nFor a composite area, the total moment of inertia is the sum of the moments of its components: \\[\nI_{\\text{total}} = \\sum I_i\n\\] For each component: \\[\nI_i = I_{c,i} + A_i d_i^2\n\\]\n\n\n5.5.4 4. Parallel Axis Theorem\nTo find the moment of inertia about an axis parallel to the centroidal axis: \\[\nI = I_c + A d^2\n\\]\n\n\n5.5.5 5. Moments of Common Shapes\n\n5.5.5.1 Rectangle\nFor a rectangle with base (b) and height (h): \\[\nI_x = \\frac{b h^3}{12}, \\quad I_y = \\frac{b^3 h}{12}\n\\]\n\n\n5.5.5.2 Circle\nFor a circle with radius (r): \\[\nI_x = I_y = \\frac{\\pi r^4}{4}, \\quad J = \\frac{\\pi r^4}{2}\n\\]\n\n\n5.5.5.3 Triangle\nFor a triangle with base (b) and height (h): \\[\nI_x = \\frac{b h^3}{36}, \\quad I_y = \\frac{h b^3}{36}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-centroidal-axis",
     "href": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-centroidal-axis",
-    "title": "4  Moment of a Force",
-    "section": "4.6 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis",
-    "text": "4.6 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis\nWe calculate the moment of inertia of a rectangle about its centroidal \\(x\\)-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at \\(y = h/2\\) (mid-height of the rectangle).",
+    "title": "5  Moment of a Force",
+    "section": "5.6 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis",
+    "text": "5.6 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis\nWe calculate the moment of inertia of a rectangle about its centroidal \\(x\\)-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at \\(y = h/2\\) (mid-height of the rectangle).",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#moment-of-inertia-formula",
     "href": "moment-of-a-force.html#moment-of-inertia-formula",
-    "title": "4  Moment of a Force",
-    "section": "4.7 1. Moment of Inertia Formula",
-    "text": "4.7 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere:\n\n\\(y\\): distance from the axis of rotation (centroidal axis in this case),\n\\(dA\\): the infinitesimal area element.",
+    "title": "5  Moment of a Force",
+    "section": "5.7 1. Moment of Inertia Formula",
+    "text": "5.7 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere:\n\n\\(y\\): distance from the axis of rotation (centroidal axis in this case),\n\\(dA\\): the infinitesimal area element.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#setup-for-the-rectangle",
     "href": "moment-of-a-force.html#setup-for-the-rectangle",
-    "title": "4  Moment of a Force",
-    "section": "4.8 2. Setup for the Rectangle",
-    "text": "4.8 2. Setup for the Rectangle\n\nThe rectangle is centered on the centroidal \\(x\\)-axis, so the height ranges from \\(y = -h/2\\) to \\(y = h/2\\).\nThe width of the rectangle is \\(b\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{centroidal}} = \\int_{-h/2}^{h/2} y^2 \\, b \\, dy\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.8 2. Setup for the Rectangle",
+    "text": "5.8 2. Setup for the Rectangle\n\nThe rectangle is centered on the centroidal \\(x\\)-axis, so the height ranges from \\(y = -h/2\\) to \\(y = h/2\\).\nThe width of the rectangle is \\(b\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{centroidal}} = \\int_{-h/2}^{h/2} y^2 \\, b \\, dy\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#solve-the-integral",
     "href": "moment-of-a-force.html#solve-the-integral",
-    "title": "4  Moment of a Force",
-    "section": "4.9 3. Solve the Integral",
-    "text": "4.9 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{centroidal}} = b \\int_{-h/2}^{h/2} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = -h/2\\) to \\(y = h/2\\):\n\\[\nI_{\\text{centroidal}} = b \\left[ \\frac{y^3}{3} \\right]_{-h/2}^{h/2}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} - \\frac{(-h/2)^3}{3} \\right)\n\\]\nSince \\((-h/2)^3 = -(h/2)^3\\), the terms simplify:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} + \\frac{(h/2)^3}{3} \\right)\n\\]\nCombine the terms:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{2(h/2)^3}{3} \\right)\n\\]\nSimplify \\((h/2)^3 = \\frac{h^3}{8}\\):\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{2}{3} \\cdot \\frac{h^3}{8}\n\\]\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{h^3}{12}\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.9 3. Solve the Integral",
+    "text": "5.9 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{centroidal}} = b \\int_{-h/2}^{h/2} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = -h/2\\) to \\(y = h/2\\):\n\\[\nI_{\\text{centroidal}} = b \\left[ \\frac{y^3}{3} \\right]_{-h/2}^{h/2}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} - \\frac{(-h/2)^3}{3} \\right)\n\\]\nSince \\((-h/2)^3 = -(h/2)^3\\), the terms simplify:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} + \\frac{(h/2)^3}{3} \\right)\n\\]\nCombine the terms:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{2(h/2)^3}{3} \\right)\n\\]\nSimplify \\((h/2)^3 = \\frac{h^3}{8}\\):\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{2}{3} \\cdot \\frac{h^3}{8}\n\\]\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{h^3}{12}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#final-result",
     "href": "moment-of-a-force.html#final-result",
-    "title": "4  Moment of a Force",
-    "section": "4.10 4. Final Result",
-    "text": "4.10 4. Final Result\nThe moment of inertia of a rectangle about its centroidal \\(x\\)-axis is:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]\nThis is the standard formula for the moment of inertia of a rectangle about its centroidal axis.",
+    "title": "5  Moment of a Force",
+    "section": "5.10 4. Final Result",
+    "text": "5.10 4. Final Result\nThe moment of inertia of a rectangle about its centroidal \\(x\\)-axis is:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]\nThis is the standard formula for the moment of inertia of a rectangle about its centroidal axis.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#difference-between-first-moment-and-second-moment",
     "href": "moment-of-a-force.html#difference-between-first-moment-and-second-moment",
-    "title": "4  Moment of a Force",
-    "section": "4.11 Difference Between First Moment and Second Moment",
-    "text": "4.11 Difference Between First Moment and Second Moment\nThe first moment and second moment are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:",
+    "title": "5  Moment of a Force",
+    "section": "5.11 Difference Between First Moment and Second Moment",
+    "text": "5.11 Difference Between First Moment and Second Moment\nThe first moment and second moment are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#first-moment",
     "href": "moment-of-a-force.html#first-moment",
-    "title": "4  Moment of a Force",
-    "section": "4.12 1. First Moment",
-    "text": "4.12 1. First Moment\n\nDefinition: The first moment measures the mean or center of mass relative to a reference point.\nFormula: \\[\nM_1 = \\sum (x_i \\cdot f_i)\n\\] where \\(x_i\\) is a value, and \\(f_i\\) is its weight.\nPhysical Interpretation: In mechanics, it determines the center of mass or centroid of an object.",
+    "title": "5  Moment of a Force",
+    "section": "5.12 1. First Moment",
+    "text": "5.12 1. First Moment\n\nDefinition: The first moment measures the mean or center of mass relative to a reference point.\nFormula: \\[\nM_1 = \\sum (x_i \\cdot f_i)\n\\] where \\(x_i\\) is a value, and \\(f_i\\) is its weight.\nPhysical Interpretation: In mechanics, it determines the center of mass or centroid of an object.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#second-moment",
     "href": "moment-of-a-force.html#second-moment",
-    "title": "4  Moment of a Force",
-    "section": "4.13 2. Second Moment",
-    "text": "4.13 2. Second Moment\n\nDefinition: The second moment measures the spread or dispersion of values around a reference point.\nFormula: \\[\nM_2 = \\sum (x_i^2 \\cdot f_i)\n\\]\nwhere \\(x_i\\) is a value, and \\(f_i\\) is its weight.\nPhysical Interpretation: In mechanics, the second moment of area (\\(I\\)) is used to describe an object’s resistance to bending or torsion (e.g., the moment of inertia).",
+    "title": "5  Moment of a Force",
+    "section": "5.13 2. Second Moment",
+    "text": "5.13 2. Second Moment\n\nDefinition: The second moment measures the spread or dispersion of values around a reference point.\nFormula: \\[\nM_2 = \\sum (x_i^2 \\cdot f_i)\n\\]\nwhere \\(x_i\\) is a value, and \\(f_i\\) is its weight.\nPhysical Interpretation: In mechanics, the second moment of area (\\(I\\)) is used to describe an object’s resistance to bending or torsion (e.g., the moment of inertia).",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#key-differences",
     "href": "moment-of-a-force.html#key-differences",
-    "title": "4  Moment of a Force",
-    "section": "4.14 Key Differences",
-    "text": "4.14 Key Differences\n\n\n\n\n\n\n\n\nFeature\nFirst Moment\nSecond Moment\n\n\n\n\nReference\nMeasures position relative to a point (e.g., centroid).\nMeasures spread relative to a point.\n\n\nPhysical Meaning\nIndicates center or balance point.\nIndicates resistance or spread.\n\n\nExample (Physics)\nCenter of mass.\nMoment of inertia.\n\n\n\nIn summary, the first moment tells you where things are, while the second moment tells you how far things are spread.Problem Set",
+    "title": "5  Moment of a Force",
+    "section": "5.14 Key Differences",
+    "text": "5.14 Key Differences\n\n\n\n\n\n\n\n\nFeature\nFirst Moment\nSecond Moment\n\n\n\n\nReference\nMeasures position relative to a point (e.g., centroid).\nMeasures spread relative to a point.\n\n\nPhysical Meaning\nIndicates center or balance point.\nIndicates resistance or spread.\n\n\nExample (Physics)\nCenter of mass.\nMoment of inertia.\n\n\n\nIn summary, the first moment tells you where things are, while the second moment tells you how far things are spread.Problem Set",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#second-moment-calculations-1",
     "href": "moment-of-a-force.html#second-moment-calculations-1",
-    "title": "4  Moment of a Force",
-    "section": "4.15 Second Moment Calculations",
-    "text": "4.15 Second Moment Calculations\nThe second moment, or moment of inertia, measures how an area or mass is distributed about an axis.\n\n4.15.1 General Formula\nThe second moment of area about the (x)-axis or (y)-axis is:\n\\[\nI_x = \\int y^2 \\, dA, \\quad I_y = \\int x^2 \\, dA\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.15 Second Moment Calculations",
+    "text": "5.15 Second Moment Calculations\nThe second moment, or moment of inertia, measures how an area or mass is distributed about an axis.\n\n5.15.1 General Formula\nThe second moment of area about the (x)-axis or (y)-axis is:\n\\[\nI_x = \\int y^2 \\, dA, \\quad I_y = \\int x^2 \\, dA\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-base",
     "href": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-base",
-    "title": "4  Moment of a Force",
-    "section": "4.16 Derivation of the Moment of Inertia of a Rectangle About Its Base",
-    "text": "4.16 Derivation of the Moment of Inertia of a Rectangle About Its Base\nWe calculate the moment of inertia of a rectangle about its base, where the base is along the \\(x\\)-axis and the height extends from \\(y = 0\\) to \\(y = h\\).\n\n4.16.1 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere: - \\(y\\): distance from the axis of rotation (the base of the rectangle in this case), - \\(dA\\): the infinitesimal area element.\n\n\n4.16.2 2. Setup for the Rectangle\n\nThe rectangle has a width of \\(b\\) and height \\(h\\).\nThe height extends from \\(y = 0\\) to \\(y = h\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{base}} = \\int_{0}^{h} y^2 \\, b \\, dy\n\\]\n\n\n4.16.3 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{base}} = b \\int_{0}^{h} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = 0\\) to \\(y = h\\):\n\\[\nI_{\\text{base}} = b \\left[ \\frac{y^3}{3} \\right]_{0}^{h}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{base}} = b \\left( \\frac{h^3}{3} - \\frac{0^3}{3} \\right)\n\\]\nSimplify:\n\\[\nI_{\\text{base}} = b \\cdot \\frac{h^3}{3}\n\\]\n\n\n4.16.4 4. Final Result\nThe moment of inertia of a rectangle about its base is:\n\\[\nI_{\\text{base}} = \\frac{b h^3}{3}\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.16 Derivation of the Moment of Inertia of a Rectangle About Its Base",
+    "text": "5.16 Derivation of the Moment of Inertia of a Rectangle About Its Base\nWe calculate the moment of inertia of a rectangle about its base, where the base is along the \\(x\\)-axis and the height extends from \\(y = 0\\) to \\(y = h\\).\n\n5.16.1 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere: - \\(y\\): distance from the axis of rotation (the base of the rectangle in this case), - \\(dA\\): the infinitesimal area element.\n\n\n5.16.2 2. Setup for the Rectangle\n\nThe rectangle has a width of \\(b\\) and height \\(h\\).\nThe height extends from \\(y = 0\\) to \\(y = h\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{base}} = \\int_{0}^{h} y^2 \\, b \\, dy\n\\]\n\n\n5.16.3 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{base}} = b \\int_{0}^{h} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = 0\\) to \\(y = h\\):\n\\[\nI_{\\text{base}} = b \\left[ \\frac{y^3}{3} \\right]_{0}^{h}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{base}} = b \\left( \\frac{h^3}{3} - \\frac{0^3}{3} \\right)\n\\]\nSimplify:\n\\[\nI_{\\text{base}} = b \\cdot \\frac{h^3}{3}\n\\]\n\n\n5.16.4 4. Final Result\nThe moment of inertia of a rectangle about its base is:\n\\[\nI_{\\text{base}} = \\frac{b h^3}{3}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-centroidal-axis-1",
     "href": "moment-of-a-force.html#derivation-of-the-moment-of-inertia-of-a-rectangle-about-its-centroidal-axis-1",
-    "title": "4  Moment of a Force",
-    "section": "4.17 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis",
-    "text": "4.17 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis\nWe calculate the moment of inertia of a rectangle about its centroidal \\(x\\)-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at \\(y = h/2\\) (mid-height of the rectangle).",
+    "title": "5  Moment of a Force",
+    "section": "5.17 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis",
+    "text": "5.17 Derivation of the Moment of Inertia of a Rectangle About its Centroidal Axis\nWe calculate the moment of inertia of a rectangle about its centroidal \\(x\\)-axis. The centroidal axis passes horizontally through the centroid of the rectangle, located at \\(y = h/2\\) (mid-height of the rectangle).",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#moment-of-inertia-formula-2",
     "href": "moment-of-a-force.html#moment-of-inertia-formula-2",
-    "title": "4  Moment of a Force",
-    "section": "4.18 1. Moment of Inertia Formula",
-    "text": "4.18 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere:\n\n\\(y\\): distance from the axis of rotation (centroidal axis in this case),\n\\(dA\\): the infinitesimal area element.",
+    "title": "5  Moment of a Force",
+    "section": "5.18 1. Moment of Inertia Formula",
+    "text": "5.18 1. Moment of Inertia Formula\nThe formula for the moment of inertia is:\n\\[\nI = \\int y^2 \\, dA\n\\]\nHere:\n\n\\(y\\): distance from the axis of rotation (centroidal axis in this case),\n\\(dA\\): the infinitesimal area element.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#setup-for-the-rectangle-2",
     "href": "moment-of-a-force.html#setup-for-the-rectangle-2",
-    "title": "4  Moment of a Force",
-    "section": "4.19 2. Setup for the Rectangle",
-    "text": "4.19 2. Setup for the Rectangle\n\nThe rectangle is centered on the centroidal \\(x\\)-axis, so the height ranges from \\(y = -h/2\\) to \\(y = h/2\\).\nThe width of the rectangle is \\(b\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{centroidal}} = \\int_{-h/2}^{h/2} y^2 \\, b \\, dy\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.19 2. Setup for the Rectangle",
+    "text": "5.19 2. Setup for the Rectangle\n\nThe rectangle is centered on the centroidal \\(x\\)-axis, so the height ranges from \\(y = -h/2\\) to \\(y = h/2\\).\nThe width of the rectangle is \\(b\\).\nThe infinitesimal area element is \\(dA = b \\, dy\\).\n\nThe integral becomes:\n\\[\nI_{\\text{centroidal}} = \\int_{-h/2}^{h/2} y^2 \\, b \\, dy\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#solve-the-integral-2",
     "href": "moment-of-a-force.html#solve-the-integral-2",
-    "title": "4  Moment of a Force",
-    "section": "4.20 3. Solve the Integral",
-    "text": "4.20 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{centroidal}} = b \\int_{-h/2}^{h/2} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = -h/2\\) to \\(y = h/2\\):\n\\[\nI_{\\text{centroidal}} = b \\left[ \\frac{y^3}{3} \\right]_{-h/2}^{h/2}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} - \\frac{(-h/2)^3}{3} \\right)\n\\]\nSince \\((-h/2)^3 = -(h/2)^3\\), the terms simplify:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} + \\frac{(h/2)^3}{3} \\right)\n\\]\nCombine the terms:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{2(h/2)^3}{3} \\right)\n\\]\nSimplify \\((h/2)^3 = \\frac{h^3}{8}\\):\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{2}{3} \\cdot \\frac{h^3}{8}\n\\]\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{h^3}{12}\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.20 3. Solve the Integral",
+    "text": "5.20 3. Solve the Integral\nFactor \\(b\\) (constant width) outside of the integral:\n\\[\nI_{\\text{centroidal}} = b \\int_{-h/2}^{h/2} y^2 \\, dy\n\\]\nThe integral of \\(y^2\\) is:\n\\[\n\\int y^2 \\, dy = \\frac{y^3}{3}\n\\]\nApply the limits \\(y = -h/2\\) to \\(y = h/2\\):\n\\[\nI_{\\text{centroidal}} = b \\left[ \\frac{y^3}{3} \\right]_{-h/2}^{h/2}\n\\]\nSubstitute the limits:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} - \\frac{(-h/2)^3}{3} \\right)\n\\]\nSince \\((-h/2)^3 = -(h/2)^3\\), the terms simplify:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{(h/2)^3}{3} + \\frac{(h/2)^3}{3} \\right)\n\\]\nCombine the terms:\n\\[\nI_{\\text{centroidal}} = b \\left( \\frac{2(h/2)^3}{3} \\right)\n\\]\nSimplify \\((h/2)^3 = \\frac{h^3}{8}\\):\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{2}{3} \\cdot \\frac{h^3}{8}\n\\]\n\\[\nI_{\\text{centroidal}} = b \\cdot \\frac{h^3}{12}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#final-result-2",
     "href": "moment-of-a-force.html#final-result-2",
-    "title": "4  Moment of a Force",
-    "section": "4.21 4. Final Result",
-    "text": "4.21 4. Final Result\nThe moment of inertia of a rectangle about its centroidal \\(x\\)-axis is:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]\nThis is the standard formula for the moment of inertia of a rectangle about its centroidal axis.",
+    "title": "5  Moment of a Force",
+    "section": "5.21 4. Final Result",
+    "text": "5.21 4. Final Result\nThe moment of inertia of a rectangle about its centroidal \\(x\\)-axis is:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]\nThis is the standard formula for the moment of inertia of a rectangle about its centroidal axis.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#comparison-with-the-centroidal-moment-of-inertia",
     "href": "moment-of-a-force.html#comparison-with-the-centroidal-moment-of-inertia",
-    "title": "4  Moment of a Force",
-    "section": "4.22 Comparison with the Centroidal Moment of Inertia",
-    "text": "4.22 Comparison with the Centroidal Moment of Inertia\nThe moment of inertia about the base is four times greater than that about the centroidal \\(x\\)-axis:\n\\[\nI_{\\text{base}} = 4 \\cdot I_{\\text{centroidal}}\n\\]\nwhere:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.22 Comparison with the Centroidal Moment of Inertia",
+    "text": "5.22 Comparison with the Centroidal Moment of Inertia\nThe moment of inertia about the base is four times greater than that about the centroidal \\(x\\)-axis:\n\\[\nI_{\\text{base}} = 4 \\cdot I_{\\text{centroidal}}\n\\]\nwhere:\n\\[\nI_{\\text{centroidal}} = \\frac{b h^3}{12}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#parallel-axis-theorem-1",
     "href": "moment-of-a-force.html#parallel-axis-theorem-1",
-    "title": "4  Moment of a Force",
-    "section": "4.23 Parallel Axis Theorem",
-    "text": "4.23 Parallel Axis Theorem\nTo find the moment of inertia about an axis parallel to the centroidal axis:\n\\[\nI = I_c + A d^2\n\\]",
+    "title": "5  Moment of a Force",
+    "section": "5.23 Parallel Axis Theorem",
+    "text": "5.23 Parallel Axis Theorem\nTo find the moment of inertia about an axis parallel to the centroidal axis:\n\\[\nI = I_c + A d^2\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#radius-of-gyration",
     "href": "moment-of-a-force.html#radius-of-gyration",
-    "title": "4  Moment of a Force",
-    "section": "4.24 Radius of Gyration",
-    "text": "4.24 Radius of Gyration\nThe radius of gyration of a body about an axis is a measure of the distribution of its area or mass relative to that axis. It is defined as the distance from the axis at which the total area or mass of the body could be concentrated without changing its moment of inertia.\nMathematically, the radius of gyration k is given by:\nwhere:\n\nI : Moment of inertia about the axis\nA : Area of the cross-section (for area calculations)\nm : Mass of the body (for mass calculations)",
+    "title": "5  Moment of a Force",
+    "section": "5.24 Radius of Gyration",
+    "text": "5.24 Radius of Gyration\nThe radius of gyration of a body about an axis is a measure of the distribution of its area or mass relative to that axis. It is defined as the distance from the axis at which the total area or mass of the body could be concentrated without changing its moment of inertia.\nMathematically, the radius of gyration k is given by:\nwhere:\n\nI : Moment of inertia about the axis\nA : Area of the cross-section (for area calculations)\nm : Mass of the body (for mass calculations)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#difference-between-first-moment-and-second-moment-1",
     "href": "moment-of-a-force.html#difference-between-first-moment-and-second-moment-1",
-    "title": "4  Moment of a Force",
-    "section": "4.25 Difference Between First Moment and Second Moment",
-    "text": "4.25 Difference Between First Moment and Second Moment\nThe first moment and second moment are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:",
+    "title": "5  Moment of a Force",
+    "section": "5.25 Difference Between First Moment and Second Moment",
+    "text": "5.25 Difference Between First Moment and Second Moment\nThe first moment and second moment are concepts from mathematics and physics, describing how quantities are distributed around a reference point (such as the mean or origin). Below is a detailed explanation:",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#first-moment-1",
     "href": "moment-of-a-force.html#first-moment-1",
-    "title": "4  Moment of a Force",
-    "section": "4.26 First Moment",
-    "text": "4.26 First Moment\n\nDefinition: The first moment measures the mean or center of mass relative to a reference point.\nFormula: \\[\nM_1 = \\sum (x_i \\cdot w_i)\n\\] where \\(x_i\\) is a value, and \\(w_i\\) is its weight.\nPhysical Interpretation: In mechanics, it determines the center of mass or centroid of an object.",
+    "title": "5  Moment of a Force",
+    "section": "5.26 First Moment",
+    "text": "5.26 First Moment\n\nDefinition: The first moment measures the mean or center of mass relative to a reference point.\nFormula: \\[\nM_1 = \\sum (x_i \\cdot w_i)\n\\] where \\(x_i\\) is a value, and \\(w_i\\) is its weight.\nPhysical Interpretation: In mechanics, it determines the center of mass or centroid of an object.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#second-moment-1",
     "href": "moment-of-a-force.html#second-moment-1",
-    "title": "4  Moment of a Force",
-    "section": "4.27 Second Moment",
-    "text": "4.27 Second Moment\n\nDefinition: The second moment measures the spread or dispersion of values around a reference point.\nFormula: \\[\nM_2 = \\sum (x_i^2 \\cdot w_i)\n\\]\nwhere \\(x_i\\) is a value, and \\(w_i\\) is its weight.\nPhysical Interpretation: In mechanics, the second moment of area (\\(I\\)) is used to describe an object’s resistance to bending or torsion (e.g., the moment of inertia).",
+    "title": "5  Moment of a Force",
+    "section": "5.27 Second Moment",
+    "text": "5.27 Second Moment\n\nDefinition: The second moment measures the spread or dispersion of values around a reference point.\nFormula: \\[\nM_2 = \\sum (x_i^2 \\cdot w_i)\n\\]\nwhere \\(x_i\\) is a value, and \\(w_i\\) is its weight.\nPhysical Interpretation: In mechanics, the second moment of area (\\(I\\)) is used to describe an object’s resistance to bending or torsion (e.g., the moment of inertia).",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#key-differences-1",
     "href": "moment-of-a-force.html#key-differences-1",
-    "title": "4  Moment of a Force",
-    "section": "4.28 Key Differences",
-    "text": "4.28 Key Differences\n\n\n\n\n\n\n\n\nFeature\nFirst Moment\nSecond Moment\n\n\n\n\nReference\nMeasures position relative to a point (e.g., centroid).\nMeasures spread relative to a point.\n\n\nPhysical Meaning\nIndicates center or balance point.\nIndicates resistance or spread.\n\n\nExample (Physics)\nCenter of mass.\nMoment of inertia.",
+    "title": "5  Moment of a Force",
+    "section": "5.28 Key Differences",
+    "text": "5.28 Key Differences\n\n\n\n\n\n\n\n\nFeature\nFirst Moment\nSecond Moment\n\n\n\n\nReference\nMeasures position relative to a point (e.g., centroid).\nMeasures spread relative to a point.\n\n\nPhysical Meaning\nIndicates center or balance point.\nIndicates resistance or spread.\n\n\nExample (Physics)\nCenter of mass.\nMoment of inertia.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#second-moments-of-common-shapes",
     "href": "moment-of-a-force.html#second-moments-of-common-shapes",
-    "title": "4  Moment of a Force",
-    "section": "4.29 Second Moments of Common Shapes",
-    "text": "4.29 Second Moments of Common Shapes\n\n\n\nTable 4.2: Second moments\n\n\n\n\n\n\n\n\n\n\nShape\nSecond moment (\\(I_x\\))\nSecond moment (\\(I_y\\))\n\n\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\\(I_x = \\frac{1}{12} b^3 h\\)\n\n\n\n\\(I_x = \\frac{1}{3} b h^3\\)\n\\(I_x = \\frac{1}{3} b^3 h\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} r^4\\)\n\\(I_y = \\frac{\\pi}{4} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\\(I_y = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\n\n\n\\(I_x = \\frac{\\pi}{8} r^4\\)\n\\(I_y = \\frac{\\pi}{8} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{16} r^4\\)\n\\(I_y = \\frac{\\pi}{16} r^4\\)\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\n\n\n\n\\(I_x = \\frac{1}{36} b h^3\\)",
+    "title": "5  Moment of a Force",
+    "section": "5.29 Second Moments of Common Shapes",
+    "text": "5.29 Second Moments of Common Shapes\n\n\n\nTable 5.2: Second moments\n\n\n\n\n\n\n\n\n\n\nShape\nSecond moment (\\(I_x\\))\nSecond moment (\\(I_y\\))\n\n\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\\(I_x = \\frac{1}{12} b^3 h\\)\n\n\n\n\\(I_x = \\frac{1}{3} b h^3\\)\n\\(I_x = \\frac{1}{3} b^3 h\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} r^4\\)\n\\(I_y = \\frac{\\pi}{4} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\\(I_y = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\n\n\n\\(I_x = \\frac{\\pi}{8} r^4\\)\n\\(I_y = \\frac{\\pi}{8} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{16} r^4\\)\n\\(I_y = \\frac{\\pi}{16} r^4\\)\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\n\n\n\n\\(I_x = \\frac{1}{36} b h^3\\)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "moment-of-a-force.html#further-reading",
     "href": "moment-of-a-force.html#further-reading",
-    "title": "4  Moment of a Force",
-    "section": "4.30 Further Reading",
-    "text": "4.30 Further Reading\nRead Chapter 7 in Russell, Jackson, and Embleton (2021), Chapter 1 in Hannah and Hillier (1995) and Chapter 2 in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd edition. Harlow: Longman Pub Group.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "title": "5  Moment of a Force",
+    "section": "5.30 Further Reading",
+    "text": "5.30 Further Reading\nRead Chapter 7 in Russell, Jackson, and Embleton (2021), Chapter 1 in Hannah and Hillier (1995) and Chapter 2 in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd edition. Harlow: Longman Pub Group.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Moment of a Force</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
   },
   {
     "objectID": "review.html",
     "href": "review.html",
-    "title": "5  Review",
+    "title": "6  Review",
     "section": "",
-    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 4:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\nChapter 4:\nChapter 5:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Review</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Review</span>"
     ]
   },
   {

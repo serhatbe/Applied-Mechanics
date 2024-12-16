@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; International System of Units – Applied Mechanics Workbook</title>
+<title>4&nbsp; Dynamics – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./scalar-and-vector-quantities.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./moment-of-a-force.html" rel="next">
+<link href="./kinematics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -132,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SI_Units.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">International System of Units</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dynamics.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -172,7 +152,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./SI_Units.html" class="sidebar-item-text sidebar-link active">
+  <a href="./SI_Units.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">International System of Units</span></span></a>
   </div>
 </li>
@@ -190,7 +170,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dynamics.html" class="sidebar-item-text sidebar-link">
+  <a href="./dynamics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamics</span></span></a>
   </div>
 </li>
@@ -222,16 +202,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">1.1</span> Objectives</a></li>
-  <li><a href="#si-units" id="toc-si-units" class="nav-link" data-scroll-target="#si-units"><span class="header-section-number">1.2</span> SI Units</a></li>
-  <li><a href="#si-system-rules-and-common-mistakes" id="toc-si-system-rules-and-common-mistakes" class="nav-link" data-scroll-target="#si-system-rules-and-common-mistakes"><span class="header-section-number">1.3</span> SI System Rules and Common Mistakes</a></li>
-  <li><a href="#unity-fraction" id="toc-unity-fraction" class="nav-link" data-scroll-target="#unity-fraction"><span class="header-section-number">1.4</span> Unity Fraction</a></li>
-  <li><a href="#classwork" id="toc-classwork" class="nav-link" data-scroll-target="#classwork"><span class="header-section-number">1.5</span> Classwork</a></li>
-  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set"><span class="header-section-number">1.6</span> Problem Set</a>
-  <ul class="collapse">
-  <li><a href="#answer-key" id="toc-answer-key" class="nav-link" data-scroll-target="#answer-key"><span class="header-section-number">1.6.1</span> Answer Key</a></li>
-  </ul></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">1.7</span> Further Reading</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">4.1</span> Objectives</a></li>
+  <li><a href="#newtons-laws-of-motion" id="toc-newtons-laws-of-motion" class="nav-link" data-scroll-target="#newtons-laws-of-motion"><span class="header-section-number">4.2</span> Newton’s Laws of Motion</a></li>
+  <li><a href="#linear-momentum" id="toc-linear-momentum" class="nav-link" data-scroll-target="#linear-momentum"><span class="header-section-number">4.3</span> Linear Momentum</a></li>
+  <li><a href="#angular-momentum" id="toc-angular-momentum" class="nav-link" data-scroll-target="#angular-momentum"><span class="header-section-number">4.4</span> Angular Momentum</a></li>
+  <li><a href="#turning-moment" id="toc-turning-moment" class="nav-link" data-scroll-target="#turning-moment"><span class="header-section-number">4.5</span> Turning Moment</a></li>
+  <li><a href="#power-by-torque" id="toc-power-by-torque" class="nav-link" data-scroll-target="#power-by-torque"><span class="header-section-number">4.6</span> Power by Torque</a></li>
+  <li><a href="#kinetic-energy-of-rotation" id="toc-kinetic-energy-of-rotation" class="nav-link" data-scroll-target="#kinetic-energy-of-rotation"><span class="header-section-number">4.7</span> Kinetic Energy of Rotation</a></li>
   </ul>
 </nav>
     </div>
@@ -240,7 +217,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-international-system-of-units" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">International System of Units</span></span></h1>
+<h1 class="title"><span id="sec-dynamics" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamics</span></span></h1>
 </div>
 
 
@@ -257,439 +234,227 @@ window.Quarto = {
 </header>
 
 
-<section id="objectives" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">1.1</span> Objectives</h2>
+<section id="objectives" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">4.1</span> Objectives</h2>
 <ul>
-<li>Recall the base and derived units.</li>
-<li>Practice the application of unity fraction.</li>
+<li>Recall</li>
+<li>Practice</li>
 </ul>
 </section>
-<section id="si-units" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="si-units"><span class="header-section-number">1.2</span> SI Units</h2>
-<p>The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.</p>
-<div style="page-break-after: always;"></div>
-<table class="caption-top table">
-<caption>Base SI units.</caption>
-<thead>
-<tr class="header">
-<th>Physical Quantity</th>
-<th>SI Base Unit</th>
-<th>Symbol</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Length</td>
-<td>Meter</td>
-<td>m</td>
-</tr>
-<tr class="even">
-<td>Mass</td>
-<td>Kilogram</td>
-<td>kg</td>
-</tr>
-<tr class="odd">
-<td>Time</td>
-<td>Second</td>
-<td>s</td>
-</tr>
-<tr class="even">
-<td>Electric Current</td>
-<td>Ampere</td>
-<td>A</td>
-</tr>
-<tr class="odd">
-<td>Temperature</td>
-<td>Kelvin</td>
-<td>K</td>
-</tr>
-<tr class="even">
-<td>Amount of Substance</td>
-<td>Mole</td>
-<td>mol</td>
-</tr>
-<tr class="odd">
-<td>Luminous Intensity</td>
-<td>Candela</td>
-<td>cd</td>
-</tr>
-</tbody>
-</table>
-<table class="caption-top table">
-<caption>Derived SI units.</caption>
-<thead>
-<tr class="header">
-<th>Physical Quantity</th>
-<th>Derived SI Unit</th>
-<th>Symbol</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Area</td>
-<td>Square meter</td>
-<td>m²</td>
-</tr>
-<tr class="even">
-<td>Volume</td>
-<td>Cubic meter</td>
-<td>m³</td>
-</tr>
-<tr class="odd">
-<td>Speed</td>
-<td>Meter per second</td>
-<td>m/s</td>
-</tr>
-<tr class="even">
-<td>Acceleration</td>
-<td>Meter per second squared</td>
-<td>m/s<sup>2</sup></td>
-</tr>
-<tr class="odd">
-<td>Force</td>
-<td>Newton</td>
-<td>N</td>
-</tr>
-<tr class="even">
-<td>Pressure</td>
-<td>Pascal</td>
-<td>Pa</td>
-</tr>
-<tr class="odd">
-<td>Energy</td>
-<td>Joule</td>
-<td>J</td>
-</tr>
-<tr class="even">
-<td>Power</td>
-<td>Watt</td>
-<td>W</td>
-</tr>
-<tr class="odd">
-<td>Electric Charge</td>
-<td>Coulomb</td>
-<td>C</td>
-</tr>
-<tr class="even">
-<td>Electric Potential</td>
-<td>Volt</td>
-<td>V</td>
-</tr>
-<tr class="odd">
-<td>Resistance</td>
-<td>Ohm</td>
-<td>Ω</td>
-</tr>
-<tr class="even">
-<td>Capacitance</td>
-<td>Farad</td>
-<td>F</td>
-</tr>
-<tr class="odd">
-<td>Frequency</td>
-<td>Hertz</td>
-<td>Hz</td>
-</tr>
-<tr class="even">
-<td>Luminous Flux</td>
-<td>Lumen</td>
-<td>lm</td>
-</tr>
-<tr class="odd">
-<td>Illuminance</td>
-<td>Lux</td>
-<td>lx</td>
-</tr>
-<tr class="even">
-<td>Specific Energy</td>
-<td>Joule per kilogram</td>
-<td>J/kg</td>
-</tr>
-<tr class="odd">
-<td>Specific Heat Capacity</td>
-<td>Joule per kilogram Kelvin</td>
-<td>J/(kg·K)</td>
-</tr>
-</tbody>
-</table>
-<div style="page-break-after: always;"></div>
-<table class="caption-top table">
-<caption>Common multiples and submultiples for SI units.</caption>
-<thead>
-<tr class="header">
-<th>Factor</th>
-<th>Prefix</th>
-<th>Symbol</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10<sup>9</sup></td>
-<td>giga</td>
-<td>G</td>
-</tr>
-<tr class="even">
-<td>10<sup>6</sup></td>
-<td>mega</td>
-<td>M</td>
-</tr>
-<tr class="odd">
-<td>10<sup>3</sup></td>
-<td>kilo</td>
-<td>k</td>
-</tr>
-<tr class="even">
-<td>10<sup>2</sup></td>
-<td>hecto</td>
-<td>h</td>
-</tr>
-<tr class="odd">
-<td>10<sup>1</sup></td>
-<td>deca</td>
-<td>da</td>
-</tr>
-<tr class="even">
-<td>10<sup>-1</sup></td>
-<td>deci</td>
-<td>d</td>
-</tr>
-<tr class="odd">
-<td>10<sup>-2</sup></td>
-<td>centi</td>
-<td>c</td>
-</tr>
-<tr class="even">
-<td>10<sup>-3</sup></td>
-<td>milli</td>
-<td>m</td>
-</tr>
-<tr class="odd">
-<td>10<sup>-6</sup></td>
-<td>micro</td>
-<td>µ</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="si-system-rules-and-common-mistakes" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="si-system-rules-and-common-mistakes"><span class="header-section-number">1.3</span> SI System Rules and Common Mistakes</h2>
-<p>Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.</p>
-<table class="caption-top table">
-<caption>SI system rules and common mistakes</caption>
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Concept</strong></th>
-<th><strong>Mistake</strong></th>
-<th><strong>Correct Usage</strong></th>
-<th><strong>Notes</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Use of SI Unit Symbols</strong></td>
-<td><code>m./s</code></td>
-<td><code>m/s</code></td>
-<td>Use the correct format without additional punctuation.</td>
-</tr>
-<tr class="even">
-<td><strong>Spacing Between Value &amp; Unit</strong></td>
-<td><code>10kg</code></td>
-<td><code>10 kg</code></td>
-<td>Always leave a space between the number and the unit symbol.</td>
-</tr>
-<tr class="odd">
-<td><strong>Incorrect Unit Symbols</strong></td>
-<td><code>sec</code>, <code>hrs</code>, <code>°K</code></td>
-<td><code>s</code>, <code>h</code>, <code>K</code></td>
-<td>Use the proper SI symbols; symbols are case-sensitive.</td>
-</tr>
-<tr class="even">
-<td><strong>Abbreviations for Units</strong></td>
-<td><code>5 kilograms (kgs)</code></td>
-<td><code>5 kilograms (kg)</code></td>
-<td>Avoid informal abbreviations like “kgs”; adhere to standard symbols.</td>
-</tr>
-<tr class="odd">
-<td><strong>Multiple Units in Expressions</strong></td>
-<td><code>5 m/s/s</code>, <code>5 kg/meter²</code></td>
-<td><code>5 m/s²</code>, <code>5 kg/m²</code></td>
-<td>Use compact, standardized formats for derived units.</td>
-</tr>
-<tr class="even">
-<td><strong>Incorrect Use of Prefixes</strong></td>
-<td><code>0.0001 km</code></td>
-<td><code>100 mm</code></td>
-<td>Choose prefixes to keep numbers in the range (0.1 x &lt; 1000).</td>
-</tr>
-<tr class="odd">
-<td><strong>Misplaced Unit Symbols</strong></td>
-<td><code>5/s</code>, <code>kg10</code></td>
-<td><code>5 s⁻¹</code>, <code>10 kg</code></td>
-<td>Symbols must follow numerical values, not precede them.</td>
-</tr>
-<tr class="even">
-<td><strong>Degrees Celsius vs.&nbsp;Kelvin</strong></td>
-<td><code>300°K</code></td>
-<td><code>300 K</code></td>
-<td>Kelvin is written without “degree”</td>
-</tr>
-<tr class="odd">
-<td><strong>Singular vs.&nbsp;Plural Units</strong></td>
-<td><code>5 kgs</code>, <code>1 meters</code></td>
-<td><code>5 kg</code>, <code>1 meter</code></td>
-<td>Symbols do not pluralize; full unit names follow grammar rules.</td>
-</tr>
-<tr class="even">
-<td><strong>Capitalization of Symbols</strong></td>
-<td><code>Kg</code>, <code>S</code>, <code>Km</code>, <code>MA</code></td>
-<td><code>kg</code>, <code>s</code>, <code>km</code>, <code>mA</code></td>
-<td>Symbols are case-sensitive; use uppercase only where specified (e.g., <code>N</code>, <code>Pa</code>).</td>
-</tr>
-<tr class="odd">
-<td><strong>Capitalization of Unit Names</strong></td>
-<td><code>Newton</code>, <code>Pascal</code>, <code>Watt</code></td>
-<td><code>newton</code>, <code>pascal</code>, <code>watt</code></td>
-<td>Unit names are lowercase, even if derived from a person’s name, unless starting a sentence.</td>
-</tr>
-<tr class="even">
-<td><strong>Prefix Capitalization</strong></td>
-<td><code>MilliMeter</code>, <code>MegaWatt</code></td>
-<td><code>millimeter</code>, <code>megawatt</code></td>
-<td>Prefixes are lowercase for (10^{-1}) to (10^{-9}), uppercase for (10^6) and larger (except <code>k</code> for kilo).</td>
-</tr>
-<tr class="odd">
-<td><strong>Formatting in Reports</strong></td>
-<td><code>5</code>, <code>Temperature: 300</code></td>
-<td><code>5 kg</code>, <code>Temperature: 300 K</code></td>
-<td>Always specify units explicitly.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="unity-fraction" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="unity-fraction"><span class="header-section-number">1.4</span> Unity Fraction</h2>
-<p>The <strong>unity fraction</strong> method, or <strong>unit conversion using unity fractions</strong>, is a systematic way to convert one unit of measurement into another. This method relies on multiplying by fractions that are equal to one, where the numerator and the denominator represent the same quantity in different units. Since any number multiplied by one remains the same, unity fractions allow for seamless conversion without changing the value.</p>
-<p>The principle of unity fractions is based on:</p>
+<section id="newtons-laws-of-motion" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="newtons-laws-of-motion"><span class="header-section-number">4.2</span> Newton’s Laws of Motion</h2>
 <ol type="1">
-<li><p><strong>Setting up equal values</strong>: Write a fraction where the numerator and denominator are equivalent values in different units, so the fraction equals one. For example, <span class="math inline">\(\frac{1km}{1000m}\)</span> is a unity fraction because 1 km equals 1000 m.</p></li>
-<li><p><strong>Multiplying by unity fractions</strong>: Multiply the initial quantity by the unity fraction(s) so that the undesired units cancel out, leaving only the desired units.</p></li>
+<li><p><strong>First Law (Law of Inertia)</strong>:<br>
+An object remains at rest, or in uniform motion in a straight line, unless acted upon by a net external force.<br>
+<span class="math display">\[
+\Sigma F = 0 \implies v = \text{constant}
+\]</span></p></li>
+<li><p><strong>Second Law (Law of Acceleration)</strong>:<br>
+The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.<br>
+<span class="math display">\[
+\vec{F} = m \vec{a}
+\]</span></p></li>
+<li><p><strong>Third Law (Action-Reaction Law)</strong>:<br>
+For every action, there is an equal and opposite reaction.<br>
+<span class="math display">\[
+\vec{F}_{\text{action}} = -\vec{F}_{\text{reaction}}
+\]</span></p></li>
 </ol>
-</section>
-<section id="classwork" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="classwork"><span class="header-section-number">1.5</span> Classwork</h2>
-<div id="exm-0" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1.1</strong></span> Suppose we want to convert <span class="math inline">\(5\)</span> kilometers to meters.</p>
-<ol type="1">
-<li>Start with <span class="math inline">\(5\)</span> kilometers: <span class="math display">\[
-5 \, \text{km}
-\]</span></li>
-<li>Multiply by a unity fraction that cancels kilometers and introduces meters. We use <span class="math inline">\((\frac{1000 \, \text{m}}{1 \, \text{km}}), since\:1 \, \text{km} = 1000 \, \text{m}\)</span>:</li>
-</ol>
-<p><span class="math display">\[5 \, \text{km} \times \frac{1000 \, \text{m}}{1 \, \text{km}} = 5000 \, \text{m}\]</span></p>
-<ol start="3" type="1">
-<li>The kilometers <span class="math inline">\(\text{km}\)</span> cancel out, leaving us with meters <span class="math inline">\(\text{m}\)</span>:</li>
-</ol>
-<p><span class="math display">\[
-5 \, \text{km} = 5000 \, \text{m}
-\]</span></p>
-<p>This step-by-step approach illustrates how the unity fraction cancels the undesired units and achieves the correct result in meters.</p>
-<p>Unity fractions can be extended by using multiple conversion steps. For example, converting hours to seconds would require two unity fractions: one to convert hours to minutes and another to convert minutes to seconds. This approach ensures accuracy and is widely used in science, engineering, and other fields that require precise unit conversions.</p>
+<div id="exm-3-1" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.1</strong></span> 3.1 Find the accelerating force required to increase the velocity of a body which has a mass of 20 kg from 30 m/s to 70 m/s in 4 s.</p>
 </div>
-<div id="exm-1" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1.2</strong></span> Convert <span class="math inline">\(15 \, \text{m/s}\)</span> to <span class="math inline">\(\text{km/h}\)</span>.</p>
-<ol type="1">
-<li>Start with <span class="math inline">\(15 \, \text{m/s}\)</span>.</li>
-<li>To convert meters to kilometers, multiply by <span class="math inline">\(\frac{1 \, \text{km}}{1000 \, \text{m}}\)</span>.</li>
-<li>To convert seconds to hours, multiply by <span class="math inline">\(\frac{3600 \, \text{s}}{1 \, \text{h}}\)</span>.</li>
-</ol>
-<p><span class="math display">\[
-15 \, \text{m/s} \times \frac{1 \, \text{km}}{1000 \, \text{m}} \times \frac{3600 \, \text{s}}{1 \, \text{h}} = 54 \, \text{km/h}
-\]</span></p>
-<p>The meters and seconds cancel out, leaving kilometers per hour: <span class="math inline">\(54 \, \text{km/h}\)</span>.</p>
+<div id="exm-3-2" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.2</strong></span> 3.2 A lift is supported by a steel wire rope, the total mass of the lift and contents is 750 kg. Find the tension in the wire rope, in newtons, when the lift is (i) moving at constant velocity, (ii) moving upwards and accelerating at 1.2 m/s<sup>2</sup>, (iii) moving upwards and retarding at 1.2 m/s<sup>2</sup></p>
 </div>
 </section>
-<section id="problem-set" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="problem-set"><span class="header-section-number">1.6</span> Problem Set</h2>
-<p><strong>Instructions:</strong></p>
-<ol type="1">
-<li><p>Use unity fraction to convert between derived SI units.</p></li>
-<li><p>Show each step of your work to ensure accuracy.</p></li>
-<li><p>Simplify your answers and include correct units.</p></li>
-</ol>
-<hr>
-<ol type="1">
-<li><p><strong>Speed</strong><br>
-Convert <span class="math inline">\(72 \, \text{km/h}\)</span> to <span class="math inline">\(\text{m/s}\)</span>.</p></li>
-<li><p><strong>Force</strong><br>
-Convert <span class="math inline">\(980 \, \text{N}\)</span> (newtons) to <span class="math inline">\(\text{kg} \cdot \text{m/s}^2\)</span>.</p></li>
-<li><p><strong>Energy</strong><br>
-Convert <span class="math inline">\(2500 \, \text{J}\)</span> (joules) to <span class="math inline">\(\text{kJ}\)</span>.</p></li>
-<li><p><strong>Power</strong><br>
-Convert <span class="math inline">\(1500 \, \text{W}\)</span> (watts) to <span class="math inline">\(\text{kW}\)</span>.</p></li>
-<li><p><strong>Pressure</strong><br>
-Convert <span class="math inline">\(101325 \, \text{Pa}\)</span> (pascals) to <span class="math inline">\(\text{kPa}\)</span>.</p></li>
-<li><p><strong>Volume Flow Rate</strong><br>
-Convert <span class="math inline">\(3 \, \text{m}^3/\text{min}\)</span> to <span class="math inline">\(\text{L/s}\)</span>.</p></li>
-<li><p><strong>Density</strong><br>
-Convert <span class="math inline">\(1000 \, \text{kg/m}^3\)</span> to <span class="math inline">\(\text{g/cm}^3\)</span>.</p></li>
-<li><p><strong>Acceleration</strong><br>
-Convert <span class="math inline">\(9.8 \, \text{m/s}^2\)</span> to <span class="math inline">\(\text{cm/s}^2\)</span>.</p></li>
-<li><p><strong>Torque</strong><br>
-Convert <span class="math inline">\(50 \, \text{N} \cdot \text{m}\)</span> to <span class="math inline">\(\text{kN} \cdot \text{cm}\)</span>.</p></li>
-<li><p><strong>Frequency</strong><br>
-Convert <span class="math inline">\(500 \, \text{Hz}\)</span> (hertz) to <span class="math inline">\(\text{kHz}\)</span>.</p></li>
-<li><p><strong>Work to Energy Conversion</strong><br>
-A force of <span class="math inline">\(20 \, \text{N}\)</span> moves an object <span class="math inline">\(500 \, \text{cm}\)</span>. Convert the work done to joules.</p></li>
-<li><p><strong>Kinetic Energy Conversion</strong><br>
-Calculate the kinetic energy in kilojoules of a <span class="math inline">\(1500 \, \text{kg}\)</span> car moving at <span class="math inline">\(72 \, \text{km/h}\)</span>.</p></li>
-<li><p><strong>Power to Energy Conversion</strong><br>
-A machine operates at <span class="math inline">\(2 \, \text{kW}\)</span> for <span class="math inline">\(3\)</span> hours. Convert the energy used to megajoules.</p></li>
-<li><p><strong>Pressure to Force Conversion</strong><br>
-Convert a pressure of <span class="math inline">\(200 \, \text{kPa}\)</span> applied to an area of <span class="math inline">\(0.5 \, \text{m}^2\)</span> to force in newtons.</p></li>
-<li><p><strong>Density to Mass Conversion</strong><br>
-Convert <span class="math inline">\(0.8 \, \text{g/cm}^3\)</span> for an object with a volume of <span class="math inline">\(250 \, \text{cm}^3\)</span> to mass in grams.</p></li>
-</ol>
-<hr>
-<section id="answer-key" class="level3" data-number="1.6.1">
-<h3 data-number="1.6.1" class="anchored" data-anchor-id="answer-key"><span class="header-section-number">1.6.1</span> Answer Key</h3>
-<ol type="1">
-<li><span class="math inline">\(72 \, \text{km/h} = 20 \, \text{m/s}\)</span></li>
-<li><span class="math inline">\(980 \, \text{N} = 980 \, \text{kg} \cdot \text{m/s}^2\)</span></li>
-<li><span class="math inline">\(2500 \, \text{J} = 2.5 \, \text{kJ}\)</span></li>
-<li><span class="math inline">\(1500 \, \text{W} = 1.5 \, \text{kW}\)</span></li>
-<li><span class="math inline">\(101325 \, \text{Pa} = 101.325 \, \text{kPa}\)</span></li>
-<li><span class="math inline">\(3 \, \text{m}^3/\text{min} = 50 \, \text{L/s}\)</span></li>
-<li><span class="math inline">\(1000 \, \text{kg/m}^3 = 1 \, \text{g/cm}^3\)</span></li>
-<li><span class="math inline">\(9.8 \, \text{m/s}^2 = 980 \, \text{cm/s}^2\)</span></li>
-<li><span class="math inline">\(50 \, \text{N} \cdot \text{m} = 5 \, \text{kN} \cdot \text{cm}\)</span></li>
-<li><span class="math inline">\(500 \, \text{Hz} = 0.5 \, \text{kHz}\)</span></li>
-<li><span class="math inline">\(20 \, \text{N} \times 5 \, \text{m} = 100 \, \text{J}\)</span></li>
-<li><span class="math inline">\(\text{Kinetic energy} = 1500 \, \text{kg} \times \left(20 \, \text{m/s}\right)^2 / 2 = 300 \, \text{kJ}\)</span></li>
-<li><span class="math inline">\(2 \, \text{kW} \times 3 \, \text{hours} = 21.6 \, \text{MJ}\)</span></li>
-<li><span class="math inline">\(200 \, \text{kPa} \times 0.5 \, \text{m}^2 = 100,000 \, \text{N}\)</span></li>
-<li><span class="math inline">\(0.8 \, \text{g/cm}^3 \times 250 \, \text{cm}^3 = 200 \, \text{g}\)</span></li>
-</ol>
+<section id="linear-momentum" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="linear-momentum"><span class="header-section-number">4.3</span> Linear Momentum</h2>
+<p>Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s <strong>mass</strong> and its <strong>velocity</strong>. Linear momentum is a vector quantity, meaning it has both magnitude and direction.</p>
+<p>Mathematically, linear momentum is given by:</p>
+<p><span class="math display">\[
+Linear\ momentum = m \vec{v}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p>Linear momentum is in kg·m/s.</p></li>
+<li><p><span class="math inline">\(m\)</span> is the mass of the object in kilograms.</p></li>
+<li><p><span class="math inline">\(\vec{v}\)</span> is the velocity of the object in meters per second.</p></li>
+</ul>
+<div id="exm-3-5" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.3</strong></span> 3.5 The mass of the head of a hand hammer is 0.8 kg. When moving at 9 m/s it strikes a chisel and is brought to rest in 1/250 s. What is the average force of the blow?</p>
+</div>
 </section>
+<section id="angular-momentum" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="angular-momentum"><span class="header-section-number">4.4</span> Angular Momentum</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/angularmomentum.png" class="img-fluid figure-img" style="width:4cm"></p>
+<figcaption>Angular momentum</figcaption>
+</figure>
+</div>
+<p>Given <strong>linear velocity</strong> <span class="math inline">\(\vec{v}\)</span> and <strong>angular velocity</strong> <span class="math inline">\(\omega\)</span>:</p>
+<p><span class="math display">\[
+\vec{v} = r \omega
+\]</span></p>
+<p>The <strong>linear momentum</strong> is determined by:</p>
+<p><span class="math display">\[
+\text{Linear momentum} = m \vec{v}
+\]</span></p>
+<p>Substituting for <span class="math inline">\(\vec{v}\)</span>:</p>
+<p><span class="math display">\[
+\text{Linear momentum} = m r \omega
+\]</span></p>
+<p>The <strong>moment of linear momentum</strong> can then be written as:</p>
+<p><span class="math display">\[
+\text{Moment of linear momentum} = m r \omega r
+\]</span></p>
+<p>The moment of linear momentum is referred to as the <strong>angular momentum</strong>. Simplifying the above equation:</p>
+<p><span class="math display">\[
+\text{Angular momentum} = m r^2 \omega
+\]</span></p>
+<p>Here, <span class="math inline">\(m r^2\)</span> is the <strong>moment of inertia</strong> (second moment of mass) of the object about its axis of rotation, denoted as <span class="math inline">\(I\)</span>. Thus, the angular momentum can be expressed as:</p>
+<p><span class="math display">\[
+\text{Angular momentum} = I \omega
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(\omega\)</span> is the angular velocity in <span class="math inline">\(rad/s\)</span>.</li>
+</ul>
+<p>Additionally, the moment of inertia <span class="math inline">\(I\)</span> is given by:</p>
+<p><span class="math display">\[
+I = m k^2
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(m\)</span> is the mass in <span class="math inline">\(kg\)</span>.</li>
+<li><span class="math inline">\(k\)</span> is the radius of gyration in <span class="math inline">\(m\)</span>.</li>
+</ul>
+<div id="exm-3-9" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.4</strong></span> 3.9 A flywheel of mass 500 kg and radius of gyration 1.2 m is running at 300 rev/min. By means of a clutch, this flywheel is suddenly connected to another flywheel, mass 2000 kg and radius of gyration 0.6 m, initially at rest. Calculate their common speed of rotation after engagement.</p>
+</div>
 </section>
-<section id="further-reading" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">1.7</span> Further Reading</h2>
-<p>Introduction in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span> and SI units in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional information.</p>
+<section id="turning-moment" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="turning-moment"><span class="header-section-number">4.5</span> Turning Moment</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/turningmoment.png" style="width:4cm;height:3.3cm" class="figure-img"></p>
+<figcaption>Turning moment</figcaption>
+</figure>
+</div>
+<p>We know the relation between linear acceleration <span class="math inline">\(a\)</span> and angular acceleration <span class="math inline">\(\alpha\)</span>:</p>
+<p><span class="math display">\[
+a = r \alpha
+\]</span></p>
+<p>And</p>
+<p><span class="math display">\[
+F = ma
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+F = m \alpha r
+\]</span></p>
+<p>If the force is not applied directly on the rim but at a greater or lesser leverage, say <span class="math inline">\(L\)</span> from the center, the effective force on the rim causing it to accelerate will be greater or lesser accordingly, in the ratio of <span class="math inline">\(L\)</span> to <span class="math inline">\(r\)</span>. Thus:</p>
+<p><span class="math display">\[
+F \frac{L}{r} = m \alpha r
+\]</span></p>
+<p>Multiplying both sides by <span class="math inline">\(r\)</span>,</p>
+<p><span class="math display">\[
+FL = m \alpha r^2
+\]</span></p>
+<p>Now, <span class="math inline">\(FL\)</span> is the torque applied. Therefore, the accelerating torque is:</p>
+<p><span class="math display">\[
+\tau = m r^2 \alpha
+\]</span></p>
+<p>Or,</p>
+<p><span class="math display">\[
+\tau = m k^2 \alpha
+\]</span></p>
+<p><span class="math inline">\(\tau\)</span> is also given by:</p>
+<p><span class="math display">\[
+\tau = I \alpha
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\tau\)</span> is the torque in <span class="math inline">\(Nm\)</span>.</li>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(\alpha\)</span>: Angular acceleration in <span class="math inline">\(rad/s^2\)</span>.</li>
+</ul>
+<div id="exm-Ex134Pg295" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.5</strong></span> Ex134 p.295 A shaft system has a moment of inertia of 51.4 kgm<sup>2</sup>. Determine the torque required to give it an angular acceleration of 5.3 rad/s<sup>2</sup></p>
+<p>Torque, <span class="math inline">\(\tau = I \alpha\)</span>, where moment of inertia I = 51.4 kg m and angular acceleration, <span class="math inline">\(\alpha = 5.3 rad/s\)</span> . Hence, torque, <span class="math inline">\(\tau = (51.4)(5.3) = 272.4 Nm\)</span></p>
+</div>
+<div id="exm-3-10" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.6</strong></span> 3.10 The mass of a flywheel is 175 kg and its radius of gyration is 380 mm. Find the torque required to attain a speed of 500 rev/min from rest in 30 s.</p>
+</div>
+<div id="exm-3-11" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.7</strong></span> 3.11 The torque to overcome frictional and other resistances of a turbine is 317 N m and may be considered as constant for all speeds. The mass of the rotating parts is 1.59 t and the radius of gyration is 0.686 m. If the gas is cut off when the turbine is running free of load at 1920 rev/min, find the time it will take to come to rest and the number of revolutions turned during that time.</p>
+</div>
+</section>
+<section id="power-by-torque" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="power-by-torque"><span class="header-section-number">4.6</span> Power by Torque</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/powerbytorque.png" class="img-fluid figure-img" style="width:4cm"></p>
+<figcaption>A rotating mechanism.</figcaption>
+</figure>
+</div>
+<p>Consider a force <span class="math inline">\(F\)</span> applied at a radius <span class="math inline">\(r\)</span> on a rotating mechanism, as shown above.</p>
+<p>The work done in one revolution is the product of the force and the circumference. Therefore:</p>
+<p><span class="math display">\[
+W = F \cdot 2 \pi r
+\]</span></p>
+<p>If the mechanism is running at <span class="math inline">\(n\)</span> revolutions per second:</p>
+<p><span class="math display">\[
+\text{Power} = F \cdot 2 \pi r n
+\]</span></p>
+<p>Since torque <span class="math inline">\(\tau = F r\)</span>, we can rewrite the equation as:</p>
+<p><span class="math display">\[
+P = \tau \cdot 2 \pi n
+\]</span></p>
+<p>Given that <span class="math inline">\(\omega = 2 \pi n\)</span>:</p>
+<p><span class="math display">\[
+P = \tau \cdot \omega
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(P\)</span> is the power in watts (W),</li>
+<li><span class="math inline">\(\tau\)</span> is the torque in newton-meters (Nm), and</li>
+<li><span class="math inline">\(\omega\)</span> is the angular velocity in radians per second (rad/s).</li>
+</ul>
+<div id="exm-4-4" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.8</strong></span> 4.4 The mean torque in a propeller shaft is 2.26 x 10<sup>5</sup> Nm when running at 140 rpm. Find the power transmitted.</p>
+</div>
+<div id="exm-4-6" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.9</strong></span> 4.6 One gear wheel with 100 teeth of 6 mm pitch running at 250 revlmin drives another which has 50 teeth. If the power transmitted is 0.5 kW, find the driving force on the teeth and the speed of the driven wheel.</p>
+</div>
+</section>
+<section id="kinetic-energy-of-rotation" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="kinetic-energy-of-rotation"><span class="header-section-number">4.7</span> Kinetic Energy of Rotation</h2>
+<p>We know that <span class="math inline">\(K.E. = \frac{1}{2}mv^2\)</span>, where <span class="math inline">\(v\)</span> is the linear velocity of the body. For a rotating body, the effective linear velocity is at the radius of gyration, as this is the radius at which the entire mass of the rotating body can be considered to act.</p>
+<p>Let <span class="math inline">\(k\)</span> = radius of gyration (in meters),<br>
+Let <span class="math inline">\(\omega\)</span> = angular velocity (in radians per second).</p>
+<p>The relationship between linear and angular velocity is:</p>
+<p><span class="math display">\[
+v = \omega k
+\]</span></p>
+<p>Substituting <span class="math inline">\(v^2 = \omega^2 k^2\)</span> into <span class="math inline">\(K.E. = \frac{1}{2}mv^2\)</span> gives:</p>
+<p><span class="math display">\[
+\text{Rotational K.E.} = \frac{1}{2} m k^2 \omega^2
+\]</span></p>
+<p>Since <span class="math inline">\(I = m k^2\)</span>, where <span class="math inline">\(I\)</span> is the moment of inertia:</p>
+<p><span class="math display">\[
+\text{Rotational K.E.} = \frac{1}{2} I \omega^2
+\]</span></p>
+<div id="exm-4-10" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.10</strong></span> 4.10 The radius of gyration of the flywheel of a shearing machine is 0.46 m and its mass is 750 kg. Find the kinetic energy stored in it when running at 120 rev/min. If the speed falls to 100 rev/min during the cutting stroke, find the kinetic energy given out by the wheel.</p>
+</div>
+<div id="exm-4-11" class="theorem example">
+<p><span class="theorem-title"><strong>Example 4.11</strong></span> 4.11 The torque required to turn a flywheel and shaft against friction at the bearings is 34 N m. The mass of the wheel and shaft is 907 kg and the radius of gyration is 381 mm. Assuming frictional resistance to be constant at all speeds, find the number of revolutions the system will turn whilst coming to rest from a speed of 450 rev/min when the driving power is cut out, and also the time taken in coming to rest.</p>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-bolton2021" class="csl-entry" role="listitem">
-Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
-</div>
-<div id="ref-russell2021" class="csl-entry" role="listitem">
-Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -1256,13 +1021,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./kinematics.html" class="pagination-link" aria-label="Kinematics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kinematics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./scalar-and-vector-quantities.html" class="pagination-link" aria-label="Scalar and Vector Quantities">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Scalar and Vector Quantities</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./moment-of-a-force.html" class="pagination-link" aria-label="Moment of a Force">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Moment of a Force</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
