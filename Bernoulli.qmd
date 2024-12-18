@@ -1,0 +1,153 @@
+---
+title: "Bernoulli's Equation"
+format: docx
+editor: visual
+---
+
+Water flows through a smooth, horizontal venturi meter with an entrance diameter of 375 mm and a throat diameter of 125 mm. If the pressure difference between these sections corresponds to a head of 457 mm of water, determine the mass flow rate in kg/s.
+
+To calculate the **mass flow rate** through the venturi meter, we will use **Bernoulli's principle** and the **continuity equation**.
+
+### Given Data:
+
+**Diameter at entrance (Section 1):**
+
+$$
+D_1 = 375\ \text{mm} = 0.375\ \text{m}
+$$
+
+**Diameter at throat (Section 2):**
+
+$$
+D_2 = 125\ \text{mm} = 0.125\ \text{m}
+$$
+
+**Pressure head difference:** $$
+h = 457\ \text{mm of water} = 0.457\ \text{m}
+$$
+
+**Density of water:** $$
+\rho = 1000\ \text{kg/m}^3 (for\ water)
+$$
+
+### Step 1: Cross-sectional Areas
+
+The areas of the entrance and throat are given by:
+
+$$
+A_1 = \frac{\pi D_1^2}{4}, \quad A_2 = \frac{\pi D_2^2}{4}
+$$ Substitute the values of $D_1$ and $D_2$:
+
+$$
+A_1 = \frac{\pi (0.375)^2}{4} = 0.1104\ \text{m}^2, \quad A_2 = \frac{\pi (0.125)^2}{4} = 0.01227 , \text{m}^2
+$$
+
+### Step 2: Bernoulli's Equation Between Two Points
+
+The Bernoulli equation, assuming negligible height differences and no losses, is:
+
+$$
+P_1 + \frac{1}{2} \rho v_1^2 = P_2 + \frac{1}{2} \rho v_2^2
+$$
+
+Rearranging for the velocity difference (using the pressure difference in terms of head): $$
+\frac{1}{2} \rho (v_2^2 - v_1^2) = \rho g h
+$$
+
+Simplify (cancel $\rho$):
+
+$$
+\frac{1}{2} (v_2^2 - v_1^2) = g h
+$$
+
+Thus: $$
+v_2^2 - v_1^2 = 2 g h
+$$
+
+### Step 3: Continuity Equation
+
+From the continuity equation:
+
+$$
+A_1 v_1 = A_2 v_2
+$$
+
+Solve for $v_1$ in terms of $v_2$:
+
+$$
+v_1 = \frac{A_2}{A_1} v_2 
+$$
+
+### Step 4: Substitute $v_1$ into Bernoulli's Equation
+
+Substitute $v_1 = \frac{A_2}{A_1} v_2$ into $v_2^2 - v_1^2 = 2 g h$:
+
+$$
+v_2^2 - \left( \frac{A_2}{A_1} v_2 \right)^2 = 2 g h
+$$
+
+Factor out $v_2^2$:
+
+$$
+v_2^2 \left( 1 - \left( \frac{A_2}{A_1} \right)^2 \right) = 2 g h 
+$$
+
+Solve for $v_2^2$:
+
+$$
+v_2^2 = \frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}
+$$
+
+Take the square root to find $v_2$:
+
+$$
+v_2 = \sqrt{\frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}}
+$$
+
+### Step 5: Calculate $v_2$
+
+First, calculate the ratio $\frac{A_2}{A_1}$:
+
+$$
+\frac{A_2}{A_1} = \frac{0.01227}{0.1104} = 0.1112
+$$
+
+Now calculate $1 - \left( \frac{A_2}{A_1} \right)^2$:
+
+$$
+1 - (0.1112)^2 = 1 - 0.01236 = 0.98764
+$$
+
+Substitute into the equation for $v_2$ using ($g = 9.81\ \text{m/s}^2$ and $h = 0.457\ \text{m}$):
+
+$$
+v_2 = \sqrt{\frac{2 \cdot 9.81 \cdot 0.457}{0.98764}}
+$$ $$
+v_2 = \sqrt{\frac{8.963}{0.98764}} = \sqrt{9.075} \approx 3.01 , \text{m/s}
+$$
+
+### Step 6: Calculate Mass Flow Rate
+
+The mass flow rate is given by:
+
+$$
+\dot{m} = \rho A_2 v_2
+$$
+
+Substitute $\rho = 1000\ \text{kg/m}^3$, $A_2 = 0.01227\ \text{m}^2$, and $v_2 = 3.01\ \text{m/s}$:
+
+$$
+\dot{m} = 1000 \cdot 0.01227 \cdot 3.01
+$$
+
+$$
+\dot{m} = 36.95\ \text{kg/s}
+$$
+
+### Final Answer:
+
+The mass flow rate is approximately:
+
+$$
+\boxed{37.0 \, \text{kg/s}}
+$$

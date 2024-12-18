@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>8&nbsp; Review – Applied Mechanics Workbook</title>
+<title>6&nbsp; Stress and Strain – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./shear-force-bending-moment-diagrams.html" rel="prev">
+<link href="./shear-force-bending-moment-diagrams.html" rel="next">
+<link href="./moment-of-a-force.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -103,7 +132,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./review.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Review</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stress-strain.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stress and Strain</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -173,7 +202,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./stress-strain.html" class="sidebar-item-text sidebar-link">
+  <a href="./stress-strain.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stress and Strain</span></span></a>
   </div>
 </li>
@@ -185,7 +214,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./review.html" class="sidebar-item-text sidebar-link active">
+  <a href="./review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Review</span></span></a>
   </div>
 </li>
@@ -200,15 +229,34 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">6.1</span> Objectives</a></li>
+  <li><a href="#stress-sigma" id="toc-stress-sigma" class="nav-link" data-scroll-target="#stress-sigma"><span class="header-section-number">6.2</span> Stress (<span class="math inline">\(\sigma\)</span>)</a></li>
+  <li><a href="#strain-varepsilon" id="toc-strain-varepsilon" class="nav-link" data-scroll-target="#strain-varepsilon"><span class="header-section-number">6.3</span> Strain (<span class="math inline">\(\varepsilon\)</span>)</a></li>
+  <li><a href="#hookes-law" id="toc-hookes-law" class="nav-link" data-scroll-target="#hookes-law"><span class="header-section-number">6.4</span> Hooke’s Law</a></li>
+  <li><a href="#ultimate-tensile-strength-uts" id="toc-ultimate-tensile-strength-uts" class="nav-link" data-scroll-target="#ultimate-tensile-strength-uts"><span class="header-section-number">6.5</span> Ultimate Tensile Strength (UTS)</a>
+  <ul class="collapse">
+  <li><a href="#formula" id="toc-formula" class="nav-link" data-scroll-target="#formula"><span class="header-section-number">6.5.1</span> Formula:</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points"><span class="header-section-number">6.5.2</span> Key Points:</a></li>
+  <li><a href="#linear-elastic-region" id="toc-linear-elastic-region" class="nav-link" data-scroll-target="#linear-elastic-region"><span class="header-section-number">6.5.3</span> Linear elastic region</a></li>
+  <li><a href="#strain-hardening-region" id="toc-strain-hardening-region" class="nav-link" data-scroll-target="#strain-hardening-region"><span class="header-section-number">6.5.4</span> Strain hardening region</a></li>
+  <li><a href="#necking-region" id="toc-necking-region" class="nav-link" data-scroll-target="#necking-region"><span class="header-section-number">6.5.5</span> Necking region</a></li>
+  </ul></li>
+  <li><a href="#factor-of-safety" id="toc-factor-of-safety" class="nav-link" data-scroll-target="#factor-of-safety"><span class="header-section-number">6.6</span> Factor of Safety</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">6.7</span> Further Reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-review" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Review</span></span></h1>
+<h1 class="title"><span id="sec-stress-and-strain" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stress and Strain</span></span></h1>
 </div>
 
 
@@ -225,57 +273,140 @@ div.csl-indent {
 </header>
 
 
-<p>We have used several books by <span class="citation" data-cites="ahrensHowTakeSmart2022">Ahrens (<a href="references.html#ref-ahrensHowTakeSmart2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="polya2014">Polya and Conway (<a href="references.html#ref-polya2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="bird2020">Bird and Ross (<a href="references.html#ref-bird2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="bird2021">Bird (<a href="references.html#ref-bird2021" role="doc-biblioref">2021</a>)</span>. These sources have helped you understand complex concepts.</p>
-<p><a href="SI_Units.html" class="quarto-xref"><span>Chapter 1</span></a>:</p>
+<section id="objectives" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">6.1</span> Objectives</h2>
 <ul>
-<li><p>Purpose of SI Units: Provide a consistent framework for scientific and technical measurements.</p></li>
-<li><p>Advantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.</p></li>
-<li><p>Fundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.</p></li>
-<li><p>Method Name: Unity fraction method.</p></li>
-<li><p>Purpose: Converting one unit of measurement into another.</p></li>
-<li><p>Methodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.</p></li>
+<li>Distinguish</li>
+<li>Define</li>
+<li>Practice</li>
 </ul>
-<p><a href="scalar-and-vector-quantities.html" class="quarto-xref"><span>Chapter 2</span></a>:</p>
+</section>
+<section id="stress-sigma" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="stress-sigma"><span class="header-section-number">6.2</span> Stress (<span class="math inline">\(\sigma\)</span>)</h2>
+<p>Stress is the internal resistance set up in a material when an external force is applied. It is given by:</p>
+<p><span class="math display">\[
+\sigma = \frac{F}{A}
+\]</span></p>
+<p>Where:</p>
 <ul>
-<li><p>Scalar Definition: A quantity with only magnitude (size).</p></li>
-<li><p>Vector Definition: A quantity with both magnitude and direction.</p></li>
-<li><p>Scalar Examples: Numbers, mass, speed, temperature, volume, and time.</p></li>
-<li><p>Vector Examples: Velocity, acceleration, weight, and friction.</p></li>
+<li><p><span class="math inline">\(\sigma\)</span> is the stress (Pa),</p></li>
+<li><p><span class="math inline">\(F\)</span> is the applied force (N),</p></li>
+<li><p><span class="math inline">\(A\)</span> is the cross-sectional area (m<span class="math inline">\(^2\)</span>).</p></li>
 </ul>
-<p><a href="kinematics.html" class="quarto-xref"><span>Chapter 3</span></a>:</p>
-<p><a href="dynamics.html" class="quarto-xref"><span>Chapter 4</span></a>:</p>
-<p><a href="moment-of-a-force.html" class="quarto-xref"><span>Chapter 5</span></a>:</p>
+<p>In the case of direct tensile or compressive forces, the area carrying the force is the cross-section in the plane of the material normal (i.e.&nbsp;perpendicular) to the direction of the force.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/comp.png" style="width:6cm;height:1.7cm" class="figure-img"></p>
+<figcaption>Compressive force</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tensile.png" style="width:6cm;height:1.4cm" class="figure-img"></p>
+<figcaption>Tensile force</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/shear.png" class="img-fluid figure-img" style="width:6cm"></p>
+<figcaption>Shearing force</figcaption>
+</figure>
+</div>
+<p><span class="math display">\[
+\tau = \frac{F}{A}
+\]</span></p>
+<p>Where:</p>
 <ul>
-<li><p>Definition of Moment: A mathematical concept representing the product of a distance and a physical quantity.</p></li>
-<li><p>Application of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.</p></li>
-<li><p>Example of Moment: Torque, the moment of force, is the product of force and distance.</p></li>
+<li><p><span class="math inline">\(\tau\)</span> is the shearing stress (Pa),</p></li>
+<li><p><span class="math inline">\(F\)</span> is the shearing force (N),</p></li>
+<li><p><span class="math inline">\(A\)</span> is the cross-sectional area (m<span class="math inline">\(^2\)</span>).</p></li>
 </ul>
-<p>As you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.</p>
-<p><a href="stress-strain.html" class="quarto-xref"><span>Chapter 6</span></a>:</p>
-<p><a href="shear-force-bending-moment-diagrams.html" class="quarto-xref"><span>Chapter 7</span></a>:</p>
-<p>We wish you the best on the exam.</p>
+</section>
+<section id="strain-varepsilon" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="strain-varepsilon"><span class="header-section-number">6.3</span> Strain (<span class="math inline">\(\varepsilon\)</span>)</h2>
+<p>Strain is defined as:</p>
+<p><span class="math display">\[
+\varepsilon = \frac{\Delta L}{L_0}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(\varepsilon\)</span> is the strain (unitless),</p></li>
+<li><p><span class="math inline">\(\Delta L\)</span> is the change in length,</p></li>
+<li><p><span class="math inline">\(L_0\)</span> is the original length.</p></li>
+</ul>
+</section>
+<section id="hookes-law" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="hookes-law"><span class="header-section-number">6.4</span> Hooke’s Law</h2>
+<p>For elastic materials:</p>
+<p><span class="math display">\[
+\sigma = E \varepsilon
+\]</span></p>
+<p>For shear stress: <span class="math display">\[
+\tau = G \gamma
+\]</span></p>
+</section>
+<section id="ultimate-tensile-strength-uts" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="ultimate-tensile-strength-uts"><span class="header-section-number">6.5</span> Ultimate Tensile Strength (UTS)</h2>
+<p><strong>Ultimate Tensile Strength (UTS)</strong> is the maximum stress a material can endure before breaking. It is determined during a tensile test.</p>
+<section id="formula" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="formula"><span class="header-section-number">6.5.1</span> Formula:</h3>
+<p><span class="math display">\[
+\text{UTS} = \frac{F_{\text{max}}}{A_0}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(F_{\text{max}}\)</span> is the maximum applied force (N),</p></li>
+<li><p><span class="math inline">\(A_0\)</span> is the original cross-sectional area (m<span class="math inline">\(^2\)</span>).</p></li>
+</ul>
+</section>
+<section id="key-points" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="key-points"><span class="header-section-number">6.5.2</span> Key Points:</h3>
+<ul>
+<li><strong>Units</strong>: Measured in Pascals (Pa), commonly in MPa or GPa.</li>
+<li><strong>Ductile Materials</strong>: Undergo significant plastic deformation after UTS.</li>
+<li><strong>Brittle Materials</strong>: Break shortly after reaching UTS.</li>
+</ul>
+<p>Below is a typical stress-strain curve showing the UTS point:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/stress_strain_curve.png" style="width:7cm;height:3.3cm" class="figure-img"></p>
+<figcaption>Stress–strain curve typical of a low-carbon steel</figcaption>
+</figure>
+</div>
+</section>
+<section id="linear-elastic-region" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="linear-elastic-region"><span class="header-section-number">6.5.3</span> Linear elastic region</h3>
+<p>The first stage is the linear elastic region. The stress is proportional to the strain, that is, obeys the general Hooke’s law, and the slope is Young’s modulus. In this region, the material undergoes only elastic deformation. The end of the stage is the initiation point of plastic deformation. The stress component of this point is defined as yield strength (or upper yield point, UYP for short).</p>
+</section>
+<section id="strain-hardening-region" class="level3" data-number="6.5.4">
+<h3 data-number="6.5.4" class="anchored" data-anchor-id="strain-hardening-region"><span class="header-section-number">6.5.4</span> Strain hardening region</h3>
+<p>The second stage is the strain hardening region. This region starts as the stress goes beyond the yielding point, reaching a <strong>maximum</strong> at the <strong>ultimate strength</strong> point, which is the maximal stress that can be sustained and is called the ultimate tensile strength (UTS). In this region, the stress mainly increases as the material elongates, except that for some materials such as steel, there is a nearly flat region at the beginning.</p>
+</section>
+<section id="necking-region" class="level3" data-number="6.5.5">
+<h3 data-number="6.5.5" class="anchored" data-anchor-id="necking-region"><span class="header-section-number">6.5.5</span> Necking region</h3>
+<p>The third stage is the necking region. Beyond tensile strength, a necking forms where the local cross-sectional area becomes significantly smaller than the average. The necking deformation is heterogeneous and will reinforce itself as the stress concentrates more at small section. Such positive feedback leads to quick development of necking and leads to fracture.</p>
+</section>
+</section>
+<section id="factor-of-safety" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="factor-of-safety"><span class="header-section-number">6.6</span> Factor of Safety</h2>
+</section>
+<section id="further-reading" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">6.7</span> Further Reading</h2>
+<p>Read Chapter 1 in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span>, Chapter 1 in <span class="citation" data-cites="hannah1995">Hannah and Hillier (<a href="references.html#ref-hannah1995" role="doc-biblioref">1995</a>)</span> and Chapter 2 in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional exercises.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-ahrensHowTakeSmart2022" class="csl-entry" role="listitem">
-Ahrens, Sönke. 2022. <em>How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking</em>. 2nd ed. edition. Sönke Ahrens.
-</div>
-<div id="ref-bird2021" class="csl-entry" role="listitem">
-Bird, J. O. 2021. <em>Bird’s Engineering Mathematics</em>. Ninth edition. Abingdon, Oxon ; New York: Routledge.
-</div>
-<div id="ref-bird2020" class="csl-entry" role="listitem">
-Bird, J. O., and C. T. F. Ross. 2020. <em>Mechanical Engineering Principles</em>. Fourth edition. Abingdon, Oxon: Routledge.
-</div>
 <div id="ref-bolton2021" class="csl-entry" role="listitem">
 Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
 </div>
-<div id="ref-polya2014" class="csl-entry" role="listitem">
-Polya, G., and John H. Conway. 2014. <em>How to Solve It: A New Aspect of Mathematical Method</em>. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.
+<div id="ref-hannah1995" class="csl-entry" role="listitem">
+Hannah, J., and M. J. Hillier. 1995. <em>Applied Mechanics</em>. 3rd edition. Harlow: Longman Pub Group.
 </div>
 <div id="ref-russell2021" class="csl-entry" role="listitem">
 Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -841,13 +972,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./shear-force-bending-moment-diagrams.html" class="pagination-link" aria-label="Shear Force and Bending Moment Diagrams">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span>
+      <a href="./moment-of-a-force.html" class="pagination-link" aria-label="Moment of a Force">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Moment of a Force</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./shear-force-bending-moment-diagrams.html" class="pagination-link" aria-label="Shear Force and Bending Moment Diagrams">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

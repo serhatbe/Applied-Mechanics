@@ -1,0 +1,127 @@
+---
+title: "Bernoulli's Equation for Final 1"
+format: docx
+editor: visual
+---
+
+Water flows through a smooth, horizontal Venturi meter with an entrance diameter of 365 mm and a throat diameter of 115 mm. If the pressure difference between these sections corresponds to a head of 467 mm of water, determine the mass flow rate in kg/s.
+
+## **Given Data**
+
+-   **Entrance diameter**, $D_1 = 365\ \text{mm} = 0.365\ \text{m}$
+-   **Throat diameter**, $D_2 = 115\ \text{mm} = 0.115\ \text{m}$
+-   **Pressure head difference**, $h = 467\ \text{mm} = 0.467\ \text{m}$
+-   **Density of water**, $\rho = 1000\ \text{kg/m}^3$
+-   **Gravitational acceleration**, $g = 9.81\ \text{m/s}^2$
+
+## **Step 1: Cross-Sectional Areas**
+
+The cross-sectional areas at the entrance $A_1$ and throat $A_2$ are given by:
+
+$$
+A = \frac{\pi D^2}{4}
+$$
+
+1.  For the entrance area $A_1$:
+
+$$
+A_1 = \frac{\pi (0.365)^2}{4} = 0.1047 \, \text{m}^2
+$$
+
+2.  For the throat area $A_2$:
+
+$$
+A_2 = \frac{\pi (0.115)^2}{4} = 0.0104 \, \text{m}^2
+$$
+
+## **Step 2: Continuity Equation**
+
+From the continuity equation, the relationship between velocities $V_1$ and $V_2$ is:
+
+$$
+A_1 V_1 = A_2 V_2 \implies V_1 = \frac{A_2}{A_1} V_2
+$$
+
+Substitute the values of ( A_1 ) and ( A_2 ):
+
+$$
+V_1 = \frac{0.0104}{0.1047} V_2 = 0.0993 V_2
+$$
+
+## **Step 3: Bernoulli's Equation**
+
+Bernoulli’s equation relates the head difference $h$ to the velocities $V_1$ and $V_2$:
+
+$$
+h = \frac{V_2^2 - V_1^2}{2g}
+$$
+
+Substitute $V_1 = 0.0993 V_2$ into the equation:
+
+$$
+h = \frac{V_2^2 - (0.0993 V_2)^2}{2g}
+$$
+
+Simplify:
+
+$$
+h = \frac{V_2^2 - (0.00986 V_2^2)}{2g}
+$$
+
+$$
+h = \frac{V_2^2 (1 - 0.00986)}{2g}
+$$
+
+$$
+h = \frac{0.9901 V_2^2}{2g}
+$$
+
+Rearranging for $V_2$:
+
+$$
+V_2^2 = \frac{2gh}{0.9901}
+$$
+
+$$
+V_2 = \sqrt{\frac{2gh}{0.9901}}
+$$
+
+Substitute $g = 9.81\ \text{m/s}^2$ and $h = 0.467\ \text{m}$:
+
+$$
+V_2 = \sqrt{\frac{2 (9.81)(0.467)}{0.9901}}
+$$
+
+$$
+V_2 = \sqrt{\frac{9.164}{0.9901}} = \sqrt{9.256}
+$$
+
+$$
+V_2 = 3.043 \, \text{m/s}
+$$
+
+## **Step 4: Mass Flow Rate**
+
+The mass flow rate $\dot{m}$ is given by:
+
+$$
+\dot{m} = \rho A_2 V_2
+$$
+
+Substitute $\rho = 1000\ \text{kg/m}^3$, $A_2 = 0.0104\ \text{m}^2$, and $V_2 = 3.043\ \text{m/s}$:
+
+$$
+\dot{m} = 1000 \times 0.0104 \times 3.043
+$$
+
+$$
+\dot{m} = 31.65 \, \text{kg/s}
+$$
+
+## **Final Answer**
+
+The mass flow rate is:
+
+$$
+\boxed{31.65 \, \text{kg/s}}
+$$

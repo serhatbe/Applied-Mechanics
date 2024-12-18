@@ -22,6 +22,8 @@ book:
     - kinematics.qmd
     - dynamics.qmd
     - moment-of-a-force.qmd
+    - stress-strain.qmd
+    - shear-force-bending-moment-diagrams.qmd
     - review.qmd
     - references.qmd
     

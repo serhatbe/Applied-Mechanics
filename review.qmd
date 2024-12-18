@@ -40,4 +40,8 @@ We have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021
 
 As you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.
 
+@sec-stress-and-strain:
+
+@sec-shear-force-and-bending-moment-diagrams:
+
 We wish you the best on the exam.

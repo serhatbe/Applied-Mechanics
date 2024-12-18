@@ -1,0 +1,115 @@
+# Stress and Strain {#sec-stress-and-strain}
+
+## Objectives
+
+-   Distinguish
+-   Define
+-   Practice
+
+## Stress ($\sigma$)
+
+Stress is the internal resistance set up in a material when an external force is applied. It is given by:
+
+$$
+\sigma = \frac{F}{A}
+$$
+
+Where:
+
+-   $\sigma$ is the stress (Pa),
+
+-   $F$ is the applied force (N),
+
+-   $A$ is the cross-sectional area (m$^2$).
+
+In the case of direct tensile or compressive forces, the area carrying the force is the cross-section in the plane of the material normal (i.e. perpendicular) to the direction of the force.
+
+![Compressive force](images/comp.png){width="6cm" height="1.7cm"}
+
+![Tensile force](images/tensile.png){width="6cm" height="1.4cm"}
+
+![Shearing force](images/shear.png){width="6cm"}
+
+$$ 
+\tau = \frac{F}{A} 
+$$
+
+Where:
+
+-   $\tau$ is the shearing stress (Pa),
+
+-   $F$ is the shearing force (N),
+
+-   $A$ is the cross-sectional area (m$^2$).
+
+## Strain ($\varepsilon$)
+
+Strain is defined as:
+
+$$
+\varepsilon = \frac{\Delta L}{L_0}
+$$
+
+Where:
+
+-   $\varepsilon$ is the strain (unitless),
+
+-   $\Delta L$ is the change in length,
+
+-   $L_0$ is the original length.
+
+## Hooke's Law
+
+For elastic materials:
+
+$$
+\sigma = E \varepsilon
+$$
+
+For shear stress: $$
+\tau = G \gamma
+$$
+
+## Ultimate Tensile Strength (UTS)
+
+**Ultimate Tensile Strength (UTS)** is the maximum stress a material can endure before breaking. It is determined during a tensile test.
+
+### Formula:
+
+$$
+\text{UTS} = \frac{F_{\text{max}}}{A_0}
+$$
+
+Where:
+
+-   $F_{\text{max}}$ is the maximum applied force (N),
+
+-   $A_0$ is the original cross-sectional area (m$^2$).
+
+### Key Points:
+
+-   **Units**: Measured in Pascals (Pa), commonly in MPa or GPa.
+-   **Ductile Materials**: Undergo significant plastic deformation after UTS.
+-   **Brittle Materials**: Break shortly after reaching UTS.
+
+Below is a typical stress-strain curve showing the UTS point:
+
+![Stress–strain curve typical of a low-carbon steel](images/stress_strain_curve.png){width="7cm" height="3.3cm"}
+
+### Linear elastic region
+
+The first stage is the linear elastic region. The stress is proportional to the strain, that is, obeys the general Hooke's law, and the slope is Young's modulus. In this region, the material undergoes only elastic deformation. The end of the stage is the initiation point of plastic deformation. The stress component of this point is defined as yield strength (or upper yield point, UYP for short).
+
+### Strain hardening region
+
+The second stage is the strain hardening region. This region starts as the stress goes beyond the yielding point, reaching a **maximum** at the **ultimate strength** point, which is the maximal stress that can be sustained and is called the ultimate tensile strength (UTS). In this region, the stress mainly increases as the material elongates, except that for some materials such as steel, there is a nearly flat region at the beginning.
+
+### Necking region
+
+The third stage is the necking region. Beyond tensile strength, a necking forms where the local cross-sectional area becomes significantly smaller than the average. The necking deformation is heterogeneous and will reinforce itself as the stress concentrates more at small section. Such positive feedback leads to quick development of necking and leads to fracture.
+
+## Factor of Safety
+
+## Further Reading
+
+Read Chapter 1 in @russell2021, Chapter 1 in @hannah1995 and Chapter 2 in @bolton2021 for additional exercises.

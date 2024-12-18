@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Applied Mechanics Workbook",
     "section": "",
-    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Dynamics: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n5  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n6  Review: Review section",
+    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Dynamics: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n5  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n6  Stress and Strain: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n7  Shear Force and Bending Moment Diagrams: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n8  Review: Review section",
     "crumbs": [
       "Preface"
     ]
@@ -750,13 +750,143 @@
     ]
   },
   {
+    "objectID": "stress-strain.html",
+    "href": "stress-strain.html",
+    "title": "6  Stress and Strain",
+    "section": "",
+    "text": "6.1 Objectives",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#objectives",
+    "href": "stress-strain.html#objectives",
+    "title": "6  Stress and Strain",
+    "section": "",
+    "text": "Distinguish\nDefine\nPractice",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#stress-sigma",
+    "href": "stress-strain.html#stress-sigma",
+    "title": "6  Stress and Strain",
+    "section": "6.2 Stress (\\(\\sigma\\))",
+    "text": "6.2 Stress (\\(\\sigma\\))\nStress is the internal resistance set up in a material when an external force is applied. It is given by:\n\\[\n\\sigma = \\frac{F}{A}\n\\]\nWhere:\n\n\\(\\sigma\\) is the stress (Pa),\n\\(F\\) is the applied force (N),\n\\(A\\) is the cross-sectional area (m\\(^2\\)).\n\nIn the case of direct tensile or compressive forces, the area carrying the force is the cross-section in the plane of the material normal (i.e. perpendicular) to the direction of the force.\n\n\n\nCompressive force\n\n\n\n\n\nTensile force\n\n\n\n\n\nShearing force\n\n\n\\[\n\\tau = \\frac{F}{A}\n\\]\nWhere:\n\n\\(\\tau\\) is the shearing stress (Pa),\n\\(F\\) is the shearing force (N),\n\\(A\\) is the cross-sectional area (m\\(^2\\)).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#strain-varepsilon",
+    "href": "stress-strain.html#strain-varepsilon",
+    "title": "6  Stress and Strain",
+    "section": "6.3 Strain (\\(\\varepsilon\\))",
+    "text": "6.3 Strain (\\(\\varepsilon\\))\nStrain is defined as:\n\\[\n\\varepsilon = \\frac{\\Delta L}{L_0}\n\\]\nWhere:\n\n\\(\\varepsilon\\) is the strain (unitless),\n\\(\\Delta L\\) is the change in length,\n\\(L_0\\) is the original length.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#hookes-law",
+    "href": "stress-strain.html#hookes-law",
+    "title": "6  Stress and Strain",
+    "section": "6.4 Hooke’s Law",
+    "text": "6.4 Hooke’s Law\nFor elastic materials:\n\\[\n\\sigma = E \\varepsilon\n\\]\nFor shear stress: \\[\n\\tau = G \\gamma\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#ultimate-tensile-strength-uts",
+    "href": "stress-strain.html#ultimate-tensile-strength-uts",
+    "title": "6  Stress and Strain",
+    "section": "6.5 Ultimate Tensile Strength (UTS)",
+    "text": "6.5 Ultimate Tensile Strength (UTS)\nUltimate Tensile Strength (UTS) is the maximum stress a material can endure before breaking. It is determined during a tensile test.\n\n6.5.1 Formula:\n\\[\n\\text{UTS} = \\frac{F_{\\text{max}}}{A_0}\n\\]\nWhere:\n\n\\(F_{\\text{max}}\\) is the maximum applied force (N),\n\\(A_0\\) is the original cross-sectional area (m\\(^2\\)).\n\n\n\n6.5.2 Key Points:\n\nUnits: Measured in Pascals (Pa), commonly in MPa or GPa.\nDuctile Materials: Undergo significant plastic deformation after UTS.\nBrittle Materials: Break shortly after reaching UTS.\n\nBelow is a typical stress-strain curve showing the UTS point:\n\n\n\nStress–strain curve typical of a low-carbon steel\n\n\n\n\n6.5.3 Linear elastic region\nThe first stage is the linear elastic region. The stress is proportional to the strain, that is, obeys the general Hooke’s law, and the slope is Young’s modulus. In this region, the material undergoes only elastic deformation. The end of the stage is the initiation point of plastic deformation. The stress component of this point is defined as yield strength (or upper yield point, UYP for short).\n\n\n6.5.4 Strain hardening region\nThe second stage is the strain hardening region. This region starts as the stress goes beyond the yielding point, reaching a maximum at the ultimate strength point, which is the maximal stress that can be sustained and is called the ultimate tensile strength (UTS). In this region, the stress mainly increases as the material elongates, except that for some materials such as steel, there is a nearly flat region at the beginning.\n\n\n6.5.5 Necking region\nThe third stage is the necking region. Beyond tensile strength, a necking forms where the local cross-sectional area becomes significantly smaller than the average. The necking deformation is heterogeneous and will reinforce itself as the stress concentrates more at small section. Such positive feedback leads to quick development of necking and leads to fracture.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#factor-of-safety",
+    "href": "stress-strain.html#factor-of-safety",
+    "title": "6  Stress and Strain",
+    "section": "6.6 Factor of Safety",
+    "text": "6.6 Factor of Safety",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "stress-strain.html#further-reading",
+    "href": "stress-strain.html#further-reading",
+    "title": "6  Stress and Strain",
+    "section": "6.7 Further Reading",
+    "text": "6.7 Further Reading\nRead Chapter 1 in Russell, Jackson, and Embleton (2021), Chapter 1 in Hannah and Hillier (1995) and Chapter 2 in Bolton (2021) for additional exercises.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd edition. Harlow: Longman Pub Group.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stress and Strain</span>"
+    ]
+  },
+  {
+    "objectID": "shear-force-bending-moment-diagrams.html",
+    "href": "shear-force-bending-moment-diagrams.html",
+    "title": "7  Shear Force and Bending Moment Diagrams",
+    "section": "",
+    "text": "7.1 Objectives",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Shear Force and Bending Moment Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "shear-force-bending-moment-diagrams.html#objectives",
+    "href": "shear-force-bending-moment-diagrams.html#objectives",
+    "title": "7  Shear Force and Bending Moment Diagrams",
+    "section": "",
+    "text": "Recall\nPractice",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Shear Force and Bending Moment Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "shear-force-bending-moment-diagrams.html#shear-force-and-bending-moment-diagrams",
+    "href": "shear-force-bending-moment-diagrams.html#shear-force-and-bending-moment-diagrams",
+    "title": "7  Shear Force and Bending Moment Diagrams",
+    "section": "7.2 Shear Force and Bending Moment Diagrams",
+    "text": "7.2 Shear Force and Bending Moment Diagrams\n\n7.2.1 1. Analyze the Problem\n\nIdentify the beam type: Determine whether it’s simply supported, cantilevered, or continuous.\nList all loads and supports: Include point loads, distributed loads, moments, and reactions.\n\n\n\n7.2.2 2. Calculate Support Reactions\n\nFree-Body Diagram (FBD): Draw the beam with all external forces, moments, and reactions.\nEquilibrium Equations: Use these to solve for the reactions at the supports:\n\n\n∑Fy​=0 (Vertical force equilibrium)\n∑M=0M = 0∑M=0 (Moment equilibrium about any point)\n\n\n\n7.2.3 3. Break the Beam into Segments\nDivide the beam into sections based on the locations of loads, supports, and discontinuities. Label each segment.\n\n\n7.2.4 4. Write Equations for Shear Force and Bending Moment\n\nShear Force (V(x)V(x)V(x)): The algebraic sum of vertical forces to the left or right of the section.\nBending Moment (M(x)M(x)M(x)): The algebraic sum of moments about the section.\n\n\n\n7.2.5 5. Plot the Shear Force Diagram (SFD)\n\nStart at zero at the ends of the beam (for simply supported beams or free ends).\nAdd or subtract forces at load points:\n\nA point load changes the shear force instantaneously by its magnitude.\nA distributed load causes a slope in the SFD.\n\nMark zero-crossings: Identify points where the shear force changes sign, indicating a potential maximum or minimum bending moment.\n\n\n\n7.2.6 6. Plot the Bending Moment Diagram (BMD)\n\nStart with the calculated moments at the supports or free ends.\nIntegrate the shear force: The area under the SFD gives the bending moment.\nApply boundary conditions:\n\nFixed ends: Zero slope (moment is maximum/minimum).\nSimply supported ends: Zero moment.\nFree ends: Zero shear force and moment.\n\n\n\n\n7.2.7 7. Verify the Results\n\nBoundary Conditions: Ensure the diagrams match the physical behavior of the beam.\nContinuity: Check for smooth transitions between segments (except at points of applied moments).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Shear Force and Bending Moment Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "shear-force-bending-moment-diagrams.html#summary",
+    "href": "shear-force-bending-moment-diagrams.html#summary",
+    "title": "7  Shear Force and Bending Moment Diagrams",
+    "section": "7.3 Summary",
+    "text": "7.3 Summary\n\n\n\n\n\n\n\n\nLoad Type\nShear Diagram Shape\nMoment Diagram Shape\n\n\n\n\nPoint Load\nRectangular (constant)\nTriangular\n\n\nUniformly Distributed Load (UDL)\nTriangular\nParabolas (second degree)\n\n\nWedge-shaped nonuniform distributed\nParabolas (second degree)\nParabolas (third degree)\n\n\nMoment Load\nStep change\nLinear",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Shear Force and Bending Moment Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "shear-force-bending-moment-diagrams.html#further-reading",
+    "href": "shear-force-bending-moment-diagrams.html#further-reading",
+    "title": "7  Shear Force and Bending Moment Diagrams",
+    "section": "7.4 Further Reading",
+    "text": "7.4 Further Reading\nIntroduction in Russell, Jackson, and Embleton (2021) and SI units in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Shear Force and Bending Moment Diagrams</span>"
+    ]
+  },
+  {
     "objectID": "review.html",
     "href": "review.html",
-    "title": "6  Review",
+    "title": "8  Review",
     "section": "",
-    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\nChapter 4:\nChapter 5:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\nChapter 4:\nChapter 5:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nChapter 6:\nChapter 7:\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Review</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Review</span>"
     ]
   },
   {

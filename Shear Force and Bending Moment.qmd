@@ -1,0 +1,74 @@
+---
+title: "Shear Force and Bending Moment Diagrams"
+format: pdf
+editor: visual
+---
+
+## Shear Force and Bending Moment Diagrams
+
+### **1. Analyze the Problem**
+
+-   **Identify the beam type:** Determine whether it's simply supported, cantilevered, or continuous.
+
+-   **List all loads and supports:** Include point loads, distributed loads, moments, and reactions.
+
+### **2. Calculate Support Reactions**
+
+1.  **Free-Body Diagram (FBD):** Draw the beam with all external forces, moments, and reactions.
+
+2.  **Equilibrium Equations:** Use these to solve for the reactions at the supports:
+
+-   ∑Fy​=0 (Vertical force equilibrium)
+
+-   ∑M=0\sum M = 0∑M=0 (Moment equilibrium about any point)
+
+### **3. Break the Beam into Segments**
+
+Divide the beam into sections based on the locations of loads, supports, and discontinuities. Label each segment.
+
+### **4. Write Equations for Shear Force and Bending Moment**
+
+-   **Shear Force (**V(x)V(x)V(x)): The algebraic sum of vertical forces to the left or right of the section.
+
+-   **Bending Moment (**M(x)M(x)M(x)): The algebraic sum of moments about the section.
+
+### **5. Plot the Shear Force Diagram (SFD)**
+
+1.  **Start at zero at the ends of the beam** (for simply supported beams or free ends).
+
+2.  **Add or subtract forces at load points:**
+
+    -   A point load changes the shear force instantaneously by its magnitude.
+
+    -   A distributed load causes a slope in the SFD.
+
+3.  **Mark zero-crossings:** Identify points where the shear force changes sign, indicating a potential maximum or minimum bending moment.
+
+### **6. Plot the Bending Moment Diagram (BMD)**
+
+1.  **Start with the calculated moments at the supports or free ends.**
+
+2.  **Integrate the shear force:** The area under the SFD gives the bending moment.
+
+3.  **Apply boundary conditions:**
+
+    -   Fixed ends: Zero slope (moment is maximum/minimum).
+
+    -   Simply supported ends: Zero moment.
+
+    -   Free ends: Zero shear force and moment.
+
+### **7. Verify the Results**
+
+-   **Boundary Conditions:** Ensure the diagrams match the physical behavior of the beam.
+
+-   **Continuity:** Check for smooth transitions between segments (except at points of applied moments).
+
+## Summary
+
+| **Load Type** | **Shear Diagram Shape** | **Moment Diagram Shape** |
+|----|----|----|
+| Point Load | Rectangular (constant) | Triangular |
+| Uniformly Distributed Load (UDL) | Triangular | Parabolas (second degree) |
+| Wedge-shaped nonuniform distributed | Parabolas (second degree) | Parabolas (third degree) |
+| Moment Load | Step change | Linear |
