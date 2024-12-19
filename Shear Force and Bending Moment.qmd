@@ -18,9 +18,9 @@ editor: visual
 
 2.  **Equilibrium Equations:** Use these to solve for the reactions at the supports:
 
--   ∑Fy​=0 (Vertical force equilibrium)
+-   $\sum F_y = 0$ (Vertical force equilibrium)
 
--   ∑M=0\sum M = 0∑M=0 (Moment equilibrium about any point)
+-   $\sum M = 0$ (Moment equilibrium about any point)
 
 ### **3. Break the Beam into Segments**
 
@@ -28,9 +28,9 @@ Divide the beam into sections based on the locations of loads, supports, and dis
 
 ### **4. Write Equations for Shear Force and Bending Moment**
 
--   **Shear Force (**V(x)V(x)V(x)): The algebraic sum of vertical forces to the left or right of the section.
+-   **Shear Force** $V(x)$: The algebraic sum of vertical forces to the left or right of the section.
 
--   **Bending Moment (**M(x)M(x)M(x)): The algebraic sum of moments about the section.
+-   **Bending Moment** $M(x)$: The algebraic sum of moments about the section.
 
 ### **5. Plot the Shear Force Diagram (SFD)**
 
@@ -62,13 +62,9 @@ Divide the beam into sections based on the locations of loads, supports, and dis
 
 -   **Boundary Conditions:** Ensure the diagrams match the physical behavior of the beam.
 
--   **Continuity:** Check for smooth transitions between segments (except at points of applied moments).
-
 ## Summary
 
 | **Load Type** | **Shear Diagram Shape** | **Moment Diagram Shape** |
 |----|----|----|
 | Point Load | Rectangular (constant) | Triangular |
 | Uniformly Distributed Load (UDL) | Triangular | Parabolas (second degree) |
-| Wedge-shaped nonuniform distributed | Parabolas (second degree) | Parabolas (third degree) |
-| Moment Load | Step change | Linear |
