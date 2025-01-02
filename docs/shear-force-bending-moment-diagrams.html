@@ -61,8 +61,8 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-ec1d12af9487bc57caf1724595cbb410.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2172c2886f7b3de52eed80ab0b6e452f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-4cae49b2eeaea5eee2bde9cfab2388c5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2eb8c37c764bb4edba42a54f5c9a154e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5e79572dcfcebd00108c1fe1d6a40836.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -91,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -118,7 +147,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images\logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Applied Mechanics Workbook</a> 
@@ -266,8 +295,8 @@ div.csl-indent {
 <li><p><strong>Equilibrium Equations:</strong> Use these to solve for the reactions at the supports:</p></li>
 </ol>
 <ul>
-<li><p>∑Fy​=0 (Vertical force equilibrium)</p></li>
-<li><p>∑M=0M = 0∑M=0 (Moment equilibrium about any point)</p></li>
+<li><p><span class="math inline">\(\sum F_y = 0\)</span> (Vertical force equilibrium)</p></li>
+<li><p><span class="math inline">\(\sum M = 0\)</span> (Moment equilibrium about any point)</p></li>
 </ul>
 </section>
 <section id="break-the-beam-into-segments" class="level3" data-number="7.2.3">
@@ -277,8 +306,8 @@ div.csl-indent {
 <section id="write-equations-for-shear-force-and-bending-moment" class="level3" data-number="7.2.4">
 <h3 data-number="7.2.4" class="anchored" data-anchor-id="write-equations-for-shear-force-and-bending-moment"><span class="header-section-number">7.2.4</span> <strong>4. Write Equations for Shear Force and Bending Moment</strong></h3>
 <ul>
-<li><p><strong>Shear Force (</strong>V(x)V(x)V(x)): The algebraic sum of vertical forces to the left or right of the section.</p></li>
-<li><p><strong>Bending Moment (</strong>M(x)M(x)M(x)): The algebraic sum of moments about the section.</p></li>
+<li><p><strong>Shear Force</strong> <span class="math inline">\(V(x)\)</span>: The algebraic sum of vertical forces to the left or right of the section.</p></li>
+<li><p><strong>Bending Moment</strong> <span class="math inline">\(M(x)\)</span>: The algebraic sum of moments about the section.</p></li>
 </ul>
 </section>
 <section id="plot-the-shear-force-diagram-sfd" class="level3" data-number="7.2.5">
@@ -309,8 +338,7 @@ div.csl-indent {
 <section id="verify-the-results" class="level3" data-number="7.2.7">
 <h3 data-number="7.2.7" class="anchored" data-anchor-id="verify-the-results"><span class="header-section-number">7.2.7</span> <strong>7. Verify the Results</strong></h3>
 <ul>
-<li><p><strong>Boundary Conditions:</strong> Ensure the diagrams match the physical behavior of the beam.</p></li>
-<li><p><strong>Continuity:</strong> Check for smooth transitions between segments (except at points of applied moments).</p></li>
+<li><strong>Boundary Conditions:</strong> Ensure the diagrams match the physical behavior of the beam.</li>
 </ul>
 </section>
 </section>
@@ -318,9 +346,9 @@ div.csl-indent {
 <h2 data-number="7.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.3</span> Summary</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 34%">
-<col style="width: 37%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -339,16 +367,6 @@ div.csl-indent {
 <td>Uniformly Distributed Load (UDL)</td>
 <td>Triangular</td>
 <td>Parabolas (second degree)</td>
-</tr>
-<tr class="odd">
-<td>Wedge-shaped nonuniform distributed</td>
-<td>Parabolas (second degree)</td>
-<td>Parabolas (third degree)</td>
-</tr>
-<tr class="even">
-<td>Moment Load</td>
-<td>Step change</td>
-<td>Linear</td>
 </tr>
 </tbody>
 </table>
