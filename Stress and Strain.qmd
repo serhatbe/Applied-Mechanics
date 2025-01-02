@@ -6,7 +6,7 @@ editor: visual
 
 ## Stress ($\sigma$)
 
-Stress is the internal resistance set up in a material when an external force is applied. It is given by:
+Stress is defined as the internal force per unit area within a material that arises due to externally applied forces. It is given by:
 
 $$
 \sigma = \frac{F}{A}
@@ -22,11 +22,11 @@ Where:
 
 In the case of direct tensile or compressive forces, the area carrying the force is the cross-section in the plane of the material normal (i.e. perpendicular) to the direction of the force.
 
-![Compressive force](images/comp.png){width="6cm" height="1.7cm"}
+![Compressive force](images/comp.png){#fig-comp width="6cm" height="1.7cm"}
 
-![Tensile force](images/tensile.png){width="6cm" height="1.4cm"}
+![Tensile force](images/tensile.png){#fig-tensile width="6cm" height="1.4cm"}
 
-![Shearing force](images/shear.png){width="6cm"}
+![Shearing force](images/shear.png){#fig-shear width="6cm"}
 
 $$ 
 \tau = \frac{F}{A} 
@@ -42,7 +42,7 @@ Where:
 
 ## Strain ($\varepsilon$)
 
-Strain is defined as:
+Strain is a measure of deformation representing the relative change in the material's dimensions under stress. It is dimensionless since it is a ratio. Strain is defined as:
 
 $$
 \varepsilon = \frac{\Delta L}{L_0}
@@ -58,15 +58,77 @@ Where:
 
 ## Hooke's Law
 
+For linear elastic materials, stress is proportional to strain:
+
 For elastic materials:
 
 $$
 \sigma = E \varepsilon
 $$
 
-For shear stress: $$
-\tau = G \gamma
 $$
+E = \frac{\sigma}{\varepsilon}
+$$
+
+Where:
+
+-   $\sigma$ is the stress (Pa).
+-   $\varepsilon$ is the strain (unitless).
+-   E: Young’s modulus (Pa), a material property (modulus of elasticity).
+
+## Factor of Safety (FOS)
+
+The **Factor of Safety (FOS)** is a critical concept in engineering design and analysis. It provides a measure of the margin of safety in a structure or material under load. The FOS is defined as the ratio of the material's ultimate strength (breaking stress) to the actual applied stress (working stress).
+
+$$
+\text{FOS} = \frac{\text{Breaking Stress}}{\text{Working Stress}}
+$$
+
+-   **Breaking Stress**: This refers to the maximum stress that a material can withstand before failure. For tensile stresses, this is called the tensile strength; for compressive stresses, it is the compressive strength.
+
+-   **Working Stress**: The stress experienced by the material under the given loading conditions.
+
+### Importance of FOS
+
+1.  **Safety**: A higher FOS ensures that the structure or material has a greater margin before failure, accounting for uncertainties in loading conditions, material properties, or fabrication methods.
+2.  **Economic Design**: While a higher FOS improves safety, it may lead to over-design and increased material costs. Engineers balance safety and cost efficiency to determine an appropriate FOS for each application.
+
+## Tensile Test
+
+The **tensile test** is a mechanical test used to determine the mechanical properties of a material under axial tensile loading. The test involves pulling a specimen apart until it fractures while measuring the applied force and the resulting elongation.
+
+### Procedure
+
+1.  Prepare a standardized specimen with a known cross-sectional area, $A_0$, and gauge length, $L_0$.
+2.  Mount the specimen in the testing machine and apply an axial tensile force, $F$.
+3.  Record the force and elongation throughout the test until the specimen fractures.
+
+### Key Parameters
+
+-   **Stress (**$\sigma$): Defined as the applied force per unit area: $$
+    \sigma = \frac{F}{A_0}
+    $$ where:
+    -   $F$ is the applied force.
+    -   $A_0$ is the initial cross-sectional area.
+-   **Strain (**$\epsilon$): Defined as the relative elongation of the specimen: $$
+    \epsilon = \frac{\Delta L}{L_0}
+    $$ where:
+    -   $\Delta L$ is the change in length.
+    -   $L_0$ is the initial gauge length.
+
+### Stress-Strain Curve
+
+The stress-strain curve @fig-curve illustrates the material's response to the applied force. Important points on the curve include:
+
+1.  **Elastic Region**: The material deforms elastically and returns to its original shape when the load is removed. Hooke's Law applies: $$
+    \sigma = E \epsilon
+    $$ where $E$ is the Young's modulus.
+
+2.  **Yield Point**: The stress at which the material begins to deform plastically.
+
+3.  **Ultimate Tensile Strength (UTS)**: The maximum stress the material can withstand.
+
+4.  **Fracture Point**: The point at which the material fails.
 
 ## Ultimate Tensile Strength (UTS)
 
@@ -74,7 +136,7 @@ $$
 
 ### Formula:
 
-$$
+$$ 
 \text{UTS} = \frac{F_{\text{max}}}{A_0}
 $$
 
@@ -92,18 +154,4 @@ Where:
 
 Below is a typical stress-strain curve showing the UTS point:
 
-![Stress–strain curve typical of a low-carbon steel](images/stress_strain_curve.png){width="7cm" height="3.3cm"}
-
-### Linear elastic region
-
-The first stage is the linear elastic region. The stress is proportional to the strain, that is, obeys the general Hooke's law, and the slope is Young's modulus. In this region, the material undergoes only elastic deformation. The end of the stage is the initiation point of plastic deformation. The stress component of this point is defined as yield strength (or upper yield point, UYP for short).
-
-### Strain hardening region
-
-The second stage is the strain hardening region. This region starts as the stress goes beyond the yielding point, reaching a **maximum** at the **ultimate strength** point, which is the maximal stress that can be sustained and is called the ultimate tensile strength (UTS). In this region, the stress mainly increases as the material elongates, except that for some materials such as steel, there is a nearly flat region at the beginning.
-
-### Necking region
-
-The third stage is the necking region. Beyond tensile strength, a necking forms where the local cross-sectional area becomes significantly smaller than the average. The necking deformation is heterogeneous and will reinforce itself as the stress concentrates more at small section. Such positive feedback leads to quick development of necking and leads to fracture.
-
-## Factor of Safety
+![Stress–strain curve](images/stress_strain_curve1.png){#fig-curve width="7cm"}
