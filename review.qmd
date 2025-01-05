@@ -44,4 +44,6 @@ As you near the final exam, remember that your knowledge and skills will help yo
 
 @sec-shear-force-and-bending-moment-diagrams:
 
+@sec-hydrodynamics:
+
 We wish you the best on the exam.

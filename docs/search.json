@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Applied Mechanics Workbook",
     "section": "",
-    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Dynamics: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n5  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n6  Stress and Strain: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n7  Shear Force and Bending Moment Diagrams: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n8  Review: Review section",
+    "text": "Preface\nThis workbook presents a collection of lecture notes on Applied Mechanics, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.\n1  International System of Units: The International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.\n2  Scalar and Vector Quantities: In mathematics and physics, a scalar is a quantity with only magnitude (size), whereas a vector has both magnitude and direction. Examples of scalar quantities include numbers, mass, speed, temperature, volume, and time. In contrast, examples of vector quantities include velocity, acceleration, and forces like weight and friction.\n3  Kinematics: Kinematic equations describe the motion of objects under constant acceleration. They relate displacement (\\(x\\)), initial velocity (\\(v_0\\)), final velocity (\\(v\\)), acceleration (\\(a\\)), and time (\\(t\\)).\n4  Dynamics: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n5  Moment of a Force: A moment is a mathematical concept that represents the product of a distance and a physical quantity, such as force. Moments are typically defined relative to a fixed reference point and pertain to physical quantities situated at some distance from this point. For instance, the moment of force, commonly referred to as torque, is the product of the force applied to an object and the distance from the reference point to the object.\n6  Stress and Strain: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n7  Shear Force and Bending Moment Diagrams: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object’s mass and its velocity. Linear momentum is a vector quantity, meaning it has both magnitude and direction.\n8  Hydrodynamics: The amount of liquid flowing through a pipe or opening is usually measured by the volume or mass of liquid that flows per unit of time.\n9  Review: Review section",
     "crumbs": [
       "Preface"
     ]
@@ -474,7 +474,7 @@
     "href": "moment-of-a-force.html#properties-of-common-shapes",
     "title": "5  Moment of a Force",
     "section": "5.3 Properties of Common Shapes",
-    "text": "5.3 Properties of Common Shapes\nIn Table 5.1, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.\n\n\n\n\nTable 5.1: Centroids of Common Shapes\n\n\n\n\n\n\n\n\n\n\n\nShape\nArea\n\\(\\bar{x}\\)\n\\(\\bar{y}\\)\n\n\n\n\n\n\\(A = b h\\)\n\\(b/2\\)\n\\(h/2\\)\n\n\n\n\\(\\dfrac{bh}{2}\\)\n\\(b/3\\)\n\\(h/3\\)\n\n\n\n\\(\\dfrac{(a+b) h}{2}\\)\n\\(\\dfrac{a^2 +ab + b^2}{3 (a+b)}\\)\n\\(\\dfrac{h(2a+b)}{3(a+b)}\\)\n\n\n\n\\(\\pi r^2\\)\n\\(r\\)\n\\(r\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{2}\\)\n\\(r\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{4}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)",
+    "text": "5.3 Properties of Common Shapes\nIn Table A.1, all centroids are measured from the indicated origin. You must make the appropriate adjustments when the origin of your coordinate system is located elsewhere.\n\n\n\n\nTable 5.1: Centroids of Common Shapes\n\n\n\n\n\n\n\n\n\n\n\nShape\nArea\n\\(\\bar{x}\\)\n\\(\\bar{y}\\)\n\n\n\n\n\n\\(A = b h\\)\n\\(b/2\\)\n\\(h/2\\)\n\n\n\n\\(\\dfrac{bh}{2}\\)\n\\(b/3\\)\n\\(h/3\\)\n\n\n\n\\(\\dfrac{(a+b) h}{2}\\)\n\\(\\dfrac{a^2 +ab + b^2}{3 (a+b)}\\)\n\\(\\dfrac{h(2a+b)}{3(a+b)}\\)\n\n\n\n\\(\\pi r^2\\)\n\\(r\\)\n\\(r\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{2}\\)\n\\(r\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{4}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Moment of a Force</span>"
     ]
@@ -880,13 +880,73 @@
     ]
   },
   {
+    "objectID": "hydrodynamics.html",
+    "href": "hydrodynamics.html",
+    "title": "8  Hydrodynamics",
+    "section": "",
+    "text": "8.1 Volume Flow Rate\nThe amount of liquid flowing through a pipe or opening is usually measured by the volume or mass of liquid that flows per unit of time.\nVolume rate of flow refers to the rate at which a fluid volume passes a given section in a flow stream. Volume rate of flow may also be referred to as capacity of flow, flow rate or discharge. It is generally given in units of volume per unit of time, cubic meters per second (m3/s) or liters per second (L/s).\nConsider an ideal fluid flow in a pipe of cross-section ‘A’ (m2). For an ideal fluid all the particles move to the right with a velocity of ‘C’ (m/s). As the fluid flow to the right with a velocity of C m/s, ‘C’ m of fluid pass section 1 every second. i.e. the volume of fluid passing section-1 every second is A x C.\n\\[\nVolume\\ flow = area\\ x\\ velocity\n\\]\n\\[\n\\dot{v} = A \\cdot C\n\\]\nWhere:\nConsider a real fluid flowing in the same pipe. Here particle velocity will be a variable across the flow stream.\nIf the mean velocity cm of all the fluid particles could be found, then similar to the ideal fluid.\n\\[\nVolume\\ flow = area\\ x\\ mean\\ velocity\n\\]\nUnless otherwise indicated, the velocity of flow is understood to refer to the average or mean velocity of all the particles in a flowing fluid.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "hydrodynamics.html#volume-flow-rate",
+    "href": "hydrodynamics.html#volume-flow-rate",
+    "title": "8  Hydrodynamics",
+    "section": "",
+    "text": "Volume flow\n\n\n\n\n\n\n\n\\(\\dot{v}\\): Volume flow rate, \\(\\mathrm{m^3/s}\\)\n\\(A\\): Cross-sectional area of the flow, \\(\\mathrm{m^2}\\)\n\\(C\\): Mean (average) velocity of the fluid, \\(\\mathrm{m/s}\\)\n\n\n\n\n\nMean velocity",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "hydrodynamics.html#mass-flow-rate",
+    "href": "hydrodynamics.html#mass-flow-rate",
+    "title": "8  Hydrodynamics",
+    "section": "8.2 Mass Flow Rate",
+    "text": "8.2 Mass Flow Rate\nMass flow rate refers to the rate at which a fluid mass passes a given section in a flow stream. It is given in units of mass per unit of time, kilogram per second (kg/s). Mass flow rate is easily calculated from volume flow rate as follows.\n\\[\nMass\\ flow = density\\ x\\ volume\\ flow\n\\]\n\\[\n\\dot{m} = \\rho \\cdot \\dot v\n\\]\nWhere:\n\n\\(\\dot{m}\\): mass flow rate, \\(\\mathrm{kg/s}\\)\n\\(\\rho\\): density, \\(\\mathrm{kg/m^3}\\)\n\\(\\dot{v}\\): volume flow, \\(\\mathrm{m^3/s}\\)\n\nOr\n\\[\n\\dot{m} = \\rho \\cdot A \\cdot C\n\\]\nWhere:\n\n\\(\\dot{m}\\): mass flow rate, \\(\\mathrm{kg/s}\\)\n\\(\\rho\\): density, \\(\\mathrm{kg/m^3}\\)\n\\(A\\): Cross-sectional area of the flow, \\(\\mathrm{m^2}\\)\n\\(C\\): Mean (average) velocity of the fluid, \\(\\mathrm{m/s}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "hydrodynamics.html#continuity-equation",
+    "href": "hydrodynamics.html#continuity-equation",
+    "title": "8  Hydrodynamics",
+    "section": "8.3 Continuity Equation",
+    "text": "8.3 Continuity Equation\nContinuous flow exists in a flow system when the mass flow rate is constant throughout the system. If in the diagram below, the mass flow rate at 1 is equal to that at 2, then continuity exists.\n\n\n\nContinuity equation\n\n\nSince \\(\\dot{m_1} = \\dot{m_2}\\), therefore\n\\[\n\\rho_1 \\cdot A_1 \\cdot C_1= \\rho_2 \\cdot A_2 \\cdot C_2\n\\]\nIf the fluid is incompressible (most liquids), then density will remain constant (\\(\\rho_1=\\rho_2\\)) and the above equations may be written as:\n\\[\nA_1 \\cdot C_1= A_2 \\cdot C_2\n\\] Or\n\\[\n\\dot{v_1}= \\dot{v_2}\n\\]\nThat is, the volume flow rate is constant for an incompressible fluid.\n\nExample 8.1 A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate the mass flow rate and the velocities in the larger and smaller pipe.\n\n\n\nExample\n\n\n\n8.3.1 Problem Statement\nA pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate:\n\nThe mass flow rate.\nThe velocity in the larger pipe.\nThe velocity in the smaller pipe.\n\n\n8.3.1.1 Given Data:\n\nDiameter of larger pipe: \\(d_1 = 300 \\, \\text{mm} = 0.3 \\, \\text{m}\\)\nDiameter of smaller pipe: \\(d_2 = 200 \\, \\text{mm} = 0.2 \\, \\text{m}\\)\nVolume flow rate:\n\\[ \\dot{v} = 0.3066\\ \\text{m}^3/\\text{s} \\]\nDensity of water:\n\\[ \\rho = 1000 \\, \\text{kg/m}^3 \\]\n\n\n\n8.3.1.2 Step 1: Mass Flow Rate\nThe mass flow rate \\(\\dot{m}\\) is given by:\n\\[\n\\dot{m} = \\rho \\dot{v}\n\\]\nSubstituting values:\n\\[\n\\dot{m} = 1000 \\times 0.3066 = 306.667 \\, \\text{kg/s}\n\\]\n\n\n8.3.1.3 Step 2: Velocity in the Larger Pipe \\(C_1\\)\nThe velocity in a pipe is related to the flow rate and cross-sectional area:\n\\[ C = \\frac{\\dot{v}}{A} \\]\nFor the larger pipe:\n\\[ A_1 = \\pi \\left(\\frac{d_1}{2}\\right)^2 = \\pi \\left(\\frac{0.3}{2}\\right)^2 = 0.0707 \\, \\text{m}^2 \\]\n\\[ C_1 = \\frac{\\dot{v}}{A_1} = \\frac{0.3066}{0.0707} \\approx 4.34 \\, \\text{m/s} \\]\n\n\n8.3.1.4 Step 3: Velocity in the Smaller Pipe \\(C_2\\)\nFor the smaller pipe:\n\\[ A_2 = \\pi \\left(\\frac{d_2}{2}\\right)^2 = \\pi \\left(\\frac{0.2}{2}\\right)^2 = 0.0314 \\, \\text{m}^2 \\]\n\\[ C_2 = \\frac{\\dot{v}}{A_2} = \\frac{0.3066}{0.0314} \\approx 9.76 \\, \\text{m/s} \\]\n\n\n\n\n8.3.2 Final Results:\n\nMass flow rate:\n\\[ \\dot{m} = 306.667 \\, \\text{kg/s} \\]\n\nVelocity in the larger pipe:\n\\[ C_1 \\approx 4.34 \\, \\text{m/s} \\]\n\nVelocity in the smaller pipe:\n\\[ C_2 \\approx 9.76 \\, \\text{m/s} \\]",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "hydrodynamics.html#the-energy-equation-for-an-ideal-fluid",
+    "href": "hydrodynamics.html#the-energy-equation-for-an-ideal-fluid",
+    "title": "8  Hydrodynamics",
+    "section": "8.4 The Energy Equation for an Ideal Fluid",
+    "text": "8.4 The Energy Equation for an Ideal Fluid\nThe steady flow equation is developed from the Law of Conservation of Energy. If there are no energy losses or energy additions in a flow system, then the total energy of a flowing fluid will remain constant.\nA flowing fluid may lose energy as a result of fluid friction, heat energy transfer and fluid motors. For an ideal fluid, frictional losses are equal to zero. Energy may be added to a fluid via a pump or heat energy addition.\nThe total energy possessed by a flowing fluid consists of:\n\ninternal energy\npotential energy\nkinetic energy and\npressure energy (flow energy).\n\nGenerally in fluid mechanics the change in internal energy is considered to be negligible. Heat energy transfers are usually not considered in fluid mechanics and the frictional heat developed by a flowing fluid is relatively small. Therefore, the internal energy term is omitted from the energy balance.\nConsider the flow system shown below. For this system, assume:\n\nan ideal fluid\nthat there are no energy losses or additions and\nsteady flow conditions exist.\n\n\n\n\nEnergy equation\n\n\nFrom the Law of Conservation of Energy:\nThe Total Energy at section 1 = The Total Energy at section 2\n\\[\nmZ_1g+\\frac{m C_1^2}{2}+mP_1v_1=mZ_2g+\\frac{m C_2^2}{2}+mP_2v_2\n\\]\nDividing through by \\(mg\\):\n\\[\n\\frac{mZ_1g}{mg}+\\frac{m C_1^2}{2mg}+\\frac{mP_1v_1}{mg}=\\frac{mZ_2g}{mg}+\\frac{m C_2^2}{2mg}+\\frac{mP_2v_2}{mg}\n\\]\nTherefore\n\\[\nZ_1+\\frac{C_1^2}{2g}+\\frac{P_1v_1}{g}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2v_2}{g}\n\\]\nIn fluid mechanics density (\\(\\rho\\)) is generally used in preference to specific volume, i.e. \\(v=\\frac{1}{\\rho}\\) Therefore:\n\\[\nZ_1+\\frac{C_1^2}{2g}+\\frac{P_1}{g\\rho_1}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2}{g\\rho_2}\n\\]\nIn fluid mechanics, specific weight represents the force exerted by gravity on a unit volume of a fluid. For this reason, units are expressed as force per unit volume (e.g., \\(N/m^3\\))\nSpecific weight is given \\(\\gamma = g\\rho\\)\nWhere:\n\\(\\gamma\\): specific weight, \\(\\mathrm{N/m^3}\\)\n\\(g\\): gravitational acceleration, \\(\\mathrm{m/s^2}\\)\n\\(\\rho\\): density, \\(\\mathrm{kg/m^3}\\)\n\\[\nZ_1+\\frac{C_1^2}{2g}+\\frac{P_1}{\\gamma_1}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2}{\\gamma_2}\n\\]\nEach term has units of m, therefore:\n\nPotential energy \\(Z\\) is known as the elevation head.\nKinetic energy \\(\\frac{c^2}{2g}\\) is known as the velocity head.\nPressure energy \\(\\frac{P}{\\gamma}\\) is known as the pressure head.\n\nSimilarly, the total energy of a flowing fluid is known as the total head (H).\n\\[\nTotal\\ Head= Elevation\\ Head + Velocity\\ Head + Pressure\\ Head\n\\] \\[\nH=Z+\\frac{C^2}{2g}+\\frac{P}{\\gamma}\n\\]\nThe total head (H) will be a constant throughout a flow system if:\n\nfrictional losses (head loss) are equal to zero\nwork energy is not added by a pump (pump head) or removed by a motor.\n\n\nExample 8.2 Consider a simple flow system consisting of a varying cross-section pipe. Water flows through this system at a rate of 2000 L/min. As the pipe increases in elevation from 30 m to 36 m it decreases in diameter from 10 cm to 3.0 cm. If the pressure is 6.5 MPa at the 30 m elevation, what is the pressure at 36 m?\n\n\n\nExample\n\n\nFind \\(P_2\\).\nApply \\(Z_1+\\frac{C_1^2}{2g}+\\frac{P_1}{\\gamma_1}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2}{\\gamma_2}\\)\nTherefore:\n\\[\n\\frac{P_2}{\\gamma_2}=(Z_1-Z_2)+(\\frac{C_1^2}{2g}-\\frac{C_2^2}{2g})+\\frac{P_1}{\\gamma_1}\n\\]\n\\[\nP_2 = \\gamma_2 \\left[ Z_1 - Z_2 + \\left( \\frac{C_1^2 - C_2^2}{2g} \\right) + \\frac{P_1}{\\gamma_1} \\right]\n\\]\nTo find \\(C_1\\) and \\(C_2\\), use \\(C_1A_2=C_2A_2=\\dot{v}\\)\ntherefore\n\\[\nC_1=\\frac{\\dot{v}}{A_1}=\\frac{2000\\ [L/min]}{\\frac{\\pi}{4}(0.1^2\\ [m^2])60\\ [s/min]\\cdot1000\\ [L/m^3]}=4.25\\ m/s\n\\]\n\\[\nC_2=\\frac{\\dot{v}}{A_2}=\\frac{2000\\ [L/min]}{\\frac{\\pi}{4}(0.03^2\\ [m^2])60\\ [s/min]\\cdot1000\\ [L/m^3]}=47.18\\ m/s\n\\]\nWe find \\(P_2\\) as follows:\n\\[\nP_2 = 9.8 \\left[ 30 - 36 + \\left( \\frac{4.25^2 - 47.18^2}{2 \\cdot 9.8} \\right) + \\frac{6500}{9.8} \\right]\n\\]\n\\[\nP_2 = 9.8 \\left[(- 6) + (-112.5) + 663 \\right]=9.8 \\cdot 544.5= 5340\\ kPa\n\\]\nThe pressure head at 2 has been decreased by the increase in elevation and velocity heads. The total head, however remains unchanged.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "hydrodynamics.html#bernoullis-equation",
+    "href": "hydrodynamics.html#bernoullis-equation",
+    "title": "8  Hydrodynamics",
+    "section": "8.5 Bernoulli’s Equation",
+    "text": "8.5 Bernoulli’s Equation\nThe Bernoulli’s equation between two points in a fluid flow is given by:\n\\[\nP_1 + \\frac{1}{2} \\rho C_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2} \\rho C_2^2 + \\rho g h_2\n\\]\nWhere:\n\n\\(P_1\\) and \\(P_2\\) are the pressures at points 1 and 2, respectively.\n\\(\\rho\\) is the density of the fluid.\n\\(C_1\\) and \\(C_2\\) are the velocities of the fluid at points 1 and 2, respectively.\n\\(g\\) is the acceleration due to gravity.\n\\(h_1\\) and \\(h_2\\) are the heights of the fluid at points 1 and 2, respectively.\n\n\nExample 8.3 Water flows through a smooth, horizontal venturi meter with an entrance diameter of 375 mm and a throat diameter of 125 mm. If the pressure difference between these sections corresponds to a head of 457 mm of water, determine the mass flow rate in kg/s.\nTo calculate the mass flow rate through the venturi meter, we will use Bernoulli’s principle and the continuity equation.\n\n8.5.1 Given Data:\nDiameter at entrance (Section 1):\n\\[\nD_1 = 375\\ \\text{mm} = 0.375\\ \\text{m}\n\\]\nDiameter at throat (Section 2):\n\\[\nD_2 = 125\\ \\text{mm} = 0.125\\ \\text{m}\n\\]\nPressure head difference: \\[\nh = 457\\ \\text{mm of water} = 0.457\\ \\text{m}\n\\]\nDensity of water: \\[\n\\rho = 1000\\ \\text{kg/m}^3 (for\\ water)\n\\]\n\n\n8.5.2 Step 1: Cross-sectional Areas\nThe areas of the entrance and throat are given by:\n\\[\nA_1 = \\frac{\\pi D_1^2}{4}, \\quad A_2 = \\frac{\\pi D_2^2}{4}\n\\] Substitute the values of \\(D_1\\) and \\(D_2\\):\n\\[\nA_1 = \\frac{\\pi (0.375)^2}{4} = 0.1104\\ \\text{m}^2, \\quad A_2 = \\frac{\\pi (0.125)^2}{4} = 0.01227 , \\text{m}^2\n\\]\n\n\n8.5.3 Step 2: Bernoulli’s Equation Between Two Points\nThe Bernoulli equation, assuming negligible height differences and no losses, is:\n\\[\nP_1 + \\frac{1}{2} \\rho C_1^2 = P_2 + \\frac{1}{2} \\rho C_2^2\n\\]\nRearranging for the velocity difference (using the pressure difference in terms of head): \\[\n\\frac{1}{2} \\rho (C_2^2 - C_1^2) = \\rho g h\n\\]\nSimplify (cancel \\(\\rho\\)):\n\\[\n\\frac{1}{2} (C_2^2 - C_1^2) = g h\n\\]\nThus: \\[\nC_2^2 - C_1^2 = 2 g h\n\\]\n\n\n8.5.4 Step 3: Continuity Equation\nFrom the continuity equation:\n\\[\nA_1 C_1 = A_2 C_2\n\\]\nSolve for \\(C_1\\) in terms of \\(C_2\\):\n\\[\nC_1 = \\frac{A_2}{A_1} C_2\n\\]\n\n\n8.5.5 Step 4: Substitute \\(C_1\\) into Bernoulli’s Equation\nSubstitute \\(C_1 = \\frac{A_2}{A_1} C_2\\) into \\(C_2^2 - C_1^2 = 2 g h\\):\n\\[\nC_2^2 - \\left( \\frac{A_2}{A_1} C_2 \\right)^2 = 2 g h\n\\]\nFactor out \\(C_2^2\\):\n\\[\nC_2^2 \\left( 1 - \\left( \\frac{A_2}{A_1} \\right)^2 \\right) = 2 g h\n\\]\nSolve for \\(C_2^2\\):\n\\[\nC_2^2 = \\frac{2 g h}{1 - \\left( \\frac{A_2}{A_1} \\right)^2}\n\\]\nTake the square root to find \\(C_2\\):\n\\[\nC_2 = \\sqrt{\\frac{2 g h}{1 - \\left( \\frac{A_2}{A_1} \\right)^2}}\n\\]\n\n\n8.5.6 Step 5: Calculate \\(C_2\\)\nFirst, calculate the ratio \\(\\frac{A_2}{A_1}\\):\n\\[\n\\frac{A_2}{A_1} = \\frac{0.01227}{0.1104} = 0.1112\n\\]\nNow calculate \\(1 - \\left( \\frac{A_2}{A_1} \\right)^2\\):\n\\[\n1 - (0.1112)^2 = 1 - 0.01236 = 0.98764\n\\]\nSubstitute into the equation for \\(v_2\\) using (\\(g = 9.81\\ \\text{m/s}^2\\) and \\(h = 0.457\\ \\text{m}\\)):\n\\[\nC_2 = \\sqrt{\\frac{2 \\cdot 9.81 \\cdot 0.457}{0.98764}}\n\\] \\[\nC_2 = \\sqrt{\\frac{8.963}{0.98764}} = \\sqrt{9.075} \\approx 3.01  \\text{m/s}\n\\]\n\n\n8.5.7 Step 6: Calculate Mass Flow Rate\nThe mass flow rate is given by:\n\\[\n\\dot{m} = \\rho A_2 C_2\n\\]\nSubstitute \\(\\rho = 1000\\ \\text{kg/m}^3\\), \\(A_2 = 0.01227\\ \\text{m}^2\\), and \\(C_2 = 3.01\\ \\text{m/s}\\):\n\\[\n\\dot{m} = 1000 \\cdot 0.01227 \\cdot 3.01\n\\]\n\\[\n\\dot{m} = 36.95\\ \\text{kg/s}\n\\]\n\n\n8.5.8 Final Answer:\nThe mass flow rate is approximately:\n\\[\n\\boxed{37.0 \\, \\text{kg/s}}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Hydrodynamics</span>"
+    ]
+  },
+  {
     "objectID": "review.html",
     "href": "review.html",
-    "title": "8  Review",
+    "title": "9  Review",
     "section": "",
-    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\nChapter 4:\nChapter 5:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nChapter 6:\nChapter 7:\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
+    "text": "We have used several books by Ahrens (2022), Russell, Jackson, and Embleton (2021), Bolton (2021), Polya and Conway (2014), Bird and Ross (2020) and Bird (2021). These sources have helped you understand complex concepts.\nChapter 1:\n\nPurpose of SI Units: Provide a consistent framework for scientific and technical measurements.\nAdvantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.\nFundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.\nMethod Name: Unity fraction method.\nPurpose: Converting one unit of measurement into another.\nMethodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.\n\nChapter 2:\n\nScalar Definition: A quantity with only magnitude (size).\nVector Definition: A quantity with both magnitude and direction.\nScalar Examples: Numbers, mass, speed, temperature, volume, and time.\nVector Examples: Velocity, acceleration, weight, and friction.\n\nChapter 3:\nChapter 4:\nChapter 5:\n\nDefinition of Moment: A mathematical concept representing the product of a distance and a physical quantity.\nApplication of Moment: Used to analyze the effect of forces acting on objects at a distance from a reference point.\nExample of Moment: Torque, the moment of force, is the product of force and distance.\n\nAs you near the final exam, remember that your knowledge and skills will help you succeed in your future courses. Stay confident, trust your preparation, and be composed. You have put in a lot of effort; now’s the time to show what you know.\nChapter 6:\nChapter 7:\nChapter 8:\nWe wish you the best on the exam.\n\n\n\n\nAhrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke Ahrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth edition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering Principles. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect of Mathematical Method. With a Foreword by John H. Con ed. edition. Princeton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021. Applied Mechanics for Marine Engineers. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Review</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Review</span>"
     ]
   },
   {
@@ -897,6 +957,149 @@
     "text": "Ahrens, Sönke. 2022. How to Take Smart Notes: One Simple Technique\nto Boost Writing, Learning and Thinking. 2nd ed. edition. Sönke\nAhrens.\n\n\nBird, J. O. 2021. Bird’s Engineering Mathematics. Ninth\nedition. Abingdon, Oxon ; New York: Routledge.\n\n\nBird, J. O., and C. T. F. Ross. 2020. Mechanical Engineering\nPrinciples. Fourth edition. Abingdon, Oxon: Routledge.\n\n\nBolton, W. 2021. Engineering Science. Seventh edition.\nAbingdon, Oxon ; New York, NY: Routledge.\n\n\nHannah, J., and M. J. Hillier. 1995. Applied Mechanics. 3rd\nedition. Harlow: Longman Pub Group.\n\n\nPolya, G., and John H. Conway. 2014. How to Solve It: A New Aspect\nof Mathematical Method. With a Foreword by John H. Con ed. edition.\nPrinceton Oxford: Princeton University Press.\n\n\nRussell, Paul A., Leslie Jackson, and William Embleton. 2021.\nApplied Mechanics for Marine Engineers. 7th edition. Reeds\nMarine Engineering and Technology Series, vol. 2. London: Reeds.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "formulae.html",
+    "href": "formulae.html",
+    "title": "Appendix A — Formulae",
+    "section": "",
+    "text": "A.1 Rules of Cosine and Sine\n\\[\nc^2 = a^2 + b^2 - 2ab\\cos \\gamma\n\\] \\[\n\\frac{a}{\\sin \\alpha} = \\frac{b}{\\sin \\beta} = \\frac{c}{\\sin \\gamma}\n\\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#linear-motion",
+    "href": "formulae.html#linear-motion",
+    "title": "Appendix A — Formulae",
+    "section": "A.2 Linear Motion",
+    "text": "A.2 Linear Motion\n\\[\n\\vec{v} = \\vec{u} + \\vec{a}t\n\\]\n\\[\n\\vec{s} = \\frac{\\vec{u}+\\vec{v}}{2}t\n\\]\n\\[\n\\vec{s} = \\vec{u}t + \\frac{1}{2}\\vec{a}t^2\n\\]\n\\[\n\\vec{v}^2 = \\vec{u}^2 + 2\\vec{a} \\cdot \\vec{s}\n\\]\nwhere:\n\n\\(\\vec{u}\\): Initial velocity\n\\(\\vec{v}\\): Final velocity\n\\(\\vec{s}\\): Displacement\n\\(\\vec{a}\\): Acceleration\n\\(t\\): Time",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#angular-motion",
+    "href": "formulae.html#angular-motion",
+    "title": "Appendix A — Formulae",
+    "section": "A.3 Angular Motion",
+    "text": "A.3 Angular Motion\n\\[\n\\omega_2 = \\omega_1 \\mp \\alpha t\n\\]\n\\[\n\\theta = \\frac{\\omega_1+\\omega_2}{2}t\n\\]\n\\[\n\\theta = \\omega_1 t \\mp \\frac{1}{2}\\alpha t^2\n\\]\n\\[\n\\omega_2^2 = \\omega_1^2 \\mp 2\\alpha \\theta\n\\]\nwhere:\n\n\\(\\omega_1\\): Initial angular velocity (rad/s)\n\\(\\omega_2\\): Final angular velocity (rad/s)\n\\(\\theta\\) Angular displacement (rad)\n\\(\\alpha\\): Angular acceleration (rad/s2)\n\\(t\\): Time (s)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#relation-between-linear-and-angular-motion",
+    "href": "formulae.html#relation-between-linear-and-angular-motion",
+    "title": "Appendix A — Formulae",
+    "section": "A.4 Relation Between Linear and Angular Motion",
+    "text": "A.4 Relation Between Linear and Angular Motion\nThe relationship between linear and angular motion is described by the following equations:\n\\(s = r \\theta\\) (linear displacement \\(s\\) and angular displacement \\(\\theta\\)).\n\\(v = r \\omega\\) (linear velocity \\(v\\) and angular velocity \\(\\omega\\)),\n\\(a = r \\alpha\\) (linear acceleration \\(a\\) and angular acceleration \\(\\alpha\\)).",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#centre-of-gravity",
+    "href": "formulae.html#centre-of-gravity",
+    "title": "Appendix A — Formulae",
+    "section": "A.5 Centre of Gravity",
+    "text": "A.5 Centre of Gravity\n\\[\n\\bar{x} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights} \\qquad \\bar{y} = \\frac{ \\sum Moments\\ of\\ Weights}{\\sum Weights}\n\\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#centroid",
+    "href": "formulae.html#centroid",
+    "title": "Appendix A — Formulae",
+    "section": "A.6 Centroid",
+    "text": "A.6 Centroid\n\\[\n\\bar{x} = \\frac{ \\sum {\\bar{x}_i}\\ A_i}{\\sum A_i} \\qquad \\bar{y} = \\frac{ \\sum {\\bar{y}_i}\\ A_i}{\\sum A_i}\n\\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#parallel-axis-theorem",
+    "href": "formulae.html#parallel-axis-theorem",
+    "title": "Appendix A — Formulae",
+    "section": "A.7 Parallel Axis Theorem",
+    "text": "A.7 Parallel Axis Theorem\nTo find the moment of inertia about an axis parallel to the centroidal axis:\n\\[ I = I_c + A d^2 \\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#radius-of-gyration",
+    "href": "formulae.html#radius-of-gyration",
+    "title": "Appendix A — Formulae",
+    "section": "A.8 Radius of Gyration",
+    "text": "A.8 Radius of Gyration\n\\[\nk = \\sqrt{\\frac{I}{A}} \\quad \\text{(for area)} \\quad \\text{or} \\quad k = \\sqrt{\\frac{I}{m}} \\quad \\text{(for mass)},\n\\]\nwhere:\n\n\\(I\\): Moment of inertia about the axis\n\\(A\\): Area of the cross-section (for area calculations)\n\\(m\\): Mass of the body (for mass calculations)\n\n\nA.8.1 Rectangle (about its centroidal axis)\n\nDimensions: ( b ) (breadth), ( h ) (height)\nRadius of gyration about the centroidal x-axis: \\[\nk_x = \\sqrt{\\frac{I_x}{A}} = \\sqrt{\\frac{\\frac{1}{12} b h^3}{b h}} = \\frac{h}{\\sqrt{12}}\n\\]\n\n\n\nA.8.2 Circle (about its centroidal axis)\n\nRadius: ( r )\nRadius of gyration: \\[\nk = \\sqrt{\\frac{I}{A}} = \\sqrt{\\frac{\\frac{\\pi r^4}{4}}{\\pi r^2}} = \\frac{r}{\\sqrt{2}}\n\\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#beam-calculations",
+    "href": "formulae.html#beam-calculations",
+    "title": "Appendix A — Formulae",
+    "section": "A.9 Beam Calculations",
+    "text": "A.9 Beam Calculations\n\n\n\nSum of Horizontal Forces\nSum of Vertical Force\nSum of Moments\n\n\n\n\n\\(\\sum F_x = 0\\)\n\\(\\sum F_y = 0\\)\n\\(\\sum M = 0\\)\n\n\n\n\n\n\n\n\n\n\n\nLoad Type\nShear Diagram Shape\nMoment Diagram Shape\n\n\n\n\nPoint Load\nRectangular (constant)\nTriangular\n\n\nUniformly Distributed Load (UDL)\nTriangular\nParabolas (second degree)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#dynamics",
+    "href": "formulae.html#dynamics",
+    "title": "Appendix A — Formulae",
+    "section": "A.10 Dynamics",
+    "text": "A.10 Dynamics\n\nA.10.1 Linear momentum\n\\[\nLinear\\ momentum = m \\vec{v}\n\\]\nWhere:\n\nLinear momentum is in kg·m/s.\n\\(m\\) is the mass of the object in kilograms.\n\\(\\vec{v}\\) is the velocity of the object in meters per second.\n\n\n\nA.10.2 Angular momentum\n\\[ \\text{Angular momentum} = I \\omega \\]\nWhere:\n\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(\\omega\\) is the angular velocity in \\(rad/s\\).\n\n\n\nA.10.3 Moment of inertia\n\\[\nI = m k^2\n\\]\nWhere:\n\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(m\\) is the mass in \\(kg\\).\n\\(k\\) is the radius of gyration in \\(m\\).\n\n\n\nA.10.4 Turning moment\n\\[\n\\tau = I \\alpha\n\\]\nWhere:\n\n\\(\\tau\\) is the torque in \\(Nm\\).\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(\\alpha\\): Angular acceleration in \\(rad/s^2\\).\n\n\n\nA.10.5 Power by Torque\n\\[\nP = \\tau \\cdot \\omega\n\\]\nWhere:\n\\(P\\) is the power in watts (W),\n\\(\\tau\\) is the torque in newton-meters (Nm), and\n\\(\\omega\\) is the angular velocity in radians per second (rad/s).\n\n\nA.10.6 Kinetic Energy of Rotation\n\\[\n\\text{Rotational K.E.} = \\frac{1}{2} I \\omega^2\n\\] Where:\n\n\\(I\\) is the moment of inertia in \\(m^4\\).\n\\(\\omega\\) is the angular velocity in radians per second (rad/s).",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#stress-and-strain",
+    "href": "formulae.html#stress-and-strain",
+    "title": "Appendix A — Formulae",
+    "section": "A.11 Stress and Strain",
+    "text": "A.11 Stress and Strain\n\nA.11.1 Stress\n\\[\n\\sigma = \\frac{F}{A}\n\\]\n\\[\n\\tau = \\frac{F}{A}\n\\]\nWhere:\n\n\\(\\sigma\\) is the stress (Pa),\n\\(\\tau\\) is the shearing stress (Pa),\n\\(F\\) is the shearing force (N),\n\\(A\\) is the cross-sectional area (m\\(^2\\)).\n\n\n\nA.11.2 Strain\n\\[\n\\varepsilon = \\frac{\\Delta L}{L_0}\n\\]\nWhere:\n\n\\(\\varepsilon\\) is the strain (unitless),\n\\(\\Delta L\\) is the change in length,\n\\(L_0\\) is the original length.\n\n\n\nA.11.3 Hooke’s Law\n\\[\nE = \\frac{\\sigma}{\\varepsilon}\n\\]\nWhere:\n\n\\(\\sigma\\) is the stress (Pa).\n\\(\\varepsilon\\) is the strain (unitless).\nE: Young’s modulus (Pa), a material property (modulus of elasticity).\n\n\n\nA.11.4 Factor of Safety (FOS)\n\\[\n\\text{FOS} = \\frac{\\text{Breaking Stress}}{\\text{Working Stress}}\n\\]",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#hydrodynamics",
+    "href": "formulae.html#hydrodynamics",
+    "title": "Appendix A — Formulae",
+    "section": "A.12 Hydrodynamics",
+    "text": "A.12 Hydrodynamics\n\nA.12.1 Volume Flow\n\\[\n\\dot{v} = A \\cdot C\n\\]\nWhere:\n\\(\\dot{v}\\): Volume flow rate, \\(\\mathrm{m^3/s}\\)\n\\(A\\): Cross-sectional area of the flow, \\(\\mathrm{m^2}\\)\n\\(C\\): Mean (average) velocity of the fluid, \\(\\mathrm{m/s}\\)\n\n\nA.12.2 Mass Flow\n\\[\n\\dot{m} = \\rho \\cdot \\dot v\n\\]\nWhere:\n\\(\\dot{m}\\): mass flow rate, \\(\\mathrm{kg/s}\\)\n\\(\\rho\\): density, \\(\\mathrm{kg/m^3}\\)\n\\(\\dot{v}\\): volume flow, \\(\\mathrm{m^3/s}\\)\n\n\nA.12.3 Specific Weight\n\\[\n\\gamma = g \\cdot \\rho\n\\]\nWhere:\n\\(\\gamma\\): specific weight, \\(\\mathrm{N/m^3}\\)\n\\(g\\): gravitational acceleration, \\(\\mathrm{m/s^2}\\)\n\\(\\rho\\): density, \\(\\mathrm{kg/m^3}\\)\n\n\nA.12.4 Continuity Equation\n\\[\nA_1 \\cdot C_1= A_2 \\cdot C_2\n\\]\n\n\nA.12.5 Energy Equation\n\\[\nZ_1+\\frac{C_1^2}{2g}+\\frac{P_1}{g\\rho_1}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2}{g\\rho_2}\n\\]\n\\[\nZ_1+\\frac{C_1^2}{2g}+\\frac{P_1}{\\gamma_1}=Z_2+\\frac{C_2^2}{2g}+\\frac{P_2}{\\gamma_2}\n\\]\nEach term has units of m, therefore:\n\nPotential energy \\(Z\\) is known as the elevation head.\nKinetic energy \\(\\frac{c^2}{2g}\\) is known as the velocity head.\nPressure energy \\(\\frac{P}{\\gamma}\\) is known as the pressure head.\n\n\\[\nTotal\\ Head= Elevation\\ Head + Velocity\\ Head + Pressure\\ Head\n\\]\n\n\nA.12.6 Bernoulli’s Equation\n\\[\nP_1 + \\frac{1}{2} \\rho C_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2} \\rho C_2^2 + \\rho g h_2\n\\]\nWhere:\n\n\\(P_1\\) and \\(P_2\\) are the pressures at points 1 and 2, respectively.\n\\(\\rho\\) is the density of the fluid.\n\\(C_1\\) and \\(C_2\\) are the velocities of the fluid at points 1 and 2, respectively.\n\\(g\\) is the acceleration due to gravity.\n\\(h_1\\) and \\(h_2\\) are the heights of the fluid at points 1 and 2, respectively.\n\n\n\n\n\nTable A.1: Centroids of Common Shapes\n\n\n\n\n\n\n\n\n\n\n\nShape\nArea\n\\(\\bar{x}\\)\n\\(\\bar{y}\\)\n\n\n\n\n\n\\(A = b h\\)\n\\(b/2\\)\n\\(h/2\\)\n\n\n\n\\(\\dfrac{bh}{2}\\)\n\\(b/3\\)\n\\(h/3\\)\n\n\n\n\\(\\dfrac{(a+b) h}{2}\\)\n\\(\\dfrac{a^2 +ab + b^2}{3 (a+b)}\\)\n\\(\\dfrac{h(2a+b)}{3(a+b)}\\)\n\n\n\n\\(\\pi r^2\\)\n\\(r\\)\n\\(r\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{2}\\)\n\\(r\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\n\n\n\\(\\dfrac{\\pi r^2}{4}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)\n\\(\\dfrac{4 r}{3 \\pi}\\)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
+    ]
+  },
+  {
+    "objectID": "formulae.html#second-moments-of-common-shapes",
+    "href": "formulae.html#second-moments-of-common-shapes",
+    "title": "Appendix A — Formulae",
+    "section": "A.13 Second Moments of Common Shapes",
+    "text": "A.13 Second Moments of Common Shapes\n\n\n\nTable A.2: Second moments\n\n\n\n\n\n\n\n\n\n\nShape\nSecond moment (\\(I_x\\))\nSecond moment (\\(I_y\\))\n\n\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\\(I_y = \\frac{1}{12} b^3 h\\)\n\n\n\n\\(I_x = \\frac{1}{3} b h^3\\)\n\\(I_y = \\frac{1}{3} b^3 h\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} r^4\\)\n\\(I_y = \\frac{\\pi}{4} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\\(I_y = \\frac{\\pi}{4} (r_2^4-r_1^4)\\)\n\n\n\n\\(I_x = \\frac{\\pi}{8} r^4\\)\n\\(I_y = \\frac{\\pi}{8} r^4\\)\n\n\n\n\\(I_x = \\frac{\\pi}{16} r^4\\)\n\\(I_y = \\frac{\\pi}{16} r^4\\)\n\n\n\n\\(I_x = \\frac{1}{12} b h^3\\)\n\n\n\n\n\\(I_x = \\frac{1}{36} b h^3\\)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Formulae</span>"
     ]
   }
 ]

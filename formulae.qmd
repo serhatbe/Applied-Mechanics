@@ -1,9 +1,4 @@
----
-#title: "Applied Mechanics 1 Formulae"
-format: pdf
----
-
-# Applied Mechanics 1 Formulae
+# Formulae {#sec-formulae}
 
 ## Rules of Cosine and Sine
 
@@ -134,7 +129,7 @@ where:
 | $\sum F_x = 0$           | $\sum F_y = 0$        | $\sum M = 0$   |
 
 | **Load Type** | **Shear Diagram Shape** | **Moment Diagram Shape** |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Point Load | Rectangular (constant) | Triangular |
 | Uniformly Distributed Load (UDL) | Triangular | Parabolas (second degree) |
 
@@ -358,7 +353,7 @@ Where:
 {{< pagebreak >}}
 
 | Shape | Area | $\bar{x}$ | $\bar{y}$ |
-|:----------------:|:----------------:|:----------------:|:----------------:|
+|:--:|:--:|:--:|:--:|
 | ![](images/centroids-rectangle.png) | $A = b h$ | $b/2$ | $h/2$ |
 | ![](images/centroids-triangle.png) | $\dfrac{bh}{2}$ | $b/3$ | $h/3$ |
 | ![](images/centroids-trapezoid.png) | $\dfrac{(a+b) h}{2}$ | $\dfrac{a^2 +ab + b^2}{3 (a+b)}$ | $\dfrac{h(2a+b)}{3(a+b)}$ |
@@ -373,7 +368,7 @@ Where:
 ## Second Moments of Common Shapes
 
 | Shape | Second moment ($I_x$) | Second moment ($I_y$) |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | ![](images/Moment_of_area_of_a_rectangle_through_the_centroid.svg.png){width="3.5cm"} | $I_x = \frac{1}{12} b h^3$ | $I_y = \frac{1}{12} b^3 h$ |
 | ![](images/Moment_of_area_of_a_rectangle_through_the_base.svg.png){width="3.5cm"} | $I_x = \frac{1}{3} b h^3$ | $I_y = \frac{1}{3} b^3 h$ |
 | ![](images/Moment_of_area_of_a_circle.svg.png){width="3.5cm"} | $I_x = \frac{\pi}{4} r^4$ | $I_y = \frac{\pi}{4} r^4$ |

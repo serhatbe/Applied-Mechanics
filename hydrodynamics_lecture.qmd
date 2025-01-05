@@ -1,0 +1,520 @@
+---
+title: "Hydrodynamics"
+format: pdf
+---
+
+The amount of liquid flowing through a pipe or opening is usually measured by the volume or mass of liquid that flows per unit of time.
+
+## Volume Flow Rate
+
+Volume rate of flow refers to the rate at which a fluid volume passes a given section in a flow stream. Volume rate of flow may also be referred to as capacity of flow, flow rate or discharge. It is generally given in units of volume per unit of time, cubic meters per second (m^3^/s) or liters per second (L/s).
+
+![Volume flow](images/volumeflow.png){width="6cm" height="1.5cm"}
+
+Consider an ideal fluid flow in a pipe of cross-section 'A' (m^2^). For an ideal fluid all the particles move to the right with a velocity of 'C' (m/s). As the fluid flow to the right with a velocity of C m/s, 'C' m of fluid pass section 1 every second. i.e. the volume of fluid passing section-1 every second is A x C.
+
+$$
+Volume\ flow = area\ x\ velocity
+$$
+
+$$
+\dot{v} = A \cdot C
+$$
+
+Where:
+
+-   $\dot{v}$: Volume flow rate, $\mathrm{m^3/s}$
+
+-   $A$: Cross-sectional area of the flow, $\mathrm{m^2}$
+
+-   $C$: Mean (average) velocity of the fluid, $\mathrm{m/s}$
+
+Consider a real fluid flowing in the same pipe. Here particle velocity will be a variable across the flow stream.
+
+![Mean velocity](images/volumeflow1.png){width="6cm" height="1.8cm"}
+
+If the mean velocity cm of all the fluid particles could be found, then similar to the ideal fluid.
+
+$$
+Volume\ flow = area\ x\ mean\ velocity
+$$
+
+Unless otherwise indicated, the velocity of flow is understood to refer to the average or mean velocity of all the particles in a flowing fluid.
+
+## Mass Flow Rate
+
+Mass flow rate refers to the rate at which a fluid mass passes a given section in a flow stream. It is given in units of mass per unit of time, kilogram per second (kg/s). Mass flow rate is easily calculated from volume flow rate as follows.
+
+$$
+Mass\ flow = density\ x\ volume\ flow
+$$
+
+$$
+\dot{m} = \rho \cdot \dot v
+$$
+
+Where:
+
+-   $\dot{m}$: mass flow rate, $\mathrm{kg/s}$
+
+-   $\rho$: density, $\mathrm{kg/m^3}$
+
+-   $\dot{v}$: volume flow, $\mathrm{m^3/s}$
+
+Or
+
+$$
+\dot{m} = \rho \cdot A \cdot C
+$$
+
+Where:
+
+-   $\dot{m}$: mass flow rate, $\mathrm{kg/s}$
+
+-   $\rho$: density, $\mathrm{kg/m^3}$
+
+-   $A$: Cross-sectional area of the flow, $\mathrm{m^2}$
+
+-   $C$: Mean (average) velocity of the fluid, $\mathrm{m/s}$
+
+## Continuity Equation
+
+Continuous flow exists in a flow system when the mass flow rate is constant throughout the system. If in the diagram below, the mass flow rate at 1 is equal to that at 2, then continuity exists.
+
+![Continuity equation](images/continuity_equation.png){width="6cm" height="2cm"}
+
+Since $\dot{m_1} = \dot{m_2}$, therefore
+
+$$
+\rho_1 \cdot A_1 \cdot C_1= \rho_2 \cdot A_2 \cdot C_2
+$$
+
+If the fluid is incompressible (most liquids), then density will remain constant ($\rho_1=\rho_2$) and the above equations may be written as:
+
+$$
+A_1 \cdot C_1= A_2 \cdot C_2
+$$ Or
+
+$$
+\dot{v_1}= \dot{v_2}
+$$
+
+That is, the volume flow rate is constant for an incompressible fluid.
+
+::: {#exm-conteq}
+A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate the mass flow rate and the velocities in the larger and smaller pipe.
+
+![Example](images/continuity_equation_exm.png){width="6cm"}
+
+### Problem Statement
+
+A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate:
+
+1.  The **mass flow rate**.
+
+2.  The **velocity** in the larger pipe.
+
+3.  The **velocity** in the smaller pipe.
+
+#### Given Data:
+
+-   Diameter of larger pipe: $d_1 = 300 \, \text{mm} = 0.3 \, \text{m}$
+-   Diameter of smaller pipe: $d_2 = 200 \, \text{mm} = 0.2 \, \text{m}$
+-   Volume flow rate:\
+    $$ \dot{v} = 0.3066\ \text{m}^3/\text{s} $$
+-   Density of water:\
+    $$ \rho = 1000 \, \text{kg/m}^3 $$
+
+#### Step 1: Mass Flow Rate
+
+The mass flow rate $\dot{m}$ is given by:\
+$$ 
+\dot{m} = \rho \dot{v} 
+$$\
+Substituting values:\
+$$ 
+\dot{m} = 1000 \times 0.3066 = 306.667 \, \text{kg/s} 
+$$
+
+#### Step 2: Velocity in the Larger Pipe $C_1$
+
+The velocity in a pipe is related to the flow rate and cross-sectional area:\
+$$ C = \frac{\dot{v}}{A} $$\
+For the larger pipe:\
+$$ A_1 = \pi \left(\frac{d_1}{2}\right)^2 = \pi \left(\frac{0.3}{2}\right)^2 = 0.0707 \, \text{m}^2 $$\
+$$ C_1 = \frac{\dot{v}}{A_1} = \frac{0.3066}{0.0707} \approx 4.34 \, \text{m/s} $$
+
+#### Step 3: Velocity in the Smaller Pipe $C_2$
+
+For the smaller pipe:\
+$$ A_2 = \pi \left(\frac{d_2}{2}\right)^2 = \pi \left(\frac{0.2}{2}\right)^2 = 0.0314 \, \text{m}^2 $$\
+$$ C_2 = \frac{\dot{v}}{A_2} = \frac{0.3066}{0.0314} \approx 9.76 \, \text{m/s} $$
+
+### Final Results:
+
+1.  **Mass flow rate:**\
+    $$ \dot{m} = 306.667 \, \text{kg/s} $$\
+2.  **Velocity in the larger pipe:**\
+    $$ C_1 \approx 4.34 \, \text{m/s} $$\
+3.  **Velocity in the smaller pipe:**\
+    $$ C_2 \approx 9.76 \, \text{m/s} $$
+:::
+
+::: {#exm-conteq3}
+Water flows in a pipe with a circular cross-section that varies in area. At all points, the water completely fills the pipe.
+
+A. At one point in the pipe, the radius is 0.16 m. What is the speed of the water at this point if it flows into the pipe at a steady rate of 1.40 m³/s?
+
+B. At another point in the pipe, the water speed is 3.9 m/s. What is the radius of the pipe at this point?
+
+### Part A: Finding water speed at r = 0.16 m
+
+Using the flow rate equation: $\dot{v} = A\cdot C$ where:
+
+-   $\dot{v} = 1.40$ m³/s (flow rate)
+-   $A = \pi r^2 = \pi(0.16)^2$ m² (cross-sectional area)
+-   $C$ is the velocity we're solving for
+
+$$
+C = \frac{\dot{v}}{A} = \frac{1.40}{\pi(0.16)^2} = 17.4\ m/s
+$$
+
+### Part B: Finding radius when C = 3.9 m/s
+
+Using the same equation: $\dot{v} = A \cdot C = \pi r^2 \cdot C$
+
+Rearranging to solve for r: $$
+r = \sqrt{\frac{\dot{v}}{\pi C}} = \sqrt{\frac{1.40}{\pi(3.9)}} = 0.339\ m
+$$
+
+Therefore:
+
+-   At r = 0.16 m, the water speed is 17.4 m/s
+-   When the water speed is 3.9 m/s, the radius is 0.339 m
+:::
+
+## The Energy Equation for an Ideal Fluid
+
+The steady flow equation is developed from the Law of Conservation of Energy. If there are no energy losses or energy additions in a flow system, then the total energy of a flowing fluid will remain constant.
+
+A flowing fluid may lose energy as a result of fluid friction, heat energy transfer and fluid motors. For an ideal fluid, frictional losses are equal to zero. Energy may be added to a fluid via a pump or heat energy addition.
+
+The total energy possessed by a flowing fluid consists of:
+
+-   internal energy
+-   potential energy
+-   kinetic energy and
+-   pressure energy (flow energy).
+
+Generally in fluid mechanics the change in internal energy is considered to be negligible. Heat energy transfers are usually not considered in fluid mechanics and the frictional heat developed by a flowing fluid is relatively small. Therefore, the internal energy term is omitted from the energy balance.
+
+Consider the flow system shown below. For this system, assume:
+
+-   an ideal fluid
+-   that there are no energy losses or additions and
+-   steady flow conditions exist.
+
+![Energy equation](images/energy_equation.png){width="6cm"}
+
+From the Law of Conservation of Energy:
+
+The Total Energy at section 1 = The Total Energy at section 2
+
+$$
+mZ_1g+\frac{m C_1^2}{2}+mP_1v_1=mZ_2g+\frac{m C_2^2}{2}+mP_2v_2
+$$
+
+Dividing through by $mg$:
+
+$$
+\frac{mZ_1g}{mg}+\frac{m C_1^2}{2mg}+\frac{mP_1v_1}{mg}=\frac{mZ_2g}{mg}+\frac{m C_2^2}{2mg}+\frac{mP_2v_2}{mg}
+$$
+
+Therefore
+
+$$
+Z_1+\frac{C_1^2}{2g}+\frac{P_1v_1}{g}=Z_2+\frac{C_2^2}{2g}+\frac{P_2v_2}{g}
+$$
+
+In fluid mechanics density ($\rho$) is generally used in preference to specific volume, i.e. $v=\frac{1}{\rho}$ Therefore:
+
+$$
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{g\rho_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{g\rho_2}
+$$
+
+In fluid mechanics, specific weight represents the force exerted by gravity on a unit volume of a fluid. For this reason, units are expressed as force per unit volume (e.g., $N/m^3$)
+
+Specific weight is given $\gamma = g\rho$
+
+Where:
+
+$\gamma$: specific weight, $\mathrm{N/m^3}$
+
+$g$: gravitational acceleration, $\mathrm{m/s^2}$
+
+$\rho$: density, $\mathrm{kg/m^3}$
+
+$$
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{\gamma_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{\gamma_2}
+$$
+
+Each term has units of m, therefore:
+
+-   Potential energy $Z$ is known as the elevation head.
+
+-   Kinetic energy $\frac{c^2}{2g}$ is known as the velocity head.
+
+-   Pressure energy $\frac{P}{\gamma}$ is known as the pressure head.
+
+Similarly, the total energy of a flowing fluid is known as the total head (H).
+
+$$
+Total\ Head= Elevation\ Head + Velocity\ Head + Pressure\ Head
+$$ $$
+H=Z+\frac{C^2}{2g}+\frac{P}{\gamma}
+$$
+
+The total head (H) will be a constant throughout a flow system if:
+
+1.  frictional losses (head loss) are equal to zero
+
+2.  work energy is not added by a pump (pump head) or removed by a motor.
+
+::: {#exm-energyeq}
+Consider a simple flow system consisting of a varying cross-section pipe. Water flows through this system at a rate of 2000 L/min. As the pipe increases in elevation from 30 m to 36 m it decreases in diameter from 10 cm to 3.0 cm. If the pressure is 6.5 MPa at the 30 m elevation, what is the pressure at 36 m?
+
+![Example](images/energy_equation_exm.png){width="6cm" height="2.5cm"}
+
+Find $P_2$.
+
+Apply $Z_1+\frac{C_1^2}{2g}+\frac{P_1}{\gamma_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{\gamma_2}$
+
+Therefore:
+
+$$
+\frac{P_2}{\gamma_2}=(Z_1-Z_2)+(\frac{C_1^2}{2g}-\frac{C_2^2}{2g})+\frac{P_1}{\gamma_1}
+$$
+
+$$
+P_2 = \gamma_2 \left[ Z_1 - Z_2 + \left( \frac{C_1^2 - C_2^2}{2g} \right) + \frac{P_1}{\gamma_1} \right]
+$$
+
+To find $C_1$ and $C_2$, use $C_1A_2=C_2A_2=\dot{v}$
+
+therefore
+
+$$
+C_1=\frac{\dot{v}}{A_1}=\frac{2000\ [L/min]}{\frac{\pi}{4}(0.1^2\ [m^2])60\ [s/min]\cdot1000\ [L/m^3]}=4.25\ m/s
+$$
+
+$$
+C_2=\frac{\dot{v}}{A_2}=\frac{2000\ [L/min]}{\frac{\pi}{4}(0.03^2\ [m^2])60\ [s/min]\cdot1000\ [L/m^3]}=47.18\ m/s
+$$
+
+We find $P_2$ as follows:
+
+$$
+P_2 = 9.8 \left[ 30 - 36 + \left( \frac{4.25^2 - 47.18^2}{2 \cdot 9.8} \right) + \frac{6500}{9.8} \right]
+$$
+
+$$
+P_2 = 9.8 \left[(- 6) + (-112.5) + 663 \right]=9.8 \cdot 544.5= 5340\ kPa
+$$
+
+The pressure head at 2 has been decreased by the increase in elevation and velocity heads. The total head, however remains unchanged.
+:::
+
+## Bernoulli's Equation
+
+The Bernoulli's equation between two points in a fluid flow is given by:
+
+$$
+P_1 + \frac{1}{2} \rho C_1^2 + \rho g h_1 = P_2 + \frac{1}{2} \rho C_2^2 + \rho g h_2
+$$
+
+Where:
+
+-   $P_1$ and $P_2$ are the pressures at points 1 and 2, respectively.
+
+-   $\rho$ is the density of the fluid.
+
+-   $C_1$ and $C_2$ are the velocities of the fluid at points 1 and 2, respectively.
+
+-   $g$ is the acceleration due to gravity.
+
+-   $h_1$ and $h_2$ are the heights of the fluid at points 1 and 2, respectively.
+
+::: {#exm-bernoulli}
+Water flows through a smooth, horizontal venturi meter with an entrance diameter of 375 mm and a throat diameter of 125 mm. If the pressure difference between these sections corresponds to a head of 457 mm of water, determine the mass flow rate in kg/s.
+
+To calculate the **mass flow rate** through the venturi meter, we will use **Bernoulli's principle** and the **continuity equation**.
+
+### Given Data:
+
+**Diameter at entrance (Section 1):**
+
+$$
+D_1 = 375\ \text{mm} = 0.375\ \text{m}
+$$
+
+**Diameter at throat (Section 2):**
+
+$$
+D_2 = 125\ \text{mm} = 0.125\ \text{m}
+$$
+
+**Pressure head difference:** $$
+h = 457\ \text{mm of water} = 0.457\ \text{m}
+$$
+
+**Density of water:** $$
+\rho = 1000\ \text{kg/m}^3 (for\ water)
+$$
+
+### Step 1: Cross-sectional Areas
+
+The areas of the entrance and throat are given by:
+
+$$
+A_1 = \frac{\pi D_1^2}{4}, \quad A_2 = \frac{\pi D_2^2}{4}
+$$ Substitute the values of $D_1$ and $D_2$:
+
+$$
+A_1 = \frac{\pi (0.375)^2}{4} = 0.1104\ \text{m}^2, \quad A_2 = \frac{\pi (0.125)^2}{4} = 0.01227 , \text{m}^2
+$$
+
+### Step 2: Bernoulli's Equation Between Two Points
+
+The Bernoulli equation, assuming negligible height differences and no losses, is:
+
+$$
+P_1 + \frac{1}{2} \rho C_1^2 = P_2 + \frac{1}{2} \rho C_2^2
+$$
+
+Rearranging for the velocity difference (using the pressure difference in terms of head): $$
+\frac{1}{2} \rho (C_2^2 - C_1^2) = \rho g h
+$$
+
+Simplify (cancel $\rho$):
+
+$$
+\frac{1}{2} (C_2^2 - C_1^2) = g h
+$$
+
+Thus: $$
+C_2^2 - C_1^2 = 2 g h
+$$
+
+### Step 3: Continuity Equation
+
+From the continuity equation:
+
+$$
+A_1 C_1 = A_2 C_2
+$$
+
+Solve for $C_1$ in terms of $C_2$:
+
+$$
+C_1 = \frac{A_2}{A_1} C_2 
+$$
+
+### Step 4: Substitute $C_1$ into Bernoulli's Equation
+
+Substitute $C_1 = \frac{A_2}{A_1} C_2$ into $C_2^2 - C_1^2 = 2 g h$:
+
+$$
+C_2^2 - \left( \frac{A_2}{A_1} C_2 \right)^2 = 2 g h
+$$
+
+Factor out $C_2^2$:
+
+$$
+C_2^2 \left( 1 - \left( \frac{A_2}{A_1} \right)^2 \right) = 2 g h 
+$$
+
+Solve for $C_2^2$:
+
+$$
+C_2^2 = \frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}
+$$
+
+Take the square root to find $C_2$:
+
+$$
+C_2 = \sqrt{\frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}}
+$$
+
+### Step 5: Calculate $C_2$
+
+First, calculate the ratio $\frac{A_2}{A_1}$:
+
+$$
+\frac{A_2}{A_1} = \frac{0.01227}{0.1104} = 0.1112
+$$
+
+Now calculate $1 - \left( \frac{A_2}{A_1} \right)^2$:
+
+$$
+1 - (0.1112)^2 = 1 - 0.01236 = 0.98764
+$$
+
+Substitute into the equation for $v_2$ using ($g = 9.81\ \text{m/s}^2$ and $h = 0.457\ \text{m}$):
+
+$$
+C_2 = \sqrt{\frac{2 \cdot 9.81 \cdot 0.457}{0.98764}}
+$$ $$
+C_2 = \sqrt{\frac{8.963}{0.98764}} = \sqrt{9.075} \approx 3.01  \text{m/s}
+$$
+
+### Step 6: Calculate Mass Flow Rate
+
+The mass flow rate is given by:
+
+$$
+\dot{m} = \rho A_2 C_2
+$$
+
+Substitute $\rho = 1000\ \text{kg/m}^3$, $A_2 = 0.01227\ \text{m}^2$, and $C_2 = 3.01\ \text{m/s}$:
+
+$$
+\dot{m} = 1000 \cdot 0.01227 \cdot 3.01
+$$
+
+$$
+\dot{m} = 36.95\ \text{kg/s}
+$$
+
+### Final Answer:
+
+The mass flow rate is approximately:
+
+$$
+\boxed{37.0 \, \text{kg/s}}
+$$
+:::
+
+::: {#exm-power}
+A centrifugal pump supplies seawater through a pipe with a diameter of 150 mm at a constant velocity of 1.5 m/s. The seawater is pumped to a height of 6.5 m. The efficiency of the pump is 65%. Taking the density of seawater as 1025 kg/m³, find the output and input power of the pump.
+
+### Solution
+
+1.  Find flow rate ($\dot{v}$):
+    -   Area = $\pi(d^2/4) = \pi(0.15^2/4) = 0.0177$ m²
+    -   $\dot{v} = C \cdot A = 1.5 \times 0.0177 = 0.0265$ m³/s
+2.  Calculate output power:
+    -   $P_{out} = \rho g \dot{v}H$
+    -   $P_{out} = 1025 \times 9.81 \times 0.0265 \times 6.5$
+    -   $P_{out} = 1725.8$ W
+3.  Calculate input power:
+    -   $\eta=\frac{P_{out}}{P_{in}} \times 100$
+    -   $65 = \frac{1725.8}{P_{in}} \times 100$
+    -   $P_{in} = \frac{1725.8}{0.65}$
+    -   $P_{in} = 2655.1$ W
+
+Therefore:
+
+-   Output power = 1.73 kW
+
+-   Input power = 2.66 kW
+:::

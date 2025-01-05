@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Shear Force and Bending Moment Diagrams – Applied Mechanics Workbook</title>
+<title>8&nbsp; Hydrodynamics – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./hydrodynamics.html" rel="next">
-<link href="./stress-strain.html" rel="prev">
+<link href="./review.html" rel="next">
+<link href="./shear-force-bending-moment-diagrams.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -132,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./shear-force-bending-moment-diagrams.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./hydrodynamics.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hydrodynamics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -208,13 +188,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./shear-force-bending-moment-diagrams.html" class="sidebar-item-text sidebar-link active">
+  <a href="./shear-force-bending-moment-diagrams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hydrodynamics.html" class="sidebar-item-text sidebar-link">
+  <a href="./hydrodynamics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hydrodynamics</span></span></a>
   </div>
 </li>
@@ -257,19 +237,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">7.1</span> Objectives</a></li>
-  <li><a href="#shear-force-and-bending-moment-diagrams" id="toc-shear-force-and-bending-moment-diagrams" class="nav-link" data-scroll-target="#shear-force-and-bending-moment-diagrams"><span class="header-section-number">7.2</span> Shear Force and Bending Moment Diagrams</a>
-  <ul class="collapse">
-  <li><a href="#analyze-the-problem" id="toc-analyze-the-problem" class="nav-link" data-scroll-target="#analyze-the-problem"><span class="header-section-number">7.2.1</span> <strong>1. Analyze the Problem</strong></a></li>
-  <li><a href="#calculate-support-reactions" id="toc-calculate-support-reactions" class="nav-link" data-scroll-target="#calculate-support-reactions"><span class="header-section-number">7.2.2</span> <strong>2. Calculate Support Reactions</strong></a></li>
-  <li><a href="#break-the-beam-into-segments" id="toc-break-the-beam-into-segments" class="nav-link" data-scroll-target="#break-the-beam-into-segments"><span class="header-section-number">7.2.3</span> <strong>3. Break the Beam into Segments</strong></a></li>
-  <li><a href="#write-equations-for-shear-force-and-bending-moment" id="toc-write-equations-for-shear-force-and-bending-moment" class="nav-link" data-scroll-target="#write-equations-for-shear-force-and-bending-moment"><span class="header-section-number">7.2.4</span> <strong>4. Write Equations for Shear Force and Bending Moment</strong></a></li>
-  <li><a href="#plot-the-shear-force-diagram-sfd" id="toc-plot-the-shear-force-diagram-sfd" class="nav-link" data-scroll-target="#plot-the-shear-force-diagram-sfd"><span class="header-section-number">7.2.5</span> <strong>5. Plot the Shear Force Diagram (SFD)</strong></a></li>
-  <li><a href="#plot-the-bending-moment-diagram-bmd" id="toc-plot-the-bending-moment-diagram-bmd" class="nav-link" data-scroll-target="#plot-the-bending-moment-diagram-bmd"><span class="header-section-number">7.2.6</span> <strong>6. Plot the Bending Moment Diagram (BMD)</strong></a></li>
-  <li><a href="#verify-the-results" id="toc-verify-the-results" class="nav-link" data-scroll-target="#verify-the-results"><span class="header-section-number">7.2.7</span> <strong>7. Verify the Results</strong></a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7.3</span> Summary</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">7.4</span> Further Reading</a></li>
+  <li><a href="#volume-flow-rate" id="toc-volume-flow-rate" class="nav-link active" data-scroll-target="#volume-flow-rate"><span class="header-section-number">8.1</span> Volume Flow Rate</a></li>
+  <li><a href="#mass-flow-rate" id="toc-mass-flow-rate" class="nav-link" data-scroll-target="#mass-flow-rate"><span class="header-section-number">8.2</span> Mass Flow Rate</a></li>
+  <li><a href="#continuity-equation" id="toc-continuity-equation" class="nav-link" data-scroll-target="#continuity-equation"><span class="header-section-number">8.3</span> Continuity Equation</a></li>
+  <li><a href="#the-energy-equation-for-an-ideal-fluid" id="toc-the-energy-equation-for-an-ideal-fluid" class="nav-link" data-scroll-target="#the-energy-equation-for-an-ideal-fluid"><span class="header-section-number">8.4</span> The Energy Equation for an Ideal Fluid</a></li>
+  <li><a href="#bernoullis-equation" id="toc-bernoullis-equation" class="nav-link" data-scroll-target="#bernoullis-equation"><span class="header-section-number">8.5</span> Bernoulli’s Equation</a></li>
   </ul>
 </nav>
     </div>
@@ -278,7 +250,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-shear-force-and-bending-moment-diagrams" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span></h1>
+<h1 class="title"><span id="sec-hydrodynamics" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hydrodynamics</span></span></h1>
 </div>
 
 
@@ -295,118 +267,393 @@ window.Quarto = {
 </header>
 
 
-<section id="objectives" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">7.1</span> Objectives</h2>
+<p>The amount of liquid flowing through a pipe or opening is usually measured by the volume or mass of liquid that flows per unit of time.</p>
+<section id="volume-flow-rate" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="volume-flow-rate"><span class="header-section-number">8.1</span> Volume Flow Rate</h2>
+<p>Volume rate of flow refers to the rate at which a fluid volume passes a given section in a flow stream. Volume rate of flow may also be referred to as capacity of flow, flow rate or discharge. It is generally given in units of volume per unit of time, cubic meters per second (m<sup>3</sup>/s) or liters per second (L/s).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/volumeflow.png" style="width:5cm;height:1.5cm" class="figure-img"></p>
+<figcaption>Volume flow</figcaption>
+</figure>
+</div>
+<p>Consider an ideal fluid flow in a pipe of cross-section ‘A’ (m<sup>2</sup>). For an ideal fluid all the particles move to the right with a velocity of ‘C’ (m/s). As the fluid flow to the right with a velocity of C m/s, ‘C’ m of fluid pass section 1 every second. i.e.&nbsp;the volume of fluid passing section-1 every second is A x C.</p>
+<p><span class="math display">\[
+Volume\ flow = area\ x\ velocity
+\]</span></p>
+<p><span class="math display">\[
+\dot{v} = A \cdot C
+\]</span></p>
+<p>Where:</p>
 <ul>
-<li>Recall</li>
-<li>Practice</li>
+<li><p><span class="math inline">\(\dot{v}\)</span>: Volume flow rate, <span class="math inline">\(\mathrm{m^3/s}\)</span></p></li>
+<li><p><span class="math inline">\(A\)</span>: Cross-sectional area of the flow, <span class="math inline">\(\mathrm{m^2}\)</span></p></li>
+<li><p><span class="math inline">\(C\)</span>: Mean (average) velocity of the fluid, <span class="math inline">\(\mathrm{m/s}\)</span></p></li>
+</ul>
+<p>Consider a real fluid flowing in the same pipe. Here particle velocity will be a variable across the flow stream.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/volumeflow1.png" style="width:5cm;height:1.8cm" class="figure-img"></p>
+<figcaption>Mean velocity</figcaption>
+</figure>
+</div>
+<p>If the mean velocity cm of all the fluid particles could be found, then similar to the ideal fluid.</p>
+<p><span class="math display">\[
+Volume\ flow = area\ x\ mean\ velocity
+\]</span></p>
+<p>Unless otherwise indicated, the velocity of flow is understood to refer to the average or mean velocity of all the particles in a flowing fluid.</p>
+</section>
+<section id="mass-flow-rate" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="mass-flow-rate"><span class="header-section-number">8.2</span> Mass Flow Rate</h2>
+<p>Mass flow rate refers to the rate at which a fluid mass passes a given section in a flow stream. It is given in units of mass per unit of time, kilogram per second (kg/s). Mass flow rate is easily calculated from volume flow rate as follows.</p>
+<p><span class="math display">\[
+Mass\ flow = density\ x\ volume\ flow
+\]</span></p>
+<p><span class="math display">\[
+\dot{m} = \rho \cdot \dot v
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(\dot{m}\)</span>: mass flow rate, <span class="math inline">\(\mathrm{kg/s}\)</span></p></li>
+<li><p><span class="math inline">\(\rho\)</span>: density, <span class="math inline">\(\mathrm{kg/m^3}\)</span></p></li>
+<li><p><span class="math inline">\(\dot{v}\)</span>: volume flow, <span class="math inline">\(\mathrm{m^3/s}\)</span></p></li>
+</ul>
+<p>Or</p>
+<p><span class="math display">\[
+\dot{m} = \rho \cdot A \cdot C
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(\dot{m}\)</span>: mass flow rate, <span class="math inline">\(\mathrm{kg/s}\)</span></p></li>
+<li><p><span class="math inline">\(\rho\)</span>: density, <span class="math inline">\(\mathrm{kg/m^3}\)</span></p></li>
+<li><p><span class="math inline">\(A\)</span>: Cross-sectional area of the flow, <span class="math inline">\(\mathrm{m^2}\)</span></p></li>
+<li><p><span class="math inline">\(C\)</span>: Mean (average) velocity of the fluid, <span class="math inline">\(\mathrm{m/s}\)</span></p></li>
 </ul>
 </section>
-<section id="shear-force-and-bending-moment-diagrams" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="shear-force-and-bending-moment-diagrams"><span class="header-section-number">7.2</span> Shear Force and Bending Moment Diagrams</h2>
-<section id="analyze-the-problem" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="analyze-the-problem"><span class="header-section-number">7.2.1</span> <strong>1. Analyze the Problem</strong></h3>
-<ul>
-<li><p><strong>Identify the beam type:</strong> Determine whether it’s simply supported, cantilevered, or continuous.</p></li>
-<li><p><strong>List all loads and supports:</strong> Include point loads, distributed loads, moments, and reactions.</p></li>
-</ul>
-</section>
-<section id="calculate-support-reactions" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="calculate-support-reactions"><span class="header-section-number">7.2.2</span> <strong>2. Calculate Support Reactions</strong></h3>
+<section id="continuity-equation" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="continuity-equation"><span class="header-section-number">8.3</span> Continuity Equation</h2>
+<p>Continuous flow exists in a flow system when the mass flow rate is constant throughout the system. If in the diagram below, the mass flow rate at 1 is equal to that at 2, then continuity exists.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/continuity_equation.png" style="width:5cm;height:2cm" class="figure-img"></p>
+<figcaption>Continuity equation</figcaption>
+</figure>
+</div>
+<p>Since <span class="math inline">\(\dot{m_1} = \dot{m_2}\)</span>, therefore</p>
+<p><span class="math display">\[
+\rho_1 \cdot A_1 \cdot C_1= \rho_2 \cdot A_2 \cdot C_2
+\]</span></p>
+<p>If the fluid is incompressible (most liquids), then density will remain constant (<span class="math inline">\(\rho_1=\rho_2\)</span>) and the above equations may be written as:</p>
+<p><span class="math display">\[
+A_1 \cdot C_1= A_2 \cdot C_2
+\]</span> Or</p>
+<p><span class="math display">\[
+\dot{v_1}= \dot{v_2}
+\]</span></p>
+<p>That is, the volume flow rate is constant for an incompressible fluid.</p>
+<div id="exm-conteq" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8.1</strong></span> A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate the mass flow rate and the velocities in the larger and smaller pipe.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/continuity_equation_exm.png" style="width:5cm;height:1.7cm" class="figure-img"></p>
+<figcaption>Example</figcaption>
+</figure>
+</div>
+<section id="problem-statement" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="problem-statement"><span class="header-section-number">8.3.1</span> Problem Statement</h3>
+<p>A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate:</p>
 <ol type="1">
-<li><p><strong>Free-Body Diagram (FBD):</strong> Draw the beam with all external forces, moments, and reactions.</p></li>
-<li><p><strong>Equilibrium Equations:</strong> Use these to solve for the reactions at the supports:</p></li>
+<li><p>The <strong>mass flow rate</strong>.</p></li>
+<li><p>The <strong>velocity</strong> in the larger pipe.</p></li>
+<li><p>The <strong>velocity</strong> in the smaller pipe.</p></li>
 </ol>
+<section id="given-data" class="level4" data-number="8.3.1.1">
+<h4 data-number="8.3.1.1" class="anchored" data-anchor-id="given-data"><span class="header-section-number">8.3.1.1</span> Given Data:</h4>
 <ul>
-<li><p><span class="math inline">\(\sum F_y = 0\)</span> (Vertical force equilibrium)</p></li>
-<li><p><span class="math inline">\(\sum M = 0\)</span> (Moment equilibrium about any point)</p></li>
+<li>Diameter of larger pipe: <span class="math inline">\(d_1 = 300 \, \text{mm} = 0.3 \, \text{m}\)</span></li>
+<li>Diameter of smaller pipe: <span class="math inline">\(d_2 = 200 \, \text{mm} = 0.2 \, \text{m}\)</span></li>
+<li>Volume flow rate:<br>
+<span class="math display">\[ \dot{v} = 0.3066\ \text{m}^3/\text{s} \]</span></li>
+<li>Density of water:<br>
+<span class="math display">\[ \rho = 1000 \, \text{kg/m}^3 \]</span></li>
 </ul>
 </section>
-<section id="break-the-beam-into-segments" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="break-the-beam-into-segments"><span class="header-section-number">7.2.3</span> <strong>3. Break the Beam into Segments</strong></h3>
-<p>Divide the beam into sections based on the locations of loads, supports, and discontinuities. Label each segment.</p>
+<section id="step-1-mass-flow-rate" class="level4" data-number="8.3.1.2">
+<h4 data-number="8.3.1.2" class="anchored" data-anchor-id="step-1-mass-flow-rate"><span class="header-section-number">8.3.1.2</span> Step 1: Mass Flow Rate</h4>
+<p>The mass flow rate <span class="math inline">\(\dot{m}\)</span> is given by:<br>
+<span class="math display">\[
+\dot{m} = \rho \dot{v}
+\]</span><br>
+Substituting values:<br>
+<span class="math display">\[
+\dot{m} = 1000 \times 0.3066 = 306.667 \, \text{kg/s}
+\]</span></p>
 </section>
-<section id="write-equations-for-shear-force-and-bending-moment" class="level3" data-number="7.2.4">
-<h3 data-number="7.2.4" class="anchored" data-anchor-id="write-equations-for-shear-force-and-bending-moment"><span class="header-section-number">7.2.4</span> <strong>4. Write Equations for Shear Force and Bending Moment</strong></h3>
-<ul>
-<li><p><strong>Shear Force</strong> <span class="math inline">\(V(x)\)</span>: The algebraic sum of vertical forces to the left or right of the section.</p></li>
-<li><p><strong>Bending Moment</strong> <span class="math inline">\(M(x)\)</span>: The algebraic sum of moments about the section.</p></li>
-</ul>
+<section id="step-2-velocity-in-the-larger-pipe-c_1" class="level4" data-number="8.3.1.3">
+<h4 data-number="8.3.1.3" class="anchored" data-anchor-id="step-2-velocity-in-the-larger-pipe-c_1"><span class="header-section-number">8.3.1.3</span> Step 2: Velocity in the Larger Pipe <span class="math inline">\(C_1\)</span></h4>
+<p>The velocity in a pipe is related to the flow rate and cross-sectional area:<br>
+<span class="math display">\[ C = \frac{\dot{v}}{A} \]</span><br>
+For the larger pipe:<br>
+<span class="math display">\[ A_1 = \pi \left(\frac{d_1}{2}\right)^2 = \pi \left(\frac{0.3}{2}\right)^2 = 0.0707 \, \text{m}^2 \]</span><br>
+<span class="math display">\[ C_1 = \frac{\dot{v}}{A_1} = \frac{0.3066}{0.0707} \approx 4.34 \, \text{m/s} \]</span></p>
 </section>
-<section id="plot-the-shear-force-diagram-sfd" class="level3" data-number="7.2.5">
-<h3 data-number="7.2.5" class="anchored" data-anchor-id="plot-the-shear-force-diagram-sfd"><span class="header-section-number">7.2.5</span> <strong>5. Plot the Shear Force Diagram (SFD)</strong></h3>
+<section id="step-3-velocity-in-the-smaller-pipe-c_2" class="level4" data-number="8.3.1.4">
+<h4 data-number="8.3.1.4" class="anchored" data-anchor-id="step-3-velocity-in-the-smaller-pipe-c_2"><span class="header-section-number">8.3.1.4</span> Step 3: Velocity in the Smaller Pipe <span class="math inline">\(C_2\)</span></h4>
+<p>For the smaller pipe:<br>
+<span class="math display">\[ A_2 = \pi \left(\frac{d_2}{2}\right)^2 = \pi \left(\frac{0.2}{2}\right)^2 = 0.0314 \, \text{m}^2 \]</span><br>
+<span class="math display">\[ C_2 = \frac{\dot{v}}{A_2} = \frac{0.3066}{0.0314} \approx 9.76 \, \text{m/s} \]</span></p>
+<hr>
+</section>
+</section>
+<section id="final-results" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="final-results"><span class="header-section-number">8.3.2</span> Final Results:</h3>
 <ol type="1">
-<li><p><strong>Start at zero at the ends of the beam</strong> (for simply supported beams or free ends).</p></li>
-<li><p><strong>Add or subtract forces at load points:</strong></p>
-<ul>
-<li><p>A point load changes the shear force instantaneously by its magnitude.</p></li>
-<li><p>A distributed load causes a slope in the SFD.</p></li>
-</ul></li>
-<li><p><strong>Mark zero-crossings:</strong> Identify points where the shear force changes sign, indicating a potential maximum or minimum bending moment.</p></li>
+<li><strong>Mass flow rate:</strong><br>
+<span class="math display">\[ \dot{m} = 306.667 \, \text{kg/s} \]</span><br>
+</li>
+<li><strong>Velocity in the larger pipe:</strong><br>
+<span class="math display">\[ C_1 \approx 4.34 \, \text{m/s} \]</span><br>
+</li>
+<li><strong>Velocity in the smaller pipe:</strong><br>
+<span class="math display">\[ C_2 \approx 9.76 \, \text{m/s} \]</span></li>
 </ol>
 </section>
-<section id="plot-the-bending-moment-diagram-bmd" class="level3" data-number="7.2.6">
-<h3 data-number="7.2.6" class="anchored" data-anchor-id="plot-the-bending-moment-diagram-bmd"><span class="header-section-number">7.2.6</span> <strong>6. Plot the Bending Moment Diagram (BMD)</strong></h3>
-<ol type="1">
-<li><p><strong>Start with the calculated moments at the supports or free ends.</strong></p></li>
-<li><p><strong>Integrate the shear force:</strong> The area under the SFD gives the bending moment.</p></li>
-<li><p><strong>Apply boundary conditions:</strong></p>
-<ul>
-<li><p>Fixed ends: Zero slope (moment is maximum/minimum).</p></li>
-<li><p>Simply supported ends: Zero moment.</p></li>
-<li><p>Free ends: Zero shear force and moment.</p></li>
-</ul></li>
-</ol>
+</div>
 </section>
-<section id="verify-the-results" class="level3" data-number="7.2.7">
-<h3 data-number="7.2.7" class="anchored" data-anchor-id="verify-the-results"><span class="header-section-number">7.2.7</span> <strong>7. Verify the Results</strong></h3>
+<section id="the-energy-equation-for-an-ideal-fluid" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="the-energy-equation-for-an-ideal-fluid"><span class="header-section-number">8.4</span> The Energy Equation for an Ideal Fluid</h2>
+<p>The steady flow equation is developed from the Law of Conservation of Energy. If there are no energy losses or energy additions in a flow system, then the total energy of a flowing fluid will remain constant.</p>
+<p>A flowing fluid may lose energy as a result of fluid friction, heat energy transfer and fluid motors. For an ideal fluid, frictional losses are equal to zero. Energy may be added to a fluid via a pump or heat energy addition.</p>
+<p>The total energy possessed by a flowing fluid consists of:</p>
 <ul>
-<li><strong>Boundary Conditions:</strong> Ensure the diagrams match the physical behavior of the beam.</li>
+<li>internal energy</li>
+<li>potential energy</li>
+<li>kinetic energy and</li>
+<li>pressure energy (flow energy).</li>
 </ul>
+<p>Generally in fluid mechanics the change in internal energy is considered to be negligible. Heat energy transfers are usually not considered in fluid mechanics and the frictional heat developed by a flowing fluid is relatively small. Therefore, the internal energy term is omitted from the energy balance.</p>
+<p>Consider the flow system shown below. For this system, assume:</p>
+<ul>
+<li>an ideal fluid</li>
+<li>that there are no energy losses or additions and</li>
+<li>steady flow conditions exist.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/energy_equation.png" style="width:5cm;height:2.2cm" class="figure-img"></p>
+<figcaption>Energy equation</figcaption>
+</figure>
+</div>
+<p>From the Law of Conservation of Energy:</p>
+<p>The Total Energy at section 1 = The Total Energy at section 2</p>
+<p><span class="math display">\[
+mZ_1g+\frac{m C_1^2}{2}+mP_1v_1=mZ_2g+\frac{m C_2^2}{2}+mP_2v_2
+\]</span></p>
+<p>Dividing through by <span class="math inline">\(mg\)</span>:</p>
+<p><span class="math display">\[
+\frac{mZ_1g}{mg}+\frac{m C_1^2}{2mg}+\frac{mP_1v_1}{mg}=\frac{mZ_2g}{mg}+\frac{m C_2^2}{2mg}+\frac{mP_2v_2}{mg}
+\]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[
+Z_1+\frac{C_1^2}{2g}+\frac{P_1v_1}{g}=Z_2+\frac{C_2^2}{2g}+\frac{P_2v_2}{g}
+\]</span></p>
+<p>In fluid mechanics density (<span class="math inline">\(\rho\)</span>) is generally used in preference to specific volume, i.e.&nbsp;<span class="math inline">\(v=\frac{1}{\rho}\)</span> Therefore:</p>
+<p><span class="math display">\[
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{g\rho_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{g\rho_2}
+\]</span></p>
+<p>In fluid mechanics, specific weight represents the force exerted by gravity on a unit volume of a fluid. For this reason, units are expressed as force per unit volume (e.g., <span class="math inline">\(N/m^3\)</span>)</p>
+<p>Specific weight is given <span class="math inline">\(\gamma = g\rho\)</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\gamma\)</span>: specific weight, <span class="math inline">\(\mathrm{N/m^3}\)</span></p>
+<p><span class="math inline">\(g\)</span>: gravitational acceleration, <span class="math inline">\(\mathrm{m/s^2}\)</span></p>
+<p><span class="math inline">\(\rho\)</span>: density, <span class="math inline">\(\mathrm{kg/m^3}\)</span></p>
+<p><span class="math display">\[
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{\gamma_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{\gamma_2}
+\]</span></p>
+<p>Each term has units of m, therefore:</p>
+<ul>
+<li><p>Potential energy <span class="math inline">\(Z\)</span> is known as the elevation head.</p></li>
+<li><p>Kinetic energy <span class="math inline">\(\frac{c^2}{2g}\)</span> is known as the velocity head.</p></li>
+<li><p>Pressure energy <span class="math inline">\(\frac{P}{\gamma}\)</span> is known as the pressure head.</p></li>
+</ul>
+<p>Similarly, the total energy of a flowing fluid is known as the total head (H).</p>
+<p><span class="math display">\[
+Total\ Head= Elevation\ Head + Velocity\ Head + Pressure\ Head
+\]</span> <span class="math display">\[
+H=Z+\frac{C^2}{2g}+\frac{P}{\gamma}
+\]</span></p>
+<p>The total head (H) will be a constant throughout a flow system if:</p>
+<ol type="1">
+<li><p>frictional losses (head loss) are equal to zero</p></li>
+<li><p>work energy is not added by a pump (pump head) or removed by a motor.</p></li>
+</ol>
+<div id="exm-energyeq" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8.2</strong></span> Consider a simple flow system consisting of a varying cross-section pipe. Water flows through this system at a rate of 2000 L/min. As the pipe increases in elevation from 30 m to 36 m it decreases in diameter from 10 cm to 3.0 cm. If the pressure is 6.5 MPa at the 30 m elevation, what is the pressure at 36 m?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/energy_equation_exm.png" style="width:5cm;height:2.1cm" class="figure-img"></p>
+<figcaption>Example</figcaption>
+</figure>
+</div>
+<p>Find <span class="math inline">\(P_2\)</span>.</p>
+<p>Apply <span class="math inline">\(Z_1+\frac{C_1^2}{2g}+\frac{P_1}{\gamma_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{\gamma_2}\)</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+\frac{P_2}{\gamma_2}=(Z_1-Z_2)+(\frac{C_1^2}{2g}-\frac{C_2^2}{2g})+\frac{P_1}{\gamma_1}
+\]</span></p>
+<p><span class="math display">\[
+P_2 = \gamma_2 \left[ Z_1 - Z_2 + \left( \frac{C_1^2 - C_2^2}{2g} \right) + \frac{P_1}{\gamma_1} \right]
+\]</span></p>
+<p>To find <span class="math inline">\(C_1\)</span> and <span class="math inline">\(C_2\)</span>, use <span class="math inline">\(C_1A_2=C_2A_2=\dot{v}\)</span></p>
+<p>therefore</p>
+<p><span class="math display">\[
+C_1=\frac{\dot{v}}{A_1}=\frac{2000\ [L/min]}{\frac{\pi}{4}(0.1^2\ [m^2])60\ [s/min]\cdot1000\ [L/m^3]}=4.25\ m/s
+\]</span></p>
+<p><span class="math display">\[
+C_2=\frac{\dot{v}}{A_2}=\frac{2000\ [L/min]}{\frac{\pi}{4}(0.03^2\ [m^2])60\ [s/min]\cdot1000\ [L/m^3]}=47.18\ m/s
+\]</span></p>
+<p>We find <span class="math inline">\(P_2\)</span> as follows:</p>
+<p><span class="math display">\[
+P_2 = 9.8 \left[ 30 - 36 + \left( \frac{4.25^2 - 47.18^2}{2 \cdot 9.8} \right) + \frac{6500}{9.8} \right]
+\]</span></p>
+<p><span class="math display">\[
+P_2 = 9.8 \left[(- 6) + (-112.5) + 663 \right]=9.8 \cdot 544.5= 5340\ kPa
+\]</span></p>
+<p>The pressure head at 2 has been decreased by the increase in elevation and velocity heads. The total head, however remains unchanged.</p>
+</div>
 </section>
+<section id="bernoullis-equation" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="bernoullis-equation"><span class="header-section-number">8.5</span> Bernoulli’s Equation</h2>
+<p>The Bernoulli’s equation between two points in a fluid flow is given by:</p>
+<p><span class="math display">\[
+P_1 + \frac{1}{2} \rho C_1^2 + \rho g h_1 = P_2 + \frac{1}{2} \rho C_2^2 + \rho g h_2
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(P_1\)</span> and <span class="math inline">\(P_2\)</span> are the pressures at points 1 and 2, respectively.</p></li>
+<li><p><span class="math inline">\(\rho\)</span> is the density of the fluid.</p></li>
+<li><p><span class="math inline">\(C_1\)</span> and <span class="math inline">\(C_2\)</span> are the velocities of the fluid at points 1 and 2, respectively.</p></li>
+<li><p><span class="math inline">\(g\)</span> is the acceleration due to gravity.</p></li>
+<li><p><span class="math inline">\(h_1\)</span> and <span class="math inline">\(h_2\)</span> are the heights of the fluid at points 1 and 2, respectively.</p></li>
+</ul>
+<div id="exm-bernoulli" class="theorem example">
+<p><span class="theorem-title"><strong>Example 8.3</strong></span> Water flows through a smooth, horizontal venturi meter with an entrance diameter of 375 mm and a throat diameter of 125 mm. If the pressure difference between these sections corresponds to a head of 457 mm of water, determine the mass flow rate in kg/s.</p>
+<p>To calculate the <strong>mass flow rate</strong> through the venturi meter, we will use <strong>Bernoulli’s principle</strong> and the <strong>continuity equation</strong>.</p>
+<section id="given-data-1" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="given-data-1"><span class="header-section-number">8.5.1</span> Given Data:</h3>
+<p><strong>Diameter at entrance (Section 1):</strong></p>
+<p><span class="math display">\[
+D_1 = 375\ \text{mm} = 0.375\ \text{m}
+\]</span></p>
+<p><strong>Diameter at throat (Section 2):</strong></p>
+<p><span class="math display">\[
+D_2 = 125\ \text{mm} = 0.125\ \text{m}
+\]</span></p>
+<p><strong>Pressure head difference:</strong> <span class="math display">\[
+h = 457\ \text{mm of water} = 0.457\ \text{m}
+\]</span></p>
+<p><strong>Density of water:</strong> <span class="math display">\[
+\rho = 1000\ \text{kg/m}^3 (for\ water)
+\]</span></p>
 </section>
-<section id="summary" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.3</span> Summary</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Load Type</strong></th>
-<th><strong>Shear Diagram Shape</strong></th>
-<th><strong>Moment Diagram Shape</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Point Load</td>
-<td>Rectangular (constant)</td>
-<td>Triangular</td>
-</tr>
-<tr class="even">
-<td>Uniformly Distributed Load (UDL)</td>
-<td>Triangular</td>
-<td>Parabolas (second degree)</td>
-</tr>
-</tbody>
-</table>
+<section id="step-1-cross-sectional-areas" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="step-1-cross-sectional-areas"><span class="header-section-number">8.5.2</span> Step 1: Cross-sectional Areas</h3>
+<p>The areas of the entrance and throat are given by:</p>
+<p><span class="math display">\[
+A_1 = \frac{\pi D_1^2}{4}, \quad A_2 = \frac{\pi D_2^2}{4}
+\]</span> Substitute the values of <span class="math inline">\(D_1\)</span> and <span class="math inline">\(D_2\)</span>:</p>
+<p><span class="math display">\[
+A_1 = \frac{\pi (0.375)^2}{4} = 0.1104\ \text{m}^2, \quad A_2 = \frac{\pi (0.125)^2}{4} = 0.01227 , \text{m}^2
+\]</span></p>
 </section>
-<section id="further-reading" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">7.4</span> Further Reading</h2>
-<p>Introduction in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span> and SI units in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional information.</p>
+<section id="step-2-bernoullis-equation-between-two-points" class="level3" data-number="8.5.3">
+<h3 data-number="8.5.3" class="anchored" data-anchor-id="step-2-bernoullis-equation-between-two-points"><span class="header-section-number">8.5.3</span> Step 2: Bernoulli’s Equation Between Two Points</h3>
+<p>The Bernoulli equation, assuming negligible height differences and no losses, is:</p>
+<p><span class="math display">\[
+P_1 + \frac{1}{2} \rho C_1^2 = P_2 + \frac{1}{2} \rho C_2^2
+\]</span></p>
+<p>Rearranging for the velocity difference (using the pressure difference in terms of head): <span class="math display">\[
+\frac{1}{2} \rho (C_2^2 - C_1^2) = \rho g h
+\]</span></p>
+<p>Simplify (cancel <span class="math inline">\(\rho\)</span>):</p>
+<p><span class="math display">\[
+\frac{1}{2} (C_2^2 - C_1^2) = g h
+\]</span></p>
+<p>Thus: <span class="math display">\[
+C_2^2 - C_1^2 = 2 g h
+\]</span></p>
+</section>
+<section id="step-3-continuity-equation" class="level3" data-number="8.5.4">
+<h3 data-number="8.5.4" class="anchored" data-anchor-id="step-3-continuity-equation"><span class="header-section-number">8.5.4</span> Step 3: Continuity Equation</h3>
+<p>From the continuity equation:</p>
+<p><span class="math display">\[
+A_1 C_1 = A_2 C_2
+\]</span></p>
+<p>Solve for <span class="math inline">\(C_1\)</span> in terms of <span class="math inline">\(C_2\)</span>:</p>
+<p><span class="math display">\[
+C_1 = \frac{A_2}{A_1} C_2
+\]</span></p>
+</section>
+<section id="step-4-substitute-c_1-into-bernoullis-equation" class="level3" data-number="8.5.5">
+<h3 data-number="8.5.5" class="anchored" data-anchor-id="step-4-substitute-c_1-into-bernoullis-equation"><span class="header-section-number">8.5.5</span> Step 4: Substitute <span class="math inline">\(C_1\)</span> into Bernoulli’s Equation</h3>
+<p>Substitute <span class="math inline">\(C_1 = \frac{A_2}{A_1} C_2\)</span> into <span class="math inline">\(C_2^2 - C_1^2 = 2 g h\)</span>:</p>
+<p><span class="math display">\[
+C_2^2 - \left( \frac{A_2}{A_1} C_2 \right)^2 = 2 g h
+\]</span></p>
+<p>Factor out <span class="math inline">\(C_2^2\)</span>:</p>
+<p><span class="math display">\[
+C_2^2 \left( 1 - \left( \frac{A_2}{A_1} \right)^2 \right) = 2 g h
+\]</span></p>
+<p>Solve for <span class="math inline">\(C_2^2\)</span>:</p>
+<p><span class="math display">\[
+C_2^2 = \frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}
+\]</span></p>
+<p>Take the square root to find <span class="math inline">\(C_2\)</span>:</p>
+<p><span class="math display">\[
+C_2 = \sqrt{\frac{2 g h}{1 - \left( \frac{A_2}{A_1} \right)^2}}
+\]</span></p>
+</section>
+<section id="step-5-calculate-c_2" class="level3" data-number="8.5.6">
+<h3 data-number="8.5.6" class="anchored" data-anchor-id="step-5-calculate-c_2"><span class="header-section-number">8.5.6</span> Step 5: Calculate <span class="math inline">\(C_2\)</span></h3>
+<p>First, calculate the ratio <span class="math inline">\(\frac{A_2}{A_1}\)</span>:</p>
+<p><span class="math display">\[
+\frac{A_2}{A_1} = \frac{0.01227}{0.1104} = 0.1112
+\]</span></p>
+<p>Now calculate <span class="math inline">\(1 - \left( \frac{A_2}{A_1} \right)^2\)</span>:</p>
+<p><span class="math display">\[
+1 - (0.1112)^2 = 1 - 0.01236 = 0.98764
+\]</span></p>
+<p>Substitute into the equation for <span class="math inline">\(v_2\)</span> using (<span class="math inline">\(g = 9.81\ \text{m/s}^2\)</span> and <span class="math inline">\(h = 0.457\ \text{m}\)</span>):</p>
+<p><span class="math display">\[
+C_2 = \sqrt{\frac{2 \cdot 9.81 \cdot 0.457}{0.98764}}
+\]</span> <span class="math display">\[
+C_2 = \sqrt{\frac{8.963}{0.98764}} = \sqrt{9.075} \approx 3.01  \text{m/s}
+\]</span></p>
+</section>
+<section id="step-6-calculate-mass-flow-rate" class="level3" data-number="8.5.7">
+<h3 data-number="8.5.7" class="anchored" data-anchor-id="step-6-calculate-mass-flow-rate"><span class="header-section-number">8.5.7</span> Step 6: Calculate Mass Flow Rate</h3>
+<p>The mass flow rate is given by:</p>
+<p><span class="math display">\[
+\dot{m} = \rho A_2 C_2
+\]</span></p>
+<p>Substitute <span class="math inline">\(\rho = 1000\ \text{kg/m}^3\)</span>, <span class="math inline">\(A_2 = 0.01227\ \text{m}^2\)</span>, and <span class="math inline">\(C_2 = 3.01\ \text{m/s}\)</span>:</p>
+<p><span class="math display">\[
+\dot{m} = 1000 \cdot 0.01227 \cdot 3.01
+\]</span></p>
+<p><span class="math display">\[
+\dot{m} = 36.95\ \text{kg/s}
+\]</span></p>
+</section>
+<section id="final-answer" class="level3" data-number="8.5.8">
+<h3 data-number="8.5.8" class="anchored" data-anchor-id="final-answer"><span class="header-section-number">8.5.8</span> Final Answer:</h3>
+<p>The mass flow rate is approximately:</p>
+<p><span class="math display">\[
+\boxed{37.0 \, \text{kg/s}}
+\]</span></p>
+</section>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-bolton2021" class="csl-entry" role="listitem">
-Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
-</div>
-<div id="ref-russell2021" class="csl-entry" role="listitem">
-Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -973,13 +1220,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./stress-strain.html" class="pagination-link" aria-label="Stress and Strain">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stress and Strain</span></span>
+      <a href="./shear-force-bending-moment-diagrams.html" class="pagination-link" aria-label="Shear Force and Bending Moment Diagrams">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./hydrodynamics.html" class="pagination-link" aria-label="Hydrodynamics">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hydrodynamics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./review.html" class="pagination-link" aria-label="Review">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Review</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

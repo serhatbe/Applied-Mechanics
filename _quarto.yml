@@ -24,8 +24,12 @@ book:
     - moment-of-a-force.qmd
     - stress-strain.qmd
     - shear-force-bending-moment-diagrams.qmd
+    - hydrodynamics.qmd
     - review.qmd
     - references.qmd
+    
+  appendices:
+    - formulae.qmd
     
 bibliography: references.bib
 

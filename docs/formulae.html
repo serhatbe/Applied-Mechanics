@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Shear Force and Bending Moment Diagrams – Applied Mechanics Workbook</title>
+<title>Appendix A — Formulae – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./hydrodynamics.html" rel="next">
-<link href="./stress-strain.html" rel="prev">
+<link href="./references.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -132,7 +111,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./shear-force-bending-moment-diagrams.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./formulae.html">Appendices</a></li><li class="breadcrumb-item"><a href="./formulae.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Formulae</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -208,7 +187,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./shear-force-bending-moment-diagrams.html" class="sidebar-item-text sidebar-link active">
+  <a href="./shear-force-bending-moment-diagrams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span></a>
   </div>
 </li>
@@ -241,7 +220,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./formulae.html" class="sidebar-item-text sidebar-link">
+  <a href="./formulae.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Formulae</span></span></a>
   </div>
 </li>
@@ -257,28 +236,54 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives"><span class="header-section-number">7.1</span> Objectives</a></li>
-  <li><a href="#shear-force-and-bending-moment-diagrams" id="toc-shear-force-and-bending-moment-diagrams" class="nav-link" data-scroll-target="#shear-force-and-bending-moment-diagrams"><span class="header-section-number">7.2</span> Shear Force and Bending Moment Diagrams</a>
+  <li><a href="#rules-of-cosine-and-sine" id="toc-rules-of-cosine-and-sine" class="nav-link active" data-scroll-target="#rules-of-cosine-and-sine"><span class="header-section-number">A.1</span> Rules of Cosine and Sine</a></li>
+  <li><a href="#linear-motion" id="toc-linear-motion" class="nav-link" data-scroll-target="#linear-motion"><span class="header-section-number">A.2</span> Linear Motion</a></li>
+  <li><a href="#angular-motion" id="toc-angular-motion" class="nav-link" data-scroll-target="#angular-motion"><span class="header-section-number">A.3</span> Angular Motion</a></li>
+  <li><a href="#relation-between-linear-and-angular-motion" id="toc-relation-between-linear-and-angular-motion" class="nav-link" data-scroll-target="#relation-between-linear-and-angular-motion"><span class="header-section-number">A.4</span> Relation Between Linear and Angular Motion</a></li>
+  <li><a href="#centre-of-gravity" id="toc-centre-of-gravity" class="nav-link" data-scroll-target="#centre-of-gravity"><span class="header-section-number">A.5</span> Centre of Gravity</a></li>
+  <li><a href="#centroid" id="toc-centroid" class="nav-link" data-scroll-target="#centroid"><span class="header-section-number">A.6</span> Centroid</a></li>
+  <li><a href="#parallel-axis-theorem" id="toc-parallel-axis-theorem" class="nav-link" data-scroll-target="#parallel-axis-theorem"><span class="header-section-number">A.7</span> Parallel Axis Theorem</a></li>
+  <li><a href="#radius-of-gyration" id="toc-radius-of-gyration" class="nav-link" data-scroll-target="#radius-of-gyration"><span class="header-section-number">A.8</span> Radius of Gyration</a>
   <ul class="collapse">
-  <li><a href="#analyze-the-problem" id="toc-analyze-the-problem" class="nav-link" data-scroll-target="#analyze-the-problem"><span class="header-section-number">7.2.1</span> <strong>1. Analyze the Problem</strong></a></li>
-  <li><a href="#calculate-support-reactions" id="toc-calculate-support-reactions" class="nav-link" data-scroll-target="#calculate-support-reactions"><span class="header-section-number">7.2.2</span> <strong>2. Calculate Support Reactions</strong></a></li>
-  <li><a href="#break-the-beam-into-segments" id="toc-break-the-beam-into-segments" class="nav-link" data-scroll-target="#break-the-beam-into-segments"><span class="header-section-number">7.2.3</span> <strong>3. Break the Beam into Segments</strong></a></li>
-  <li><a href="#write-equations-for-shear-force-and-bending-moment" id="toc-write-equations-for-shear-force-and-bending-moment" class="nav-link" data-scroll-target="#write-equations-for-shear-force-and-bending-moment"><span class="header-section-number">7.2.4</span> <strong>4. Write Equations for Shear Force and Bending Moment</strong></a></li>
-  <li><a href="#plot-the-shear-force-diagram-sfd" id="toc-plot-the-shear-force-diagram-sfd" class="nav-link" data-scroll-target="#plot-the-shear-force-diagram-sfd"><span class="header-section-number">7.2.5</span> <strong>5. Plot the Shear Force Diagram (SFD)</strong></a></li>
-  <li><a href="#plot-the-bending-moment-diagram-bmd" id="toc-plot-the-bending-moment-diagram-bmd" class="nav-link" data-scroll-target="#plot-the-bending-moment-diagram-bmd"><span class="header-section-number">7.2.6</span> <strong>6. Plot the Bending Moment Diagram (BMD)</strong></a></li>
-  <li><a href="#verify-the-results" id="toc-verify-the-results" class="nav-link" data-scroll-target="#verify-the-results"><span class="header-section-number">7.2.7</span> <strong>7. Verify the Results</strong></a></li>
+  <li><a href="#rectangle-about-its-centroidal-axis" id="toc-rectangle-about-its-centroidal-axis" class="nav-link" data-scroll-target="#rectangle-about-its-centroidal-axis"><span class="header-section-number">A.8.1</span> Rectangle (about its centroidal axis)</a></li>
+  <li><a href="#circle-about-its-centroidal-axis" id="toc-circle-about-its-centroidal-axis" class="nav-link" data-scroll-target="#circle-about-its-centroidal-axis"><span class="header-section-number">A.8.2</span> Circle (about its centroidal axis)</a></li>
   </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7.3</span> Summary</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">7.4</span> Further Reading</a></li>
+  <li><a href="#beam-calculations" id="toc-beam-calculations" class="nav-link" data-scroll-target="#beam-calculations"><span class="header-section-number">A.9</span> Beam Calculations</a></li>
+  <li><a href="#dynamics" id="toc-dynamics" class="nav-link" data-scroll-target="#dynamics"><span class="header-section-number">A.10</span> Dynamics</a>
+  <ul class="collapse">
+  <li><a href="#linear-momentum" id="toc-linear-momentum" class="nav-link" data-scroll-target="#linear-momentum"><span class="header-section-number">A.10.1</span> Linear momentum</a></li>
+  <li><a href="#angular-momentum" id="toc-angular-momentum" class="nav-link" data-scroll-target="#angular-momentum"><span class="header-section-number">A.10.2</span> Angular momentum</a></li>
+  <li><a href="#moment-of-inertia" id="toc-moment-of-inertia" class="nav-link" data-scroll-target="#moment-of-inertia"><span class="header-section-number">A.10.3</span> Moment of inertia</a></li>
+  <li><a href="#turning-moment" id="toc-turning-moment" class="nav-link" data-scroll-target="#turning-moment"><span class="header-section-number">A.10.4</span> Turning moment</a></li>
+  <li><a href="#power-by-torque" id="toc-power-by-torque" class="nav-link" data-scroll-target="#power-by-torque"><span class="header-section-number">A.10.5</span> Power by Torque</a></li>
+  <li><a href="#kinetic-energy-of-rotation" id="toc-kinetic-energy-of-rotation" class="nav-link" data-scroll-target="#kinetic-energy-of-rotation"><span class="header-section-number">A.10.6</span> Kinetic Energy of Rotation</a></li>
+  </ul></li>
+  <li><a href="#stress-and-strain" id="toc-stress-and-strain" class="nav-link" data-scroll-target="#stress-and-strain"><span class="header-section-number">A.11</span> Stress and Strain</a>
+  <ul class="collapse">
+  <li><a href="#stress" id="toc-stress" class="nav-link" data-scroll-target="#stress"><span class="header-section-number">A.11.1</span> Stress</a></li>
+  <li><a href="#strain" id="toc-strain" class="nav-link" data-scroll-target="#strain"><span class="header-section-number">A.11.2</span> Strain</a></li>
+  <li><a href="#hookes-law" id="toc-hookes-law" class="nav-link" data-scroll-target="#hookes-law"><span class="header-section-number">A.11.3</span> Hooke’s Law</a></li>
+  <li><a href="#factor-of-safety-fos" id="toc-factor-of-safety-fos" class="nav-link" data-scroll-target="#factor-of-safety-fos"><span class="header-section-number">A.11.4</span> Factor of Safety (FOS)</a></li>
+  </ul></li>
+  <li><a href="#hydrodynamics" id="toc-hydrodynamics" class="nav-link" data-scroll-target="#hydrodynamics"><span class="header-section-number">A.12</span> Hydrodynamics</a>
+  <ul class="collapse">
+  <li><a href="#volume-flow" id="toc-volume-flow" class="nav-link" data-scroll-target="#volume-flow"><span class="header-section-number">A.12.1</span> Volume Flow</a></li>
+  <li><a href="#mass-flow" id="toc-mass-flow" class="nav-link" data-scroll-target="#mass-flow"><span class="header-section-number">A.12.2</span> Mass Flow</a></li>
+  <li><a href="#specific-weight" id="toc-specific-weight" class="nav-link" data-scroll-target="#specific-weight"><span class="header-section-number">A.12.3</span> Specific Weight</a></li>
+  <li><a href="#continuity-equation" id="toc-continuity-equation" class="nav-link" data-scroll-target="#continuity-equation"><span class="header-section-number">A.12.4</span> Continuity Equation</a></li>
+  <li><a href="#energy-equation" id="toc-energy-equation" class="nav-link" data-scroll-target="#energy-equation"><span class="header-section-number">A.12.5</span> Energy Equation</a></li>
+  <li><a href="#bernoullis-equation" id="toc-bernoullis-equation" class="nav-link" data-scroll-target="#bernoullis-equation"><span class="header-section-number">A.12.6</span> Bernoulli’s Equation</a></li>
+  </ul></li>
+  <li><a href="#second-moments-of-common-shapes" id="toc-second-moments-of-common-shapes" class="nav-link" data-scroll-target="#second-moments-of-common-shapes"><span class="header-section-number">A.13</span> Second Moments of Common Shapes</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./formulae.html">Appendices</a></li><li class="breadcrumb-item"><a href="./formulae.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Formulae</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-shear-force-and-bending-moment-diagrams" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Shear Force and Bending Moment Diagrams</span></span></h1>
+<h1 class="title"><span id="sec-formulae" class="quarto-section-identifier">Appendix A — Formulae</span></h1>
 </div>
 
 
@@ -295,78 +300,132 @@ window.Quarto = {
 </header>
 
 
-<section id="objectives" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">7.1</span> Objectives</h2>
+<section id="rules-of-cosine-and-sine" class="level2" data-number="A.1">
+<h2 data-number="A.1" class="anchored" data-anchor-id="rules-of-cosine-and-sine"><span class="header-section-number">A.1</span> Rules of Cosine and Sine</h2>
+<p><span class="math display">\[
+c^2 = a^2 + b^2 - 2ab\cos \gamma
+\]</span> <span class="math display">\[
+\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma}
+\]</span></p>
+</section>
+<section id="linear-motion" class="level2" data-number="A.2">
+<h2 data-number="A.2" class="anchored" data-anchor-id="linear-motion"><span class="header-section-number">A.2</span> Linear Motion</h2>
+<p><span class="math display">\[
+\vec{v} = \vec{u} + \vec{a}t
+\]</span></p>
+<p><span class="math display">\[
+\vec{s} = \frac{\vec{u}+\vec{v}}{2}t
+\]</span></p>
+<p><span class="math display">\[
+\vec{s} = \vec{u}t + \frac{1}{2}\vec{a}t^2
+\]</span></p>
+<p><span class="math display">\[
+\vec{v}^2 = \vec{u}^2 + 2\vec{a} \cdot \vec{s}
+\]</span></p>
+<p>where:</p>
 <ul>
-<li>Recall</li>
-<li>Practice</li>
+<li><span class="math inline">\(\vec{u}\)</span>: Initial velocity</li>
+<li><span class="math inline">\(\vec{v}\)</span>: Final velocity</li>
+<li><span class="math inline">\(\vec{s}\)</span>: Displacement</li>
+<li><span class="math inline">\(\vec{a}\)</span>: Acceleration</li>
+<li><span class="math inline">\(t\)</span>: Time</li>
 </ul>
 </section>
-<section id="shear-force-and-bending-moment-diagrams" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="shear-force-and-bending-moment-diagrams"><span class="header-section-number">7.2</span> Shear Force and Bending Moment Diagrams</h2>
-<section id="analyze-the-problem" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="analyze-the-problem"><span class="header-section-number">7.2.1</span> <strong>1. Analyze the Problem</strong></h3>
+<section id="angular-motion" class="level2" data-number="A.3">
+<h2 data-number="A.3" class="anchored" data-anchor-id="angular-motion"><span class="header-section-number">A.3</span> Angular Motion</h2>
+<p><span class="math display">\[
+\omega_2 = \omega_1 \mp \alpha t
+\]</span></p>
+<p><span class="math display">\[
+\theta = \frac{\omega_1+\omega_2}{2}t
+\]</span></p>
+<p><span class="math display">\[
+\theta = \omega_1 t \mp \frac{1}{2}\alpha t^2
+\]</span></p>
+<p><span class="math display">\[
+\omega_2^2 = \omega_1^2 \mp 2\alpha \theta
+\]</span></p>
+<p>where:</p>
 <ul>
-<li><p><strong>Identify the beam type:</strong> Determine whether it’s simply supported, cantilevered, or continuous.</p></li>
-<li><p><strong>List all loads and supports:</strong> Include point loads, distributed loads, moments, and reactions.</p></li>
+<li><p><span class="math inline">\(\omega_1\)</span>: Initial angular velocity (rad/s)</p></li>
+<li><p><span class="math inline">\(\omega_2\)</span>: Final angular velocity (rad/s)</p></li>
+<li><p><span class="math inline">\(\theta\)</span> Angular displacement (rad)</p></li>
+<li><p><span class="math inline">\(\alpha\)</span>: Angular acceleration (rad/s<sup>2</sup>)</p></li>
+<li><p><span class="math inline">\(t\)</span>: Time (s)</p></li>
 </ul>
 </section>
-<section id="calculate-support-reactions" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="calculate-support-reactions"><span class="header-section-number">7.2.2</span> <strong>2. Calculate Support Reactions</strong></h3>
-<ol type="1">
-<li><p><strong>Free-Body Diagram (FBD):</strong> Draw the beam with all external forces, moments, and reactions.</p></li>
-<li><p><strong>Equilibrium Equations:</strong> Use these to solve for the reactions at the supports:</p></li>
-</ol>
+<section id="relation-between-linear-and-angular-motion" class="level2" data-number="A.4">
+<h2 data-number="A.4" class="anchored" data-anchor-id="relation-between-linear-and-angular-motion"><span class="header-section-number">A.4</span> Relation Between Linear and Angular Motion</h2>
+<p>The relationship between linear and angular motion is described by the following equations:</p>
+<p><span class="math inline">\(s = r \theta\)</span> (linear displacement <span class="math inline">\(s\)</span> and angular displacement <span class="math inline">\(\theta\)</span>).</p>
+<p><span class="math inline">\(v = r \omega\)</span> (linear velocity <span class="math inline">\(v\)</span> and angular velocity <span class="math inline">\(\omega\)</span>),</p>
+<p><span class="math inline">\(a = r \alpha\)</span> (linear acceleration <span class="math inline">\(a\)</span> and angular acceleration <span class="math inline">\(\alpha\)</span>).</p>
+</section>
+<section id="centre-of-gravity" class="level2" data-number="A.5">
+<h2 data-number="A.5" class="anchored" data-anchor-id="centre-of-gravity"><span class="header-section-number">A.5</span> Centre of Gravity</h2>
+<p><span class="math display">\[
+\bar{x} = \frac{ \sum Moments\ of\ Weights}{\sum Weights} \qquad \bar{y} = \frac{ \sum Moments\ of\ Weights}{\sum Weights}
+\]</span></p>
+</section>
+<section id="centroid" class="level2" data-number="A.6">
+<h2 data-number="A.6" class="anchored" data-anchor-id="centroid"><span class="header-section-number">A.6</span> Centroid</h2>
+<p><span class="math display">\[
+\bar{x} = \frac{ \sum {\bar{x}_i}\ A_i}{\sum A_i} \qquad \bar{y} = \frac{ \sum {\bar{y}_i}\ A_i}{\sum A_i}
+\]</span></p>
+</section>
+<section id="parallel-axis-theorem" class="level2" data-number="A.7">
+<h2 data-number="A.7" class="anchored" data-anchor-id="parallel-axis-theorem"><span class="header-section-number">A.7</span> Parallel Axis Theorem</h2>
+<p>To find the moment of inertia about an axis parallel to the centroidal axis:</p>
+<p><span class="math display">\[ I = I_c + A d^2 \]</span></p>
+</section>
+<section id="radius-of-gyration" class="level2" data-number="A.8">
+<h2 data-number="A.8" class="anchored" data-anchor-id="radius-of-gyration"><span class="header-section-number">A.8</span> Radius of Gyration</h2>
+<p><span class="math display">\[
+k = \sqrt{\frac{I}{A}} \quad \text{(for area)} \quad \text{or} \quad k = \sqrt{\frac{I}{m}} \quad \text{(for mass)},
+\]</span></p>
+<p>where:</p>
 <ul>
-<li><p><span class="math inline">\(\sum F_y = 0\)</span> (Vertical force equilibrium)</p></li>
-<li><p><span class="math inline">\(\sum M = 0\)</span> (Moment equilibrium about any point)</p></li>
+<li><p><span class="math inline">\(I\)</span>: Moment of inertia about the axis</p></li>
+<li><p><span class="math inline">\(A\)</span>: Area of the cross-section (for area calculations)</p></li>
+<li><p><span class="math inline">\(m\)</span>: Mass of the body (for mass calculations)</p></li>
+</ul>
+<section id="rectangle-about-its-centroidal-axis" class="level3" data-number="A.8.1">
+<h3 data-number="A.8.1" class="anchored" data-anchor-id="rectangle-about-its-centroidal-axis"><span class="header-section-number">A.8.1</span> Rectangle (about its centroidal axis)</h3>
+<ul>
+<li><p>Dimensions: ( b ) (breadth), ( h ) (height)</p></li>
+<li><p>Radius of gyration about the centroidal x-axis: <span class="math display">\[
+k_x = \sqrt{\frac{I_x}{A}} = \sqrt{\frac{\frac{1}{12} b h^3}{b h}} = \frac{h}{\sqrt{12}}
+\]</span></p></li>
 </ul>
 </section>
-<section id="break-the-beam-into-segments" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="break-the-beam-into-segments"><span class="header-section-number">7.2.3</span> <strong>3. Break the Beam into Segments</strong></h3>
-<p>Divide the beam into sections based on the locations of loads, supports, and discontinuities. Label each segment.</p>
-</section>
-<section id="write-equations-for-shear-force-and-bending-moment" class="level3" data-number="7.2.4">
-<h3 data-number="7.2.4" class="anchored" data-anchor-id="write-equations-for-shear-force-and-bending-moment"><span class="header-section-number">7.2.4</span> <strong>4. Write Equations for Shear Force and Bending Moment</strong></h3>
+<section id="circle-about-its-centroidal-axis" class="level3" data-number="A.8.2">
+<h3 data-number="A.8.2" class="anchored" data-anchor-id="circle-about-its-centroidal-axis"><span class="header-section-number">A.8.2</span> Circle (about its centroidal axis)</h3>
 <ul>
-<li><p><strong>Shear Force</strong> <span class="math inline">\(V(x)\)</span>: The algebraic sum of vertical forces to the left or right of the section.</p></li>
-<li><p><strong>Bending Moment</strong> <span class="math inline">\(M(x)\)</span>: The algebraic sum of moments about the section.</p></li>
-</ul>
-</section>
-<section id="plot-the-shear-force-diagram-sfd" class="level3" data-number="7.2.5">
-<h3 data-number="7.2.5" class="anchored" data-anchor-id="plot-the-shear-force-diagram-sfd"><span class="header-section-number">7.2.5</span> <strong>5. Plot the Shear Force Diagram (SFD)</strong></h3>
-<ol type="1">
-<li><p><strong>Start at zero at the ends of the beam</strong> (for simply supported beams or free ends).</p></li>
-<li><p><strong>Add or subtract forces at load points:</strong></p>
-<ul>
-<li><p>A point load changes the shear force instantaneously by its magnitude.</p></li>
-<li><p>A distributed load causes a slope in the SFD.</p></li>
-</ul></li>
-<li><p><strong>Mark zero-crossings:</strong> Identify points where the shear force changes sign, indicating a potential maximum or minimum bending moment.</p></li>
-</ol>
-</section>
-<section id="plot-the-bending-moment-diagram-bmd" class="level3" data-number="7.2.6">
-<h3 data-number="7.2.6" class="anchored" data-anchor-id="plot-the-bending-moment-diagram-bmd"><span class="header-section-number">7.2.6</span> <strong>6. Plot the Bending Moment Diagram (BMD)</strong></h3>
-<ol type="1">
-<li><p><strong>Start with the calculated moments at the supports or free ends.</strong></p></li>
-<li><p><strong>Integrate the shear force:</strong> The area under the SFD gives the bending moment.</p></li>
-<li><p><strong>Apply boundary conditions:</strong></p>
-<ul>
-<li><p>Fixed ends: Zero slope (moment is maximum/minimum).</p></li>
-<li><p>Simply supported ends: Zero moment.</p></li>
-<li><p>Free ends: Zero shear force and moment.</p></li>
-</ul></li>
-</ol>
-</section>
-<section id="verify-the-results" class="level3" data-number="7.2.7">
-<h3 data-number="7.2.7" class="anchored" data-anchor-id="verify-the-results"><span class="header-section-number">7.2.7</span> <strong>7. Verify the Results</strong></h3>
-<ul>
-<li><strong>Boundary Conditions:</strong> Ensure the diagrams match the physical behavior of the beam.</li>
+<li><p>Radius: ( r )</p></li>
+<li><p>Radius of gyration: <span class="math display">\[
+k = \sqrt{\frac{I}{A}} = \sqrt{\frac{\frac{\pi r^4}{4}}{\pi r^2}} = \frac{r}{\sqrt{2}}
+\]</span></p></li>
 </ul>
 </section>
 </section>
-<section id="summary" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.3</span> Summary</h2>
+<section id="beam-calculations" class="level2" data-number="A.9">
+<h2 data-number="A.9" class="anchored" data-anchor-id="beam-calculations"><span class="header-section-number">A.9</span> Beam Calculations</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Sum of Horizontal Forces</th>
+<th>Sum of Vertical Force</th>
+<th>Sum of Moments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\sum F_x = 0\)</span></td>
+<td><span class="math inline">\(\sum F_y = 0\)</span></td>
+<td><span class="math inline">\(\sum M = 0\)</span></td>
+</tr>
+</tbody>
+</table>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -394,19 +453,328 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="further-reading" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">7.4</span> Further Reading</h2>
-<p>Introduction in <span class="citation" data-cites="russell2021">Russell, Jackson, and Embleton (<a href="references.html#ref-russell2021" role="doc-biblioref">2021</a>)</span> and SI units in <span class="citation" data-cites="bolton2021">Bolton (<a href="references.html#ref-bolton2021" role="doc-biblioref">2021</a>)</span> for additional information.</p>
+<section id="dynamics" class="level2" data-number="A.10">
+<h2 data-number="A.10" class="anchored" data-anchor-id="dynamics"><span class="header-section-number">A.10</span> Dynamics</h2>
+<section id="linear-momentum" class="level3" data-number="A.10.1">
+<h3 data-number="A.10.1" class="anchored" data-anchor-id="linear-momentum"><span class="header-section-number">A.10.1</span> Linear momentum</h3>
+<p><span class="math display">\[
+Linear\ momentum = m \vec{v}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p>Linear momentum is in kg·m/s.</p></li>
+<li><p><span class="math inline">\(m\)</span> is the mass of the object in kilograms.</p></li>
+<li><p><span class="math inline">\(\vec{v}\)</span> is the velocity of the object in meters per second.</p></li>
+</ul>
+</section>
+<section id="angular-momentum" class="level3" data-number="A.10.2">
+<h3 data-number="A.10.2" class="anchored" data-anchor-id="angular-momentum"><span class="header-section-number">A.10.2</span> Angular momentum</h3>
+<p><span class="math display">\[ \text{Angular momentum} = I \omega \]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(\omega\)</span> is the angular velocity in <span class="math inline">\(rad/s\)</span>.</li>
+</ul>
+</section>
+<section id="moment-of-inertia" class="level3" data-number="A.10.3">
+<h3 data-number="A.10.3" class="anchored" data-anchor-id="moment-of-inertia"><span class="header-section-number">A.10.3</span> Moment of inertia</h3>
+<p><span class="math display">\[
+I = m k^2
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(m\)</span> is the mass in <span class="math inline">\(kg\)</span>.</li>
+<li><span class="math inline">\(k\)</span> is the radius of gyration in <span class="math inline">\(m\)</span>.</li>
+</ul>
+</section>
+<section id="turning-moment" class="level3" data-number="A.10.4">
+<h3 data-number="A.10.4" class="anchored" data-anchor-id="turning-moment"><span class="header-section-number">A.10.4</span> Turning moment</h3>
+<p><span class="math display">\[
+\tau = I \alpha
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\tau\)</span> is the torque in <span class="math inline">\(Nm\)</span>.</li>
+<li><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</li>
+<li><span class="math inline">\(\alpha\)</span>: Angular acceleration in <span class="math inline">\(rad/s^2\)</span>.</li>
+</ul>
+</section>
+<section id="power-by-torque" class="level3" data-number="A.10.5">
+<h3 data-number="A.10.5" class="anchored" data-anchor-id="power-by-torque"><span class="header-section-number">A.10.5</span> Power by Torque</h3>
+<p><span class="math display">\[
+P = \tau \cdot \omega
+\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(P\)</span> is the power in watts (W),</p>
+<p><span class="math inline">\(\tau\)</span> is the torque in newton-meters (Nm), and</p>
+<p><span class="math inline">\(\omega\)</span> is the angular velocity in radians per second (rad/s).</p>
+</section>
+<section id="kinetic-energy-of-rotation" class="level3" data-number="A.10.6">
+<h3 data-number="A.10.6" class="anchored" data-anchor-id="kinetic-energy-of-rotation"><span class="header-section-number">A.10.6</span> Kinetic Energy of Rotation</h3>
+<p><span class="math display">\[
+\text{Rotational K.E.} = \frac{1}{2} I \omega^2
+\]</span> Where:</p>
+<ul>
+<li><p><span class="math inline">\(I\)</span> is the moment of inertia in <span class="math inline">\(m^4\)</span>.</p></li>
+<li><p><span class="math inline">\(\omega\)</span> is the angular velocity in radians per second (rad/s).</p></li>
+</ul>
+</section>
+</section>
+<section id="stress-and-strain" class="level2" data-number="A.11">
+<h2 data-number="A.11" class="anchored" data-anchor-id="stress-and-strain"><span class="header-section-number">A.11</span> Stress and Strain</h2>
+<section id="stress" class="level3" data-number="A.11.1">
+<h3 data-number="A.11.1" class="anchored" data-anchor-id="stress"><span class="header-section-number">A.11.1</span> Stress</h3>
+<p><span class="math display">\[
+\sigma = \frac{F}{A}
+\]</span></p>
+<p><span class="math display">\[
+\tau = \frac{F}{A}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(\sigma\)</span> is the stress (Pa),</p></li>
+<li><p><span class="math inline">\(\tau\)</span> is the shearing stress (Pa),</p></li>
+<li><p><span class="math inline">\(F\)</span> is the shearing force (N),</p></li>
+<li><p><span class="math inline">\(A\)</span> is the cross-sectional area (m<span class="math inline">\(^2\)</span>).</p></li>
+</ul>
+</section>
+<section id="strain" class="level3" data-number="A.11.2">
+<h3 data-number="A.11.2" class="anchored" data-anchor-id="strain"><span class="header-section-number">A.11.2</span> Strain</h3>
+<p><span class="math display">\[
+\varepsilon = \frac{\Delta L}{L_0}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(\varepsilon\)</span> is the strain (unitless),</p></li>
+<li><p><span class="math inline">\(\Delta L\)</span> is the change in length,</p></li>
+<li><p><span class="math inline">\(L_0\)</span> is the original length.</p></li>
+</ul>
+</section>
+<section id="hookes-law" class="level3" data-number="A.11.3">
+<h3 data-number="A.11.3" class="anchored" data-anchor-id="hookes-law"><span class="header-section-number">A.11.3</span> Hooke’s Law</h3>
+<p><span class="math display">\[
+E = \frac{\sigma}{\varepsilon}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\sigma\)</span> is the stress (Pa).</li>
+<li><span class="math inline">\(\varepsilon\)</span> is the strain (unitless).</li>
+<li>E: Young’s modulus (Pa), a material property (modulus of elasticity).</li>
+</ul>
+</section>
+<section id="factor-of-safety-fos" class="level3" data-number="A.11.4">
+<h3 data-number="A.11.4" class="anchored" data-anchor-id="factor-of-safety-fos"><span class="header-section-number">A.11.4</span> Factor of Safety (FOS)</h3>
+<p><span class="math display">\[
+\text{FOS} = \frac{\text{Breaking Stress}}{\text{Working Stress}}
+\]</span></p>
+</section>
+</section>
+<section id="hydrodynamics" class="level2" data-number="A.12">
+<h2 data-number="A.12" class="anchored" data-anchor-id="hydrodynamics"><span class="header-section-number">A.12</span> Hydrodynamics</h2>
+<section id="volume-flow" class="level3" data-number="A.12.1">
+<h3 data-number="A.12.1" class="anchored" data-anchor-id="volume-flow"><span class="header-section-number">A.12.1</span> Volume Flow</h3>
+<p><span class="math display">\[
+\dot{v} = A \cdot C
+\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\dot{v}\)</span>: Volume flow rate, <span class="math inline">\(\mathrm{m^3/s}\)</span></p>
+<p><span class="math inline">\(A\)</span>: Cross-sectional area of the flow, <span class="math inline">\(\mathrm{m^2}\)</span></p>
+<p><span class="math inline">\(C\)</span>: Mean (average) velocity of the fluid, <span class="math inline">\(\mathrm{m/s}\)</span></p>
+</section>
+<section id="mass-flow" class="level3" data-number="A.12.2">
+<h3 data-number="A.12.2" class="anchored" data-anchor-id="mass-flow"><span class="header-section-number">A.12.2</span> Mass Flow</h3>
+<p><span class="math display">\[
+\dot{m} = \rho \cdot \dot v
+\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\dot{m}\)</span>: mass flow rate, <span class="math inline">\(\mathrm{kg/s}\)</span></p>
+<p><span class="math inline">\(\rho\)</span>: density, <span class="math inline">\(\mathrm{kg/m^3}\)</span></p>
+<p><span class="math inline">\(\dot{v}\)</span>: volume flow, <span class="math inline">\(\mathrm{m^3/s}\)</span></p>
+</section>
+<section id="specific-weight" class="level3" data-number="A.12.3">
+<h3 data-number="A.12.3" class="anchored" data-anchor-id="specific-weight"><span class="header-section-number">A.12.3</span> Specific Weight</h3>
+<p><span class="math display">\[
+\gamma = g \cdot \rho
+\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\gamma\)</span>: specific weight, <span class="math inline">\(\mathrm{N/m^3}\)</span></p>
+<p><span class="math inline">\(g\)</span>: gravitational acceleration, <span class="math inline">\(\mathrm{m/s^2}\)</span></p>
+<p><span class="math inline">\(\rho\)</span>: density, <span class="math inline">\(\mathrm{kg/m^3}\)</span></p>
+</section>
+<section id="continuity-equation" class="level3" data-number="A.12.4">
+<h3 data-number="A.12.4" class="anchored" data-anchor-id="continuity-equation"><span class="header-section-number">A.12.4</span> Continuity Equation</h3>
+<p><span class="math display">\[
+A_1 \cdot C_1= A_2 \cdot C_2
+\]</span></p>
+</section>
+<section id="energy-equation" class="level3" data-number="A.12.5">
+<h3 data-number="A.12.5" class="anchored" data-anchor-id="energy-equation"><span class="header-section-number">A.12.5</span> Energy Equation</h3>
+<p><span class="math display">\[
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{g\rho_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{g\rho_2}
+\]</span></p>
+<p><span class="math display">\[
+Z_1+\frac{C_1^2}{2g}+\frac{P_1}{\gamma_1}=Z_2+\frac{C_2^2}{2g}+\frac{P_2}{\gamma_2}
+\]</span></p>
+<p>Each term has units of m, therefore:</p>
+<ul>
+<li><p>Potential energy <span class="math inline">\(Z\)</span> is known as the elevation head.</p></li>
+<li><p>Kinetic energy <span class="math inline">\(\frac{c^2}{2g}\)</span> is known as the velocity head.</p></li>
+<li><p>Pressure energy <span class="math inline">\(\frac{P}{\gamma}\)</span> is known as the pressure head.</p></li>
+</ul>
+<p><span class="math display">\[
+Total\ Head= Elevation\ Head + Velocity\ Head + Pressure\ Head
+\]</span></p>
+</section>
+<section id="bernoullis-equation" class="level3" data-number="A.12.6">
+<h3 data-number="A.12.6" class="anchored" data-anchor-id="bernoullis-equation"><span class="header-section-number">A.12.6</span> Bernoulli’s Equation</h3>
+<p><span class="math display">\[
+P_1 + \frac{1}{2} \rho C_1^2 + \rho g h_1 = P_2 + \frac{1}{2} \rho C_2^2 + \rho g h_2
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(P_1\)</span> and <span class="math inline">\(P_2\)</span> are the pressures at points 1 and 2, respectively.</p></li>
+<li><p><span class="math inline">\(\rho\)</span> is the density of the fluid.</p></li>
+<li><p><span class="math inline">\(C_1\)</span> and <span class="math inline">\(C_2\)</span> are the velocities of the fluid at points 1 and 2, respectively.</p></li>
+<li><p><span class="math inline">\(g\)</span> is the acceleration due to gravity.</p></li>
+<li><p><span class="math inline">\(h_1\)</span> and <span class="math inline">\(h_2\)</span> are the heights of the fluid at points 1 and 2, respectively.</p></li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div id="tbl-centroids" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-centroids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;A.1: Centroids of Common Shapes
+</figcaption>
+<div aria-describedby="tbl-centroids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Shape</th>
+<th style="text-align: center;">Area</th>
+<th style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\bar{y}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/centroids-rectangle.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(A = b h\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(b/2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(h/2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/centroids-triangle.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{bh}{2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(b/3\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(h/3\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/centroids-trapezoid.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{(a+b) h}{2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{a^2 +ab + b^2}{3 (a+b)}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{h(2a+b)}{3(a+b)}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/centroids-circle.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(\pi r^2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(r\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(r\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="images/centroids-semi-circle.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{\pi r^2}{2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(r\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{4 r}{3 \pi}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="images/centroids-quarter-circle.png" class="img-fluid figure-img"></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{\pi r^2}{4}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{4 r}{3 \pi}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{4 r}{3 \pi}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="second-moments-of-common-shapes" class="level2" data-number="A.13">
+<h2 data-number="A.13" class="anchored" data-anchor-id="second-moments-of-common-shapes"><span class="header-section-number">A.13</span> Second Moments of Common Shapes</h2>
+<div id="tbl-second-moments" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-second-moments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;A.2: Second moments
+</figcaption>
+<div aria-describedby="tbl-second-moments-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shape</th>
+<th>Second moment (<span class="math inline">\(I_x\)</span>)</th>
+<th>Second moment (<span class="math inline">\(I_y\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/Moment_of_area_of_a_rectangle_through_the_centroid.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{1}{12} b h^3\)</span></td>
+<td><span class="math inline">\(I_y = \frac{1}{12} b^3 h\)</span></td>
+</tr>
+<tr class="even">
+<td><img src="images/Moment_of_area_of_a_rectangle_through_the_base.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{1}{3} b h^3\)</span></td>
+<td><span class="math inline">\(I_y = \frac{1}{3} b^3 h\)</span></td>
+</tr>
+<tr class="odd">
+<td><img src="images/Moment_of_area_of_a_circle.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{\pi}{4} r^4\)</span></td>
+<td><span class="math inline">\(I_y = \frac{\pi}{4} r^4\)</span></td>
+</tr>
+<tr class="even">
+<td><img src="images/Moment_of_area_of_an_annulus.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{\pi}{4} (r_2^4-r_1^4)\)</span></td>
+<td><span class="math inline">\(I_y = \frac{\pi}{4} (r_2^4-r_1^4)\)</span></td>
+</tr>
+<tr class="odd">
+<td><img src="images/Moment_of_area_of_a_semicircle_through_the_base.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{\pi}{8} r^4\)</span></td>
+<td><span class="math inline">\(I_y = \frac{\pi}{8} r^4\)</span></td>
+</tr>
+<tr class="even">
+<td><img src="images/Moment_of_area_of_a_quarter_circle_through_the_base.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{\pi}{16} r^4\)</span></td>
+<td><span class="math inline">\(I_y = \frac{\pi}{16} r^4\)</span></td>
+</tr>
+<tr class="odd">
+<td><img src="images/Moment_of_inertia_on_a_traingle_through_the_base_with_dimension_'a'.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{1}{12} b h^3\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><img src="images/Moment_of_inertia_on_a_triangle_through_centroide_with_dimension_'a'.svg.png" class="img-fluid figure-img" style="width:3.5cm"></td>
+<td><span class="math inline">\(I_x = \frac{1}{36} b h^3\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-bolton2021" class="csl-entry" role="listitem">
-Bolton, W. 2021. <em>Engineering Science</em>. Seventh edition. Abingdon, Oxon ; New York, NY: Routledge.
-</div>
-<div id="ref-russell2021" class="csl-entry" role="listitem">
-Russell, Paul A., Leslie Jackson, and William Embleton. 2021. <em>Applied Mechanics for Marine Engineers</em>. 7th edition. Reeds Marine Engineering and Technology Series, vol. 2. London: Reeds.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -973,14 +1341,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./stress-strain.html" class="pagination-link" aria-label="Stress and Strain">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stress and Strain</span></span>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">References</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./hydrodynamics.html" class="pagination-link" aria-label="Hydrodynamics">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hydrodynamics</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

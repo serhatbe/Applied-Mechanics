@@ -16,4 +16,6 @@ This workbook presents a collection of lecture notes on Applied Mechanics, desig
 
 @sec-shear-force-and-bending-moment-diagrams: Linear momentum is a fundamental concept in physics that describes the quantity of motion an object has. It is defined as the product of an object's **mass** and its **velocity**. Linear momentum is a vector quantity, meaning it has both magnitude and direction.
 
+@sec-hydrodynamics: The amount of liquid flowing through a pipe or opening is usually measured by the volume or mass of liquid that flows per unit of time.
+
 @sec-review: Review section
