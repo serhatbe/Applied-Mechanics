@@ -9,7 +9,7 @@ The amount of liquid flowing through a pipe or opening is usually measured by th
 
 Volume rate of flow refers to the rate at which a fluid volume passes a given section in a flow stream. Volume rate of flow may also be referred to as capacity of flow, flow rate or discharge. It is generally given in units of volume per unit of time, cubic meters per second (m^3^/s) or liters per second (L/s).
 
-![Volume flow](images/volumeflow.png){width="6cm" height="1.5cm"}
+![Volume flow](images/volumeflow.png){width="7.8cm"}
 
 Consider an ideal fluid flow in a pipe of cross-section 'A' (m^2^). For an ideal fluid all the particles move to the right with a velocity of 'C' (m/s). As the fluid flow to the right with a velocity of C m/s, 'C' m of fluid pass section 1 every second. i.e. the volume of fluid passing section-1 every second is A x C.
 
@@ -31,7 +31,7 @@ Where:
 
 Consider a real fluid flowing in the same pipe. Here particle velocity will be a variable across the flow stream.
 
-![Mean velocity](images/volumeflow1.png){width="6cm" height="1.8cm"}
+![Mean velocity](images/volumeflow1.png){width="8.4cm"}
 
 If the mean velocity cm of all the fluid particles could be found, then similar to the ideal fluid.
 
@@ -81,7 +81,7 @@ Where:
 
 Continuous flow exists in a flow system when the mass flow rate is constant throughout the system. If in the diagram below, the mass flow rate at 1 is equal to that at 2, then continuity exists.
 
-![Continuity equation](images/continuity_equation.png){width="6cm" height="2cm"}
+![Continuity equation](images/continuity_equation.png){width="7.6cm"}
 
 Since $\dot{m_1} = \dot{m_2}$, therefore
 
@@ -104,7 +104,7 @@ That is, the volume flow rate is constant for an incompressible fluid.
 ::: {#exm-conteq}
 A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate the mass flow rate and the velocities in the larger and smaller pipe.
 
-![Example](images/continuity_equation_exm.png){width="6cm"}
+![Example](images/continuity_equation_exm.png){width="8.9cm"}
 
 ### Problem Statement
 
@@ -150,6 +150,8 @@ For the smaller pipe:\
 $$ A_2 = \pi \left(\frac{d_2}{2}\right)^2 = \pi \left(\frac{0.2}{2}\right)^2 = 0.0314 \, \text{m}^2 $$\
 $$ C_2 = \frac{\dot{v}}{A_2} = \frac{0.3066}{0.0314} \approx 9.76 \, \text{m/s} $$
 
+------------------------------------------------------------------------
+
 ### Final Results:
 
 1.  **Mass flow rate:**\
@@ -158,39 +160,6 @@ $$ C_2 = \frac{\dot{v}}{A_2} = \frac{0.3066}{0.0314} \approx 9.76 \, \text{m/s} 
     $$ C_1 \approx 4.34 \, \text{m/s} $$\
 3.  **Velocity in the smaller pipe:**\
     $$ C_2 \approx 9.76 \, \text{m/s} $$
-:::
-
-::: {#exm-conteq3}
-Water flows in a pipe with a circular cross-section that varies in area. At all points, the water completely fills the pipe.
-
-A. At one point in the pipe, the radius is 0.16 m. What is the speed of the water at this point if it flows into the pipe at a steady rate of 1.40 m³/s?
-
-B. At another point in the pipe, the water speed is 3.9 m/s. What is the radius of the pipe at this point?
-
-### Part A: Finding water speed at r = 0.16 m
-
-Using the flow rate equation: $\dot{v} = A\cdot C$ where:
-
--   $\dot{v} = 1.40$ m³/s (flow rate)
--   $A = \pi r^2 = \pi(0.16)^2$ m² (cross-sectional area)
--   $C$ is the velocity we're solving for
-
-$$
-C = \frac{\dot{v}}{A} = \frac{1.40}{\pi(0.16)^2} = 17.4\ m/s
-$$
-
-### Part B: Finding radius when C = 3.9 m/s
-
-Using the same equation: $\dot{v} = A \cdot C = \pi r^2 \cdot C$
-
-Rearranging to solve for r: $$
-r = \sqrt{\frac{\dot{v}}{\pi C}} = \sqrt{\frac{1.40}{\pi(3.9)}} = 0.339\ m
-$$
-
-Therefore:
-
--   At r = 0.16 m, the water speed is 17.4 m/s
--   When the water speed is 3.9 m/s, the radius is 0.339 m
 :::
 
 ## The Energy Equation for an Ideal Fluid
@@ -214,7 +183,7 @@ Consider the flow system shown below. For this system, assume:
 -   that there are no energy losses or additions and
 -   steady flow conditions exist.
 
-![Energy equation](images/energy_equation.png){width="6cm"}
+![Energy equation](images/energy_equation.png){width="7cm"}
 
 From the Law of Conservation of Energy:
 
@@ -283,7 +252,7 @@ The total head (H) will be a constant throughout a flow system if:
 ::: {#exm-energyeq}
 Consider a simple flow system consisting of a varying cross-section pipe. Water flows through this system at a rate of 2000 L/min. As the pipe increases in elevation from 30 m to 36 m it decreases in diameter from 10 cm to 3.0 cm. If the pressure is 6.5 MPa at the 30 m elevation, what is the pressure at 36 m?
 
-![Example](images/energy_equation_exm.png){width="6cm" height="2.5cm"}
+![Example](images/energy_equation_exm.png){width="7cm"}
 
 Find $P_2$.
 
@@ -492,29 +461,4 @@ The mass flow rate is approximately:
 $$
 \boxed{37.0 \, \text{kg/s}}
 $$
-:::
-
-::: {#exm-power}
-A centrifugal pump supplies seawater through a pipe with a diameter of 150 mm at a constant velocity of 1.5 m/s. The seawater is pumped to a height of 6.5 m. The efficiency of the pump is 65%. Taking the density of seawater as 1025 kg/m³, find the output and input power of the pump.
-
-### Solution
-
-1.  Find flow rate ($\dot{v}$):
-    -   Area = $\pi(d^2/4) = \pi(0.15^2/4) = 0.0177$ m²
-    -   $\dot{v} = C \cdot A = 1.5 \times 0.0177 = 0.0265$ m³/s
-2.  Calculate output power:
-    -   $P_{out} = \rho g \dot{v}H$
-    -   $P_{out} = 1025 \times 9.81 \times 0.0265 \times 6.5$
-    -   $P_{out} = 1725.8$ W
-3.  Calculate input power:
-    -   $\eta=\frac{P_{out}}{P_{in}} \times 100$
-    -   $65 = \frac{1725.8}{P_{in}} \times 100$
-    -   $P_{in} = \frac{1725.8}{0.65}$
-    -   $P_{in} = 2655.1$ W
-
-Therefore:
-
--   Output power = 1.73 kW
-
--   Input power = 2.66 kW
 :::

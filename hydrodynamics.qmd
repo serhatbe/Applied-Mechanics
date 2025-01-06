@@ -6,7 +6,7 @@ The amount of liquid flowing through a pipe or opening is usually measured by th
 
 Volume rate of flow refers to the rate at which a fluid volume passes a given section in a flow stream. Volume rate of flow may also be referred to as capacity of flow, flow rate or discharge. It is generally given in units of volume per unit of time, cubic meters per second (m^3^/s) or liters per second (L/s).
 
-![Volume flow](images/volumeflow.png){width="5cm" height="1.5cm"}
+![Volume flow](images/volumeflow.png){width="7.8cm"}
 
 Consider an ideal fluid flow in a pipe of cross-section 'A' (m^2^). For an ideal fluid all the particles move to the right with a velocity of 'C' (m/s). As the fluid flow to the right with a velocity of C m/s, 'C' m of fluid pass section 1 every second. i.e. the volume of fluid passing section-1 every second is A x C.
 
@@ -28,7 +28,7 @@ Where:
 
 Consider a real fluid flowing in the same pipe. Here particle velocity will be a variable across the flow stream.
 
-![Mean velocity](images/volumeflow1.png){width="5cm" height="1.8cm"}
+![Mean velocity](images/volumeflow1.png){width="8.4cm"}
 
 If the mean velocity cm of all the fluid particles could be found, then similar to the ideal fluid.
 
@@ -78,7 +78,7 @@ Where:
 
 Continuous flow exists in a flow system when the mass flow rate is constant throughout the system. If in the diagram below, the mass flow rate at 1 is equal to that at 2, then continuity exists.
 
-![Continuity equation](images/continuity_equation.png){width="5cm" height="2cm"}
+![Continuity equation](images/continuity_equation.png){width="7.6cm"}
 
 Since $\dot{m_1} = \dot{m_2}$, therefore
 
@@ -101,7 +101,7 @@ That is, the volume flow rate is constant for an incompressible fluid.
 ::: {#exm-conteq}
 A pipe decreases in diameter from 300 mm to 200 mm. Water flows from the larger to the smaller pipe at a constant rate of 18.4 kL/min. Calculate the mass flow rate and the velocities in the larger and smaller pipe.
 
-![Example](images/continuity_equation_exm.png){width="5cm" height="1.7cm"}
+![Example](images/continuity_equation_exm.png){width="8.9cm"}
 
 ### Problem Statement
 
@@ -180,7 +180,7 @@ Consider the flow system shown below. For this system, assume:
 -   that there are no energy losses or additions and
 -   steady flow conditions exist.
 
-![Energy equation](images/energy_equation.png){width="5cm" height="2.2cm"}
+![Energy equation](images/energy_equation.png){width="7cm"}
 
 From the Law of Conservation of Energy:
 
@@ -249,7 +249,7 @@ The total head (H) will be a constant throughout a flow system if:
 ::: {#exm-energyeq}
 Consider a simple flow system consisting of a varying cross-section pipe. Water flows through this system at a rate of 2000 L/min. As the pipe increases in elevation from 30 m to 36 m it decreases in diameter from 10 cm to 3.0 cm. If the pressure is 6.5 MPa at the 30 m elevation, what is the pressure at 36 m?
 
-![Example](images/energy_equation_exm.png){width="5cm" height="2.1cm"}
+![Example](images/energy_equation_exm.png){width="7cm"}
 
 Find $P_2$.
 
