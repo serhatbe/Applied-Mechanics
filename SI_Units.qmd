@@ -66,7 +66,7 @@ The International System of Units (SI)\index{SI} is the globally accepted standa
 Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.
 
 | **Concept** | **Mistake** | **Correct Usage** | **Notes** |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | **Use of SI Unit Symbols** | `m./s` | `m/s` | Use the correct format without additional punctuation. |
 | **Spacing Between Value & Unit** | `10kg` | `10 kg` | Always leave a space between the number and the unit symbol. |
 | **Incorrect Unit Symbols** | `sec`, `hrs`, `°K` | `s`, `h`, `K` | Use the proper SI symbols; symbols are case-sensitive. |
